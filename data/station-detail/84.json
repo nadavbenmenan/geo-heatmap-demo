@@ -1,0 +1,52 @@
+{
+ "id": 84,
+ "name": "תחנת הבקעה",
+ "district": "ש\"י",
+ "area": "גלעד",
+ "open_positions": 12,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 32.07,
+ "lng": 35.42,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 3
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 2
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 3
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

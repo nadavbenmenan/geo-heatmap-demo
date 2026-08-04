@@ -1,0 +1,52 @@
+{
+ "id": 62,
+ "name": "תחנת נהריה",
+ "district": "חוף",
+ "area": "חוף",
+ "open_positions": 20,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 33.0063,
+ "lng": 35.0946,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 3
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 3
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 5
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

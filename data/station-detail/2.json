@@ -1,0 +1,81 @@
+{
+ "id": 2,
+ "name": "תחנת בת ים",
+ "district": "תל אביב",
+ "area": "איילון",
+ "open_positions": 26,
+ "status": "קריטי",
+ "status_key": "critical",
+ "color": "#DC2626",
+ "lat": 32.0231,
+ "lng": 34.7503,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 8
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 4
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 3
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 4
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 8
+ },
+ "nearby_settlements": [
+  {
+   "name": "בת ים",
+   "travel_min": 4
+  },
+  {
+   "name": "חולון",
+   "travel_min": 7
+  },
+  {
+   "name": "אזור",
+   "travel_min": 9
+  },
+  {
+   "name": "תל אביב",
+   "travel_min": 15
+  },
+  {
+   "name": "ראשון לציון",
+   "travel_min": 21
+  },
+  {
+   "name": "נס ציונה",
+   "travel_min": 27
+  },
+  {
+   "name": "באר יעקב",
+   "travel_min": 29
+  }
+ ],
+ "insights": []
+}

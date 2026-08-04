@@ -1,0 +1,109 @@
+{
+ "id": 7,
+ "name": "תחנת לב ת\"א",
+ "district": "תל אביב",
+ "area": "ירקון",
+ "open_positions": 11,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 32.0668,
+ "lng": 34.7745,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 2
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 3
+ },
+ "nearby_settlements": [
+  {
+   "name": "תל אביב",
+   "travel_min": 6
+  },
+  {
+   "name": "גבעתיים",
+   "travel_min": 7
+  },
+  {
+   "name": "אזור",
+   "travel_min": 9
+  },
+  {
+   "name": "בת ים",
+   "travel_min": 12
+  },
+  {
+   "name": "חולון",
+   "travel_min": 12
+  },
+  {
+   "name": "רמת גן",
+   "travel_min": 12
+  },
+  {
+   "name": "בני ברק",
+   "travel_min": 13
+  },
+  {
+   "name": "גבעת שמואל",
+   "travel_min": 14
+  },
+  {
+   "name": "קריית אונו",
+   "travel_min": 16
+  },
+  {
+   "name": "פתח תקווה",
+   "travel_min": 21
+  },
+  {
+   "name": "רמת השרון",
+   "travel_min": 21
+  },
+  {
+   "name": "יהוד",
+   "travel_min": 23
+  },
+  {
+   "name": "ראשון לציון",
+   "travel_min": 27
+  },
+  {
+   "name": "הוד השרון",
+   "travel_min": 28
+  }
+ ],
+ "insights": []
+}

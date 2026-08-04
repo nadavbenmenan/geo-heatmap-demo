@@ -1,0 +1,52 @@
+{
+ "id": 37,
+ "name": "תחנת שפט",
+ "district": "ירושלים",
+ "area": "קדם",
+ "open_positions": 33,
+ "status": "קריטי",
+ "status_key": "critical",
+ "color": "#DC2626",
+ "lat": 31.81,
+ "lng": 35.23,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 10
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 7
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 4
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 4
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 4
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 4
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 10
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

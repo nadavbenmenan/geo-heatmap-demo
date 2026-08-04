@@ -1,0 +1,52 @@
+{
+ "id": 39,
+ "name": "תחנת אופקים",
+ "district": "דרום",
+ "area": "נגב",
+ "open_positions": 9,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 31.3126,
+ "lng": 34.6209,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 2
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 2
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

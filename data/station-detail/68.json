@@ -1,0 +1,52 @@
+{
+ "id": 68,
+ "name": "תחנת טייבה",
+ "district": "מרכז",
+ "area": "שרון",
+ "open_positions": 2,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 32.2671,
+ "lng": 35.0089,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 1
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 0
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 0
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 0
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 0
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 1
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

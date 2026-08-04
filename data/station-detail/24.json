@@ -1,0 +1,52 @@
+{
+ "id": 24,
+ "name": "תחנת נצרת",
+ "district": "צפון",
+ "area": "עמקים",
+ "open_positions": 22,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 32.7021,
+ "lng": 35.2978,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 3
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 3
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 7
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

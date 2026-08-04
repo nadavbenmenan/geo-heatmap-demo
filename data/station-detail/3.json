@@ -1,0 +1,85 @@
+{
+ "id": 3,
+ "name": "תחנת גבעתיים",
+ "district": "תל אביב",
+ "area": "דן",
+ "open_positions": 7,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 32.0723,
+ "lng": 34.8104,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 1
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 1
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 2
+ },
+ "nearby_settlements": [
+  {
+   "name": "גבעתיים",
+   "travel_min": 3
+  },
+  {
+   "name": "רמת גן",
+   "travel_min": 4
+  },
+  {
+   "name": "בני ברק",
+   "travel_min": 7
+  },
+  {
+   "name": "קריית אונו",
+   "travel_min": 8
+  },
+  {
+   "name": "תל אביב",
+   "travel_min": 10
+  },
+  {
+   "name": "גבעת שמואל",
+   "travel_min": 11
+  },
+  {
+   "name": "אור יהודה",
+   "travel_min": 12
+  },
+  {
+   "name": "פתח תקווה",
+   "travel_min": 18
+  }
+ ],
+ "insights": []
+}

@@ -1,0 +1,52 @@
+{
+ "id": 58,
+ "name": "תחנת זכרון יעקב",
+ "district": "חוף",
+ "area": "חוף",
+ "open_positions": 7,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 32.5712,
+ "lng": 34.953,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 2
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 1
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 0
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 2
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

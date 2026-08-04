@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מפת חום גיוס — הדגמה (נתונים סינתטיים)</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">מ</div>
+        <div class="brand-text">
+          <strong>מפת חום גיוס</strong>
+          <span>הדגמת פורטפוליו · נתוני דמה</span>
+        </div>
+      </div>
+
+      <!-- באנר מצב הדגמה: הגרסה הזו רצה ללא שרת, על נתונים סינתטיים בלבד. -->
+      <div class="demo-banner">
+        <strong>מצב הדגמה</strong>
+        <span>המדד היחיד כאן הוא <b>משרות פתוחות</b>, וכל המספרים הומצאו (התפלגות נורמלית, seed קבוע). אין בהדגמה נתוני איוש, דמוגרפיה או מועמדים. "ייצוא אקסל" פעיל ומוריד קובץ מלא; טעינה/עריכה זמינות בגרסת השרת המלאה.</span>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" id="nav-map">מפת גיוס</button>
+        <button class="nav-item" id="nav-dashboard">לוח בקרה</button>
+        <button class="nav-item" id="nav-upload">טעינת נתונים</button>
+        <button class="nav-item" id="nav-manage">ניהול נתונים</button>
+        <button class="nav-item" id="nav-recruiter">ממשק מגייס</button>
+        <button class="nav-item" id="nav-strategic">תכנון אסטרטגי</button>
+        <button class="nav-item" id="nav-settings">הגדרות</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div id="health" class="health health--pending">
+          <span class="dot"></span>
+          <span class="health-text">בודק חיבור…</span>
+        </div>
+        <div class="last-update">עדכון אחרון: <span id="last-update">—</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+     <!-- ===================== מסך 1: מפת גיוס ===================== -->
+     <section class="screen" id="screen-map">
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>מפת גיוס</h1>
+          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
+        </div>
+        <div class="tabs">
+          <button class="tab active" id="tab-stations">מפת חום תחנות</button>
+          <button class="tab" id="tab-settlements">מפת חום יישובים</button>
+        </div>
+      </header>
+
+      <section class="map-section">
+        <div id="map"></div>
+
+        <!-- חיפוש: צף מעל המפה, לא גוזל ממנה גובה -->
+        <div class="map-search">
+          <input type="text" id="search" autocomplete="off" placeholder="חפש תחנה… (או לחץ על סיכה במפה)" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+          <button class="search-clear" id="search-clear" title="נקה בחירה" hidden>נקה</button>
+          <ul class="suggestions" id="suggestions" hidden></ul>
+        </div>
+
+        <div class="map-legend" id="legend"></div>
+
+        <div class="map-info" id="map-info" hidden></div>
+
+        <!-- חלונית תחנה קרובה: נפתחת בלחיצה על תחנה בטאב היישובים -->
+        <div class="drawer" id="drawer" hidden></div>
+      </section>
+
+      <section class="content">
+        <div class="stats" id="stats"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>מצב תחנות</h2>
+            <span class="panel-note" id="stations-note"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="stations-table">
+              <thead>
+                <tr>
+                  <th>תחנה</th><th>מרחב</th><th>משרות פתוחות</th>
+                  <th>סטטוס</th><th>מקצוע מוביל</th><th>יישובים עד 30 דק'</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>אקסלים שנטענו</h2>
+            <span class="panel-note">כל טעינה נשמרת עם חותמת תאריך‑שעה</span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="loads-table">
+              <thead>
+                <tr><th>מתי</th><th>סוג</th><th>קובץ</th><th>שורות</th><th>סטטוס</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 2: לוח בקרה ===================== -->
+     <section class="screen" id="screen-dashboard" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>לוח בקרה</h1>
+          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
+        </div>
+      </header>
+
+      <section class="content">
+        <!-- סרגל סינון -->
+        <div class="filters" id="filters">
+          <label>
+            <span>מחוז</span>
+            <select id="f-district" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+          </label>
+          <label>
+            <span>מרחב</span>
+            <select id="f-region" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+          </label>
+          <label>
+            <span>תחנה</span>
+            <select id="f-station" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+          </label>
+          <button class="filters-reset" id="f-reset" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">נקה סינון</button>
+        </div>
+
+        <div class="kpis" id="kpis"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Top‑5 תחנות בעומס גיוס</h2>
+            <span class="panel-note" id="top5-note"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="top5-table">
+              <thead>
+                <tr><th>תחנה</th><th>מחוז</th><th>מרחב</th><th>משרות פתוחות</th><th>סטטוס</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 3: טעינת נתונים ===================== -->
+     <section class="screen" id="screen-upload" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>טעינת נתונים</h1>
+          <div class="live" id="live">
+            <span class="dot"></span>
+            <span class="live-text">מערכת מחוברת בזמן אמת</span>
+            <span class="live-sep">·</span>
+            <span class="live-age" id="live-age">—</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="drops">
+          <div class="drop" id="drop-openings" data-type="openings">
+            <h2>משרות פתוחות</h2>
+            <p class="drop-cols">מחוז · מרחב · תחנה · מקצוע · מספר משרות פתוחות</p>
+            <div class="drop-zone drop-zone--locked">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <span class="drop-btn drop-btn--disabled" title="טעינת נתונים זמינה בגרסת השרת המלאה">בחר קובץ</span>
+              <em>XLSX או CSV</em>
+            </div>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <div class="drop" id="drop-relations" data-type="relations">
+            <h2>קשרי תחנה‑יישוב</h2>
+            <p class="drop-cols">תחנה · יישוב · זמן נסיעה (דקות)</p>
+            <div class="drop-zone drop-zone--locked">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <span class="drop-btn drop-btn--disabled" title="טעינת נתונים זמינה בגרסת השרת המלאה">בחר קובץ</span>
+              <em>XLSX או CSV</em>
+            </div>
+            <div class="drop-result" hidden></div>
+          </div>
+
+        </div>
+
+        <div class="guard-note">
+          <strong>Data Guard פעיל.</strong> קובץ שסוטה ביותר מ‑10% מהנתונים הקיימים
+          עוצר את הטעינה ומבקש אישור — הוא אינו נחסם: מציגים לך את גודל הסטייה,
+          ואם השינוי אמיתי לוחצים "טען בכל זאת" והקובץ נטען במלואו. עד האישור
+          המאגר לא משתנה, ולפני כל טעינה מוצלחת נשמר גיבוי.
+          <em>(במצב ההדגמה הטעינה מושבתת — זהו מסך תיעוד בלבד.)</em>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>אקסלים שנטענו</h2>
+            <span class="panel-note">כל טעינה נשמרת עם חותמת תאריך‑שעה</span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="loads-table-2">
+              <thead>
+                <tr><th>מתי</th><th>סוג</th><th>קובץ</th><th>שורות</th><th>סטטוס</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 4: ניהול נתונים ===================== -->
+     <section class="screen" id="screen-manage" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>ניהול נתונים</h1>
+          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="kpis" id="manage-kpis"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>קשרי תחנה‑יישוב</h2>
+            <span class="panel-note" id="manage-note"></span>
+          </div>
+
+          <div class="manage-bar">
+            <input type="search" id="rel-search" placeholder="חיפוש מהיר — תחנה או יישוב…" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+            <select id="rel-filter"></select>
+            <button class="add-btn" id="rel-add">+ הוסף קישור</button>
+          </div>
+
+          <div class="add-row" id="add-row" hidden>
+            <select id="add-station"></select>
+            <select id="add-settlement"></select>
+            <input type="number" id="add-travel" min="0" max="600" placeholder="דקות">
+            <button class="add-save" id="add-save">שמור</button>
+            <button class="add-cancel" id="add-cancel">ביטול</button>
+            <span class="add-error" id="add-error"></span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table" id="rel-table">
+              <thead>
+                <tr><th>תחנה</th><th>יישוב</th><th>זמן נסיעה (דקות)</th><th>עד 30 דק'</th><th></th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 5: ממשק מגייס ===================== -->
+     <section class="screen" id="screen-recruiter" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>ממשק מגייס</h1>
+          <div class="settings-actions">
+            <button class="filters-reset" id="rec-sync" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">עדכון אוטומטי</button>
+            <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="kpis" id="rec-kpis"></div>
+
+        <div class="filters">
+          <label>
+            <span>מחוז</span>
+            <select id="rec-district" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+          </label>
+          <label>
+            <span>מרחב</span>
+            <select id="rec-region" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+          </label>
+          <label>
+            <span>עומס גיוס</span>
+            <select id="rec-status" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+              <option value="">כל הסטטוסים</option>
+              <option value="critical">קריטי</option>
+              <option value="urgent">דחוף</option>
+              <option value="medium">בינוני</option>
+              <option value="ok">תקין</option>
+            </select>
+          </label>
+          <label class="filters-grow">
+            <span>חיפוש חופשי</span>
+            <input type="search" id="rec-search" placeholder="שם יחידה, מחוז, מרחב או יישוב…" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+          </label>
+          <button class="filters-reset" id="rec-reset" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">נקה</button>
+        </div>
+
+        <div id="rec-tree"></div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 6: תכנון אסטרטגי ===================== -->
+     <section class="screen" id="screen-strategic" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>תכנון אסטרטגי</h1>
+          <div class="settings-actions">
+            <label class="n-picker">
+              <span>כמות תחנות להצגה</span>
+              <select id="str-n" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+            </label>
+            <span class="export-btn export-btn--disabled" title="הפקת תוכנית עבודה זמינה בגרסת השרת המלאה">הפקת תוכנית עבודה</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="kpis" id="str-kpis"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>חוסרים ותכנון אסטרטגי</h2>
+            <span class="panel-note" id="str-note"></span>
+          </div>
+          <div class="formula" id="str-formula"></div>
+          <div class="table-wrap">
+            <table class="table" id="str-table">
+              <thead>
+                <tr>
+                  <th>שם היחידה</th><th>מרחב</th><th>משרות פתוחות</th>
+                  <th>מקצוע מוביל</th><th>ציון דחיפות</th><th>סטטוס</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="str-grid">
+          <div class="panel">
+            <div class="panel-head">
+              <h2>מפת יעדי פרסום</h2>
+              <span class="panel-note">יישובים מומלצים לגיוס</span>
+            </div>
+            <div id="str-targets"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h2>ימי גיוס מתוכננים</h2>
+              <button class="add-btn" id="day-add">+ הוסף</button>
+            </div>
+            <div class="add-row" id="day-row" hidden>
+              <select id="day-station"></select>
+              <input type="date" id="day-date">
+              <input type="text" id="day-location" placeholder="מיקום">
+              <input type="number" id="day-pct" min="0" max="100" placeholder="% צפוי">
+              <button class="add-save" id="day-save">שמור</button>
+              <button class="add-cancel" id="day-cancel">ביטול</button>
+              <span class="add-error" id="day-error"></span>
+            </div>
+            <div id="str-days"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><h2>תובנות וטיפים מבצעיים</h2></div>
+          <div class="tips-empty">
+            <strong>דורש נתוני היענות לפרסום.</strong>
+            <span>
+              טיפים מבוססי מיקום דורשים נתוני היענות ברמת היישוב — נתון שאינו
+              בגרסת ההדגמה. כשיגיע, ההצלבה תהיה מול קשרי תחנה‑יישוב עד 20 דק'
+              לתחנות הקריטיות. עד אז, "מפת יעדי פרסום" מימין מבוססת על זמני
+              נסיעה בלבד.
+            </span>
+          </div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===================== מסך 7: הגדרות ===================== -->
+     <section class="screen" id="screen-settings" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>הגדרות מערכת</h1>
+          <div class="settings-actions">
+            <span class="save-status" id="save-status"></span>
+            <span class="export-btn export-btn--disabled" id="settings-save" title="שמירת הגדרות זמינה בגרסת השרת המלאה">שמור הגדרות</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="settings-warn">
+          <strong>שינוי כאן משנה את כל המערכת.</strong> ספי הצבע קובעים את הסיווג
+          של כל תחנה במפה, בלוח הבקרה ובייצוא. סף זמן הנסיעה קובע מי נחשב "קרוב".
+          לפני כל שמירה נוצר גיבוי. <em>(במצב ההדגמה השמירה מושבתת.)</em>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>ספי התראות — מדד חום</h2>
+            <span class="panel-note">מספר משרות פתוחות בתחנה. גבוה יותר = חמור יותר.</span>
+          </div>
+          <div class="settings-grid">
+            <label>
+              <span>סף קריטי (אדום)</span>
+              <em>מהמספר הזה ומעלה — קריטי</em>
+              <input type="number" id="s-critical" min="1" max="500">
+            </label>
+            <label>
+              <span>סף דחוף (כתום)</span>
+              <em>מהמספר הזה ומעלה — דחוף</em>
+              <input type="number" id="s-urgent" min="1" max="500">
+            </label>
+            <label>
+              <span>סף בינוני (צהוב)</span>
+              <em>מהמספר הזה ומעלה — בינוני; מתחת — תקין</em>
+              <input type="number" id="s-medium" min="1" max="500">
+            </label>
+          </div>
+          <div class="settings-preview">
+            <span class="settings-preview-label">תצוגה מקדימה:</span>
+            <div id="settings-legend"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>סף מרחק ומיקום</h2>
+            <span class="panel-note">קובע את עמודת "עד X דק'" ואת המלצות הגיוס</span>
+          </div>
+          <div class="settings-grid">
+            <label>
+              <span>סף זמן נסיעה אפקטיבי (דקות)</span>
+              <em>קשר מעל הסף לא ייכלל בהמלצות</em>
+              <input type="number" id="s-nearby" min="1" max="600">
+            </label>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>התראות מערכת</h2>
+            <span class="panel-note">נשמרות במאגר; שליחה בפועל טרם מחוברת</span>
+          </div>
+          <div class="toggles">
+            <label class="toggle">
+              <input type="checkbox" id="s-alert-critical">
+              <span>התראה מיידית כשיחידה נכנסת לסטטוס קריטי</span>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" id="s-alert-weekly">
+              <span>דוח שבועי מרוכז במייל על מצב המשרות הפתוחות</span>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" id="s-alert-opening">
+              <span>התראה על משרה חדשה שנפתחה ביחידה</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><h2>פרטי משתמש</h2></div>
+          <div class="settings-grid">
+            <label>
+              <span>שם מלא</span>
+              <input type="text" id="s-name" maxlength="80" placeholder="לדוגמה: מנהל גיוס ארצי">
+            </label>
+            <label>
+              <span>תפקיד</span>
+              <select id="s-role"></select>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-error" id="settings-error" hidden></div>
+      </section>
+     </section>
+    </main>
+
+  </div>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script>
+    /* תפריט נייד: פתיחה/סגירה של הסרגל הנשלף */
+    (function () {
+      var toggle = document.getElementById('navToggle'),
+          layout = document.querySelector('.layout'),
+          backdrop = document.getElementById('sidebarBackdrop');
+      if (!toggle || !layout) return;
+      function setOpen(open) {
+        layout.classList.toggle('nav-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      toggle.addEventListener('click', function () {
+        setOpen(!layout.classList.contains('nav-open'));
+      });
+      if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
+      document.querySelectorAll('.nav-item').forEach(function (n) {
+        n.addEventListener('click', function () { setOpen(false); });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
+  </script>
+</body>
+</html>

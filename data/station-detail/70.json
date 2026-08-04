@@ -1,0 +1,52 @@
+{
+ "id": 70,
+ "name": "תחנת יבנה",
+ "district": "מרכז",
+ "area": "שפלה",
+ "open_positions": 4,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 31.8769,
+ "lng": 34.7383,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 1
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 1
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 0
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 0
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 1
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

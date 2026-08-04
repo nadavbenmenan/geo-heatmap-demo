@@ -1,0 +1,26 @@
+[
+ {
+  "status": "קריטי",
+  "color": "#DC2626",
+  "key": "critical",
+  "label": "25 משרות ומעלה"
+ },
+ {
+  "status": "דחוף",
+  "color": "#EA580C",
+  "key": "urgent",
+  "label": "16–24 משרות"
+ },
+ {
+  "status": "בינוני",
+  "color": "#EAB308",
+  "key": "medium",
+  "label": "8–15 משרות"
+ },
+ {
+  "status": "תקין",
+  "color": "#16A34A",
+  "key": "ok",
+  "label": "עד 7 משרות"
+ }
+]

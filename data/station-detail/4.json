@@ -1,0 +1,81 @@
+{
+ "id": 4,
+ "name": "תחנת גלילות",
+ "district": "תל אביב",
+ "area": "ירקון",
+ "open_positions": 20,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 32.131,
+ "lng": 34.802,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 3
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 2
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 3
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 5
+ },
+ "nearby_settlements": [
+  {
+   "name": "רמת השרון",
+   "travel_min": 8
+  },
+  {
+   "name": "הרצליה",
+   "travel_min": 10
+  },
+  {
+   "name": "כפר שמריהו",
+   "travel_min": 13
+  },
+  {
+   "name": "תל אביב",
+   "travel_min": 15
+  },
+  {
+   "name": "הוד השרון",
+   "travel_min": 19
+  },
+  {
+   "name": "רעננה",
+   "travel_min": 20
+  },
+  {
+   "name": "כפר סבא",
+   "travel_min": 23
+  }
+ ],
+ "insights": []
+}

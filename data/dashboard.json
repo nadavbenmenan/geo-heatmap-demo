@@ -1,0 +1,135 @@
+{
+ "filters": {
+  "region": null,
+  "station": null
+ },
+ "open_load": {
+  "value": 15.8,
+  "max": 38,
+  "note": null,
+  "status": "דחוף",
+  "color": "#EA580C",
+  "key": "urgent"
+ },
+ "positions": {
+  "available": true,
+  "total_open": 1390,
+  "stations_count": 88,
+  "status_counts": {
+   "בינוני": 32,
+   "דחוף": 31,
+   "קריטי": 11,
+   "תקין": 14
+  }
+ },
+ "manpower_gap": {
+  "available": true,
+  "total_open": 1390,
+  "trend": -47,
+  "snapshots": 2
+ },
+ "by_role": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 410
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 286
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 195
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 181
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 167
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 151
+  }
+ ],
+ "top5": [
+  {
+   "name": "תחנת אריאל",
+   "district": "ש\"י",
+   "area": "שומרון",
+   "open_positions": 38,
+   "status": "קריטי",
+   "color": "#DC2626",
+   "top_role": {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 11
+   },
+   "max": 38
+  },
+  {
+   "name": "תחנת באר שבע",
+   "district": "דרום",
+   "area": "נגב",
+   "open_positions": 37,
+   "status": "קריטי",
+   "color": "#DC2626",
+   "top_role": {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 11
+   },
+   "max": 38
+  },
+  {
+   "name": "תחנת שפט",
+   "district": "ירושלים",
+   "area": "קדם",
+   "open_positions": 33,
+   "status": "קריטי",
+   "color": "#DC2626",
+   "top_role": {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   "max": 38
+  },
+  {
+   "name": "תחנת תבור",
+   "district": "צפון",
+   "area": "צפון",
+   "open_positions": 33,
+   "status": "קריטי",
+   "color": "#DC2626",
+   "top_role": {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   "max": 38
+  },
+  {
+   "name": "תחנת חולון",
+   "district": "תל אביב",
+   "area": "איילון",
+   "open_positions": 30,
+   "status": "קריטי",
+   "color": "#DC2626",
+   "top_role": {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   "max": 38
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "id": 63,
+ "name": "תחנת נשר",
+ "district": "חוף",
+ "area": "חוף",
+ "open_positions": 12,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 32.7709,
+ "lng": 35.0381,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 2
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 2
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 3
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

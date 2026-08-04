@@ -1,0 +1,113 @@
+{
+ "id": 10,
+ "name": "תחנת ת\"א צפון",
+ "district": "תל אביב",
+ "area": "ירקון",
+ "open_positions": 22,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 32.095,
+ "lng": 34.781,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 3
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 3
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 3
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 6
+ },
+ "nearby_settlements": [
+  {
+   "name": "תל אביב",
+   "travel_min": 4
+  },
+  {
+   "name": "גבעתיים",
+   "travel_min": 8
+  },
+  {
+   "name": "רמת גן",
+   "travel_min": 11
+  },
+  {
+   "name": "בני ברק",
+   "travel_min": 13
+  },
+  {
+   "name": "גבעת שמואל",
+   "travel_min": 14
+  },
+  {
+   "name": "אזור",
+   "travel_min": 15
+  },
+  {
+   "name": "קריית אונו",
+   "travel_min": 15
+  },
+  {
+   "name": "הרצליה",
+   "travel_min": 19
+  },
+  {
+   "name": "פתח תקווה",
+   "travel_min": 20
+  },
+  {
+   "name": "רמת השרון",
+   "travel_min": 20
+  },
+  {
+   "name": "בת ים",
+   "travel_min": 21
+  },
+  {
+   "name": "חולון",
+   "travel_min": 23
+  },
+  {
+   "name": "הוד השרון",
+   "travel_min": 26
+  },
+  {
+   "name": "יהוד",
+   "travel_min": 26
+  },
+  {
+   "name": "רעננה",
+   "travel_min": 27
+  }
+ ],
+ "insights": []
+}

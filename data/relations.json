@@ -1,0 +1,1154 @@
+[
+ {
+  "id": 2,
+  "station_id": 1,
+  "station_name": "תחנת בני ברק",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 3,
+  "within_nearby": true
+ },
+ {
+  "id": 1,
+  "station_id": 1,
+  "station_name": "תחנת בני ברק",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 4,
+  "station_id": 1,
+  "station_name": "תחנת בני ברק",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 3,
+  "station_id": 1,
+  "station_name": "תחנת בני ברק",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 7,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 8,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 7,
+  "within_nearby": true
+ },
+ {
+  "id": 5,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 9,
+  "within_nearby": true
+ },
+ {
+  "id": 12,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 10,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 21,
+  "within_nearby": true
+ },
+ {
+  "id": 9,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 27,
+  "within_nearby": true
+ },
+ {
+  "id": 6,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 4,
+  "settlement_name": "באר יעקב",
+  "travel_min": 29,
+  "within_nearby": true
+ },
+ {
+  "id": 11,
+  "station_id": 2,
+  "station_name": "תחנת בת ים",
+  "settlement_id": 24,
+  "settlement_name": "רחובות",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 16,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 3,
+  "within_nearby": true
+ },
+ {
+  "id": 19,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 14,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 7,
+  "within_nearby": true
+ },
+ {
+  "id": 18,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 20,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 10,
+  "within_nearby": true
+ },
+ {
+  "id": 15,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 13,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 1,
+  "settlement_name": "אור יהודה",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 17,
+  "station_id": 3,
+  "station_name": "תחנת גבעתיים",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 18,
+  "within_nearby": true
+ },
+ {
+  "id": 26,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 22,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 10,
+  "within_nearby": true
+ },
+ {
+  "id": 24,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 14,
+  "settlement_name": "כפר שמריהו",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 28,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 21,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 19,
+  "within_nearby": true
+ },
+ {
+  "id": 27,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 20,
+  "within_nearby": true
+ },
+ {
+  "id": 23,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 13,
+  "settlement_name": "כפר סבא",
+  "travel_min": 23,
+  "within_nearby": true
+ },
+ {
+  "id": 25,
+  "station_id": 4,
+  "station_name": "תחנת גלילות",
+  "settlement_id": 18,
+  "settlement_name": "נתניה",
+  "travel_min": 45,
+  "within_nearby": false
+ },
+ {
+  "id": 31,
+  "station_id": 5,
+  "station_name": "תחנת חולון",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 29,
+  "station_id": 5,
+  "station_name": "תחנת חולון",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 5,
+  "within_nearby": true
+ },
+ {
+  "id": 30,
+  "station_id": 5,
+  "station_name": "תחנת חולון",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 6,
+  "within_nearby": true
+ },
+ {
+  "id": 32,
+  "station_id": 5,
+  "station_name": "תחנת חולון",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 33,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 49,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 35,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 37,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 46,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 40,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 34,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 17,
+  "within_nearby": true
+ },
+ {
+  "id": 44,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 19,
+  "within_nearby": true
+ },
+ {
+  "id": 36,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 20,
+  "within_nearby": true
+ },
+ {
+  "id": 45,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 24,
+  "within_nearby": true
+ },
+ {
+  "id": 43,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 30,
+  "within_nearby": true
+ },
+ {
+  "id": 41,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 31,
+  "within_nearby": false
+ },
+ {
+  "id": 47,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 31,
+  "within_nearby": false
+ },
+ {
+  "id": 39,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 38,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 34,
+  "within_nearby": false
+ },
+ {
+  "id": 42,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 34,
+  "within_nearby": false
+ },
+ {
+  "id": 48,
+  "station_id": 6,
+  "station_name": "תחנת יפו",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 43,
+  "within_nearby": false
+ },
+ {
+  "id": 66,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 6,
+  "within_nearby": true
+ },
+ {
+  "id": 54,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 7,
+  "within_nearby": true
+ },
+ {
+  "id": 50,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 9,
+  "within_nearby": true
+ },
+ {
+  "id": 52,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 57,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 63,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 51,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 53,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 61,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 16,
+  "within_nearby": true
+ },
+ {
+  "id": 60,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 21,
+  "within_nearby": true
+ },
+ {
+  "id": 64,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 21,
+  "within_nearby": true
+ },
+ {
+  "id": 58,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 23,
+  "within_nearby": true
+ },
+ {
+  "id": 62,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 27,
+  "within_nearby": true
+ },
+ {
+  "id": 55,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 28,
+  "within_nearby": true
+ },
+ {
+  "id": 56,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 31,
+  "within_nearby": false
+ },
+ {
+  "id": 65,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 32,
+  "within_nearby": false
+ },
+ {
+  "id": 59,
+  "station_id": 7,
+  "station_name": "תחנת לב ת\"א",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 35,
+  "within_nearby": false
+ },
+ {
+  "id": 73,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 7,
+  "within_nearby": true
+ },
+ {
+  "id": 76,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 28,
+  "settlement_name": "רמת פנקס",
+  "travel_min": 7,
+  "within_nearby": true
+ },
+ {
+  "id": 67,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 1,
+  "settlement_name": "אור יהודה",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 72,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 19,
+  "settlement_name": "סביון",
+  "travel_min": 10,
+  "within_nearby": true
+ },
+ {
+  "id": 69,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 71,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 16,
+  "settlement_name": "מגשימים",
+  "travel_min": 17,
+  "within_nearby": true
+ },
+ {
+  "id": 68,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 3,
+  "settlement_name": "אלעד",
+  "travel_min": 28,
+  "within_nearby": true
+ },
+ {
+  "id": 70,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 15,
+  "settlement_name": "לוד",
+  "travel_min": 29,
+  "within_nearby": true
+ },
+ {
+  "id": 74,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 22,
+  "settlement_name": "ראש העין",
+  "travel_min": 29,
+  "within_nearby": true
+ },
+ {
+  "id": 77,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 30,
+  "settlement_name": "שוהם",
+  "travel_min": 29,
+  "within_nearby": true
+ },
+ {
+  "id": 75,
+  "station_id": 8,
+  "station_name": "תחנת מסובים",
+  "settlement_id": 25,
+  "settlement_name": "רמלה",
+  "travel_min": 32,
+  "within_nearby": false
+ },
+ {
+  "id": 78,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 6,
+  "within_nearby": true
+ },
+ {
+  "id": 82,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 9,
+  "within_nearby": true
+ },
+ {
+  "id": 85,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 10,
+  "within_nearby": true
+ },
+ {
+  "id": 91,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 10,
+  "within_nearby": true
+ },
+ {
+  "id": 94,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 81,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 12,
+  "within_nearby": true
+ },
+ {
+  "id": 79,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 80,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 89,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 86,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 20,
+  "within_nearby": true
+ },
+ {
+  "id": 88,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 22,
+  "within_nearby": true
+ },
+ {
+  "id": 90,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 24,
+  "within_nearby": true
+ },
+ {
+  "id": 92,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 25,
+  "within_nearby": true
+ },
+ {
+  "id": 84,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 28,
+  "within_nearby": true
+ },
+ {
+  "id": 87,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 31,
+  "within_nearby": false
+ },
+ {
+  "id": 83,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 32,
+  "within_nearby": false
+ },
+ {
+  "id": 93,
+  "station_id": 9,
+  "station_name": "תחנת שרת",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 111,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 4,
+  "within_nearby": true
+ },
+ {
+  "id": 99,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 108,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 96,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 13,
+  "within_nearby": true
+ },
+ {
+  "id": 98,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 95,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 106,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 101,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 19,
+  "within_nearby": true
+ },
+ {
+  "id": 105,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 20,
+  "within_nearby": true
+ },
+ {
+  "id": 109,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 20,
+  "within_nearby": true
+ },
+ {
+  "id": 97,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 21,
+  "within_nearby": true
+ },
+ {
+  "id": 102,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 23,
+  "within_nearby": true
+ },
+ {
+  "id": 100,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 26,
+  "within_nearby": true
+ },
+ {
+  "id": 103,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 26,
+  "within_nearby": true
+ },
+ {
+  "id": 110,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 27,
+  "within_nearby": true
+ },
+ {
+  "id": 107,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 104,
+  "station_id": 10,
+  "station_name": "תחנת ת\"א צפון",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 42,
+  "within_nearby": false
+ },
+ {
+  "id": 112,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 2,
+  "settlement_name": "אזור",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 119,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 11,
+  "settlement_name": "חולון",
+  "travel_min": 8,
+  "within_nearby": true
+ },
+ {
+  "id": 116,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 8,
+  "settlement_name": "גבעתיים",
+  "travel_min": 9,
+  "within_nearby": true
+ },
+ {
+  "id": 128,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 31,
+  "settlement_name": "תל אביב",
+  "travel_min": 9,
+  "within_nearby": true
+ },
+ {
+  "id": 125,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 26,
+  "settlement_name": "רמת גן",
+  "travel_min": 11,
+  "within_nearby": true
+ },
+ {
+  "id": 114,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 6,
+  "settlement_name": "בת ים",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 123,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 21,
+  "settlement_name": "קריית אונו",
+  "travel_min": 14,
+  "within_nearby": true
+ },
+ {
+  "id": 113,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 5,
+  "settlement_name": "בני ברק",
+  "travel_min": 15,
+  "within_nearby": true
+ },
+ {
+  "id": 115,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 7,
+  "settlement_name": "גבעת שמואל",
+  "travel_min": 16,
+  "within_nearby": true
+ },
+ {
+  "id": 124,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 23,
+  "settlement_name": "ראשון לציון",
+  "travel_min": 21,
+  "within_nearby": true
+ },
+ {
+  "id": 122,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 20,
+  "settlement_name": "פתח תקווה",
+  "travel_min": 24,
+  "within_nearby": true
+ },
+ {
+  "id": 120,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 12,
+  "settlement_name": "יהוד",
+  "travel_min": 26,
+  "within_nearby": true
+ },
+ {
+  "id": 126,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 27,
+  "settlement_name": "רמת השרון",
+  "travel_min": 28,
+  "within_nearby": true
+ },
+ {
+  "id": 121,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 17,
+  "settlement_name": "נס ציונה",
+  "travel_min": 32,
+  "within_nearby": false
+ },
+ {
+  "id": 117,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 9,
+  "settlement_name": "הוד השרון",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 118,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 10,
+  "settlement_name": "הרצליה",
+  "travel_min": 33,
+  "within_nearby": false
+ },
+ {
+  "id": 127,
+  "station_id": 11,
+  "station_name": "תחנת תל אביב דרום",
+  "settlement_id": 29,
+  "settlement_name": "רעננה",
+  "travel_min": 39,
+  "within_nearby": false
+ }
+]

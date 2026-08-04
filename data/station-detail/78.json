@@ -1,0 +1,52 @@
+{
+ "id": 78,
+ "name": "תחנת ראשון לציון",
+ "district": "מרכז",
+ "area": "שפלה",
+ "open_positions": 13,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 31.9636,
+ "lng": 34.8101,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 3
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 4
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

@@ -1,0 +1,52 @@
+{
+ "id": 54,
+ "name": "תחנת באקה אלע'רביה",
+ "district": "חוף",
+ "area": "חוף",
+ "open_positions": 7,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 32.4166,
+ "lng": 35.04,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 1
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 1
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 2
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

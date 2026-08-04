@@ -1,0 +1,52 @@
+{
+ "id": 88,
+ "name": "תחנת עציון",
+ "district": "ש\"י",
+ "area": "יהודה",
+ "open_positions": 17,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 31.65,
+ "lng": 35.125,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 3
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 2
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 6
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

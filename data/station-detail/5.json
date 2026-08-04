@@ -1,0 +1,69 @@
+{
+ "id": 5,
+ "name": "תחנת חולון",
+ "district": "תל אביב",
+ "area": "איילון",
+ "open_positions": 30,
+ "status": "קריטי",
+ "status_key": "critical",
+ "color": "#DC2626",
+ "lat": 32.0158,
+ "lng": 34.7742,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 10
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 5
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 4
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 3
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 3
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 10
+ },
+ "nearby_settlements": [
+  {
+   "name": "חולון",
+   "travel_min": 4
+  },
+  {
+   "name": "אזור",
+   "travel_min": 5
+  },
+  {
+   "name": "בת ים",
+   "travel_min": 6
+  },
+  {
+   "name": "ראשון לציון",
+   "travel_min": 13
+  }
+ ],
+ "insights": []
+}

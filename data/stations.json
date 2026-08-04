@@ -1,0 +1,4402 @@
+[
+ {
+  "id": 38,
+  "name": "מרחב אילת",
+  "district": "דרום",
+  "area": "מרחב אילת",
+  "open_positions": 14,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 29.5569,
+  "lng": 34.9498,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 30,
+  "name": "מרחב דוד",
+  "district": "ירושלים",
+  "area": "מרחב דוד",
+  "open_positions": 16,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.7784,
+  "lng": 35.21,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 67,
+  "name": "מרחב נתב\"ג",
+  "district": "מרכז",
+  "area": "מרכז",
+  "open_positions": 18,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.0004,
+  "lng": 34.8706,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 53,
+  "name": "תחנת אום אל פחם",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 22,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.5158,
+  "lng": 35.1525,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 39,
+  "name": "תחנת אופקים",
+  "district": "דרום",
+  "area": "נגב",
+  "open_positions": 9,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.3126,
+  "lng": 34.6209,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 82,
+  "name": "תחנת אריאל",
+  "district": "ש\"י",
+  "area": "שומרון",
+  "open_positions": 38,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.105,
+  "lng": 35.1857,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 11
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 10
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 4
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 5
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 11
+  }
+ },
+ {
+  "id": 40,
+  "name": "תחנת אשדוד",
+  "district": "דרום",
+  "area": "לכיש",
+  "open_positions": 20,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.7977,
+  "lng": 34.653,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 41,
+  "name": "תחנת אשקלון",
+  "district": "דרום",
+  "area": "לכיש",
+  "open_positions": 10,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.6653,
+  "lng": 34.565,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 54,
+  "name": "תחנת באקה אלע'רביה",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 7,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.4166,
+  "lng": 35.04,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 42,
+  "name": "תחנת באר שבע",
+  "district": "דרום",
+  "area": "נגב",
+  "open_positions": 37,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 31.2457,
+  "lng": 34.7925,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 11
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 9
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 4
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 5
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 11
+  }
+ },
+ {
+  "id": 12,
+  "name": "תחנת בית שאן",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 9,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.4967,
+  "lng": 35.4973,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 31,
+  "name": "תחנת בית שמש",
+  "district": "ירושלים",
+  "area": "ציון",
+  "open_positions": 13,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.7457,
+  "lng": 34.9886,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 1,
+  "name": "תחנת בני ברק",
+  "district": "תל אביב",
+  "area": "דן",
+  "open_positions": 15,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.0809,
+  "lng": 34.8338,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 83,
+  "name": "תחנת בנימין",
+  "district": "ש\"י",
+  "area": "שומרון",
+  "open_positions": 24,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.95,
+  "lng": 35.22,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 6
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 2,
+  "name": "תחנת בת ים",
+  "district": "תל אביב",
+  "area": "איילון",
+  "open_positions": 26,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.0231,
+  "lng": 34.7503,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 8
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 8
+  }
+ },
+ {
+  "id": 56,
+  "name": "תחנת ג'סר א-זרקא",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 9,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.5377,
+  "lng": 34.9114,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 3,
+  "name": "תחנת גבעתיים",
+  "district": "תל אביב",
+  "area": "דן",
+  "open_positions": 7,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.0723,
+  "lng": 34.8104,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 13,
+  "name": "תחנת גולן",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 18,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.9903,
+  "lng": 35.6897,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 55,
+  "name": "תחנת גליל מערבי",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 24,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 33.01,
+  "lng": 35.15,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 8
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 8
+  }
+ },
+ {
+  "id": 4,
+  "name": "תחנת גלילות",
+  "district": "תל אביב",
+  "area": "ירקון",
+  "open_positions": 20,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.131,
+  "lng": 34.802,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 43,
+  "name": "תחנת דימונה",
+  "district": "דרום",
+  "area": "רותם",
+  "open_positions": 21,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.0687,
+  "lng": 35.0366,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 84,
+  "name": "תחנת הבקעה",
+  "district": "ש\"י",
+  "area": "גלעד",
+  "open_positions": 12,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.07,
+  "lng": 35.42,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 44,
+  "name": "תחנת העיירות",
+  "district": "דרום",
+  "area": "רותם",
+  "open_positions": 16,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.24,
+  "lng": 35.12,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 32,
+  "name": "תחנת הראל",
+  "district": "ירושלים",
+  "area": "ציון",
+  "open_positions": 14,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.79,
+  "lng": 35.15,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 57,
+  "name": "תחנת זבולון",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 19,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.81,
+  "lng": 35.11,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 58,
+  "name": "תחנת זכרון יעקב",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 7,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.5712,
+  "lng": 34.953,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 85,
+  "name": "תחנת חברון",
+  "district": "ש\"י",
+  "area": "יהודה",
+  "open_positions": 18,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.5326,
+  "lng": 35.0998,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 59,
+  "name": "תחנת חדרה",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 14,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.4407,
+  "lng": 34.9401,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 5,
+  "name": "תחנת חולון",
+  "district": "תל אביב",
+  "area": "איילון",
+  "open_positions": 30,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.0158,
+  "lng": 34.7742,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 5
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 4
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 10
+  }
+ },
+ {
+  "id": 60,
+  "name": "תחנת חיפה",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 28,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.8191,
+  "lng": 34.9984,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 8
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 5
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 8
+  }
+ },
+ {
+  "id": 14,
+  "name": "תחנת טבריה",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 6,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.7922,
+  "lng": 35.5312,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 68,
+  "name": "תחנת טייבה",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 2,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.2671,
+  "lng": 35.0089,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 0
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 0
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 0
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 69,
+  "name": "תחנת טירה",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 8,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.2347,
+  "lng": 34.9545,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 61,
+  "name": "תחנת טירת הכרמל",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 12,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.7614,
+  "lng": 34.9718,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 15,
+  "name": "תחנת טמרה",
+  "district": "צפון",
+  "area": "גליל",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.8548,
+  "lng": 35.1967,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 70,
+  "name": "תחנת יבנה",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 4,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 31.8769,
+  "lng": 34.7383,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 0
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 6,
+  "name": "תחנת יפו",
+  "district": "תל אביב",
+  "area": "איילון",
+  "open_positions": 15,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.053,
+  "lng": 34.755,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 16,
+  "name": "תחנת ירדן",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 18,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.705,
+  "lng": 35.58,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 17,
+  "name": "תחנת כפר כנא",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 21,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.746,
+  "lng": 35.3398,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 71,
+  "name": "תחנת כפר סבא",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 20,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.1773,
+  "lng": 34.9075,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 72,
+  "name": "תחנת כפר קאסם",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 13,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.1147,
+  "lng": 34.9756,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 18,
+  "name": "תחנת כרמיאל",
+  "district": "צפון",
+  "area": "גליל",
+  "open_positions": 6,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.9159,
+  "lng": 35.2934,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 33,
+  "name": "תחנת לב הבירה",
+  "district": "ירושלים",
+  "area": "ציון",
+  "open_positions": 5,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 31.781,
+  "lng": 35.22,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 7,
+  "name": "תחנת לב ת\"א",
+  "district": "תל אביב",
+  "area": "ירקון",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.0668,
+  "lng": 34.7745,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 73,
+  "name": "תחנת לוד",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 23,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.9489,
+  "lng": 34.8885,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 20,
+  "name": "תחנת מג'דל כרום",
+  "district": "צפון",
+  "area": "גליל",
+  "open_positions": 29,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.9163,
+  "lng": 35.2436,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 6
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 5
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 19,
+  "name": "תחנת מגדל העמק",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 16,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.6771,
+  "lng": 35.241,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 74,
+  "name": "תחנת מודיעין",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 25,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 31.8986,
+  "lng": 35.0069,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 4
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 86,
+  "name": "תחנת מודיעין עילית",
+  "district": "ש\"י",
+  "area": "שומרון",
+  "open_positions": 1,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 31.9333,
+  "lng": 35.0417,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 0
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 0
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 0
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 0
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 34,
+  "name": "תחנת מוריה",
+  "district": "ירושלים",
+  "area": "ציון",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.75,
+  "lng": 35.22,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 66,
+  "name": "תחנת מטה יהודה",
+  "district": "מג\"ב",
+  "area": "מג\"ב י-ם",
+  "open_positions": 19,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.72,
+  "lng": 35.05,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 8,
+  "name": "תחנת מסובים",
+  "district": "תל אביב",
+  "area": "דן",
+  "open_positions": 7,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.0442,
+  "lng": 34.83,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 87,
+  "name": "תחנת מעלה אדומים",
+  "district": "ש\"י",
+  "area": "גלעד",
+  "open_positions": 17,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.7739,
+  "lng": 35.2983,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 21,
+  "name": "תחנת מעלות תרשיחא",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 1,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 33.0166,
+  "lng": 35.2897,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 0
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 0
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 0
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 0
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 22,
+  "name": "תחנת משגב",
+  "district": "צפון",
+  "area": "גליל",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.89,
+  "lng": 35.25,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 62,
+  "name": "תחנת נהריה",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 20,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 33.0063,
+  "lng": 35.0946,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 23,
+  "name": "תחנת נוף הגליל",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 10,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.7023,
+  "lng": 35.3183,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 24,
+  "name": "תחנת נצרת",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 22,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.7021,
+  "lng": 35.2978,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 63,
+  "name": "תחנת נשר",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 12,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.7709,
+  "lng": 35.0381,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 45,
+  "name": "תחנת נתיבות",
+  "district": "דרום",
+  "area": "נגב",
+  "open_positions": 24,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.4214,
+  "lng": 34.5884,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 75,
+  "name": "תחנת נתניה",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.3286,
+  "lng": 34.8566,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 35,
+  "name": "תחנת עוז",
+  "district": "ירושלים",
+  "area": "קדם",
+  "open_positions": 13,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.785,
+  "lng": 35.235,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 64,
+  "name": "תחנת עירון",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 23,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.47,
+  "lng": 35.11,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 65,
+  "name": "תחנת עכו",
+  "district": "חוף",
+  "area": "חוף",
+  "open_positions": 12,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.9282,
+  "lng": 35.0756,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 25,
+  "name": "תחנת עפולה",
+  "district": "צפון",
+  "area": "עמקים",
+  "open_positions": 25,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.6086,
+  "lng": 35.2897,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 88,
+  "name": "תחנת עציון",
+  "district": "ש\"י",
+  "area": "יהודה",
+  "open_positions": 17,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.65,
+  "lng": 35.125,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 46,
+  "name": "תחנת ערד",
+  "district": "דרום",
+  "area": "רותם",
+  "open_positions": 10,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.2612,
+  "lng": 35.2146,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 47,
+  "name": "תחנת ערוער",
+  "district": "דרום",
+  "area": "רותם",
+  "open_positions": 13,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.23,
+  "lng": 35.02,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 76,
+  "name": "תחנת פתח תקוה",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 22,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.0878,
+  "lng": 34.886,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 26,
+  "name": "תחנת צפת",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 19,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.9646,
+  "lng": 35.496,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 49,
+  "name": "תחנת קרית גת",
+  "district": "דרום",
+  "area": "לכיש",
+  "open_positions": 29,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 31.6094,
+  "lng": 34.7712,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 7
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 5
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  }
+ },
+ {
+  "id": 48,
+  "name": "תחנת קרית מלאכי",
+  "district": "דרום",
+  "area": "לכיש",
+  "open_positions": 20,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.73,
+  "lng": 34.745,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 4
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 27,
+  "name": "תחנת קרית שמונה",
+  "district": "צפון",
+  "area": "כנרת",
+  "open_positions": 15,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 33.2074,
+  "lng": 35.5695,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 77,
+  "name": "תחנת ראש העין",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 8,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.0953,
+  "lng": 34.9533,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 3
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 3
+  }
+ },
+ {
+  "id": 78,
+  "name": "תחנת ראשון לציון",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 13,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.9636,
+  "lng": 34.8101,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 50,
+  "name": "תחנת רהט",
+  "district": "דרום",
+  "area": "נגב",
+  "open_positions": 16,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.3934,
+  "lng": 34.7547,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 79,
+  "name": "תחנת רחובות",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 9,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.8953,
+  "lng": 34.8106,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ },
+ {
+  "id": 80,
+  "name": "תחנת רמלה",
+  "district": "מרכז",
+  "area": "שפלה",
+  "open_positions": 15,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.928,
+  "lng": 34.8623,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 51,
+  "name": "תחנת שגב שלום",
+  "district": "דרום",
+  "area": "רותם",
+  "open_positions": 21,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 31.2009,
+  "lng": 34.8401,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 81,
+  "name": "תחנת שדות",
+  "district": "מרכז",
+  "area": "שרון",
+  "open_positions": 17,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.27,
+  "lng": 34.89,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 3
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 2
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 52,
+  "name": "תחנת שדרות",
+  "district": "דרום",
+  "area": "נגב",
+  "open_positions": 15,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 31.5265,
+  "lng": 34.597,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 5
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 3
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 2
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  }
+ },
+ {
+  "id": 36,
+  "name": "תחנת שלם",
+  "district": "ירושלים",
+  "area": "קדם",
+  "open_positions": 2,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 31.79,
+  "lng": 35.24,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 0
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 0
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 0
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 37,
+  "name": "תחנת שפט",
+  "district": "ירושלים",
+  "area": "קדם",
+  "open_positions": 33,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 31.81,
+  "lng": 35.23,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 7
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 4
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 4
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 4
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 10
+  }
+ },
+ {
+  "id": 28,
+  "name": "תחנת שפרעם",
+  "district": "צפון",
+  "area": "גליל",
+  "open_positions": 4,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.8064,
+  "lng": 35.1713,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 1
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 0
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 0
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 1
+  }
+ },
+ {
+  "id": 9,
+  "name": "תחנת שרת",
+  "district": "תל אביב",
+  "area": "איילון",
+  "open_positions": 11,
+  "status": "בינוני",
+  "status_key": "medium",
+  "color": "#EAB308",
+  "lat": 32.057,
+  "lng": 34.788,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 4
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 2
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 2
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 4
+  }
+ },
+ {
+  "id": 10,
+  "name": "תחנת ת\"א צפון",
+  "district": "תל אביב",
+  "area": "ירקון",
+  "open_positions": 22,
+  "status": "דחוף",
+  "status_key": "urgent",
+  "color": "#EA580C",
+  "lat": 32.095,
+  "lng": 34.781,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 6
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 5
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 2
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 3
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 3
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 6
+  }
+ },
+ {
+  "id": 29,
+  "name": "תחנת תבור",
+  "district": "צפון",
+  "area": "צפון",
+  "open_positions": 33,
+  "status": "קריטי",
+  "status_key": "critical",
+  "color": "#DC2626",
+  "lat": 32.6863,
+  "lng": 35.4082,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 10
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 6
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 5
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 5
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 3
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 4
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 10
+  }
+ },
+ {
+  "id": 11,
+  "name": "תחנת תל אביב דרום",
+  "district": "תל אביב",
+  "area": "איילון",
+  "open_positions": 7,
+  "status": "תקין",
+  "status_key": "ok",
+  "color": "#16A34A",
+  "lat": 32.053,
+  "lng": 34.778,
+  "coord_verified": false,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סיור",
+    "open": 2
+   },
+   {
+    "key": "investigation",
+    "label": "חקירות",
+    "open": 1
+   },
+   {
+    "key": "traffic",
+    "label": "תנועה",
+    "open": 1
+   },
+   {
+    "key": "intelligence",
+    "label": "מודיעין",
+    "open": 1
+   },
+   {
+    "key": "support",
+    "label": "מטה ותמיכה",
+    "open": 1
+   },
+   {
+    "key": "community",
+    "label": "שיטור קהילתי",
+    "open": 1
+   }
+  ],
+  "top_role": {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  }
+ }
+]

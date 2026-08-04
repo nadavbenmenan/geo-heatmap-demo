@@ -1,0 +1,250 @@
+[
+ {
+  "id": 1,
+  "name": "אור יהודה",
+  "lat": 32.0306,
+  "lng": 34.8531,
+  "coord_verified": false,
+  "nearby_stations": 2
+ },
+ {
+  "id": 2,
+  "name": "אזור",
+  "lat": 32.0264,
+  "lng": 34.8,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 3,
+  "name": "אלעד",
+  "lat": 32.05,
+  "lng": 34.95,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 4,
+  "name": "באר יעקב",
+  "lat": 31.9433,
+  "lng": 34.8353,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 5,
+  "name": "בני ברק",
+  "lat": 32.0807,
+  "lng": 34.8338,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 6,
+  "name": "בת ים",
+  "lat": 32.0171,
+  "lng": 34.75,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 7,
+  "name": "גבעת שמואל",
+  "lat": 32.0783,
+  "lng": 34.85,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 8,
+  "name": "גבעתיים",
+  "lat": 32.0723,
+  "lng": 34.8104,
+  "coord_verified": false,
+  "nearby_stations": 6
+ },
+ {
+  "id": 9,
+  "name": "הוד השרון",
+  "lat": 32.15,
+  "lng": 34.8853,
+  "coord_verified": false,
+  "nearby_stations": 3
+ },
+ {
+  "id": 10,
+  "name": "הרצליה",
+  "lat": 32.1656,
+  "lng": 34.8433,
+  "coord_verified": false,
+  "nearby_stations": 3
+ },
+ {
+  "id": 11,
+  "name": "חולון",
+  "lat": 32.0117,
+  "lng": 34.7742,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 12,
+  "name": "יהוד",
+  "lat": 32.0333,
+  "lng": 34.8917,
+  "coord_verified": false,
+  "nearby_stations": 5
+ },
+ {
+  "id": 13,
+  "name": "כפר סבא",
+  "lat": 32.175,
+  "lng": 34.907,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 14,
+  "name": "כפר שמריהו",
+  "lat": 32.1889,
+  "lng": 34.8214,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 15,
+  "name": "לוד",
+  "lat": 31.9514,
+  "lng": 34.8953,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 16,
+  "name": "מגשימים",
+  "lat": 32.045,
+  "lng": 34.91,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 17,
+  "name": "נס ציונה",
+  "lat": 31.9294,
+  "lng": 34.7986,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 18,
+  "name": "נתניה",
+  "lat": 32.3215,
+  "lng": 34.8532,
+  "coord_verified": false,
+  "nearby_stations": 0
+ },
+ {
+  "id": 19,
+  "name": "סביון",
+  "lat": 32.05,
+  "lng": 34.875,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 20,
+  "name": "פתח תקווה",
+  "lat": 32.087,
+  "lng": 34.8867,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 21,
+  "name": "קריית אונו",
+  "lat": 32.0639,
+  "lng": 34.8553,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 22,
+  "name": "ראש העין",
+  "lat": 32.0956,
+  "lng": 34.9569,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 23,
+  "name": "ראשון לציון",
+  "lat": 31.9642,
+  "lng": 34.8044,
+  "coord_verified": false,
+  "nearby_stations": 6
+ },
+ {
+  "id": 24,
+  "name": "רחובות",
+  "lat": 31.8928,
+  "lng": 34.8113,
+  "coord_verified": false,
+  "nearby_stations": 0
+ },
+ {
+  "id": 25,
+  "name": "רמלה",
+  "lat": 31.9288,
+  "lng": 34.8667,
+  "coord_verified": false,
+  "nearby_stations": 0
+ },
+ {
+  "id": 26,
+  "name": "רמת גן",
+  "lat": 32.07,
+  "lng": 34.8236,
+  "coord_verified": false,
+  "nearby_stations": 7
+ },
+ {
+  "id": 27,
+  "name": "רמת השרון",
+  "lat": 32.1461,
+  "lng": 34.8394,
+  "coord_verified": false,
+  "nearby_stations": 5
+ },
+ {
+  "id": 28,
+  "name": "רמת פנקס",
+  "lat": 32.04,
+  "lng": 34.86,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 29,
+  "name": "רעננה",
+  "lat": 32.1836,
+  "lng": 34.8714,
+  "coord_verified": false,
+  "nearby_stations": 2
+ },
+ {
+  "id": 30,
+  "name": "שוהם",
+  "lat": 31.9992,
+  "lng": 34.9469,
+  "coord_verified": false,
+  "nearby_stations": 1
+ },
+ {
+  "id": 31,
+  "name": "תל אביב",
+  "lat": 32.0853,
+  "lng": 34.7818,
+  "coord_verified": false,
+  "nearby_stations": 8
+ }
+]

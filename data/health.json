@@ -1,0 +1,8 @@
+{
+ "ok": true,
+ "db": "(demo)",
+ "stations": 88,
+ "settlements": 31,
+ "relations": 128,
+ "nearby_minutes": 30
+}

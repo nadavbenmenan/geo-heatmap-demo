@@ -1,0 +1,52 @@
+{
+ "id": 82,
+ "name": "תחנת אריאל",
+ "district": "ש\"י",
+ "area": "שומרון",
+ "open_positions": 38,
+ "status": "קריטי",
+ "status_key": "critical",
+ "color": "#DC2626",
+ "lat": 32.105,
+ "lng": 35.1857,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 11
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 10
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 4
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 4
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 5
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 4
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 11
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

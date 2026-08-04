@@ -1,0 +1,76 @@
+{
+ "id": 1,
+ "name": "תחנת בני ברק",
+ "district": "תל אביב",
+ "area": "דן",
+ "open_positions": 15,
+ "status": "בינוני",
+ "status_key": "medium",
+ "color": "#EAB308",
+ "lat": 32.0809,
+ "lng": 34.8338,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 2
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 3
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 2
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 5
+ },
+ "nearby_settlements": [
+  {
+   "name": "גבעת שמואל",
+   "travel_min": 3
+  },
+  {
+   "name": "בני ברק",
+   "travel_min": 4
+  },
+  {
+   "name": "רמת גן",
+   "travel_min": 4
+  },
+  {
+   "name": "פתח תקווה",
+   "travel_min": 14
+  }
+ ],
+ "insights": [
+  {
+   "id": 2,
+   "text": "התחנה כמעט סגורה על התקן — להסיט תקציב פרסום לתחנות האדומות.",
+   "done": 1,
+   "created_at": "2026-07-27T19:13:47"
+  }
+ ]
+}

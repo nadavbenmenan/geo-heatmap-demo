@@ -1,0 +1,52 @@
+{
+ "id": 74,
+ "name": "תחנת מודיעין",
+ "district": "מרכז",
+ "area": "שפלה",
+ "open_positions": 25,
+ "status": "קריטי",
+ "status_key": "critical",
+ "color": "#DC2626",
+ "lat": 31.8986,
+ "lng": 35.0069,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 7
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 5
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 3
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 4
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 3
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 3
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 7
+ },
+ "nearby_settlements": [],
+ "insights": []
+}

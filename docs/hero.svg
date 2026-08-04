@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="900" height="560" fill="#0f172a"/>
+<line x1="70" y1="70" x2="70" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="160" y1="70" x2="160" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="250" y1="70" x2="250" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="340" y1="70" x2="340" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="430" y1="70" x2="430" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="520" y1="70" x2="520" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="610" y1="70" x2="610" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="700" y1="70" x2="700" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="790" y1="70" x2="790" y2="490" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="70" x2="830" y2="70" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="150" x2="830" y2="150" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="230" x2="830" y2="230" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="310" x2="830" y2="310" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="390" x2="830" y2="390" stroke="#1e293b" stroke-width="1"/>
+<line x1="70" y1="470" x2="830" y2="470" stroke="#1e293b" stroke-width="1"/>
+<circle cx="729.4" cy="259.9" r="46" fill="#DC2626" opacity="0.14"/>
+<circle cx="170.6" cy="414.8" r="46" fill="#EAB308" opacity="0.14"/>
+<circle cx="572.8" cy="282.9" r="46" fill="#EA580C" opacity="0.14"/>
+<circle cx="516.6" cy="125.6" r="46" fill="#EAB308" opacity="0.14"/>
+<circle cx="330.5" cy="434.4" r="46" fill="#16A34A" opacity="0.14"/>
+<circle cx="202.0" cy="334.7" r="46" fill="#DC2626" opacity="0.14"/>
+<circle cx="332.5" cy="297.7" r="46" fill="#16A34A" opacity="0.14"/>
+<circle cx="704.0" cy="358.3" r="46" fill="#DC2626" opacity="0.14"/>
+<circle cx="422.9" cy="324.0" r="46" fill="#EAB308" opacity="0.14"/>
+<circle cx="376.0" cy="222.1" r="46" fill="#16A34A" opacity="0.14"/>
+<circle cx="356.0" cy="334.7" r="46" fill="#EAB308" opacity="0.14"/>
+<circle cx="729.4" cy="259.9" r="21" fill="#DC2626" stroke="#0f172a" stroke-width="2.5"/>
+<text x="729.4" y="263.9" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">64</text>
+<text x="729.4" y="232.9" fill="#cbd5e1" font-size="11" text-anchor="middle">בני ברק</text>
+<circle cx="170.6" cy="414.8" r="21" fill="#EAB308" stroke="#0f172a" stroke-width="2.5"/>
+<text x="170.6" y="418.8" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">88</text>
+<text x="170.6" y="387.8" fill="#cbd5e1" font-size="11" text-anchor="middle">בת ים</text>
+<circle cx="572.8" cy="282.9" r="21" fill="#EA580C" stroke="#0f172a" stroke-width="2.5"/>
+<text x="572.8" y="286.9" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">74</text>
+<text x="572.8" y="255.9" fill="#cbd5e1" font-size="11" text-anchor="middle">גבעתיים</text>
+<circle cx="516.6" cy="125.6" r="21" fill="#EAB308" stroke="#0f172a" stroke-width="2.5"/>
+<text x="516.6" y="129.6" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">81</text>
+<text x="516.6" y="98.6" fill="#cbd5e1" font-size="11" text-anchor="middle">גלילות</text>
+<circle cx="330.5" cy="434.4" r="21" fill="#16A34A" stroke="#0f172a" stroke-width="2.5"/>
+<text x="330.5" y="438.4" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">97</text>
+<text x="330.5" y="407.4" fill="#cbd5e1" font-size="11" text-anchor="middle">חולון</text>
+<circle cx="202.0" cy="334.7" r="21" fill="#DC2626" stroke="#0f172a" stroke-width="2.5"/>
+<text x="202.0" y="338.7" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">62</text>
+<text x="202.0" y="307.7" fill="#cbd5e1" font-size="11" text-anchor="middle">יפו</text>
+<circle cx="332.5" cy="297.7" r="21" fill="#16A34A" stroke="#0f172a" stroke-width="2.5"/>
+<text x="332.5" y="301.7" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">100</text>
+<text x="332.5" y="270.7" fill="#cbd5e1" font-size="11" text-anchor="middle">לב ת"א</text>
+<circle cx="704.0" cy="358.3" r="21" fill="#DC2626" stroke="#0f172a" stroke-width="2.5"/>
+<text x="704.0" y="362.3" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">67</text>
+<text x="704.0" y="331.3" fill="#cbd5e1" font-size="11" text-anchor="middle">מסובים</text>
+<circle cx="422.9" cy="324.0" r="21" fill="#EAB308" stroke="#0f172a" stroke-width="2.5"/>
+<text x="422.9" y="328.0" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">82</text>
+<text x="422.9" y="297.0" fill="#cbd5e1" font-size="11" text-anchor="middle">שרת</text>
+<circle cx="376.0" cy="222.1" r="21" fill="#16A34A" stroke="#0f172a" stroke-width="2.5"/>
+<text x="376.0" y="226.1" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">99</text>
+<text x="376.0" y="195.1" fill="#cbd5e1" font-size="11" text-anchor="middle">ת"א צפון</text>
+<circle cx="356.0" cy="334.7" r="21" fill="#EAB308" stroke="#0f172a" stroke-width="2.5"/>
+<text x="356.0" y="338.7" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">85</text>
+<text x="356.0" y="307.7" fill="#cbd5e1" font-size="11" text-anchor="middle">תל אביב דרום</text>
+<text x="70" y="40" fill="#f8fafc" font-size="21" font-weight="700">מפת חום גיוס · מחוז תל אביב</text>
+<text x="70" y="60" fill="#94a3b8" font-size="12.5">אחוז איוש לפי תחנה — נתוני דמה סינתטיים</text>
+<rect x="656" y="382" width="176" height="104" rx="8" fill="#1e293b" opacity="0.92"/>
+<circle cx="670" cy="398" r="7" fill="#DC2626"/>
+<text x="654" y="402" fill="#e2e8f0" font-size="12" text-anchor="end">קריטי · עד 70%</text>
+<circle cx="670" cy="420" r="7" fill="#EA580C"/>
+<text x="654" y="424" fill="#e2e8f0" font-size="12" text-anchor="end">דחוף · 70-80%</text>
+<circle cx="670" cy="442" r="7" fill="#EAB308"/>
+<text x="654" y="446" fill="#e2e8f0" font-size="12" text-anchor="end">בינוני · 80-90%</text>
+<circle cx="670" cy="464" r="7" fill="#16A34A"/>
+<text x="654" y="468" fill="#e2e8f0" font-size="12" text-anchor="end">תקין · 90% ומעלה</text>
+</svg>

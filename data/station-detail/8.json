@@ -1,0 +1,100 @@
+{
+ "id": 8,
+ "name": "תחנת מסובים",
+ "district": "תל אביב",
+ "area": "דן",
+ "open_positions": 7,
+ "status": "תקין",
+ "status_key": "ok",
+ "color": "#16A34A",
+ "lat": 32.0442,
+ "lng": 34.83,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 2
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 1
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 1
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 1
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 1
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 2
+ },
+ "nearby_settlements": [
+  {
+   "name": "קריית אונו",
+   "travel_min": 7
+  },
+  {
+   "name": "רמת פנקס",
+   "travel_min": 7
+  },
+  {
+   "name": "אור יהודה",
+   "travel_min": 8
+  },
+  {
+   "name": "סביון",
+   "travel_min": 10
+  },
+  {
+   "name": "יהוד",
+   "travel_min": 15
+  },
+  {
+   "name": "מגשימים",
+   "travel_min": 17
+  },
+  {
+   "name": "אלעד",
+   "travel_min": 28
+  },
+  {
+   "name": "לוד",
+   "travel_min": 29
+  },
+  {
+   "name": "ראש העין",
+   "travel_min": 29
+  },
+  {
+   "name": "שוהם",
+   "travel_min": 29
+  }
+ ],
+ "insights": [
+  {
+   "id": 3,
+   "text": "משרות חקירות פתוחות לאורך זמן — לבחון שיתוף מרחבי.",
+   "done": 0,
+   "created_at": "2026-08-03T19:13:47"
+  }
+ ]
+}

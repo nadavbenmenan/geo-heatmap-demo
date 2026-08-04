@@ -1,0 +1,978 @@
+/* ---------------------------------------------------------------------------
+   style.css — RTL לאורך כל המסך.
+   הצבעים של הסטטוסים לא מוגדרים כאן: הם מגיעים מהשרת (colors.py) ומוזרקים
+   כ-inline style, כדי שלא יהיה מקור שני לאמת שיכול לסטות מהמקרא.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --bg: #f1f5f9;
+  --panel: #ffffff;
+  --ink: #0f172a;
+  --ink-soft: #64748b;
+  --line: #e2e8f0;
+  --navy: #14284b;
+  --navy-soft: #1e3a63;
+  --accent: #2563eb;
+  --ok: #16a34a;
+  --err: #dc2626;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(15, 23, 42, .13);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  direction: rtl;
+}
+
+.layout { display: flex; min-height: 100vh; }
+
+/* --- סרגל צד --- */
+.sidebar {
+  width: 232px;
+  flex: 0 0 232px;
+  background: var(--navy);
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; padding-bottom: 18px; }
+.brand-mark {
+  width: 38px; height: 38px; border-radius: 9px;
+  background: var(--accent); color: #fff;
+  display: grid; place-items: center; font-weight: 700; font-size: 18px;
+}
+.brand-text { display: flex; flex-direction: column; line-height: 1.35; }
+.brand-text strong { font-size: 15px; }
+.brand-text span { font-size: 11.5px; color: #94a3b8; }
+
+.nav { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
+.nav-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 11px; border-radius: 8px;
+  font-size: 14px; color: #cbd5e1; text-decoration: none;
+}
+.nav-item {
+  font-family: inherit; text-align: right; border: none; background: none; cursor: pointer;
+}
+.nav-item.active { background: var(--navy-soft); color: #fff; font-weight: 600; }
+.nav-item:not(.disabled):not(.active):hover { background: rgba(255, 255, 255, .07); }
+.nav-item.disabled { color: #64748b; cursor: default; }
+.nav-item em {
+  font-style: normal; font-size: 10px; color: #475569;
+  border: 1px solid #334155; border-radius: 999px; padding: 1px 6px;
+}
+
+.sidebar-foot { margin-top: auto; font-size: 12px; }
+
+.health {
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 10px; border-radius: 8px;
+  background: rgba(255, 255, 255, .06); margin-bottom: 8px;
+}
+.health .dot { width: 9px; height: 9px; border-radius: 50%; background: #94a3b8; flex: 0 0 9px; }
+.health--ok .dot  { background: var(--ok);  box-shadow: 0 0 0 3px rgba(22, 163, 74, .22); }
+.health--err .dot { background: var(--err); box-shadow: 0 0 0 3px rgba(220, 38, 38, .22); }
+.health--ok .health-text  { color: #86efac; }
+.health--err .health-text { color: #fca5a5; }
+
+.last-update { color: #94a3b8; padding: 0 10px; }
+
+/* --- ראש המסך --- */
+.main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+.topbar {
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 22px 0;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.topbar-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.topbar h1 { margin: 0; font-size: 19px; }
+
+.export-btn {
+  display: inline-flex; align-items: center;
+  padding: 8px 14px; border-radius: 8px;
+  background: var(--accent); color: #fff; text-decoration: none;
+  font-size: 13px; font-weight: 600;
+}
+.export-btn:hover { background: #1d4ed8; }
+
+.tabs { display: flex; gap: 4px; }
+.tab {
+  border: none; background: none; cursor: pointer;
+  padding: 9px 15px; font-size: 14px; font-family: inherit;
+  color: var(--ink-soft); border-bottom: 2px solid transparent;
+  display: flex; align-items: center; gap: 7px;
+}
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.tab:disabled { cursor: default; }
+.tab em {
+  font-style: normal; font-size: 10px; color: var(--ink-soft);
+  border: 1px solid var(--line); border-radius: 999px; padding: 1px 6px;
+}
+
+/* --- המפה --- */
+/* המפה היא העיקר במסך, לכן היא מקבלת גובה קבוע גדול והפאנלים יורדים מתחתיה. */
+.map-section { position: relative; height: 62vh; min-height: 440px; }
+#map { position: absolute; inset: 0; z-index: 1; }
+
+/* המפה בצבעי OSM המקוריים (הוחזר לבקשת המזמין — גרסת גווני האפור נוסתה
+   ונדחתה). כדי שהסיכות ימשיכו לבלוט מעל רקע צבעוני, הן נשענות על גבול לבן
+   וצל — ראו .pin. */
+
+/* z-index: שכבות ה-UI חייבות להיות מעל אריחי Leaflet (שיושבים על 400). */
+.map-search {
+  position: absolute; top: 12px; right: 12px; z-index: 500; width: 290px;
+}
+.map-search input {
+  width: 100%; padding: 10px 13px; font-size: 14px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow);
+  direction: rtl;
+}
+.map-search input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+.search-clear {
+  position: absolute; top: 7px; left: 7px;
+  border: none; background: #e2e8f0; color: var(--ink-soft);
+  border-radius: 6px; padding: 4px 9px; font-size: 11.5px; font-family: inherit;
+  cursor: pointer;
+}
+.search-clear:hover { background: #cbd5e1; }
+
+.suggestions {
+  list-style: none; margin: 5px 0 0; padding: 4px;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; box-shadow: var(--shadow);
+  max-height: 260px; overflow-y: auto;
+}
+.suggestions li {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; border-radius: 6px; font-size: 13.5px; cursor: pointer;
+}
+.suggestions li:hover { background: #f1f5f9; }
+.suggestions li.empty { color: var(--ink-soft); cursor: default; }
+.suggestions li.empty:hover { background: none; }
+.sugg-dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 10px; }
+.sugg-name { flex: 1; }
+.sugg-pct { color: var(--ink-soft); font-size: 12.5px; }
+
+.map-legend {
+  position: absolute; bottom: 18px; right: 12px; z-index: 500;
+  background: rgba(255, 255, 255, .96); border: 1px solid var(--line);
+  border-radius: 8px; box-shadow: var(--shadow); padding: 9px 12px;
+}
+.legend-title { font-size: 11px; color: var(--ink-soft); margin-bottom: 5px; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 1.5px 0; }
+.legend-swatch { width: 11px; height: 11px; border-radius: 3px; flex: 0 0 11px; }
+.legend-item strong { font-weight: 600; }
+.legend-item span { color: var(--ink-soft); }
+
+/* חלונית מידע על התחנה הנבחרת */
+.map-info {
+  position: absolute; top: 12px; left: 12px; z-index: 500; width: 268px;
+  max-height: calc(100% - 24px); overflow-y: auto;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; box-shadow: var(--shadow); padding: 12px 14px;
+}
+.info-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.info-head strong { font-size: 14.5px; flex: 1; }
+.info-close {
+  border: none; background: none; cursor: pointer;
+  font-size: 19px; line-height: 1; color: var(--ink-soft); padding: 0 3px;
+}
+.info-close:hover { color: var(--ink); }
+
+.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 11px; }
+.info-grid div { display: flex; flex-direction: column; gap: 1px; }
+.info-grid span { font-size: 10.5px; color: var(--ink-soft); }
+.info-grid b { font-size: 13px; }
+
+.info-list-head {
+  font-size: 12px; color: var(--ink-soft);
+  border-top: 1px solid var(--line); padding-top: 9px; margin-bottom: 5px;
+}
+.info-list-head em { font-style: normal; }
+.info-list { list-style: none; margin: 0; padding: 0; }
+.info-list li {
+  display: flex; justify-content: space-between; gap: 8px;
+  padding: 4px 0; font-size: 13px; border-bottom: 1px dashed #f1f5f9;
+}
+.info-list li:last-child { border-bottom: none; }
+.info-list b { color: var(--ink-soft); font-weight: 600; font-size: 12px; }
+
+.info-warn {
+  margin-top: 9px; padding: 6px 8px; border-radius: 6px;
+  background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-size: 11px;
+}
+
+.info-list li.clickable { cursor: pointer; border-radius: 5px; padding: 4px 5px; }
+.info-list li.clickable:hover { background: #f1f5f9; }
+.info-list li .sugg-dot { margin-left: 6px; }
+
+/* חלונית תחנה קרובה — נפתחת מתחת לחלונית היישוב, לא במקומה: המשתמש צריך
+   לראות את שתיהן יחד כדי להשוות תחנות באותו יישוב. */
+.drawer {
+  position: absolute; bottom: 18px; left: 12px; z-index: 500; width: 268px;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; box-shadow: var(--shadow); padding: 12px 14px;
+}
+/* שתי עמודות ולא שלוש: בחלונית של 268px, ארבעה שדות (זמן נסיעה · אחוז איוש ·
+   תקנים חסרים · מועמדים בהליך) נקראים כרשת 2x2 ונחתכים כשהם 3+1. */
+.drawer .info-grid { grid-template-columns: repeat(2, 1fr); margin-bottom: 0; }
+.drawer .unit-section { margin-top: 10px; }
+.drawer-foot {
+  margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--line);
+  font-size: 11px; color: var(--ink-soft);
+}
+
+/* סיכת יישוב: נקודה + שם. נייטרלית בכוונה — הצבע במסך הזה שמור לאחוז
+   איוש של תחנות, וצביעת יישובים הייתה מתחרה על אותה משמעות. */
+.dot {
+  display: flex; align-items: center; gap: 5px;
+  white-space: nowrap; width: max-content; cursor: pointer;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.dot::before {
+  content: ""; width: 9px; height: 9px; border-radius: 50%;
+  background: var(--navy); border: 2px solid #fff; flex: 0 0 9px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+.dot span {
+  font-size: 11px; color: var(--ink);
+  background: rgba(255, 255, 255, .9); border-radius: 3px; padding: 0 4px;
+}
+.dot:hover span { background: #fff; font-weight: 600; }
+.dot--selected::before {
+  width: 13px; height: 13px; flex: 0 0 13px; background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .3);
+}
+.dot--selected span { font-weight: 700; background: #fff; }
+
+/* --- סיכות --- */
+/* הרקע מוזרק מהשרת. גבול לבן כדי שהסיכה תיקרא מעל אריחי המפה. */
+.pin {
+  border-radius: 50%; border: 2.5px solid #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 12px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  cursor: pointer; transition: transform .12s;
+}
+.pin:hover { transform: scale(1.1); }
+.pin--selected {
+  border-width: 3.5px; font-size: 13.5px;
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, .35), 0 2px 8px rgba(0, 0, 0, .4);
+}
+
+.settlement-pin {
+  display: flex; align-items: center; gap: 5px;
+  background: rgba(255, 255, 255, .96); border: 1px solid #94a3b8;
+  border-radius: 999px; padding: 2px 8px; white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .22); width: max-content;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.settlement-name { font-size: 11.5px; color: var(--ink); }
+.settlement-time { font-size: 10.5px; color: #fff; background: var(--navy); border-radius: 999px; padding: 0 5px; }
+
+/* --- מסכים --- */
+.screen { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.screen[hidden] { display: none; }
+
+/* --- סרגל סינון (לוח בקרה) --- */
+.filters {
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px;
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 13px 16px;
+}
+.filters label { display: flex; flex-direction: column; gap: 4px; }
+.filters label span { font-size: 11.5px; color: var(--ink-soft); }
+.filters select {
+  min-width: 150px; padding: 7px 9px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink);
+}
+.filters select:disabled { background: #f8fafc; color: var(--ink-soft); cursor: not-allowed; }
+.filters-reset {
+  padding: 7px 13px; font-size: 12.5px; font-family: inherit; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink-soft);
+}
+.filters-reset:hover { background: #f1f5f9; color: var(--ink); }
+
+/* --- כרטיסי KPI --- */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.kpi {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 15px 17px;
+  display: flex; flex-direction: column; gap: 7px;
+}
+.kpi h3 { margin: 0; font-size: 12.5px; color: var(--ink-soft); font-weight: 600; }
+.kpi b { font-size: 30px; line-height: 1.1; }
+.kpi > span:not(.pill) { font-size: 12.5px; color: var(--ink-soft); }
+.kpi .pill { align-self: flex-start; }
+
+/* כותרת אדומה לכרטיס פער כוח האדם, לפי דרישת המסמך */
+.kpi--alert { border-top: 3px solid var(--err); }
+.kpi--alert h3 { color: var(--err); }
+
+.kpi-note { font-style: normal; font-size: 11.5px; color: var(--ink-soft); }
+.kpi-empty {
+  display: inline-block; align-self: flex-start;
+  padding: 4px 9px; border-radius: 6px; font-size: 12px;
+  background: #f8fafc; border: 1px dashed #cbd5e1; color: var(--ink-soft);
+}
+.kpi-breakdown { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--ink-soft); }
+
+.bar { height: 7px; border-radius: 999px; background: #e2e8f0; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 999px; }
+.td-bar { min-width: 140px; }
+.td-bar span { font-size: 12.5px; }
+.td-bar .bar { margin-top: 4px; }
+
+/* --- מסך טעינת נתונים --- */
+.live {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; color: var(--ink-soft);
+  background: #f0fdf4; border: 1px solid #bbf7d0;
+  border-radius: 999px; padding: 6px 13px;
+}
+.live .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--ok);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, .2);
+}
+.live-text { color: #15803d; font-weight: 600; }
+.live-sep { color: #86efac; }
+
+.drops { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.drop {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px 18px;
+}
+.drop h2 { margin: 0 0 3px; font-size: 15px; }
+.drop-cols { margin: 0 0 12px; font-size: 11.5px; color: var(--ink-soft); }
+
+.drop-zone {
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 26px 16px; text-align: center;
+  border: 2px dashed #cbd5e1; border-radius: 9px; background: #f8fafc;
+  transition: background .15s, border-color .15s;
+}
+.drop-zone--over { border-color: var(--accent); background: #eff6ff; }
+.drop-zone strong { font-size: 13.5px; }
+.drop-zone span { font-size: 11.5px; color: var(--ink-soft); }
+.drop-zone em { font-style: normal; font-size: 11px; color: #94a3b8; }
+.drop-btn {
+  padding: 6px 14px; border-radius: 7px; cursor: pointer;
+  background: var(--accent); color: #fff; font-size: 12.5px; font-weight: 600;
+}
+.drop-btn:hover { background: #1d4ed8; }
+
+.drop-result { margin-top: 11px; padding: 10px 13px; border-radius: 8px; font-size: 12.5px; }
+.drop-result--busy     { background: #f1f5f9; color: var(--ink-soft); }
+.drop-result--ok       { background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; }
+.drop-result--rejected { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+.drop-result--err      { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+.drop-result .muted { display: block; margin-top: 3px; font-size: 11px; }
+.drop-warn { margin-top: 6px; font-size: 11.5px; }
+
+/* אישור טעינה חריגה (סטייה >10%). הכפתור המאשר בולט, אבל לא ירוק/כחול
+   "רגיל" — הוא צהוב כמו ההודעה שמעליו, כדי שלא ילחצו עליו בהיסח הדעת. */
+.drop-confirm { display: flex; gap: 8px; margin-top: 9px; }
+.drop-confirm button {
+  padding: 6px 13px; border-radius: 7px; cursor: pointer;
+  font-family: inherit; font-size: 12.5px; font-weight: 600;
+}
+.btn-confirm { border: 1px solid #b45309; background: #b45309; color: #fff; }
+.btn-confirm:hover { background: #92400e; }
+.btn-cancel { border: 1px solid var(--line); background: #fff; color: var(--ink-soft); }
+.btn-cancel:hover { background: #f1f5f9; }
+
+.guard-note {
+  padding: 11px 15px; border-radius: var(--radius); font-size: 12.5px;
+  background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af;
+}
+
+/* --- מסך ניהול נתונים --- */
+.manage-bar {
+  display: flex; flex-wrap: wrap; gap: 9px;
+  padding: 12px 16px; border-bottom: 1px solid var(--line);
+}
+.manage-bar input[type="search"] {
+  flex: 1; min-width: 200px; padding: 7px 11px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px;
+}
+.manage-bar select {
+  min-width: 150px; padding: 7px 9px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff;
+}
+.add-btn {
+  padding: 7px 14px; border: none; border-radius: 7px; cursor: pointer;
+  background: var(--accent); color: #fff; font-size: 12.5px; font-weight: 600; font-family: inherit;
+}
+.add-btn:hover { background: #1d4ed8; }
+
+.add-row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 9px;
+  padding: 12px 16px; background: #eff6ff; border-bottom: 1px solid var(--line);
+}
+/* display מכלל class גובר על תכונת hidden של הדפדפן, ובלי זה השורה
+   מוצגת תמיד. אותה מלכודת קיימת בכל אלמנט שמשלב hidden עם display. */
+.add-row[hidden] { display: none; }
+.add-row select, .add-row input {
+  padding: 7px 9px; font-size: 13px; font-family: inherit;
+  border: 1px solid #bfdbfe; border-radius: 7px; background: #fff;
+}
+.add-row input { width: 100px; }
+.add-save, .add-cancel {
+  padding: 7px 13px; border-radius: 7px; cursor: pointer;
+  font-size: 12.5px; font-family: inherit; border: 1px solid transparent;
+}
+.add-save { background: var(--ok); color: #fff; font-weight: 600; }
+.add-cancel { background: #fff; border-color: var(--line); color: var(--ink-soft); }
+.add-error { font-size: 12px; color: var(--err); }
+
+.travel-input {
+  width: 72px; padding: 4px 7px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 6px; text-align: center;
+}
+.travel-input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.input--ok  { border-color: var(--ok);  background: #f0fdf4; }
+.input--err { border-color: var(--err); background: #fef2f2; }
+
+.cell-actions { width: 1%; }
+.row-del {
+  padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px;
+  background: #fff; color: var(--err); font-size: 11.5px; font-family: inherit; cursor: pointer;
+}
+.row-del:hover { background: #fef2f2; border-color: #fecaca; }
+.yes { color: var(--ok); font-weight: 600; }
+
+/* בטבלת הניהול השורות אינן נלחצות, בניגוד לטבלת מצב התחנות. */
+#rel-table tbody tr { cursor: default; }
+
+/* --- מסך ממשק מגייס --- */
+.filters-grow { flex: 1; min-width: 200px; }
+.filters-grow input {
+  width: 100%; padding: 7px 10px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px;
+}
+
+.acc { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.acc-district {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 16px; border-radius: var(--radius);
+  background: var(--navy); color: #fff; font-weight: 600; font-size: 14px;
+}
+.acc-district em { font-style: normal; font-size: 12px; color: #94a3b8; }
+
+.acc-area {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.acc-area summary {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 16px; cursor: pointer; font-weight: 600; font-size: 13.5px;
+  list-style: none;
+}
+.acc-area summary::-webkit-details-marker { display: none; }
+.acc-area summary::before {
+  content: "▾"; color: var(--ink-soft); font-size: 11px; margin-left: 7px;
+}
+.acc-area:not([open]) summary::before { content: "▸"; }
+.acc-area summary em { font-style: normal; font-size: 12px; color: var(--ink-soft); font-weight: 400; }
+.acc-area summary:hover { background: #f8fafc; }
+
+.unit-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 12px; padding: 0 14px 14px;
+}
+.unit-card {
+  border: 1px solid var(--line); border-radius: 9px; padding: 13px 14px;
+  display: flex; flex-direction: column; gap: 10px; background: #fff;
+}
+.unit-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.unit-title { display: flex; flex-direction: column; gap: 2px; }
+.unit-title strong { font-size: 14px; }
+.unit-meta { font-size: 11px; color: var(--ink-soft); }
+
+.unit-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.unit-metrics div { display: flex; flex-direction: column; gap: 1px; }
+.unit-metrics span { font-size: 10.5px; color: var(--ink-soft); }
+.unit-metrics b { font-size: 16px; }
+.unit-metrics b.neg { color: var(--err); }
+
+.unit-bar-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 11.5px; color: var(--ink-soft); margin-bottom: 4px;
+}
+.unit-bar-head b { font-size: 13px; color: var(--ink); }
+
+.unit-section { display: flex; flex-direction: column; gap: 4px; }
+.unit-section-title { font-size: 10.5px; color: var(--ink-soft); }
+.unit-big { font-size: 20px; }
+
+/* המצב הריק הוא מצב אמיתי ולא תקלה: חודש בלי טעינה ומרבית הכרטיס ייראה כך.
+   לכן הוא מעוצב להיקרא כמידע — לא כשגיאה ולא כרעש אדום. */
+.card-empty {
+  padding: 5px 9px; border-radius: 6px; font-size: 11px;
+  background: #f8fafc; border: 1px dashed #cbd5e1; color: var(--ink-soft);
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip {
+  display: flex; align-items: center; gap: 4px;
+  padding: 3px 8px; border-radius: 999px; font-size: 11px;
+  background: #f1f5f9; color: var(--ink-soft);
+}
+.chip b { color: var(--ink); }
+
+.poi-select {
+  width: 100%; padding: 6px 8px; font-size: 12px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff;
+}
+
+.unit-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.unit-btn {
+  flex: 1; padding: 7px 10px; border-radius: 7px; cursor: pointer;
+  font-size: 11.5px; font-family: inherit; font-weight: 600;
+  border: 1px solid var(--accent); background: #fff; color: var(--accent);
+}
+.unit-btn:hover:not(:disabled) { background: #eff6ff; }
+.unit-btn:disabled { border-color: var(--line); color: #94a3b8; cursor: not-allowed; }
+
+.insight-panel {
+  border: 1px solid #bfdbfe; background: #f8fbff;
+  border-radius: 8px; padding: 11px 12px;
+  display: flex; flex-direction: column; gap: 9px;
+}
+.insight-head { display: flex; align-items: center; justify-content: space-between; }
+.insight-head strong { font-size: 12.5px; }
+.insight-warn {
+  padding: 7px 9px; border-radius: 6px; font-size: 11px;
+  background: #fffbeb; border: 1px solid #fde68a; color: #92400e;
+}
+.insight-list { margin: 0; padding: 0 18px 0 0; display: flex; flex-direction: column; gap: 3px; }
+.insight-list li { display: flex; justify-content: space-between; font-size: 12px; }
+.insight-list b { color: var(--ink-soft); font-size: 11px; }
+
+.insight-add { display: flex; gap: 6px; }
+.insight-add input {
+  flex: 1; padding: 6px 9px; font-size: 12px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 6px;
+}
+.insight-saved { display: flex; flex-direction: column; gap: 4px; }
+.saved-item {
+  display: flex; align-items: center; gap: 7px;
+  padding: 5px 7px; border-radius: 6px; background: #fff;
+  border: 1px solid var(--line); font-size: 12px;
+}
+.saved-item span { flex: 1; }
+.saved-item input { accent-color: var(--ok); cursor: pointer; }
+.saved-item--done span { text-decoration: line-through; color: var(--ink-soft); }
+
+.empty-state { padding: 28px; text-align: center; color: var(--ink-soft); font-size: 13px; }
+
+/* --- מסך תכנון אסטרטגי --- */
+.n-picker { display: flex; align-items: center; gap: 7px; }
+.n-picker span { font-size: 12px; color: var(--ink-soft); }
+.n-picker select {
+  padding: 6px 9px; font-size: 13px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff;
+}
+
+/* הנוסחה חשופה במסך ולא מוסתרת בקוד: מנהל מקצה לפיה תקציב פרסום, ומספר
+   שאי אפשר לשחזר איך התקבל אינו בר-ערעור. */
+.formula {
+  padding: 11px 16px; border-bottom: 1px solid var(--line); background: #f8fafc;
+  display: flex; flex-direction: column; gap: 7px;
+}
+.formula-line { font-size: 12.5px; color: var(--ink); }
+.formula-weights { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.formula-weights .legend-swatch { width: 9px; height: 9px; }
+.formula-note { font-size: 11px; color: var(--ink-soft); }
+
+.str-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+
+.targets-note { padding: 10px 16px 0; font-size: 11.5px; color: var(--ink-soft); }
+.targets { list-style: none; margin: 0; padding: 10px 16px 14px; counter-reset: t; }
+.targets li {
+  counter-increment: t;
+  padding: 10px 0 10px 0; border-bottom: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 5px;
+}
+.targets li:last-child { border-bottom: none; }
+.target-head { display: flex; align-items: center; gap: 8px; }
+.target-head::before {
+  content: counter(t); width: 20px; height: 20px; border-radius: 50%;
+  background: var(--navy); color: #fff; font-size: 11px; font-weight: 700;
+  display: grid; place-items: center; flex: 0 0 20px;
+}
+.target-head strong { flex: 1; font-size: 13.5px; }
+.target-score { font-size: 11.5px; color: var(--ink-soft); }
+.target-meta { font-size: 11px; color: var(--ink-soft); padding-right: 28px; }
+.target-stations { display: flex; flex-wrap: wrap; gap: 5px; padding-right: 28px; }
+
+.tips-empty {
+  display: flex; flex-direction: column; gap: 5px; padding: 15px 16px;
+}
+.tips-empty strong { font-size: 13px; color: #92400e; }
+.tips-empty span { font-size: 12px; color: var(--ink-soft); line-height: 1.55; }
+
+.table b.neg { color: var(--err); }
+
+/* --- מסך הגדרות --- */
+.settings-actions { display: flex; align-items: center; gap: 11px; }
+.save-status { font-size: 12.5px; color: var(--ok); font-weight: 600; }
+
+.settings-warn {
+  padding: 11px 15px; border-radius: var(--radius); font-size: 12.5px;
+  background: #fffbeb; border: 1px solid #fde68a; color: #92400e;
+}
+
+.settings-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px; padding: 15px 16px;
+}
+.settings-grid label { display: flex; flex-direction: column; gap: 3px; }
+.settings-grid label > span { font-size: 13px; font-weight: 600; }
+.settings-grid label > em {
+  font-style: normal; font-size: 11px; color: var(--ink-soft); margin-bottom: 3px;
+}
+.settings-grid input, .settings-grid select {
+  padding: 8px 10px; font-size: 13.5px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink);
+}
+.settings-grid input:focus, .settings-grid select:focus {
+  outline: 2px solid var(--accent); outline-offset: -1px;
+}
+
+.settings-preview {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 14px;
+  padding: 12px 16px; border-top: 1px solid var(--line); background: #f8fafc;
+}
+.settings-preview-label { font-size: 11.5px; color: var(--ink-soft); }
+.settings-preview > div { display: flex; flex-wrap: wrap; gap: 14px; }
+.preview-bad { font-size: 12px; color: var(--err); font-weight: 600; }
+
+.toggles { display: flex; flex-direction: column; gap: 2px; padding: 13px 16px; }
+.toggle {
+  display: flex; align-items: center; gap: 9px;
+  padding: 8px 6px; border-radius: 7px; cursor: pointer; font-size: 13px;
+}
+.toggle:hover { background: #f8fafc; }
+.toggle input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+
+.settings-error {
+  padding: 11px 15px; border-radius: var(--radius); font-size: 13px;
+  background: #fef2f2; border: 1px solid #fecaca; color: #991b1b;
+}
+/* display מכלל class גובר על תכונת hidden — אותה מלכודת כמו ב-.add-row. */
+.settings-error[hidden] { display: none; }
+
+/* --- תוכן מתחת למפה --- */
+.content { padding: 20px 22px 32px; display: flex; flex-direction: column; gap: 16px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 13px 15px; }
+.stat b { display: block; font-size: 25px; line-height: 1.25; }
+.stat span { font-size: 12.5px; color: var(--ink-soft); }
+
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.panel-head { display: flex; align-items: baseline; gap: 10px; padding: 13px 16px; border-bottom: 1px solid var(--line); }
+.panel-head h2 { margin: 0; font-size: 14.5px; }
+.panel-note { font-size: 12px; color: var(--ink-soft); }
+
+.table-wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.table th, .table td { text-align: right; padding: 9px 16px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.table th { background: #f8fafc; color: var(--ink-soft); font-weight: 600; font-size: 12.5px; }
+.table tbody tr:last-child td { border-bottom: none; }
+.table tbody tr { cursor: pointer; }
+.table tbody tr:hover { background: #f8fafc; }
+.table tbody tr.row--selected { background: #eff6ff; box-shadow: inset 3px 0 0 var(--accent); }
+
+.pill { display: inline-block; padding: 2px 9px; border-radius: 999px; color: #fff; font-size: 12px; font-weight: 600; }
+.muted { color: var(--ink-soft); }
+
+.status-ok { color: var(--ok); font-weight: 600; }
+.status-rejected, .status-error { color: var(--err); font-weight: 600; }
+
+.error-banner {
+  background: #fef2f2; border: 1px solid #fecaca; color: #991b1b;
+  padding: 11px 15px; border-radius: var(--radius); font-size: 13.5px;
+}
+
+/* --- תוספות מצב הדגמה (GitHub Pages) --- */
+.demo-banner {
+  margin: 4px 14px 10px;
+  padding: 9px 11px;
+  border-radius: 8px;
+  background: rgba(234, 179, 8, .14);
+  border: 1px solid rgba(234, 179, 8, .45);
+  color: #fde68a;
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.demo-banner strong { display: block; color: #fbbf24; margin-bottom: 2px; font-size: 12px; }
+
+.export-btn--disabled {
+  background: #e2e8f0; color: var(--ink-soft);
+  cursor: not-allowed; opacity: .8;
+}
+.export-btn--disabled:hover { background: #e2e8f0; }
+
+/* מצב הדגמה: טעינת אקסלים מושבתת — הכפתור נראה אך אינו לחיץ */
+.drop-btn--disabled {
+  background: #e2e8f0; color: var(--ink-soft);
+  cursor: not-allowed; opacity: .85;
+  display: inline-block;
+}
+.drop-btn--disabled:hover { background: #e2e8f0; }
+.drop-zone--locked { opacity: .8; }
+.drop-zone--locked:hover { border-color: #cbd5e1; background: #f8fafc; }
+
+/* מצב הדגמה: שדות ההגדרות מוקפאים — מציגים את הערכים אך אינם ניתנים לעריכה */
+.settings-grid input[readonly],
+.settings-grid select[disabled] {
+  background: #f1f5f9; color: var(--ink-soft); cursor: not-allowed;
+}
+.settings-grid input[disabled] {
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   התאמה לנייד / רספונסיביות (חלק ו.4 באפיון)
+
+   שלוש נקודות שבירה:
+     ≤1024  — סרגל צר יותר (טאבלט לרוחב)
+     ≤768   — סרגל off-canvas עם המבורגר, מפה מלאת-רוחב, כרטיס bottom-sheet
+     ≤620   — טבלאות הופכות לכרטיסים (ראו "טבלאות בנייד" בהמשך)
+
+   כלל-על: העמוד לעולם לא נגלל אופקית. כל תוכן רחב (טבלה, נוסחה, שורת
+   עריכה) חייב לגלול בתוך המכל שלו, לא לדחוף את ה-body.
+   ============================================================ */
+
+/* כפתור המבורגר + רקע-כיסוי — מוסתרים בדסקטופ, מופיעים בנייד */
+.nav-toggle { display: none; }
+.sidebar-backdrop { display: none; }
+
+@media (max-width: 1024px) {
+  .sidebar { flex-basis: 200px; width: 200px; }
+}
+
+@media (max-width: 768px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+
+  /* 100vh בנייד כולל את סרגל הכתובת שנעלם בגלילה, ואז המסך "קופץ".
+     dvh נמדד לפי הגובה הזמין בפועל. הנפילה לאחור נשארת ל-vh. */
+  .layout { min-height: 100vh; min-height: 100dvh; }
+
+  /* כפתור המבורגר קבוע בפינה הימנית-עליונה (RTL). 44px = יעד המגע
+     המינימלי המומלץ; קטן מזה מחטיאים אותו באגודל. */
+  .nav-toggle {
+    display: grid; place-items: center;
+    position: fixed; top: calc(8px + env(safe-area-inset-top)); right: 8px; z-index: 1200;
+    width: 44px; height: 44px; border: none; border-radius: 10px;
+    background: var(--navy); color: #fff;
+    font-size: 20px; line-height: 1; cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+
+  /* הסרגל יוצא מהזרימה והופך למגירה נשלפת מימין */
+  .sidebar {
+    position: fixed; top: 0; right: 0; bottom: 0; z-index: 1100;
+    width: 272px; max-width: 84vw; flex-basis: auto;
+    transform: translateX(100%); transition: transform .22s ease;
+    overflow-y: auto;
+    padding-top: calc(18px + env(safe-area-inset-top));
+    padding-bottom: calc(18px + env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling: touch;
+  }
+  .layout.nav-open .sidebar { transform: translateX(0); }
+  .nav-item { padding: 12px 12px; font-size: 15px; }
+
+  .sidebar-backdrop {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(15, 23, 42, .45);
+  }
+  .layout.nav-open .sidebar-backdrop { display: block; }
+
+  /* המיין תופס תמיד את מלוא הרוחב (הסרגל מרחף מעל) */
+  .main { width: 100%; }
+
+  /* מרווח לכפתור ההמבורגר בראש כל מסך */
+  .topbar { padding: 12px 14px 0 14px; padding-right: 62px; gap: 10px; }
+  .topbar h1 { font-size: 17px; }
+  .topbar-row { flex-wrap: wrap; gap: 8px; }
+  .export-btn, .filters-reset, .add-btn { min-height: 40px; }
+
+  /* טאבים גוללים אופקית במקום להידחס לשתי שורות */
+  .tabs { overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; padding: 10px 12px; }
+
+  /* --- מפה --- */
+  .map-section { height: 56vh; min-height: 300px; }
+
+  /* בקרות הזום של Leaflet יורדות לתחתית-שמאל: בראש המפה יושב שדה החיפוש
+     מלוא-הרוחב, ובלי ההזזה הן נוחתות עליו. */
+  .leaflet-top.leaflet-left { top: auto; bottom: 8px; }
+
+  /* חיפוש מלא-רוחב, משאיר מקום להמבורגר */
+  .map-search { top: 10px; right: 10px; left: 10px; width: auto; }
+  .map-search input { min-height: 44px; font-size: 16px; } /* 16px מונע זום אוטומטי ב-iOS */
+  .suggestions { max-height: 45vh; }
+  .suggestions li { padding: 11px 10px; }
+
+  /* מקרא קומפקטי — הוא נועד להסביר את הצבעים, לא לכסות את המפה */
+  .map-legend { bottom: 10px; right: 10px; padding: 7px 10px; max-width: 62vw; }
+  .legend-item { font-size: 11px; }
+
+  /* כרטיס תחנה נפתח כ-bottom-sheet מלא-רוחב */
+  .map-info {
+    top: auto; bottom: 0; left: 0; right: 0;
+    width: auto; max-width: 100%;
+    max-height: 72vh;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, .22);
+  }
+
+  /* גם חלונית התחנה שנפתחת דרך יישוב — אחרת היא נשארת ריבוע צף של 268px
+     שיושב מעל ה-bottom-sheet. היא מעליו בכוונה: המשתמש הרגע לחץ על התחנה,
+     והמשרות הפתוחות שלה הן מה שהוא בא לראות. */
+  .drawer {
+    top: auto; bottom: 0; left: 0; right: 0;
+    width: auto; max-width: 100%;
+    max-height: 72vh; overflow-y: auto;
+    z-index: 501;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, .22);
+  }
+  .info-close { font-size: 26px; padding: 0 8px; } /* יעד מגע, לא רק תו */
+
+  /* --- תוכן --- */
+  .content {
+    padding: 14px 12px 26px;
+    padding-bottom: calc(26px + env(safe-area-inset-bottom));
+    gap: 14px;
+  }
+
+  /* כרטיסי מדדים וסינון — עמודה אחת, בלי minmax שמכריח 240px */
+  .kpis, .drops, .str-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .kpi > b { font-size: 26px; }
+  /* פירוט ההתפלגות יושב בתוך .kpi, ויורש ממנו b בגודל 26px — מספרים
+     בגודל כותרת בשורה אחת הופכים אותה לבלתי קריאה. */
+  .kpi-breakdown { flex-wrap: wrap; gap: 4px 10px; font-size: 12px; }
+  /* .kpi b ו-.kpi-breakdown b הם באותה סגוליות בדיוק, ולכן הסדר הוא שמכריע.
+     הצמדת .kpi לפני מרימה את הסגוליות ומנתקת את הכלל מסדר הכתיבה — אחרת
+     כל שינוי גודל עתידי של .kpi b בנקודת שבירה נמוכה יותר יבלע אותו. */
+  .kpi .kpi-breakdown b { font-size: 13px; }
+
+  .filters { padding: 12px; gap: 10px; }
+  .filters label { flex: 1 1 46%; min-width: 0; }
+  .filters select, .filters-grow input {
+    width: 100%; min-width: 0; min-height: 40px; font-size: 16px;
+  }
+  .filters-grow { flex: 1 1 100%; }
+  .filters-reset { flex: 1 1 100%; }
+
+  .panel-head { flex-wrap: wrap; gap: 4px; }
+  .panel-head h2 { font-size: 15px; }
+  .panel-note { font-size: 11px; }
+
+  /* שורות עריכה/הוספה: כל שדה בשורה משלו במקום גלישה מבולגנת */
+  .manage-bar, .add-row, .settings-actions { flex-wrap: wrap; }
+  .manage-bar input[type="search"], .manage-bar select,
+  .add-row select, .add-row input { flex: 1 1 100%; width: auto; min-height: 40px; }
+  .settings-grid { grid-template-columns: 1fr; padding: 13px 12px; }
+  .settings-grid input, .settings-grid select { min-height: 42px; font-size: 16px; }
+  .toggle { padding: 6px 0; }
+
+  /* כרטיסי היחידות בממשק המגייס — עמודה אחת */
+  .unit-grid { grid-template-columns: 1fr; padding: 0 12px 12px; }
+  .unit-btn { min-height: 40px; }
+  .acc-area summary { padding: 12px 14px; }
+
+  /* הנוסחה במסך האסטרטגי גולשת — שוברים אותה לשורות במקום לדחוף את העמוד */
+  .formula-weights { gap: 6px; }
+  .targets li, .target-meta, .target-stations { padding-right: 0; }
+  .target-meta, .target-stations { padding-right: 28px; }
+}
+
+/* ============================================================
+   טבלאות בנייד — כל שורה הופכת לכרטיס
+   טבלה של 6-7 עמודות בעברית לא נכנסת ל-390px, וגלילה אופקית בתוך
+   טבלה היא ממשק שמשתמש בנייד לא מגלה. במקום זה כל <tr> נפרשת לרשימת
+   "תווית: ערך", כשהתווית מגיעה מ-data-th שה-JS כותב על כל <td>.
+   הכותרת האמיתית (thead) מוסתרת — היא כפילות ברגע שכל תא נושא תווית.
+   ============================================================ */
+@media (max-width: 620px) {
+  .table-wrap { overflow-x: visible; }
+  .table, .table tbody, .table tr, .table td { display: block; width: auto; }
+  .table thead { display: none; }
+
+  .table tbody tr {
+    border: 1px solid var(--line); border-radius: 9px;
+    margin: 10px 12px; padding: 4px 0; background: #fff;
+  }
+  .table tbody tr:hover { background: #fff; }
+  .table tbody tr.row--selected { background: #eff6ff; box-shadow: inset 0 0 0 2px var(--accent); }
+
+  .table td {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 7px 13px; border-bottom: 1px dashed var(--line);
+    white-space: normal; text-align: left;
+  }
+  .table tbody tr td:last-child { border-bottom: none; }
+
+  /* התווית מגיעה מהתא עצמו, ולכן אי אפשר שתא יאבד את הכותרת שלו בשינוי
+     סדר העמודות — מלכודת קלאסית בטבלאות "רספונסיביות" עם nth-child. */
+  .table td[data-th]::before {
+    content: attr(data-th);
+    color: var(--ink-soft); font-size: 11.5px; font-weight: 600;
+    text-align: right; flex: 0 0 auto;
+  }
+
+  /* התא הראשון (שם התחנה/היחידה) הוא כותרת הכרטיס ולא עוד שדה */
+  .table tbody tr td:first-child {
+    background: #f8fafc; border-radius: 8px 8px 0 0;
+    padding: 9px 13px; font-size: 14px;
+  }
+  .table tbody tr td:first-child::before { display: none; }
+  .table tbody tr td:first-child { justify-content: flex-start; }
+
+  /* תא עם פס התקדמות: הפס יורד לשורה משלו מתחת למספר */
+  .table td.td-bar { flex-wrap: wrap; }
+  .table td.td-bar .bar { flex: 1 1 100%; }
+
+  .table td.cell-edit .travel-input { width: 90px; }
+  .table td.cell-actions { justify-content: flex-end; }
+  .table td.cell-actions::before { display: none; }
+
+  /* שורת "אין תוצאות" היא colspan יחיד — בלי data-th וללא מסגרת כרטיס */
+  .table tbody tr td[colspan] { text-align: center; background: none; }
+}
+
+@media (max-width: 360px) {
+  .stats { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .topbar h1 { font-size: 15.5px; }
+  .info-grid { grid-template-columns: repeat(2, 1fr); }
+  .unit-metrics { grid-template-columns: repeat(2, 1fr); }
+  .map-section { height: 52vh; }
+  .kpi > b { font-size: 24px; }
+}
+
+/* מכשירי מגע בכל רוחב: אין ריחוף, ולכן אפקטי hover רק מהבהבים אחרי לחיצה */
+@media (hover: none) {
+  .table tbody tr:hover, .suggestions li:hover, .nav-item:hover { background: inherit; }
+}

@@ -1,0 +1,52 @@
+{
+ "id": 19,
+ "name": "תחנת מגדל העמק",
+ "district": "צפון",
+ "area": "עמקים",
+ "open_positions": 16,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "color": "#EA580C",
+ "lat": 32.6771,
+ "lng": 35.241,
+ "coord_verified": false,
+ "roles": [
+  {
+   "key": "patrol",
+   "label": "סיור",
+   "open": 5
+  },
+  {
+   "key": "investigation",
+   "label": "חקירות",
+   "open": 4
+  },
+  {
+   "key": "traffic",
+   "label": "תנועה",
+   "open": 2
+  },
+  {
+   "key": "intelligence",
+   "label": "מודיעין",
+   "open": 2
+  },
+  {
+   "key": "support",
+   "label": "מטה ותמיכה",
+   "open": 1
+  },
+  {
+   "key": "community",
+   "label": "שיטור קהילתי",
+   "open": 2
+  }
+ ],
+ "top_role": {
+  "key": "patrol",
+  "label": "סיור",
+  "open": 5
+ },
+ "nearby_settlements": [],
+ "insights": []
+}
