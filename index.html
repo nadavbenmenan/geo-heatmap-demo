@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>מפת חום גיוס — הדגמה (נתונים סינתטיים)</title>
+  <title>מפת חום גיוס — הדגמה (נתונים מוגרלים)</title>
   <link rel="stylesheet" href="vendor/leaflet.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,19 +22,25 @@
         </div>
       </div>
 
-      <!-- באנר מצב הדגמה: הגרסה הזו רצה ללא שרת, על נתונים סינתטיים בלבד. -->
+      <!-- באנר מצב הדגמה: הגרסה הזו רצה ללא שרת, על נתונים מוגרלים בלבד. -->
       <div class="demo-banner">
         <strong>מצב הדגמה</strong>
-        <span>המדד היחיד כאן הוא <b>משרות פתוחות</b>, וכל המספרים הומצאו (התפלגות נורמלית, seed קבוע). אין בהדגמה נתוני איוש, דמוגרפיה או מועמדים. "ייצוא אקסל" פעיל ומוריד קובץ מלא; טעינה/עריכה זמינות בגרסת השרת המלאה.</span>
+        <span>
+          אותה מערכת בדיוק, על מאגר שכל מספר בו מוגרל — אחוזי איוש, תקן,
+          משרות, דמוגרפיה ומועמדים. אמיתיים רק שמות התחנות, המרחבים
+          והיישובים והקואורדינטות שלהם. הצפייה מלאה בכל המסכים; פעולות
+          טעינה ועריכה מוקפאות.
+        </span>
       </div>
 
       <nav class="nav">
-        <button class="nav-item active" id="nav-map">מפת גיוס</button>
-        <button class="nav-item" id="nav-dashboard">לוח בקרה</button>
-        <button class="nav-item" id="nav-upload">טעינת נתונים</button>
-        <button class="nav-item" id="nav-manage">ניהול נתונים</button>
-        <button class="nav-item" id="nav-recruiter">ממשק מגייס</button>
-        <button class="nav-item" id="nav-strategic">תכנון אסטרטגי</button>
+        <button class="nav-item active" id="nav-map">מפת חום תחנות</button>
+        <button class="nav-item" id="nav-admin">מפת חום מנהלה</button>
+        <button class="nav-item" id="nav-strategic">לוח בקרה</button>
+        <button class="nav-item" id="nav-recruiter">סטטוס תחנות</button>
+        <button class="nav-item" id="nav-alerts">התראות <em id="alerts-badge" hidden></em></button>
+        <!-- §16.3: פריט אחד. שלושת המסכים שהיו כאן — ניהול נתונים,
+             הגדרות וטעינת נתונים — הם לשוניות בתוכו. -->
         <button class="nav-item" id="nav-settings">הגדרות</button>
       </nav>
 
@@ -48,25 +54,46 @@
     </aside>
 
     <main class="main">
-     <!-- ===================== מסך 1: מפת גיוס ===================== -->
+     <!-- ===================== מסך 1: מפת חום תחנות ===================== -->
      <section class="screen" id="screen-map">
       <header class="topbar">
         <div class="topbar-row">
-          <h1>מפת גיוס</h1>
-          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
-        </div>
-        <div class="tabs">
-          <button class="tab active" id="tab-stations">מפת חום תחנות</button>
-          <button class="tab" id="tab-settlements">מפת חום יישובים</button>
+          <h1>מפת חום תחנות</h1>
         </div>
       </header>
+
+      <!-- בורר רמת המפה, ממורכז: זו הבחירה הראשונה שעושים במסך, לפני כל
+           סינון. אותו רכיב כמו בורר הליבה/מנהלה בלוח הבקרה — שתי בחירות
+           מאותו סוג צריכות להיראות אותו דבר. -->
+      <div class="scope-row">
+        <div class="scope-switch" id="map-scope">
+          <button class="scope-btn active" id="tab-stations">
+            <span class="scope-title">תחנות</span>
+            <span class="scope-sub">88 תחנות</span>
+          </button>
+          <!-- §8: בין תחנות למרחבים. רמה 03 מכילה 238 יחידות ורק 23 מהן
+               מרחבים; השאר מגייסות בדיוק כמו מרחב ולא היה להן מסך. -->
+          <button class="scope-btn" id="tab-units">
+            <span class="scope-title">יחידות</span>
+            <span class="scope-sub" id="tab-units-sub">יחידות ומחוזות</span>
+          </button>
+          <button class="scope-btn" id="tab-regions">
+            <span class="scope-title">מרחבים</span>
+            <span class="scope-sub">לפי מפקדת המרחב</span>
+          </button>
+          <button class="scope-btn" id="tab-settlements">
+            <span class="scope-title">יישובים</span>
+            <span class="scope-sub">עד 30 דקות נסיעה</span>
+          </button>
+        </div>
+      </div>
 
       <section class="map-section">
         <div id="map"></div>
 
         <!-- חיפוש: צף מעל המפה, לא גוזל ממנה גובה -->
         <div class="map-search">
-          <input type="text" id="search" autocomplete="off" placeholder="חפש תחנה… (או לחץ על סיכה במפה)" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+          <input type="text" id="search" autocomplete="off" placeholder="חפש תחנה… (או לחץ על סיכה במפה)">
           <button class="search-clear" id="search-clear" title="נקה בחירה" hidden>נקה</button>
           <ul class="suggestions" id="suggestions" hidden></ul>
         </div>
@@ -91,8 +118,8 @@
             <table class="table" id="stations-table">
               <thead>
                 <tr>
-                  <th>תחנה</th><th>מרחב</th><th>משרות פתוחות</th>
-                  <th>סטטוס</th><th>מקצוע מוביל</th><th>יישובים עד 30 דק'</th>
+                  <th>תחנה</th><th>מרחב</th><th>אחוז איוש</th>
+                  <th>סטטוס</th><th>תקנים חסרים</th><th>יישובים עד 30 דק'</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -100,61 +127,84 @@
           </div>
         </div>
 
-        <div class="panel">
-          <div class="panel-head">
-            <h2>אקסלים שנטענו</h2>
-            <span class="panel-note">כל טעינה נשמרת עם חותמת תאריך‑שעה</span>
-          </div>
-          <div class="table-wrap">
-            <table class="table" id="loads-table">
-              <thead>
-                <tr><th>מתי</th><th>סוג</th><th>קובץ</th><th>שורות</th><th>סטטוס</th></tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
+        <!-- רשימת האקסלים שנטענו הוסרה מכאן: מסך מפת הגיוס הוא מסך תפעולי,
+             ורשימת קבצים היא מידע תחזוקה. היא נמצאת במסך ההגדרות, ליד
+             טעינת הנתונים עצמה. -->
       </section>
      </section>
 
-     <!-- ===================== מסך 2: לוח בקרה ===================== -->
-     <section class="screen" id="screen-dashboard" hidden>
+     <!-- ===== מסך: מפת חום מנהלה =====
+          מאז מעבר למקור "משרות משטרה" המסך מכסה את **כל** התפקידים ולא רק
+          תפקידי מנהלה: הקובץ הוא תמונת התקן המלאה, משרה‑משרה.
+
+          אין כאן מפה: לקובץ יש רמה היררכית 02 (מחוז/אגף) ו‑03 (מרחב/יחידה)
+          בלבד — רמת התחנה אינה בו, וזו הרזולוציה היחידה שהנתון תומך בה. -->
+     <section class="screen" id="screen-admin" hidden>
       <header class="topbar">
         <div class="topbar-row">
-          <h1>לוח בקרה</h1>
-          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
+          <h1>מפת חום מנהלה</h1>
+          <span class="topbar-note">תקנים פנויים לגיוס</span>
         </div>
       </header>
 
       <section class="content">
-        <!-- סרגל סינון -->
-        <div class="filters" id="filters">
-          <label>
-            <span>מחוז</span>
-            <select id="f-district" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+        <div class="filters" id="admin-filters">
+          <label class="filters-grow">
+            <span>תפקיד</span>
+            <!-- datalist: אפשר להקליד ולחפש וגם לפתוח את הרשימה המלאה.
+                 הרשימה נבנית מהקובץ ומצטמצמת לפי האזור/אגף שנבחרו. -->
+            <input type="search" id="a-profession" list="a-profession-list"
+                   placeholder="חפש תפקיד — או בחר מהרשימה" autocomplete="off">
+            <datalist id="a-profession-list"></datalist>
           </label>
           <label>
-            <span>מרחב</span>
-            <select id="f-region" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+            <span>אזור בישראל</span>
+            <select id="a-area"></select>
           </label>
           <label>
-            <span>תחנה</span>
-            <select id="f-station" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+            <span>אגף</span>
+            <select id="a-department"></select>
           </label>
-          <button class="filters-reset" id="f-reset" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">נקה סינון</button>
+          <label>
+            <!-- היחידה עברה לסרגל הסינון כשטבלת היחידות ירדה מהמסך. קודם
+                 הצמצום ליחידה נעשה בלחיצה על שורה בטבלה ההיא, ובלעדיה לא
+                 הייתה דרך להגיע לרשימת המשרות של מרחב מסוים. -->
+            <span>מרחב / יחידה</span>
+            <select id="a-unit"></select>
+          </label>
+          <!-- §16.6: חיפוש לפי מספר משרה. שדה נפרד ולא בתוך "תפקיד":
+               מספר שהוקלד בשדה התפקיד היה מתפרש כשם תפקיד ומחזיר ריק. -->
+          <label>
+            <span>מספר משרה</span>
+            <input type="search" id="a-position" placeholder="מספר משרה" autocomplete="off"
+                   inputmode="numeric">
+          </label>
+          <button class="filters-reset" id="a-reset">איפוס</button>
         </div>
 
-        <div class="kpis" id="kpis"></div>
+        <!-- **במסך הזה יש טבלה אחת בלבד** — המשרות עצמן, עם מספר המשרה.
+             סקירת החוסרים המרכזית (הגרף, התפקידים החסרים, היחידות
+             המרוקנות) עברה ללוח הבקרה, לבורר "תפקידי מטה": שם שואלים
+             "איפה הפער", וכאן שואלים "על מה בדיוק לפעול".
 
-        <div class="panel">
+             בפתיחה מוצגות כל המשרות; כל סינון בסרגל שלמעלה מצמצם אותן.
+             מוצגות רק משרות שאפשר לגייס אליהן: מסומנות X ב"משרה פנויה
+             לתכנון גיוס", מצב פנויה או פנויה‑קשורה, ותקן גדול מהאיוש. -->
+        <div class="panel" id="admin-positions-panel">
           <div class="panel-head">
-            <h2>Top‑5 תחנות בעומס גיוס</h2>
-            <span class="panel-note" id="top5-note"></span>
+            <h2 id="admin-positions-title">משרות פנויות</h2>
+            <span class="panel-note" id="admin-positions-note"></span>
           </div>
-          <div class="table-wrap">
-            <table class="table" id="top5-table">
+          <div class="chips" id="admin-positions-chips"></div>
+          <div class="table-wrap table-wrap--tall">
+            <table class="table table--wide" id="admin-positions-table">
               <thead>
-                <tr><th>תחנה</th><th>מחוז</th><th>מרחב</th><th>משרות פתוחות</th><th>סטטוס</th></tr>
+                <tr>
+                  <th>מספר משרה</th><th>היקף</th><th>תיאור עיסוק</th>
+                  <th>סיווג תפקיד</th><th>תת קבוצה</th><th>דרגת תקן</th>
+                  <th>רמה 02 — מחוז / אגף</th><th>רמה 03 — מרחב / יחידה</th>
+                  <th>רמה 04 — תחנה / יחידת משנה</th><th>מצב משרה</th>
+                </tr>
               </thead>
               <tbody></tbody>
             </table>
@@ -163,127 +213,11 @@
       </section>
      </section>
 
-     <!-- ===================== מסך 3: טעינת נתונים ===================== -->
-     <section class="screen" id="screen-upload" hidden>
-      <header class="topbar">
-        <div class="topbar-row">
-          <h1>טעינת נתונים</h1>
-          <div class="live" id="live">
-            <span class="dot"></span>
-            <span class="live-text">מערכת מחוברת בזמן אמת</span>
-            <span class="live-sep">·</span>
-            <span class="live-age" id="live-age">—</span>
-          </div>
-        </div>
-      </header>
-
-      <section class="content">
-        <div class="drops">
-          <div class="drop" id="drop-openings" data-type="openings">
-            <h2>משרות פתוחות</h2>
-            <p class="drop-cols">מחוז · מרחב · תחנה · מקצוע · מספר משרות פתוחות</p>
-            <div class="drop-zone drop-zone--locked">
-              <strong>גרור לכאן קובץ</strong>
-              <span>או</span>
-              <span class="drop-btn drop-btn--disabled" title="טעינת נתונים זמינה בגרסת השרת המלאה">בחר קובץ</span>
-              <em>XLSX או CSV</em>
-            </div>
-            <div class="drop-result" hidden></div>
-          </div>
-
-          <div class="drop" id="drop-relations" data-type="relations">
-            <h2>קשרי תחנה‑יישוב</h2>
-            <p class="drop-cols">תחנה · יישוב · זמן נסיעה (דקות)</p>
-            <div class="drop-zone drop-zone--locked">
-              <strong>גרור לכאן קובץ</strong>
-              <span>או</span>
-              <span class="drop-btn drop-btn--disabled" title="טעינת נתונים זמינה בגרסת השרת המלאה">בחר קובץ</span>
-              <em>XLSX או CSV</em>
-            </div>
-            <div class="drop-result" hidden></div>
-          </div>
-
-        </div>
-
-        <div class="guard-note">
-          <strong>Data Guard פעיל.</strong> קובץ שסוטה ביותר מ‑10% מהנתונים הקיימים
-          עוצר את הטעינה ומבקש אישור — הוא אינו נחסם: מציגים לך את גודל הסטייה,
-          ואם השינוי אמיתי לוחצים "טען בכל זאת" והקובץ נטען במלואו. עד האישור
-          המאגר לא משתנה, ולפני כל טעינה מוצלחת נשמר גיבוי.
-          <em>(במצב ההדגמה הטעינה מושבתת — זהו מסך תיעוד בלבד.)</em>
-        </div>
-
-        <div class="panel">
-          <div class="panel-head">
-            <h2>אקסלים שנטענו</h2>
-            <span class="panel-note">כל טעינה נשמרת עם חותמת תאריך‑שעה</span>
-          </div>
-          <div class="table-wrap">
-            <table class="table" id="loads-table-2">
-              <thead>
-                <tr><th>מתי</th><th>סוג</th><th>קובץ</th><th>שורות</th><th>סטטוס</th></tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-     </section>
-
-     <!-- ===================== מסך 4: ניהול נתונים ===================== -->
-     <section class="screen" id="screen-manage" hidden>
-      <header class="topbar">
-        <div class="topbar-row">
-          <h1>ניהול נתונים</h1>
-          <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא אקסל</a>
-        </div>
-      </header>
-
-      <section class="content">
-        <div class="kpis" id="manage-kpis"></div>
-
-        <div class="panel">
-          <div class="panel-head">
-            <h2>קשרי תחנה‑יישוב</h2>
-            <span class="panel-note" id="manage-note"></span>
-          </div>
-
-          <div class="manage-bar">
-            <input type="search" id="rel-search" placeholder="חיפוש מהיר — תחנה או יישוב…" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
-            <select id="rel-filter"></select>
-            <button class="add-btn" id="rel-add">+ הוסף קישור</button>
-          </div>
-
-          <div class="add-row" id="add-row" hidden>
-            <select id="add-station"></select>
-            <select id="add-settlement"></select>
-            <input type="number" id="add-travel" min="0" max="600" placeholder="דקות">
-            <button class="add-save" id="add-save">שמור</button>
-            <button class="add-cancel" id="add-cancel">ביטול</button>
-            <span class="add-error" id="add-error"></span>
-          </div>
-
-          <div class="table-wrap">
-            <table class="table" id="rel-table">
-              <thead>
-                <tr><th>תחנה</th><th>יישוב</th><th>זמן נסיעה (דקות)</th><th>עד 30 דק'</th><th></th></tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-     </section>
-
-     <!-- ===================== מסך 5: ממשק מגייס ===================== -->
+     <!-- ===================== מסך 5: סטטוס תחנות ===================== -->
      <section class="screen" id="screen-recruiter" hidden>
       <header class="topbar">
         <div class="topbar-row">
-          <h1>ממשק מגייס</h1>
-          <div class="settings-actions">
-            <button class="filters-reset" id="rec-sync" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">עדכון אוטומטי</button>
-            <a class="export-btn" href="data/export.xlsx" download="מפת_חום_נתונים.xlsx" title="הורדת האקסל המלא — 88 תחנות ופילוח מקצועות">ייצוא</a>
-          </div>
+          <h1>סטטוס תחנות</h1>
         </div>
       </header>
 
@@ -293,15 +227,19 @@
         <div class="filters">
           <label>
             <span>מחוז</span>
-            <select id="rec-district" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+            <select id="rec-district"></select>
           </label>
           <label>
             <span>מרחב</span>
-            <select id="rec-region" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+            <select id="rec-region"></select>
           </label>
           <label>
-            <span>עומס גיוס</span>
-            <select id="rec-status" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+            <span>תחנה</span>
+            <select id="rec-station"></select>
+          </label>
+          <label>
+            <span>סטטוס איוש</span>
+            <select id="rec-status">
               <option value="">כל הסטטוסים</option>
               <option value="critical">קריטי</option>
               <option value="urgent">דחוף</option>
@@ -311,36 +249,174 @@
           </label>
           <label class="filters-grow">
             <span>חיפוש חופשי</span>
-            <input type="search" id="rec-search" placeholder="שם יחידה, מחוז, מרחב או יישוב…" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">
+            <input type="search" id="rec-search" placeholder="שם יחידה, מחוז, מרחב או יישוב…">
           </label>
-          <button class="filters-reset" id="rec-reset" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד">נקה</button>
+          <button class="filters-reset" id="rec-reset">איפוס</button>
         </div>
 
         <div id="rec-tree"></div>
       </section>
      </section>
 
-     <!-- ===================== מסך 6: תכנון אסטרטגי ===================== -->
+     <!-- ===================== לוח בקרה =====================
+          איחוד של "לוח בקרה" ו"תכנון אסטרטגי", שהיו שני מסכים על אותם
+          נתונים: אותו סינון היררכי, אותם מדדים, אותן תחנות. הבורר
+          ליבה/מנהלה נשאר — הוא ההבחנה האמיתית היחידה שהייתה בין השניים. -->
      <section class="screen" id="screen-strategic" hidden>
       <header class="topbar">
         <div class="topbar-row">
-          <h1>תכנון אסטרטגי</h1>
+          <h1>לוח בקרה</h1>
           <div class="settings-actions">
             <label class="n-picker">
               <span>כמות תחנות להצגה</span>
-              <select id="str-n" disabled title="מוקפא בגרסת הדמו — לתצוגה בלבד"></select>
+              <select id="str-n"></select>
             </label>
-            <span class="export-btn export-btn--disabled" title="הפקת תוכנית עבודה זמינה בגרסת השרת המלאה">הפקת תוכנית עבודה</span>
           </div>
         </div>
       </header>
 
       <section class="content">
+        <!-- בורר תחום: תפקידי ליבה (יעודי) מול תפקידי מנהלה. שני עולמות
+             נתונים שונים — לליבה יש תחנות ותקן מפולח, למנהלה יש יחידות
+             ותפקידים. הבורר מחליף את שניהם, לא מסנן בתוך אחד.
+             ממורכז: זו הבחירה הראשונה שעושים במסך, לפני כל סינון. -->
+        <div class="scope-row">
+          <div class="scope-switch" id="str-scope">
+            <button class="scope-btn active" data-scope="core">
+              <span class="scope-title">תפקידי ליבה</span>
+              <span class="scope-sub">סייר · בלש · חוקר</span>
+            </button>
+            <button class="scope-btn" data-scope="admin">
+              <span class="scope-title">תפקידי מטה</span>
+              <span class="scope-sub">כלל התקנים</span>
+            </button>
+          </div>
+        </div>
+
         <div class="kpis" id="str-kpis"></div>
 
-        <div class="panel">
+        <div class="filters" id="str-filters">
+          <label>
+            <span>מחוז</span>
+            <select id="str-district"></select>
+          </label>
+          <label>
+            <span>מרחב</span>
+            <select id="str-region"></select>
+          </label>
+          <label>
+            <span>תחנה</span>
+            <select id="str-station"></select>
+          </label>
+          <label id="str-family-label">
+            <span>מקצוע</span>
+            <select id="f-family">
+              <option value="">כל התפקידים</option>
+              <option value="patrol">סיירים</option>
+              <option value="detectives">בלשים</option>
+              <option value="investigators">חוקרים</option>
+              <option value="other">יתר התפקידים</option>
+            </select>
+          </label>
+          <button class="filters-reset" id="str-reset">איפוס</button>
+        </div>
+
+        <!-- סקירת החוסרים המרכזית של המנהלה. הגיעה לכאן ממסך מפת חום
+             מנהלה, שנשאר עם טבלת המשרות בלבד: כאן שואלים "איפה הפער",
+             ושם שואלים "על מה בדיוק לפעול". -->
+        <div id="str-admin-panel" hidden>
+          <div class="panel">
+            <div class="panel-head">
+              <h2>התפקידים שהכי חסרים</h2>
+              <span class="panel-note">מספר התקנים החסרים · עשרת הגדולים</span>
+            </div>
+            <!-- סדרה אחת, ולכן צבע אחד ובלי מקרא: אורך העמודה הוא ההצפנה,
+                 וצביעה לפי גודל הייתה מקודדת את אותו נתון פעמיים. אחוז
+                 האיוש מוצג כטקסט לצד כל עמודה ולא כצבע שלה. -->
+            <div class="chart" id="str-admin-chart"></div>
+          </div>
+
+          <div class="two-col">
+            <div class="panel">
+              <div class="panel-head">
+                <h2>איפה הפער הגדול ביותר — לפי תפקיד</h2>
+              </div>
+              <div class="table-wrap">
+                <table class="table" id="str-admin-table">
+                  <thead>
+                    <tr><th>תפקיד</th><th>תקן</th><th>מאויש</th><th>חסר</th>
+                        <th>אחוז איוש</th><th>יחידות עם חוסר</th></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <h2>היחידות המרוקנות ביותר</h2>
+              </div>
+              <div class="table-wrap">
+                <table class="table" id="str-admin-units">
+                  <thead>
+                    <tr><th>יחידה</th><th>אגף / אזור</th><th>תקן</th><th>חסר</th><th>אחוז איוש</th></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- מדדי התחנות ו-Top‑5: היו במסך לוח הבקרה הנפרד. רלוונטיים
+             לליבה בלבד — למנהלה אין רמת תחנה. -->
+        <div class="kpis" id="kpis" hidden></div>
+
+        <!-- פילוח לפי תפקיד: כמה חסר, מי משרת שם היום ומי בהליך — ולכל
+             אחד מהם אחוז הגברים והיהודים שלו. שלוש שאלות שנשאלות יחד,
+             ולכן שורה אחת. -->
+        <div class="panel" id="role-panel" hidden>
           <div class="panel-head">
-            <h2>חוסרים ותכנון אסטרטגי</h2>
+            <h2>פילוח לפי תפקיד</h2>
+            <span class="panel-note" id="role-note"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table table--wide" id="role-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">תפקיד</th>
+                  <th rowspan="2">תקנים חסרים</th>
+                  <th colspan="2">האיוש היום</th>
+                  <th rowspan="2">מועמדים בהליך</th>
+                  <th colspan="2">המועמדים</th>
+                </tr>
+                <tr>
+                  <th>גברים</th><th>יהודים</th><th>גברים</th><th>יהודים</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel" id="top5-panel" hidden>
+          <div class="panel-head">
+            <h2>Top‑5 תחנות קריטיות</h2>
+            <span class="panel-note" id="top5-note"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="top5-table">
+              <thead>
+                <tr><th>תחנה</th><th>מחוז</th><th>מרחב</th><th>אחוז איוש</th><th>סטטוס</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel" id="str-core-panel">
+          <div class="panel-head">
+            <h2>חוסרים ותכנון עבודה</h2>
             <span class="panel-note" id="str-note"></span>
           </div>
           <div class="formula" id="str-formula"></div>
@@ -348,8 +424,8 @@
             <table class="table" id="str-table">
               <thead>
                 <tr>
-                  <th>שם היחידה</th><th>מרחב</th><th>משרות פתוחות</th>
-                  <th>מקצוע מוביל</th><th>ציון דחיפות</th><th>סטטוס</th>
+                  <th>שם היחידה</th><th>מרחב</th><th>מחסור</th>
+                  <th>אחוז פער</th><th>ציון דחיפות</th><th>סטטוס</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -387,10 +463,10 @@
         <div class="panel">
           <div class="panel-head"><h2>תובנות וטיפים מבצעיים</h2></div>
           <div class="tips-empty">
-            <strong>דורש נתוני היענות לפרסום.</strong>
+            <strong>דורש נתוני מגורי מועמדים.</strong>
             <span>
-              טיפים מבוססי מיקום דורשים נתוני היענות ברמת היישוב — נתון שאינו
-              בגרסת ההדגמה. כשיגיע, ההצלבה תהיה מול קשרי תחנה‑יישוב עד 20 דק'
+              טיפים מבוססי מיקום דורשים את יישובי המגורים של המועמדים — נתון
+              שאינו במערכת. כשיגיע, ההצלבה תהיה מול קשרי תחנה‑יישוב עד 20 דק'
               לתחנות הקריטיות. עד אז, "מפת יעדי פרסום" מימין מבוססת על זמני
               נסיעה בלבד.
             </span>
@@ -399,45 +475,165 @@
       </section>
      </section>
 
-     <!-- ===================== מסך 7: הגדרות ===================== -->
-     <section class="screen" id="screen-settings" hidden>
+     <!-- ===== מסך: התראות =====
+          מעבר לתוך סטטוס קריטי (אדום) או החוצה ממנו (ירוק), לתחנות
+          ולמרחבים. הסף נקבע במסך ההגדרות. -->
+     <section class="screen" id="screen-alerts" hidden>
       <header class="topbar">
         <div class="topbar-row">
-          <h1>הגדרות מערכת</h1>
+          <h1>התראות</h1>
           <div class="settings-actions">
-            <span class="save-status" id="save-status"></span>
-            <span class="export-btn export-btn--disabled" id="settings-save" title="שמירת הגדרות זמינה בגרסת השרת המלאה">שמור הגדרות</span>
+            <span class="panel-note" id="alerts-threshold"></span>
+            <button class="filters-reset" id="alerts-clear">נקה יומן</button>
           </div>
         </div>
       </header>
 
       <section class="content">
+        <div class="kpis" id="alerts-kpis"></div>
+
+        <!-- §17.4: **מי קריטי כרגע.** זה מה שדורש פעולה, וזה מה שחסר היה
+             במסך: המונה אמר "1 קריטי" והמסך היה ריק, כי היומן רושם
+             שינויים ולא מצב. השורה שמתחת לכותרת היא החשבון שסוגר בין
+             שני המספרים. -->
+        <div class="panel" id="critical-panel">
+          <div class="panel-head">
+            <h2>קריטיים כרגע</h2>
+            <span class="panel-note" id="critical-note"></span>
+          </div>
+          <div id="critical-list"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>יומן שינויי סטטוס</h2>
+            <span class="panel-note" id="alerts-note"></span>
+          </div>
+          <div id="alerts-list"></div>
+        </div>
+      </section>
+     </section>
+
+     <!-- ===== מסך: הגדרות + טעינת נתונים =====
+          טעינת הנתונים עברה לכאן: שתי הפעולות שמשנות את המערכת כולה —
+          שינוי הספים וטעינת קובץ — יושבות באותו מסך, ולא בשני מקומות. -->
+     <section class="screen" id="screen-settings" hidden>
+      <header class="topbar">
+        <div class="topbar-row">
+          <h1>הגדרות</h1>
+          <!-- שורת הפעולות שייכת ללשונית ההגדרות בלבד: "שמור הגדרות"
+               על מסך טעינת קבצים הוא כפתור שלא ברור מה הוא שומר. -->
+          <div class="settings-actions" id="settings-actions" hidden>
+            <div class="live" id="live">
+              <span class="dot"></span>
+              <span class="live-text">מערכת מחוברת</span>
+              <span class="live-sep">·</span>
+              <span class="live-age" id="live-age">—</span>
+            </div>
+            <span class="save-status" id="save-status"></span>
+            <button class="add-btn" id="settings-save">שמור הגדרות</button>
+          </div>
+        </div>
+        <!-- §16.3: שלוש לשוניות, כמו הבורר שבין מפות החום. -->
+        <div class="tabs" id="settings-tabs">
+          <button class="tab active" data-pane="manage">ניהול נתונים</button>
+          <button class="tab" data-pane="config">הגדרות</button>
+          <button class="tab" data-pane="upload">טעינת נתונים</button>
+        </div>
+      </header>
+
+      <!-- ===== לשונית: ניהול נתונים =====
+           בורר מערך נתונים אחד, וכל מערך מוצג ונערך באותו מבנה. סרגל
+           סינון היררכי משותף: בחירת מחוז מצמצמת את המרחבים, ובחירת מרחב
+           מצמצמת את התחנות.
+
+           הבורר הפנימי הוא רמה שנייה: הלשוניות שלמעלה בוחרות מסך,
+           והשורה הזו בוחרת **איזה מערך נתונים** בתוך המסך. -->
+      <section class="content" id="pane-manage">
+        <div class="tabs tabs--inner" id="manage-tabs">
+          <button class="tab active" data-dataset="relations">קשרי תחנה‑יישוב</button>
+          <button class="tab" data-dataset="region_relations">קשרי מרחב‑יישוב</button>
+          <button class="tab" data-dataset="stations">איוש תחנות</button>
+          <button class="tab" data-dataset="regions">איוש מרחבים</button>
+          <button class="tab" data-dataset="candidates">מועמדים בהליך</button>
+          <button class="tab" data-dataset="admin">איוש מנהלה</button>
+          <button class="tab" data-dataset="unit_locations">מיקומי יחידות</button>
+        </div>
+
+        <div class="kpis" id="manage-kpis"></div>
+
+        <!-- סרגל הסינון נבנה ב-JS לפי עמודות המערך הנבחר -->
+        <div class="filters" id="manage-filters"></div>
+
+        <datalist id="settlement-options"></datalist>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2 id="manage-title">קשרי תחנה‑יישוב</h2>
+            <span class="panel-note" id="manage-note"></span>
+          </div>
+
+          <div class="manage-bar" id="manage-bar">
+            <button class="add-btn" id="rel-add">+ הוסף קישור</button>
+          </div>
+
+          <!-- שורת הוספה לקשרי תחנה‑יישוב -->
+          <div class="add-row" id="add-row" hidden>
+            <select id="add-station"></select>
+            <select id="add-settlement"></select>
+            <input type="number" id="add-travel" min="0" max="600" placeholder="דקות">
+            <button class="add-save" id="add-save">שמור</button>
+            <button class="add-cancel" id="add-cancel">ביטול</button>
+            <span class="add-error" id="add-error"></span>
+          </div>
+
+          <!-- שורת הוספה לקשרי מרחב‑יישוב -->
+          <div class="add-row" id="add-row-region" hidden>
+            <select id="add-region"></select>
+            <select id="add-region-settlement"></select>
+            <input type="number" id="add-region-travel" min="0" max="600" placeholder="דקות">
+            <button class="add-save" id="add-region-save">שמור</button>
+            <button class="add-cancel" id="add-region-cancel">ביטול</button>
+            <span class="add-error" id="add-region-error"></span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table" id="manage-table">
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== לשונית: הגדרות ===== -->
+      <section class="content" id="pane-config" hidden>
         <div class="settings-warn">
           <strong>שינוי כאן משנה את כל המערכת.</strong> ספי הצבע קובעים את הסיווג
           של כל תחנה במפה, בלוח הבקרה ובייצוא. סף זמן הנסיעה קובע מי נחשב "קרוב".
-          לפני כל שמירה נוצר גיבוי. <em>(במצב ההדגמה השמירה מושבתת.)</em>
+          לפני כל שמירה נוצר גיבוי.
         </div>
 
         <div class="panel">
           <div class="panel-head">
             <h2>ספי התראות — מדד חום</h2>
-            <span class="panel-note">מספר משרות פתוחות בתחנה. גבוה יותר = חמור יותר.</span>
+            <span class="panel-note">אחוז איוש. הספים חייבים לעלות בסדר.</span>
           </div>
           <div class="settings-grid">
             <label>
               <span>סף קריטי (אדום)</span>
-              <em>מהמספר הזה ומעלה — קריטי</em>
-              <input type="number" id="s-critical" min="1" max="500">
+              <em>מתחת לאחוז הזה — קריטי</em>
+              <input type="number" id="s-critical" min="1" max="100">
             </label>
             <label>
               <span>סף דחוף (כתום)</span>
-              <em>מהמספר הזה ומעלה — דחוף</em>
-              <input type="number" id="s-urgent" min="1" max="500">
+              <em>מתחת לאחוז הזה — דחוף</em>
+              <input type="number" id="s-urgent" min="1" max="100">
             </label>
             <label>
               <span>סף בינוני (צהוב)</span>
-              <em>מהמספר הזה ומעלה — בינוני; מתחת — תקין</em>
-              <input type="number" id="s-medium" min="1" max="500">
+              <em>מתחת לאחוז הזה — בינוני; מעל — תקין</em>
+              <input type="number" id="s-medium" min="1" max="100">
             </label>
           </div>
           <div class="settings-preview">
@@ -446,53 +642,248 @@
           </div>
         </div>
 
-        <div class="panel">
-          <div class="panel-head">
-            <h2>סף מרחק ומיקום</h2>
-            <span class="panel-note">קובע את עמודת "עד X דק'" ואת המלצות הגיוס</span>
-          </div>
-          <div class="settings-grid">
-            <label>
-              <span>סף זמן נסיעה אפקטיבי (דקות)</span>
-              <em>קשר מעל הסף לא ייכלל בהמלצות</em>
-              <input type="number" id="s-nearby" min="1" max="600">
-            </label>
-          </div>
+      </section>
+
+      <!-- ===== לשונית: טעינת נתונים ===== -->
+      <section class="content" id="pane-upload" hidden>
+        <div class="panel-divider">
+          <h2>טעינת נתונים</h2>
+          <p>קובצי המקור. כל טעינה מגובה ומשאירה עותק עם חותמת תאריך‑שעה.</p>
         </div>
 
-        <div class="panel">
-          <div class="panel-head">
-            <h2>התראות מערכת</h2>
-            <span class="panel-note">נשמרות במאגר; שליחה בפועל טרם מחוברת</span>
+        <div class="drops">
+          <div class="drop" id="drop-relations" data-type="relations">
+            <h2>קשרי תחנה‑יישוב</h2>
+            <p class="drop-cols">תחנה · יישוב · זמן נסיעה (דקות)</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>תחנה</td><td class="req">חובה</td><td>שם התחנה כפי שהוא במאגר</td></tr>
+                  <tr><td>יישוב</td><td class="req">חובה</td><td>שם היישוב</td></tr>
+                  <tr><td>זמן נסיעה (דקות)</td><td class="req">חובה</td><td>מספר שלם, אי-שלילי</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">הקובץ מחליף את כל הקשרים. יישוב שאינו במאגר — נוצר. תחנה שאינה במאגר — נוצרת בלי אחוז איוש.</p>
+            </details>
+            <div class="drop-result" hidden></div>
           </div>
-          <div class="toggles">
-            <label class="toggle">
-              <input type="checkbox" id="s-alert-critical">
-              <span>התראה מיידית כשיחידה נכנסת לסטטוס קריטי</span>
-            </label>
-            <label class="toggle">
-              <input type="checkbox" id="s-alert-weekly">
-              <span>דוח שבועי מרוכז במייל על מצב המשרות הפתוחות</span>
-            </label>
-            <label class="toggle">
-              <input type="checkbox" id="s-alert-opening">
-              <span>התראה על משרה חדשה שנפתחה ביחידה</span>
-            </label>
+
+          <div class="drop" id="drop-region_relations" data-type="region_relations">
+            <h2>קשרי מרחב‑יישוב</h2>
+            <p class="drop-cols">מרחב · יישוב · זמן נסיעה (דקות)</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>מרחב</td><td class="req">חובה</td><td>חייב להיות מרחב שקיים במאגר</td></tr>
+                  <tr><td>יישוב</td><td class="req">חובה</td><td>שם היישוב</td></tr>
+                  <tr><td>זמן נסיעה (דקות)</td><td class="req">חובה</td><td>מספר שלם, אי-שלילי</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">מרחב שאינו במאגר מדווח ולא נוצר. הקובץ מחליף את כל קשרי המרחבים.</p>
+            </details>
+            <div class="drop-result" hidden></div>
           </div>
+
+          <div class="drop" id="drop-candidates" data-type="candidates">
+            <h2>מועמדים בהליך</h2>
+            <p class="drop-cols">דרישה · תחנה · י.ארגונית מחוזית · יחידה ארגונית</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>דרישה</td><td class="req">חובה</td><td>המקצוע נגזר מהטקסט: סיור/סייר, חוקר/חקירות, בילוש/בלש, אחרת אחר</td></tr>
+                  <tr><td>תחנה</td><td class="req">חובה</td><td>שם תחנה. תא ריק או '0' — המועמד נספר ולא משויך לתחנה</td></tr>
+                  <tr><td>י.ארגונית מחוזית</td><td class="opt">רשות</td><td>ממנה נגזר המחוז</td></tr>
+                  <tr><td>יחידה ארגונית</td><td class="opt">רשות</td><td>ממנה נגזר המרחב</td></tr>
+                  <tr><td>כמות מועמדים</td><td class="opt">רשות</td><td>אם קיימת — שורה מסכמת. אם לא — שורה = מועמד אחד</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">הקובץ מחליף את כל נתוני המועמדים.</p>
+            </details>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <div class="drop" id="drop-establishment" data-type="establishment">
+            <h2>תקן ומצבה</h2>
+            <p class="drop-cols">רמה 02 · רמה 03 · רמה 04 · מספר משרה · מצב משרה · תיאור עיסוק · תקן · איוש · סיווג</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>רמה היררכית 02</td><td class="req">חובה</td><td>מחוז או אגף ארצי</td></tr>
+                  <tr><td>רמה היררכית 03</td><td class="req">חובה</td><td>המרחב או היחידה שמתחתיו</td></tr>
+                  <tr><td>רמה היררכית 04</td><td class="req">חובה</td><td>התחנה — זו הרמה שמחברת את המשרה לתחנה במפה</td></tr>
+                  <tr><td>מספר משרה</td><td class="req">חובה</td><td>מזהה המשרה — זה מה שמוצג למגייס</td></tr>
+                  <tr><td>מצב משרה</td><td class="req">חובה</td><td>מאויישת · פנויה · פנויה ‑ קשורה · זמנית · מוקפאת · מיועד לביטול</td></tr>
+                  <tr><td>תיאור עיסוק</td><td class="req">חובה</td><td>התפקיד המילולי — סייר, בלש, תובע פלילי</td></tr>
+                  <tr><td>סה"כ תקן נטו + מעל הנטו</td><td class="req">חובה</td><td>המונה של אחוז האיוש</td></tr>
+                  <tr><td>סה"כ איוש בתקן אג"ת</td><td class="req">חובה</td><td>המכנה של אחוז האיוש</td></tr>
+                  <tr><td>סיווג תיאור משרה</td><td class="req">חובה</td><td>קיבוץ העיסוקים לתפקיד. 'למחיקה' = תפקיד שיוצא מהמבנה</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">
+                <strong>אחוז איוש</strong> = סכום האיוש חלקי סכום התקן, על כל שורות היחידה.
+                מצב המשרה אינו נכנס לחישוב הזה כלל, וגם שורות בסיווג 'למחיקה' נספרות בו —
+                הן תופסות תקן.
+                <strong>משרה לגיוס</strong> = מצב "פנויה" או "פנויה ‑ קשורה", תקן גדול מהאיוש,
+                וסיווג שאינו 'למחיקה'.
+                הקובץ מחליף את איוש התחנות ואת נתוני המנהלה גם יחד.
+              </p>
+            </details>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <div class="drop" id="drop-population" data-type="population">
+            <h2>אוכלוסיית יישובים</h2>
+            <p class="drop-cols">יישוב · מספר תושבים</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>יישוב</td><td class="req">חובה</td><td>שם היישוב כפי שהוא במאגר</td></tr>
+                  <tr><td>מספר תושבים</td><td class="req">חובה</td><td>מספר שלם, אי-שלילי</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">
+                בטאב "מרחבים", בחירת מרחב מציגה על המפה רק יישובים מעל
+                <strong>20,000 תושבים</strong> בטווח חצי שעה, ומדגישה אותם בשחור ברשימה.
+                הקובץ מעדכן ואינו מוחק: יישוב שאינו בו שומר את הנתון שכבר יש לו.
+                יישוב בלי נתון אינו נחשב "קטן" — הוא לא ידוע.
+              </p>
+            </details>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <!-- §8: מי מוצג במפת חום היחידות. רשימת בחירה ולא מדידה. -->
+          <div class="drop" id="drop-recruit_units" data-type="recruit_units">
+            <h2>יחידות לגיוס</h2>
+            <p class="drop-cols">יחידה · מחוז/אגף · יישוב</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>יחידה</td><td class="req">חובה</td><td>השם ברמה היררכית 03, כפי שהוא בקובץ התקן והמצבה — "ימ"ר צפון", "מפקדת מג"ב ירושלים"</td></tr>
+                  <tr><td>מחוז/אגף</td><td>רשות</td><td>רמה 02. בלעדיה נלקח מקובץ התקן</td></tr>
+                  <tr><td>יישוב</td><td>רשות</td><td>היכן היחידה יושבת — לסיכה על המפה</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">
+                רמה 03 מכילה <strong>238 יחידות</strong>, ורק 23 מהן מרחבים. השאר —
+                ימ"רים, מפקדות מג"ב, יחידות ארציות — מגייסות בדיוק כמו מרחב.
+                <strong>המרחבים מוצגים תמיד</strong> גם בלי הקובץ; הקובץ קובע אילו
+                יחידות נוספות מצטרפות אליהם.
+                שם שאינו קיים ברמה 03 מדווח ואינו נטען — אין מאחוריו תקן ואיוש.
+                יחידה בלי יישוב מופיעה ברשימה בלי סיכה ואינה נעלמת.
+              </p>
+            </details>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <div class="drop" id="drop-region_map" data-type="region_map">
+            <h2>מרחבים משטרה</h2>
+            <p class="drop-cols">מחוז · מרחב · תחנה — בלי שורת כותרת</p>
+            <div class="drop-zone">
+              <strong>גרור לכאן קובץ</strong>
+              <span>או</span>
+              <label class="drop-btn">
+                בחר קובץ
+                <input type="file" accept=".xlsx,.xls,.csv" hidden>
+              </label>
+              <em>XLSX או CSV</em>
+            </div>
+            <details class="drop-spec">
+              <summary>מה צריך לשלוח</summary>
+              <table class="spec-table">
+                <thead><tr><th>עמודה</th><th></th><th>הסבר</th></tr></thead>
+                <tbody>
+                  <tr><td>עמודה A</td><td class="req">חובה</td><td>שם המחוז המלא — "לשכת מפקד מחוז ת"א"</td></tr>
+                  <tr><td>עמודה B</td><td class="req">חובה</td><td>שם המרחב המלא — "מרחב ירקון ת"א"</td></tr>
+                  <tr><td>עמודה C</td><td class="req">חובה</td><td>שם התחנה המלא — "תחנת גלילות ירקון"</td></tr>
+                </tbody>
+              </table>
+              <p class="spec-note">
+                זה מקור האמת לשיוך הארגוני, וגם טבלת התרגום בין השם הרשמי המלא
+                לשם הקצר שבמאגר. תחנה שאין לה מרחב במאגר מקבלת אותו מכאן;
+                שיוך קיים שנמצא סותר מדווח ואינו נדרס.
+              </p>
+            </details>
+            <div class="drop-result" hidden></div>
+          </div>
+
+          <!-- §16.2: אזור הטעינה של "איוש תחנות" (הפורמט הרחב) הוסר.
+               הוא נשאר עד עכשיו כי היה המקור היחיד לאחוז יהודים וגברים;
+               מקובץ "תקן מצבה 4.8" הנתון הזה מגיע משם, ולכן לקובץ הישן
+               אין יותר שום דבר לתרום — וטעינתו הייתה **דורסת** את התקן
+               והאיוש בחזרה לערכים ישנים. -->
         </div>
 
-        <div class="panel">
-          <div class="panel-head"><h2>פרטי משתמש</h2></div>
-          <div class="settings-grid">
-            <label>
-              <span>שם מלא</span>
-              <input type="text" id="s-name" maxlength="80" placeholder="לדוגמה: מנהל גיוס ארצי">
-            </label>
-            <label>
-              <span>תפקיד</span>
-              <select id="s-role"></select>
-            </label>
-          </div>
+        <div class="guard-note">
+          <strong>אין תקרת שינוי.</strong> שום קובץ אינו נחסם. קובץ שמזיז את
+          הנתונים ביותר מ‑10% עוצר ושואל: מציגים לך את גודל הסטייה, ואם השינוי
+          אמיתי לוחצים "טען בכל זאת" והקובץ נטען במלואו. עד האישור המאגר לא
+          משתנה, ולפני כל טעינה מוצלחת נשמר גיבוי.
         </div>
 
         <div class="settings-error" id="settings-error" hidden></div>
@@ -503,6 +894,7 @@
   </div>
 
   <script src="vendor/leaflet.js"></script>
+  <script src="demo.js"></script>
   <script src="app.js"></script>
   <script>
     /* תפריט נייד: פתיחה/סגירה של הסרגל הנשלף */

@@ -1,76 +1,95 @@
 {
- "id": 1,
- "name": "תחנת בני ברק",
- "district": "תל אביב",
+ "actual_positions": 58,
  "area": "דן",
- "open_positions": 15,
- "status": "בינוני",
- "status_key": "medium",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 5,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 2,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 2,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 11,
+ "candidates_in_process": 24,
+ "candidates_pct_jewish": 70.0,
+ "candidates_pct_male": 54.5,
+ "candidates_religion_coverage": 10,
  "color": "#EAB308",
+ "coord_verified": false,
+ "district": "תל אביב",
+ "id": 1,
+ "insights": [],
  "lat": 32.0809,
  "lng": 34.8338,
- "coord_verified": false,
+ "missing_positions": 14,
+ "missing_to_delete": 2,
+ "name": "תחנת בני ברק",
+ "nearby_settlements": [],
+ "pct_jewish": 88.5,
+ "pct_male": 81.9,
+ "required_positions": 72,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 5
+   "label": "סייר",
+   "missing": 5,
+   "pct_jewish": 98.4,
+   "pct_male": 78.8
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 2
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 2,
+   "pct_jewish": 89.8,
+   "pct_male": 83.7
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 2
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 3,
+   "pct_jewish": 83.7,
+   "pct_male": 84.4
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 3
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 2
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 1
+   "key": "other",
+   "label": "אחר",
+   "missing": 2,
+   "pct_jewish": 85.5,
+   "pct_male": 80.0
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 5
- },
- "nearby_settlements": [
-  {
-   "name": "גבעת שמואל",
-   "travel_min": 3
-  },
-  {
-   "name": "בני ברק",
-   "travel_min": 4
-  },
-  {
-   "name": "רמת גן",
-   "travel_min": 4
-  },
-  {
-   "name": "פתח תקווה",
-   "travel_min": 14
-  }
- ],
- "insights": [
-  {
-   "id": 2,
-   "text": "התחנה כמעט סגורה על התקן — להסיט תקציב פרסום לתחנות האדומות.",
-   "done": 1,
-   "created_at": "2026-07-27T19:13:47"
-  }
- ]
+ "staffing_pct": 80.56,
+ "status": "בינוני",
+ "status_key": "medium",
+ "surplus_positions": 3
 }

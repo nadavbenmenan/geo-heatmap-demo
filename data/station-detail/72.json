@@ -1,52 +1,102 @@
 {
- "id": 72,
- "name": "תחנת כפר קאסם",
- "district": "מרכז",
+ "actual_positions": 102,
  "area": "שרון",
- "open_positions": 13,
- "status": "בינוני",
- "status_key": "medium",
- "color": "#EAB308",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 40,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 17,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 23,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 15,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 93,
+ "candidates_in_process": 191,
+ "candidates_pct_jewish": 58.5,
+ "candidates_pct_male": 60.2,
+ "candidates_religion_coverage": 94,
+ "color": "#DC2626",
+ "coord_verified": false,
+ "district": "מרכז",
+ "id": 72,
+ "insights": [
+  {
+   "created_at": "2026-07-27T22:52:31",
+   "done": 1,
+   "id": 3,
+   "text": "להסיט תקציב פרסום לתחנות האדומות."
+  }
+ ],
  "lat": 32.1147,
  "lng": 34.9756,
- "coord_verified": false,
+ "missing_positions": 47,
+ "missing_to_delete": 7,
+ "name": "תחנת כפר קאסם",
+ "nearby_settlements": [],
+ "pct_jewish": 72.2,
+ "pct_male": 79.1,
+ "required_positions": 149,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 3
+   "label": "סייר",
+   "missing": 17,
+   "pct_jewish": 63.1,
+   "pct_male": 79.4
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 3
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 7,
+   "pct_jewish": 72.8,
+   "pct_male": 71.7
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 2
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 10,
+   "pct_jewish": 72.9,
+   "pct_male": 74.6
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 1
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 2
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 2
+   "key": "other",
+   "label": "אחר",
+   "missing": 6,
+   "pct_jewish": 73.8,
+   "pct_male": 81.8
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 3
- },
- "nearby_settlements": [],
- "insights": []
+ "staffing_pct": 68.46,
+ "status": "קריטי",
+ "status_key": "critical",
+ "surplus_positions": 2
 }

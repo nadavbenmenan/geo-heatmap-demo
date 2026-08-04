@@ -1,0 +1,110 @@
+{
+ "alerts": [
+  {
+   "created_at": "2026-08-03T22:52:31",
+   "direction": "left",
+   "district": "צפון",
+   "entity_name": "תחנת טבריה",
+   "entity_type": "station",
+   "from_status": "קריטי",
+   "id": 1,
+   "staffing_pct": 63.55,
+   "to_status": "בינוני"
+  },
+  {
+   "created_at": "2026-08-01T21:52:31",
+   "direction": "entered",
+   "district": "צפון",
+   "entity_name": "תחנת תבור",
+   "entity_type": "station",
+   "from_status": "תקין",
+   "id": 2,
+   "staffing_pct": 69.88,
+   "to_status": "קריטי"
+  },
+  {
+   "created_at": "2026-07-30T20:52:31",
+   "direction": "entered",
+   "district": "חוף",
+   "entity_name": "תחנת טירת הכרמל",
+   "entity_type": "station",
+   "from_status": "תקין",
+   "id": 3,
+   "staffing_pct": 64.89,
+   "to_status": "קריטי"
+  },
+  {
+   "created_at": "2026-07-28T19:52:31",
+   "direction": "left",
+   "district": "מרכז",
+   "entity_name": "תחנת טייבה",
+   "entity_type": "station",
+   "from_status": "קריטי",
+   "id": 4,
+   "staffing_pct": 69.09,
+   "to_status": "בינוני"
+  },
+  {
+   "created_at": "2026-07-26T18:52:31",
+   "direction": "entered",
+   "district": "מרכז",
+   "entity_name": "תחנת כפר קאסם",
+   "entity_type": "station",
+   "from_status": "תקין",
+   "id": 5,
+   "staffing_pct": 68.46,
+   "to_status": "קריטי"
+  }
+ ],
+ "critical": [
+  {
+   "district": "צפון",
+   "entity_name": "תחנת טבריה",
+   "entity_type": "station",
+   "logged": false,
+   "staffing_pct": 63.55
+  },
+  {
+   "district": "חוף",
+   "entity_name": "תחנת טירת הכרמל",
+   "entity_type": "station",
+   "logged": true,
+   "staffing_pct": 64.89
+  },
+  {
+   "district": "מרכז",
+   "entity_name": "תחנת כפר קאסם",
+   "entity_type": "station",
+   "logged": true,
+   "staffing_pct": 68.46
+  },
+  {
+   "district": "מרכז",
+   "entity_name": "תחנת טייבה",
+   "entity_type": "station",
+   "logged": false,
+   "staffing_pct": 69.09
+  },
+  {
+   "district": "צפון",
+   "entity_name": "תחנת תבור",
+   "entity_type": "station",
+   "logged": true,
+   "staffing_pct": 69.88
+  },
+  {
+   "district": "צפון",
+   "entity_name": "צפון",
+   "entity_type": "region",
+   "logged": false,
+   "staffing_pct": 69.88
+  }
+ ],
+ "critical_now": 6,
+ "enabled": true,
+ "entered": 3,
+ "entered_open": 3,
+ "left": 2,
+ "threshold": 70,
+ "unlogged": 3
+}

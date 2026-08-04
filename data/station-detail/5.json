@@ -1,69 +1,95 @@
 {
- "id": 5,
- "name": "תחנת חולון",
- "district": "תל אביב",
+ "actual_positions": 161,
  "area": "איילון",
- "open_positions": 30,
- "status": "קריטי",
- "status_key": "critical",
- "color": "#DC2626",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 8,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 4,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 16,
+ "candidates_in_process": 36,
+ "candidates_pct_jewish": 72.2,
+ "candidates_pct_male": 68.8,
+ "candidates_religion_coverage": 18,
+ "color": "#16A34A",
+ "coord_verified": false,
+ "district": "תל אביב",
+ "id": 5,
+ "insights": [],
  "lat": 32.0158,
  "lng": 34.7742,
- "coord_verified": false,
+ "missing_positions": 11,
+ "missing_to_delete": 1,
+ "name": "תחנת חולון",
+ "nearby_settlements": [],
+ "pct_jewish": 58.6,
+ "pct_male": 66.2,
+ "required_positions": 172,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 10
+   "label": "סייר",
+   "missing": 4,
+   "pct_jewish": 53.1,
+   "pct_male": 73.2
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 5
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 2,
+   "pct_jewish": 51.1,
+   "pct_male": 59.8
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 5
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 2,
+   "pct_jewish": 64.4,
+   "pct_male": 70.9
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 4
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 3
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 3
+   "key": "other",
+   "label": "אחר",
+   "missing": 2,
+   "pct_jewish": 51.0,
+   "pct_male": 73.7
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 10
- },
- "nearby_settlements": [
-  {
-   "name": "חולון",
-   "travel_min": 4
-  },
-  {
-   "name": "אזור",
-   "travel_min": 5
-  },
-  {
-   "name": "בת ים",
-   "travel_min": 6
-  },
-  {
-   "name": "ראשון לציון",
-   "travel_min": 13
-  }
- ],
- "insights": []
+ "staffing_pct": 93.6,
+ "status": "תקין",
+ "status_key": "ok",
+ "surplus_positions": 2
 }

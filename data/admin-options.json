@@ -1,0 +1,250 @@
+{
+ "areas": [
+  {
+   "name": "דרום",
+   "required": 1925,
+   "vacant": 284
+  },
+  {
+   "name": "חוף",
+   "required": 1622,
+   "vacant": 271
+  },
+  {
+   "name": "ירושלים",
+   "required": 1042,
+   "vacant": 184
+  },
+  {
+   "name": "מג\"ב",
+   "required": 241,
+   "vacant": 57
+  },
+  {
+   "name": "מרכז",
+   "required": 1985,
+   "vacant": 359
+  },
+  {
+   "name": "צפון",
+   "required": 2174,
+   "vacant": 387
+  },
+  {
+   "name": "ש\"י",
+   "required": 968,
+   "vacant": 173
+  },
+  {
+   "name": "תל אביב",
+   "required": 1581,
+   "vacant": 265
+  }
+ ],
+ "departments": [
+  {
+   "name": "מחוז דרום",
+   "required": 1925,
+   "vacant": 284
+  },
+  {
+   "name": "מחוז חוף",
+   "required": 1622,
+   "vacant": 271
+  },
+  {
+   "name": "מחוז ירושלים",
+   "required": 1042,
+   "vacant": 184
+  },
+  {
+   "name": "מחוז מג\"ב",
+   "required": 241,
+   "vacant": 57
+  },
+  {
+   "name": "מחוז מרכז",
+   "required": 1985,
+   "vacant": 359
+  },
+  {
+   "name": "מחוז צפון",
+   "required": 2174,
+   "vacant": 387
+  },
+  {
+   "name": "מחוז ש\"י",
+   "required": 968,
+   "vacant": 173
+  },
+  {
+   "name": "מחוז תל אביב",
+   "required": 1581,
+   "vacant": 265
+  }
+ ],
+ "professions": [
+  {
+   "name": "בילוש",
+   "required": 1740,
+   "vacant": 305
+  },
+  {
+   "name": "הדרכה והכשרות",
+   "required": 283,
+   "vacant": 45
+  },
+  {
+   "name": "חקירות",
+   "required": 2315,
+   "vacant": 405
+  },
+  {
+   "name": "ייעוץ משפטי",
+   "required": 330,
+   "vacant": 58
+  },
+  {
+   "name": "כספים ותקציב",
+   "required": 301,
+   "vacant": 53
+  },
+  {
+   "name": "לוגיסטיקה",
+   "required": 326,
+   "vacant": 53
+  },
+  {
+   "name": "מנהלה וכוח אדם",
+   "required": 350,
+   "vacant": 60
+  },
+  {
+   "name": "מערכות מידע",
+   "required": 303,
+   "vacant": 40
+  },
+  {
+   "name": "סיור",
+   "required": 4046,
+   "vacant": 697
+  },
+  {
+   "name": "שיטור קהילתי",
+   "required": 1544,
+   "vacant": 264
+  }
+ ],
+ "units": [
+  {
+   "name": "איילון",
+   "required": 710,
+   "vacant": 95
+  },
+  {
+   "name": "גליל",
+   "required": 650,
+   "vacant": 71
+  },
+  {
+   "name": "גלעד",
+   "required": 215,
+   "vacant": 33
+  },
+  {
+   "name": "דן",
+   "required": 436,
+   "vacant": 93
+  },
+  {
+   "name": "חוף",
+   "required": 1622,
+   "vacant": 271
+  },
+  {
+   "name": "יהודה",
+   "required": 275,
+   "vacant": 35
+  },
+  {
+   "name": "ירקון",
+   "required": 435,
+   "vacant": 77
+  },
+  {
+   "name": "כנרת",
+   "required": 652,
+   "vacant": 125
+  },
+  {
+   "name": "לכיש",
+   "required": 523,
+   "vacant": 58
+  },
+  {
+   "name": "מג\"ב י-ם",
+   "required": 241,
+   "vacant": 57
+  },
+  {
+   "name": "מרחב אילת",
+   "required": 169,
+   "vacant": 41
+  },
+  {
+   "name": "מרחב דוד",
+   "required": 201,
+   "vacant": 47
+  },
+  {
+   "name": "מרכז",
+   "required": 200,
+   "vacant": 32
+  },
+  {
+   "name": "נגב",
+   "required": 561,
+   "vacant": 86
+  },
+  {
+   "name": "עמקים",
+   "required": 714,
+   "vacant": 154
+  },
+  {
+   "name": "ציון",
+   "required": 514,
+   "vacant": 90
+  },
+  {
+   "name": "צפון",
+   "required": 158,
+   "vacant": 37
+  },
+  {
+   "name": "קדם",
+   "required": 327,
+   "vacant": 47
+  },
+  {
+   "name": "רותם",
+   "required": 672,
+   "vacant": 99
+  },
+  {
+   "name": "שומרון",
+   "required": 478,
+   "vacant": 105
+  },
+  {
+   "name": "שפלה",
+   "required": 757,
+   "vacant": 123
+  },
+  {
+   "name": "שרון",
+   "required": 1028,
+   "vacant": 204
+  }
+ ]
+}

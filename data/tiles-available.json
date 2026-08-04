@@ -1,4 +1,15 @@
 {
- "available": false,
- "zooms": []
+ "available": true,
+ "max": 14,
+ "min": 7,
+ "zooms": [
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14
+ ]
 }

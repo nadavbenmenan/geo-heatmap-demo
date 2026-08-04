@@ -1,26 +1,26 @@
 [
  {
-  "status": "קריטי",
   "color": "#DC2626",
   "key": "critical",
-  "label": "25 משרות ומעלה"
+  "label": "מתחת ל‑70%",
+  "status": "קריטי"
  },
  {
-  "status": "דחוף",
   "color": "#EA580C",
   "key": "urgent",
-  "label": "16–24 משרות"
+  "label": "70% - 80%",
+  "status": "דחוף"
  },
  {
-  "status": "בינוני",
   "color": "#EAB308",
   "key": "medium",
-  "label": "8–15 משרות"
+  "label": "80% - 90%",
+  "status": "בינוני"
  },
  {
-  "status": "תקין",
   "color": "#16A34A",
   "key": "ok",
-  "label": "עד 7 משרות"
+  "label": "90% ומעלה",
+  "status": "תקין"
  }
 ]

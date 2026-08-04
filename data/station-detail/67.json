@@ -1,52 +1,95 @@
 {
- "id": 67,
- "name": "מרחב נתב\"ג",
- "district": "מרכז",
+ "actual_positions": 92,
  "area": "מרכז",
- "open_positions": 18,
- "status": "דחוף",
- "status_key": "urgent",
- "color": "#EA580C",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 7,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 4,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 15,
+ "candidates_in_process": 33,
+ "candidates_pct_jewish": 66.7,
+ "candidates_pct_male": 40.0,
+ "candidates_religion_coverage": 15,
+ "color": "#16A34A",
+ "coord_verified": false,
+ "district": "מרכז",
+ "id": 67,
+ "insights": [],
  "lat": 32.0004,
  "lng": 34.8706,
- "coord_verified": false,
+ "missing_positions": 8,
+ "missing_to_delete": 1,
+ "name": "מרחב נתב\"ג",
+ "nearby_settlements": [],
+ "pct_jewish": 71.7,
+ "pct_male": 75.8,
+ "required_positions": 100,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 6
+   "label": "סייר",
+   "missing": 3,
+   "pct_jewish": 79.0,
+   "pct_male": 67.6
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 3
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 1,
+   "pct_jewish": 78.8,
+   "pct_male": 71.0
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 2
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 2,
+   "pct_jewish": 66.7,
+   "pct_male": 88.9
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 3
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 2
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 2
+   "key": "other",
+   "label": "אחר",
+   "missing": 1,
+   "pct_jewish": 65.6,
+   "pct_male": 74.6
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 6
- },
- "nearby_settlements": [],
- "insights": []
+ "staffing_pct": 92.0,
+ "status": "תקין",
+ "status_key": "ok",
+ "surplus_positions": 1
 }

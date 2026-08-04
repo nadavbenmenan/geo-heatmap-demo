@@ -1,81 +1,95 @@
 {
- "id": 4,
- "name": "תחנת גלילות",
- "district": "תל אביב",
+ "actual_positions": 45,
  "area": "ירקון",
- "open_positions": 20,
- "status": "דחוף",
- "status_key": "urgent",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 8,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 4,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 3,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 17,
+ "candidates_in_process": 36,
+ "candidates_pct_jewish": 50.0,
+ "candidates_pct_male": 70.6,
+ "candidates_religion_coverage": 12,
  "color": "#EA580C",
+ "coord_verified": false,
+ "district": "תל אביב",
+ "id": 4,
+ "insights": [],
  "lat": 32.131,
  "lng": 34.802,
- "coord_verified": false,
+ "missing_positions": 14,
+ "missing_to_delete": 1,
+ "name": "תחנת גלילות",
+ "nearby_settlements": [],
+ "pct_jewish": 97.0,
+ "pct_male": 60.4,
+ "required_positions": 59,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 5
+   "label": "סייר",
+   "missing": 6,
+   "pct_jewish": 93.0,
+   "pct_male": 54.8
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 5
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 2,
+   "pct_jewish": 99.0,
+   "pct_male": 69.5
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 3
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 3,
+   "pct_jewish": 97.1,
+   "pct_male": 55.4
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 2
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 2
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 3
+   "key": "other",
+   "label": "אחר",
+   "missing": 2,
+   "pct_jewish": 99.0,
+   "pct_male": 68.6
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 5
- },
- "nearby_settlements": [
-  {
-   "name": "רמת השרון",
-   "travel_min": 8
-  },
-  {
-   "name": "הרצליה",
-   "travel_min": 10
-  },
-  {
-   "name": "כפר שמריהו",
-   "travel_min": 13
-  },
-  {
-   "name": "תל אביב",
-   "travel_min": 15
-  },
-  {
-   "name": "הוד השרון",
-   "travel_min": 19
-  },
-  {
-   "name": "רעננה",
-   "travel_min": 20
-  },
-  {
-   "name": "כפר סבא",
-   "travel_min": 23
-  }
- ],
- "insights": []
+ "staffing_pct": 76.27,
+ "status": "דחוף",
+ "status_key": "urgent",
+ "surplus_positions": 2
 }

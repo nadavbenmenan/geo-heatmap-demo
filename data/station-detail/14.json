@@ -1,52 +1,102 @@
 {
- "id": 14,
- "name": "תחנת טבריה",
- "district": "צפון",
+ "actual_positions": 68,
  "area": "כנרת",
- "open_positions": 6,
- "status": "תקין",
- "status_key": "ok",
- "color": "#16A34A",
+ "candidates_by_role": [
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 42,
+   "key": "patrol",
+   "label": "סייר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 18,
+   "key": "detectives",
+   "label": "בלש"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 24,
+   "key": "investigators",
+   "label": "חוקר"
+  },
+  {
+   "candidates_gender_coverage": null,
+   "candidates_pct_jewish": null,
+   "candidates_pct_male": null,
+   "candidates_religion_coverage": null,
+   "count": 16,
+   "key": "other",
+   "label": "אחר"
+  }
+ ],
+ "candidates_gender_coverage": 69,
+ "candidates_in_process": 199,
+ "candidates_pct_jewish": 51.5,
+ "candidates_pct_male": 66.7,
+ "candidates_religion_coverage": 66,
+ "color": "#DC2626",
+ "coord_verified": false,
+ "district": "צפון",
+ "id": 14,
+ "insights": [
+  {
+   "created_at": "2026-08-01T22:52:31",
+   "done": 0,
+   "id": 1,
+   "text": "ריכוז חוסר בסיור — לשקול יום גיוס ממוקד באזור."
+  }
+ ],
  "lat": 32.7922,
  "lng": 35.5312,
- "coord_verified": false,
+ "missing_positions": 39,
+ "missing_to_delete": 5,
+ "name": "תחנת טבריה",
+ "nearby_settlements": [],
+ "pct_jewish": 60.3,
+ "pct_male": 60.8,
+ "required_positions": 107,
  "roles": [
   {
    "key": "patrol",
-   "label": "סיור",
-   "open": 2
+   "label": "סייר",
+   "missing": 14,
+   "pct_jewish": 60.6,
+   "pct_male": 54.9
   },
   {
-   "key": "investigation",
-   "label": "חקירות",
-   "open": 1
+   "key": "detectives",
+   "label": "בלש",
+   "missing": 6,
+   "pct_jewish": 67.0,
+   "pct_male": 52.8
   },
   {
-   "key": "traffic",
-   "label": "תנועה",
-   "open": 1
+   "key": "investigators",
+   "label": "חוקר",
+   "missing": 8,
+   "pct_jewish": 53.0,
+   "pct_male": 64.4
   },
   {
-   "key": "intelligence",
-   "label": "מודיעין",
-   "open": 1
-  },
-  {
-   "key": "support",
-   "label": "מטה ותמיכה",
-   "open": 1
-  },
-  {
-   "key": "community",
-   "label": "שיטור קהילתי",
-   "open": 0
+   "key": "other",
+   "label": "אחר",
+   "missing": 6,
+   "pct_jewish": 46.6,
+   "pct_male": 47.7
   }
  ],
- "top_role": {
-  "key": "patrol",
-  "label": "סיור",
-  "open": 2
- },
- "nearby_settlements": [],
- "insights": []
+ "staffing_pct": 63.55,
+ "status": "קריטי",
+ "status_key": "critical",
+ "surplus_positions": 3
 }
