@@ -1,5 +1,4 @@
 {
- "approved_source": "הרשימה שאופיינה",
  "groups": [
   "בילוש",
   "הדרכה והכשרות",
@@ -7,10 +6,12 @@
   "ייעוץ משפטי",
   "כספים ותקציב",
   "לוגיסטיקה",
+  "מודיעין",
   "מנהלה וכוח אדם",
   "מערכות מידע",
   "סיור",
-  "שיטור קהילתי"
+  "שיטור קהילתי",
+  "תנועה"
  ],
  "items": [
   {
@@ -158,6 +159,30 @@
    "vacant": 24
   },
   {
+   "category": "מודיעין",
+   "occupation": "מודיעין — מפקד צוות",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
+  },
+  {
+   "category": "מודיעין",
+   "occupation": "מודיעין — קצין",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
+  },
+  {
+   "category": "מודיעין",
+   "occupation": "מודיעין — שוטר",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
+  },
+  {
    "category": "מנהלה וכוח אדם",
    "occupation": "מנהלה וכוח אדם — מפקד צוות",
    "positions": 106,
@@ -169,8 +194,8 @@
    "category": "מנהלה וכוח אדם",
    "occupation": "מנהלה וכוח אדם — קצין",
    "positions": 122,
-   "source": "כלל מילת מפתח: \"קצין\"",
-   "unclassified": true,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
    "vacant": 16
   },
   {
@@ -193,8 +218,8 @@
    "category": "מערכות מידע",
    "occupation": "מערכות מידע — קצין",
    "positions": 101,
-   "source": "כלל מילת מפתח: \"קצין\"",
-   "unclassified": true,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
    "vacant": 12
   },
   {
@@ -230,6 +255,22 @@
    "vacant": 221
   },
   {
+   "category": "מקצועות ללא סיווג",
+   "occupation": "קצין חדשנות דיגיטלית",
+   "positions": 0,
+   "source": "חדש — טעון סיווג",
+   "unclassified": true,
+   "vacant": 0
+  },
+  {
+   "category": "מקצועות ללא סיווג",
+   "occupation": "רכז נגישות",
+   "positions": 0,
+   "source": "חדש — טעון סיווג",
+   "unclassified": true,
+   "vacant": 0
+  },
+  {
    "category": "שיטור קהילתי",
    "occupation": "שיטור קהילתי — מפקד צוות",
    "positions": 522,
@@ -252,7 +293,32 @@
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 80
+  },
+  {
+   "category": "תנועה",
+   "occupation": "תנועה — מפקד צוות",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
+  },
+  {
+   "category": "תנועה",
+   "occupation": "תנועה — קצין",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
+  },
+  {
+   "category": "תנועה",
+   "occupation": "תנועה — שוטר",
+   "positions": 0,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 0
   }
  ],
- "unclassified": 2
+ "unclassified": 2,
+ "unclassified_group": "מקצועות ללא סיווג"
 }

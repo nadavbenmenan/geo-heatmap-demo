@@ -2461,24 +2461,33 @@ const MANAGE_DATASETS = {
         { n: pending.reduce((a, i) => a + i.positions, 0), label: "משרות בעיסוקים אלה" },
       ];
     },
-    render: (r) => `<tr class="${r.unclassified ? "row-unclassified" : ""}">
-      <td><strong>${escapeHtml(r.occupation)}</strong></td>
-      <td>${
-        r.category
-          ? escapeHtml(r.category)
-          : '<b class="neg">לא מסווג</b>'
-      }</td>
-      <td class="muted">${
-        r.unclassified
-          ? `<b class="neg">${escapeHtml(r.source || "אין סיווג שנמסר")}</b>`
-          : escapeHtml(r.source)
-      }</td>
-      <td>${r.positions}</td>
-      <td>${r.vacant}</td>
-    </tr>`,
+    // §21: הקבוצה היא בורר ולא טקסט. זו הנקודה כולה — השיוך נערך כאן,
+    // ולא בקובץ אקסל שצריך לטעון מחדש.
+    render: (r) => {
+      const groups = state.occupationGroups.groups || [];
+      const unclassified = state.occupationGroups.unclassified_group || "מקצועות ללא סיווג";
+      const options = [unclassified, ...groups]
+        .map(
+          (g) =>
+            `<option value="${escapeHtml(g)}"${g === r.category ? " selected" : ""}>${escapeHtml(
+              g
+            )}</option>`
+        )
+        .join("");
+      return `<tr class="${r.unclassified ? "row-unclassified" : ""}">
+        <td><strong>${escapeHtml(r.occupation)}</strong></td>
+        <td class="cell-edit">
+          <select class="occ-group" data-occupation="${escapeHtml(r.occupation)}"
+                  data-original="${escapeHtml(r.category)}">${options}</select>
+        </td>
+        <td class="muted">${escapeHtml(r.source || "—")}</td>
+        <td>${r.positions}</td>
+        <td>${r.vacant}</td>
+      </tr>`;
+    },
     note:
-      "עיסוק מסומן באדום כשהשיוך שלו נקבע ע\"י המערכת ולא נמסר ברשימה — " +
-      "הוא עובד, אבל טעון אישור. לעדכון: data/מיפוי_עיסוקים.xlsx.",
+      "השיוך נערך כאן ונשמר מיד. עיסוק חדש שמגיע בקובץ נכנס אדום תחת " +
+      "\"מקצועות ללא סיווג\" ומחכה לשיוך — המערכת אינה מנחשת לו קבוצה.",
     empty: "עדיין לא נטען קובץ תקן ומצבה, ולכן אין תיאורי עיסוק.",
   },
 };
@@ -2617,9 +2626,99 @@ function renderManageRows() {
   wireInlineEdit(table);
 }
 
+// §21: רענון המיפוי אחרי שינוי. הקבוצות והשיוכים מזינים גם את בוררי
+// המסך וגם את מסך המנהלה, ולכן מרעננים את שניהם ולא רק את הטבלה.
+async function refreshOccupationGroups() {
+  state.occupationGroups = await api("/api/occupation-groups");
+  renderManageKpis();
+  renderManageTable();
+}
+
+// ניהול הקבוצות עצמן — יצירה, שינוי שם ומחיקה. שורה אחת מעל הטבלה, ורק
+// במערך העיסוקים: היא חסרת משמעות בכל מערך אחר.
+function renderOccupationGroupBar() {
+  const bar = el("occ-group-bar");
+  if (!bar) return;
+  const isOccupations = state.dataset === "occupations";
+  bar.hidden = !isOccupations;
+  if (!isOccupations) return;
+
+  const groups = state.occupationGroups.groups || [];
+  el("occ-group-pick").innerHTML = groups
+    .map((g) => `<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`)
+    .join("");
+  el("occ-group-count").textContent = `${groups.length} קבוצות`;
+}
+
+async function occupationGroupAction(url, method, body) {
+  const response = await fetch(url, {
+    method,
+    headers: { "Content-Type": "application/json" },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await response.json();
+  if (!data.ok) {
+    alert(data.error);
+    return false;
+  }
+  await refreshOccupationGroups();
+  renderOccupationGroupBar();
+  return true;
+}
+
+function wireOccupationGroups() {
+  el("occ-group-add").onclick = async () => {
+    const name = (prompt("שם הקבוצה החדשה:") || "").trim();
+    if (name) await occupationGroupAction("/api/occupation-groups", "POST", { name });
+  };
+  el("occ-group-rename").onclick = async () => {
+    const current = el("occ-group-pick").value;
+    if (!current) return;
+    const name = (prompt(`שם חדש לקבוצה "${current}":`, current) || "").trim();
+    if (name && name !== current) {
+      await occupationGroupAction(
+        `/api/occupation-groups/${encodeURIComponent(current)}`, "PUT", { name }
+      );
+    }
+  };
+  el("occ-group-delete").onclick = async () => {
+    const current = el("occ-group-pick").value;
+    if (!current) return;
+    if (!confirm(`למחוק את הקבוצה "${current}"?\n\nמחיקה אפשרית רק כשאין תחתיה עיסוקים.`)) return;
+    await occupationGroupAction(`/api/occupation-groups/${encodeURIComponent(current)}`, "DELETE");
+  };
+}
+
 // עריכה בשורה: נשמרת ב-blur או ב-Enter, ורק אם הערך באמת השתנה — אחרת
 // כל מעבר עם Tab על הטבלה היה יוצר גיבוי וכתיבה מיותרים.
 function wireInlineEdit(table) {
+  // §21: שיוך עיסוק לקבוצה. נשמר מיד בבחירה — אין כאן "שמור", כי הבחירה
+  // עצמה היא הפעולה, וכפתור נוסף רק מזמין לשכוח ללחוץ עליו.
+  table.querySelectorAll(".occ-group").forEach((select) => {
+    select.onchange = async () => {
+      const original = select.dataset.original;
+      if (select.value === original) return;
+      const response = await fetch(
+        `/api/occupations/${encodeURIComponent(select.dataset.occupation)}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ category: select.value }),
+        }
+      );
+      const data = await response.json();
+      if (!data.ok) {
+        select.value = original; // לא נשמר — לא להשאיר במסך בחירה שלא קרתה
+        select.classList.add("input--err");
+        setTimeout(() => select.classList.remove("input--err"), 1500);
+        return alert(data.error);
+      }
+      select.dataset.original = select.value;
+      select.classList.add("input--ok");
+      await refreshOccupationGroups();
+    };
+  });
+
   table.querySelectorAll(".unit-input").forEach((input) => {
     input.onblur = () => saveUnitLocation(input);
     input.onkeydown = (e) => {
@@ -2713,12 +2812,14 @@ function switchDataset(name) {
   // הקודם — שורת "4,937 קשרים · 88 תחנות" מעל טבלת תיאורי העיסוק נראית
   // כמו כותרת שלה, ואינה.
   renderManageKpis();
+  renderOccupationGroupBar();
   renderManageTable();
 }
 
 function wireManage() {
   // אין כאן חיווט של סרגל הסינון: הוא נבנה מחדש בכל רינדור, לפי עמודות
   // המערך הנבחר. ראה renderManageFilters.
+  wireOccupationGroups();
   document.querySelectorAll("#manage-tabs .tab").forEach((tab) => {
     tab.onclick = () => switchDataset(tab.dataset.dataset);
   });
