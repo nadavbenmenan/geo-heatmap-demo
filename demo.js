@@ -100,7 +100,38 @@
       return json(found || {});
     }
 
-    // תכנון אסטרטגי — רק N משנה כאן. שאר הפרמטרים הם סינון, והוא מוקפא.
+    // --- הסינון ההיררכי: מחוז → מרחב → תחנה ------------------------------
+    //
+    // שלושת המסכים האלה נשענים עליו, וקודם הם קיבלו תמיד את התמונה הארצית:
+    // הבורר זז והמסך לא. עכשיו כל 119 מצבי הסינון מוקפאים מראש מהשרת
+    // האמיתי, ולכן גם המספרים וגם הכותרות נכונים — הם מגיעים מאותה תשובה
+    // בדיוק שהשרת היה מחזיר.
+    //
+    // המפתח הוא **הרמה הספציפית ביותר בלבד**. הסינון היררכי, ולכן תחנה
+    // מגדירה חד-משמעית גם את המרחב וגם את המחוז; צירופים היו מכפילים את
+    // מספר הקבצים בלי להוסיף ולו תשובה אחת שונה.
+    const SCOPED = {
+      "/api/dashboard": "dashboard__by-scope.json",
+      "/api/recruiter": "recruiter__by-scope.json",
+      "/api/strategic": "strategic__by-scope.json",
+    };
+    if (SCOPED[path]) {
+      const p = new URLSearchParams(query);
+      const station = p.get("station");
+      const region = p.get("region");
+      const district = p.get("district");
+      const key = station
+        ? `s|${station}`
+        : region
+          ? `r|${region}`
+          : district
+            ? `d|${district}`
+            : "all";
+      const found = await fromBundle(SCOPED[path], key);
+      if (found) return json(found);
+    }
+
+    // תכנון אסטרטגי — בורר כמות התחנות (N), כשאין סינון היררכי פעיל.
     if (path === "/api/strategic") {
       const n = new URLSearchParams(query).get("n") || "10";
       const found = await fromBundle("strategic__by-n.json", n);
