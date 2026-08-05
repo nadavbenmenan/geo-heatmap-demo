@@ -28,7 +28,6 @@
   "אשתאול",
   "באר יעקב",
   "בוקעאתא",
-  "ביר אל-מכסור",
   "בית אורן",
   "בית ברל",
   "בית השיטה",
@@ -51,7 +50,6 @@
   "בת עין",
   "בת שלמה",
   "ג'לג'וליה",
-  "ג'סר א-זרקא",
   "גבולות",
   "גבים",
   "גבע בנימין",
@@ -100,7 +98,6 @@
   "טפחות",
   "יבול",
   "יד בנימין",
-  "יהוד",
   "יהל",
   "יונתן",
   "יושיביה",
@@ -159,7 +156,6 @@
   "מעלה לבונה",
   "מעלה עמוס",
   "מצובה",
-  "מצפה אבי\"ב",
   "מצפה נטופה",
   "מצפה שלם",
   "מרחב עם",
@@ -236,7 +232,6 @@
   "רמלה",
   "רמת גן",
   "רמת השרון",
-  "רמת פנקס",
   "רמת רזיאל",
   "רעננה",
   "שבי דרום",
@@ -260,15 +255,28 @@
   "שפר",
   "שרשרת",
   "תדהר",
-  "תל אביב",
   "תנובות"
  ],
  "units": [
   {
    "located": true,
-   "settlement_name": "בת ים",
+   "settlement_name": "חולון",
    "source": "מפקדת מרחב",
    "unit_name": "איילון",
+   "unit_type": "region"
+  },
+  {
+   "located": true,
+   "settlement_name": "אילות",
+   "source": "מפקדת מרחב",
+   "unit_name": "אילת",
+   "unit_type": "region"
+  },
+  {
+   "located": true,
+   "settlement_name": "כפר יאסיף",
+   "source": "מפקדת מרחב",
+   "unit_name": "אשר",
    "unit_type": "region"
   },
   {
@@ -287,6 +295,13 @@
   },
   {
    "located": true,
+   "settlement_name": "כוכב מיכאל",
+   "source": "מפקדת מרחב",
+   "unit_name": "דוד",
+   "unit_type": "region"
+  },
+  {
+   "located": true,
    "settlement_name": "רמת גן",
    "source": "מפקדת מרחב",
    "unit_name": "דן",
@@ -294,21 +309,14 @@
   },
   {
    "located": true,
-   "settlement_name": "בית אורן",
-   "source": "מפקדת מרחב",
-   "unit_name": "חוף",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "בת עין",
+   "settlement_name": "נווה דניאל",
    "source": "מפקדת מרחב",
    "unit_name": "יהודה",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "תל אביב",
+   "settlement_name": "גבעתיים",
    "source": "מפקדת מרחב",
    "unit_name": "ירקון",
    "unit_type": "region"
@@ -322,6 +330,13 @@
   },
   {
    "located": true,
+   "settlement_name": "חיפה",
+   "source": "מפקדת מרחב",
+   "unit_name": "כרמל",
+   "unit_type": "region"
+  },
+  {
+   "located": true,
    "settlement_name": "ניצנים",
    "source": "מפקדת מרחב",
    "unit_name": "לכיש",
@@ -329,30 +344,16 @@
   },
   {
    "located": true,
-   "settlement_name": "בר גיורא",
+   "settlement_name": "אשתאול",
    "source": "מפקדת מרחב",
    "unit_name": "מג\"ב י-ם",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "אילות",
+   "settlement_name": "כפר קרע",
    "source": "מפקדת מרחב",
-   "unit_name": "מרחב אילת",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "אורה",
-   "source": "מפקדת מרחב",
-   "unit_name": "מרחב דוד",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "אחיעזר",
-   "source": "מפקדת מרחב",
-   "unit_name": "מרכז",
+   "unit_name": "מנשה",
    "unit_type": "region"
   },
   {
@@ -364,42 +365,42 @@
   },
   {
    "located": true,
-   "settlement_name": "כפר גדעון",
+   "settlement_name": "אור יהודה",
+   "source": "מפקדת מרחב",
+   "unit_name": "נתב\"ג",
+   "unit_type": "region"
+  },
+  {
+   "located": true,
+   "settlement_name": "דחי",
    "source": "מפקדת מרחב",
    "unit_name": "עמקים",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "אורה",
+   "settlement_name": "רמת רזיאל",
    "source": "מפקדת מרחב",
    "unit_name": "ציון",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "כדורי",
-   "source": "מפקדת מרחב",
-   "unit_name": "צפון",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "מעלה אדומים",
+   "settlement_name": "אורה",
    "source": "מפקדת מרחב",
    "unit_name": "קדם",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "מיתר",
+   "settlement_name": "עומר",
    "source": "מפקדת מרחב",
    "unit_name": "רותם",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "ניל\"י",
+   "settlement_name": "איתמר",
    "source": "מפקדת מרחב",
    "unit_name": "שומרון",
    "unit_type": "region"
@@ -413,7 +414,7 @@
   },
   {
    "located": true,
-   "settlement_name": "בית ברל",
+   "settlement_name": "כפר סבא",
    "source": "מפקדת מרחב",
    "unit_name": "שרון",
    "unit_type": "region"
@@ -427,14 +428,14 @@
   },
   {
    "located": true,
-   "settlement_name": "אורה",
+   "settlement_name": "כוכב מיכאל",
    "source": "הצעה",
    "unit_name": "מרחב דוד",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "אחיעזר",
+   "settlement_name": "אור יהודה",
    "source": "הצעה",
    "unit_name": "מרחב נתב\"ג",
    "unit_type": "station"
@@ -455,7 +456,7 @@
   },
   {
    "located": true,
-   "settlement_name": "ברקן",
+   "settlement_name": "אורה",
    "source": "הצעה",
    "unit_name": "תחנת אריאל",
    "unit_type": "station"
@@ -511,7 +512,7 @@
   },
   {
    "located": true,
-   "settlement_name": "עפרה",
+   "settlement_name": "פסגות",
    "source": "הצעה",
    "unit_name": "תחנת בנימין",
    "unit_type": "station"
@@ -525,9 +526,9 @@
   },
   {
    "located": true,
-   "settlement_name": "ג'סר א-זרקא",
+   "settlement_name": "עין איילה",
    "source": "הצעה",
-   "unit_name": "תחנת ג'סר א-זרקא",
+   "unit_name": "תחנת ג'סר א זרקא",
    "unit_type": "station"
   },
   {
@@ -546,7 +547,7 @@
   },
   {
    "located": true,
-   "settlement_name": "נווה זיו",
+   "settlement_name": "נהרייה",
    "source": "הצעה",
    "unit_name": "תחנת גליל מערבי",
    "unit_type": "station"
@@ -567,21 +568,21 @@
   },
   {
    "located": true,
-   "settlement_name": "גיתית",
+   "settlement_name": "יפית",
    "source": "הצעה",
    "unit_name": "תחנת הבקעה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "שמעה",
+   "settlement_name": "אשבול",
    "source": "הצעה",
    "unit_name": "תחנת העיירות",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "עין נקובא",
+   "settlement_name": "הראל",
    "source": "הצעה",
    "unit_name": "תחנת הראל",
    "unit_type": "station"
@@ -595,14 +596,14 @@
   },
   {
    "located": true,
-   "settlement_name": "ג'סר א-זרקא",
+   "settlement_name": "בת שלמה",
    "source": "הצעה",
    "unit_name": "תחנת זכרון יעקב",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "בת עין",
+   "settlement_name": "הר גילה",
    "source": "הצעה",
    "unit_name": "תחנת חברון",
    "unit_type": "station"
@@ -658,7 +659,7 @@
   },
   {
    "located": true,
-   "settlement_name": "מצפה אבי\"ב",
+   "settlement_name": "מורשת",
    "source": "הצעה",
    "unit_name": "תחנת טמרה",
    "unit_type": "station"
@@ -721,9 +722,9 @@
   },
   {
    "located": true,
-   "settlement_name": "תל אביב",
+   "settlement_name": "גבעתיים",
    "source": "הצעה",
-   "unit_name": "תחנת לב ת\"א",
+   "unit_name": "תחנת לב תל אביב",
    "unit_type": "station"
   },
   {
@@ -735,7 +736,7 @@
   },
   {
    "located": true,
-   "settlement_name": "לפידות",
+   "settlement_name": "ירכא",
    "source": "הצעה",
    "unit_name": "תחנת מג'דל כרום",
    "unit_type": "station"
@@ -749,14 +750,14 @@
   },
   {
    "located": true,
-   "settlement_name": "נוף איילון",
+   "settlement_name": "מבוא מודיעים",
    "source": "הצעה",
    "unit_name": "תחנת מודיעין",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "ניל\"י",
+   "settlement_name": "טבריה",
    "source": "הצעה",
    "unit_name": "תחנת מודיעין עילית",
    "unit_type": "station"
@@ -770,21 +771,21 @@
   },
   {
    "located": true,
-   "settlement_name": "בר גיורא",
+   "settlement_name": "אשתאול",
    "source": "הצעה",
    "unit_name": "תחנת מטה יהודה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "אור יהודה",
+   "settlement_name": "רמת גן",
    "source": "הצעה",
    "unit_name": "תחנת מסובים",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "מעלה אדומים",
+   "settlement_name": "גבע בנימין",
    "source": "הצעה",
    "unit_name": "תחנת מעלה אדומים",
    "unit_type": "station"
@@ -798,7 +799,7 @@
   },
   {
    "located": true,
-   "settlement_name": "קורנית",
+   "settlement_name": "צביה",
    "source": "הצעה",
    "unit_name": "תחנת משגב",
    "unit_type": "station"
@@ -847,14 +848,14 @@
   },
   {
    "located": true,
-   "settlement_name": "מעלה אדומים",
+   "settlement_name": "אורה",
    "source": "הצעה",
    "unit_name": "תחנת עוז",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "אום אל-פחם",
+   "settlement_name": "כפר קרע",
    "source": "הצעה",
    "unit_name": "תחנת עירון",
    "unit_type": "station"
@@ -875,7 +876,7 @@
   },
   {
    "located": true,
-   "settlement_name": "ראש צורים",
+   "settlement_name": "בת עין",
    "source": "הצעה",
    "unit_name": "תחנת עציון",
    "unit_type": "station"
@@ -889,7 +890,7 @@
   },
   {
    "located": true,
-   "settlement_name": "מיתר",
+   "settlement_name": "עומר",
    "source": "הצעה",
    "unit_name": "תחנת ערוער",
    "unit_type": "station"
@@ -973,7 +974,7 @@
   },
   {
    "located": true,
-   "settlement_name": "אבן יהודה",
+   "settlement_name": "באר יעקב",
    "source": "הצעה",
    "unit_name": "תחנת שדות",
    "unit_type": "station"
@@ -1001,7 +1002,7 @@
   },
   {
    "located": true,
-   "settlement_name": "מצפה אבי\"ב",
+   "settlement_name": "הרדוף",
    "source": "הצעה",
    "unit_name": "תחנת שפרעם",
    "unit_type": "station"
@@ -1015,13 +1016,6 @@
   },
   {
    "located": true,
-   "settlement_name": "תל אביב",
-   "source": "הצעה",
-   "unit_name": "תחנת ת\"א צפון",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "כדורי",
    "source": "הצעה",
    "unit_name": "תחנת תבור",
@@ -1029,9 +1023,16 @@
   },
   {
    "located": true,
-   "settlement_name": "תל אביב",
+   "settlement_name": "אזור",
    "source": "הצעה",
    "unit_name": "תחנת תל אביב דרום",
+   "unit_type": "station"
+  },
+  {
+   "located": true,
+   "settlement_name": "גבעתיים",
+   "source": "הצעה",
+   "unit_name": "תחנת תל אביב צפון",
    "unit_type": "station"
   }
  ]

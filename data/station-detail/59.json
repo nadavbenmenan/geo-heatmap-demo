@@ -1,13 +1,13 @@
 {
- "actual_positions": 100,
- "area": "חוף",
+ "actual_positions": 88,
+ "area": "כרמל",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 13,
+   "count": 10,
    "key": "patrol",
    "label": "סייר"
   },
@@ -16,7 +16,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 6,
+   "count": 4,
    "key": "detectives",
    "label": "בלש"
   },
@@ -25,7 +25,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 7,
+   "count": 6,
    "key": "investigators",
    "label": "חוקר"
   },
@@ -34,62 +34,62 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 5,
+   "count": 4,
    "key": "other",
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 29,
- "candidates_in_process": 62,
- "candidates_pct_jewish": 70.8,
- "candidates_pct_male": 62.1,
- "candidates_religion_coverage": 24,
- "color": "#EA580C",
+ "candidates_gender_coverage": 22,
+ "candidates_in_process": 47,
+ "candidates_pct_jewish": 73.3,
+ "candidates_pct_male": 59.1,
+ "candidates_religion_coverage": 15,
+ "color": "#EAB308",
  "coord_verified": false,
  "district": "חוף",
  "id": 59,
  "insights": [],
- "lat": 32.4407,
- "lng": 34.9401,
- "missing_positions": 27,
- "missing_to_delete": 2,
- "name": "תחנת חדרה",
+ "lat": 32.77088,
+ "lng": 35.03812,
+ "missing_positions": 17,
+ "missing_to_delete": 1,
+ "name": "תחנת נשר",
  "nearby_settlements": [],
- "pct_jewish": 85.7,
- "pct_male": 66.5,
- "required_positions": 127,
+ "pct_jewish": 88.3,
+ "pct_male": 58.8,
+ "required_positions": 105,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 11,
-   "pct_jewish": 85.5,
-   "pct_male": 66.1
+   "missing": 7,
+   "pct_jewish": 88.1,
+   "pct_male": 58.4
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 4,
-   "pct_jewish": 84.0,
-   "pct_male": 74.7
+   "missing": 3,
+   "pct_jewish": 86.6,
+   "pct_male": 67.0
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 6,
-   "pct_jewish": 82.9,
-   "pct_male": 76.7
+   "missing": 4,
+   "pct_jewish": 85.5,
+   "pct_male": 69.0
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 4,
-   "pct_jewish": 93.9,
-   "pct_male": 73.1
+   "missing": 2,
+   "pct_jewish": 96.5,
+   "pct_male": 65.4
   }
  ],
- "staffing_pct": 78.74,
- "status": "דחוף",
- "status_key": "urgent",
- "surplus_positions": 0
+ "staffing_pct": 83.81,
+ "status": "בינוני",
+ "status_key": "medium",
+ "surplus_positions": 3
 }

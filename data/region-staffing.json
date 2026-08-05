@@ -1,948 +1,991 @@
 [
  {
-  "actual_positions": 543,
+  "actual_positions": 526,
   "candidates_by_role": null,
-  "candidates_in_process": 128,
+  "candidates_in_process": 92,
   "color": "#EAB308",
   "district": "תל אביב",
-  "missing_positions": 79,
+  "missing_positions": 61,
   "region": "איילון",
-  "required_positions": 622,
+  "required_positions": 587,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 30,
-    "pct_jewish": 68.92,
-    "pct_male": 72.58
+    "missing": 24,
+    "pct_jewish": 80.25,
+    "pct_male": 61.38
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 13,
-    "pct_jewish": 62.73,
-    "pct_male": 67.81
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 16,
-    "pct_jewish": 70.18,
-    "pct_male": 72.75
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 12,
-    "pct_jewish": 67.23,
-    "pct_male": 71.72
-   }
-  ],
-  "staffing_pct": 87.3,
-  "stations_count": 5,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 493,
-  "candidates_by_role": null,
-  "candidates_in_process": 102,
-  "color": "#EAB308",
-  "district": "צפון",
-  "missing_positions": 55,
-  "region": "גליל",
-  "required_positions": 548,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 22,
-    "pct_jewish": 84.87,
-    "pct_male": 65.55
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 10,
-    "pct_jewish": 78.78,
-    "pct_male": 71.0
+    "missing": 11,
+    "pct_jewish": 84.53,
+    "pct_male": 59.59
    },
    {
     "key": "investigators",
     "label": "חוקר",
     "missing": 12,
-    "pct_jewish": 78.45,
-    "pct_male": 68.6
+    "pct_jewish": 84.02,
+    "pct_male": 58.99
    },
    {
     "key": "other",
     "label": "אחר",
     "missing": 7,
-    "pct_jewish": 80.77,
-    "pct_male": 72.85
+    "pct_jewish": 82.5,
+    "pct_male": 59.35
    }
   ],
-  "staffing_pct": 89.96,
+  "staffing_pct": 89.61,
   "stations_count": 5,
   "status": "בינוני"
  },
  {
-  "actual_positions": 124,
+  "actual_positions": 107,
   "candidates_by_role": null,
-  "candidates_in_process": 36,
-  "color": "#EAB308",
-  "district": "ש\"י",
-  "missing_positions": 22,
-  "region": "גלעד",
-  "required_positions": 146,
+  "candidates_in_process": 4,
+  "color": "#16A34A",
+  "district": "דרום",
+  "missing_positions": 0,
+  "region": "אילת",
+  "required_positions": 107,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 10,
-    "pct_jewish": 86.32,
-    "pct_male": 68.22
+    "missing": 0,
+    "pct_jewish": 68.0,
+    "pct_male": 59.9
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 4,
-    "pct_jewish": 87.74,
-    "pct_male": 68.32
+    "missing": 0,
+    "pct_jewish": 72.2,
+    "pct_male": 64.8
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 5,
-    "pct_jewish": 88.38,
-    "pct_male": 65.16
+    "missing": 0,
+    "pct_jewish": 66.1,
+    "pct_male": 65.5
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 3,
-    "pct_jewish": 84.7,
-    "pct_male": 65.18
+    "missing": 0,
+    "pct_jewish": 67.9,
+    "pct_male": 61.1
    }
   ],
-  "staffing_pct": 84.93,
-  "stations_count": 2,
-  "status": "בינוני"
+  "staffing_pct": 100.0,
+  "stations_count": 1,
+  "status": "תקין"
  },
  {
-  "actual_positions": 277,
+  "actual_positions": 396,
   "candidates_by_role": null,
-  "candidates_in_process": 71,
-  "color": "#EA580C",
-  "district": "תל אביב",
-  "missing_positions": 79,
-  "region": "דן",
-  "required_positions": 356,
+  "candidates_in_process": 109,
+  "color": "#EAB308",
+  "district": "חוף",
+  "missing_positions": 76,
+  "region": "אשר",
+  "required_positions": 472,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 30,
-    "pct_jewish": 84.91,
-    "pct_male": 64.87
+    "missing": 31,
+    "pct_jewish": 89.0,
+    "pct_male": 73.37
    },
    {
     "key": "detectives",
     "label": "בלש",
     "missing": 13,
-    "pct_jewish": 81.05,
-    "pct_male": 66.64
+    "pct_jewish": 80.88,
+    "pct_male": 72.49
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 17,
-    "pct_jewish": 74.71,
-    "pct_male": 69.66
+    "missing": 18,
+    "pct_jewish": 81.29,
+    "pct_male": 70.18
    },
    {
     "key": "other",
     "label": "אחר",
     "missing": 11,
-    "pct_jewish": 80.64,
-    "pct_male": 61.7
+    "pct_jewish": 83.72,
+    "pct_male": 73.41
    }
   ],
-  "staffing_pct": 77.81,
-  "stations_count": 3,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 1260,
-  "candidates_by_role": null,
-  "candidates_in_process": 308,
-  "color": "#EAB308",
-  "district": "חוף",
-  "missing_positions": 258,
-  "region": "חוף",
-  "required_positions": 1518,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 102,
-    "pct_jewish": 74.59,
-    "pct_male": 65.28
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 43,
-    "pct_jewish": 72.94,
-    "pct_male": 72.16
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 58,
-    "pct_jewish": 76.11,
-    "pct_male": 70.14
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 36,
-    "pct_jewish": 73.77,
-    "pct_male": 68.88
-   }
-  ],
-  "staffing_pct": 83.0,
-  "stations_count": 13,
+  "staffing_pct": 83.9,
+  "stations_count": 4,
   "status": "בינוני"
  },
  {
-  "actual_positions": 164,
+  "actual_positions": 547,
   "candidates_by_role": null,
-  "candidates_in_process": 47,
+  "candidates_in_process": 135,
   "color": "#EAB308",
-  "district": "ש\"י",
-  "missing_positions": 28,
-  "region": "יהודה",
-  "required_positions": 192,
+  "district": "צפון",
+  "missing_positions": 82,
+  "region": "גליל",
+  "required_positions": 629,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 11,
-    "pct_jewish": 79.32,
-    "pct_male": 64.52
+    "missing": 32,
+    "pct_jewish": 81.74,
+    "pct_male": 64.75
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 5,
-    "pct_jewish": 80.32,
-    "pct_male": 65.55
+    "missing": 14,
+    "pct_jewish": 79.19,
+    "pct_male": 67.74
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 18,
+    "pct_jewish": 80.69,
+    "pct_male": 67.02
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 12,
+    "pct_jewish": 77.44,
+    "pct_male": 65.84
+   }
+  ],
+  "staffing_pct": 86.96,
+  "stations_count": 5,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 217,
+  "candidates_by_role": null,
+  "candidates_in_process": 77,
+  "color": "#EAB308",
+  "district": "ש\"י",
+  "missing_positions": 42,
+  "region": "גלעד",
+  "required_positions": 259,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 17,
+    "pct_jewish": 72.49,
+    "pct_male": 72.75
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 7,
+    "pct_jewish": 67.46,
+    "pct_male": 70.76
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 9,
+    "pct_jewish": 69.97,
+    "pct_male": 70.62
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 6,
+    "pct_jewish": 71.88,
+    "pct_male": 65.88
+   }
+  ],
+  "staffing_pct": 83.78,
+  "stations_count": 2,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 130,
+  "candidates_by_role": null,
+  "candidates_in_process": 9,
+  "color": "#16A34A",
+  "district": "ירושלים",
+  "missing_positions": 6,
+  "region": "דוד",
+  "required_positions": 136,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 2,
+    "pct_jewish": 71.7,
+    "pct_male": 64.2
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 1,
+    "pct_jewish": 66.7,
+    "pct_male": 66.8
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 1,
+    "pct_jewish": 77.9,
+    "pct_male": 66.6
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 1,
+    "pct_jewish": 77.4,
+    "pct_male": 65.1
+   }
+  ],
+  "staffing_pct": 95.59,
+  "stations_count": 1,
+  "status": "תקין"
+ },
+ {
+  "actual_positions": 313,
+  "candidates_by_role": null,
+  "candidates_in_process": 74,
+  "color": "#EAB308",
+  "district": "תל אביב",
+  "missing_positions": 62,
+  "region": "דן",
+  "required_positions": 375,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 24,
+    "pct_jewish": 69.6,
+    "pct_male": 72.45
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 10,
+    "pct_jewish": 77.75,
+    "pct_male": 69.4
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 15,
+    "pct_jewish": 76.6,
+    "pct_male": 65.51
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 9,
+    "pct_jewish": 71.11,
+    "pct_male": 70.11
+   }
+  ],
+  "staffing_pct": 83.47,
+  "stations_count": 3,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 166,
+  "candidates_by_role": null,
+  "candidates_in_process": 28,
+  "color": "#EAB308",
+  "district": "ש\"י",
+  "missing_positions": 24,
+  "region": "יהודה",
+  "required_positions": 190,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 10,
+    "pct_jewish": 72.18,
+    "pct_male": 67.39
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 4,
+    "pct_jewish": 75.89,
+    "pct_male": 71.71
    },
    {
     "key": "investigators",
     "label": "חוקר",
     "missing": 6,
-    "pct_jewish": 83.78,
-    "pct_male": 66.78
+    "pct_jewish": 71.06,
+    "pct_male": 64.47
    },
    {
     "key": "other",
     "label": "אחר",
     "missing": 4,
-    "pct_jewish": 83.54,
-    "pct_male": 71.58
+    "pct_jewish": 74.51,
+    "pct_male": 82.46
    }
   ],
-  "staffing_pct": 85.42,
+  "staffing_pct": 87.37,
   "stations_count": 2,
   "status": "בינוני"
  },
  {
-  "actual_positions": 282,
+  "actual_positions": 292,
   "candidates_by_role": null,
-  "candidates_in_process": 62,
+  "candidates_in_process": 75,
   "color": "#EAB308",
   "district": "תל אביב",
-  "missing_positions": 57,
+  "missing_positions": 71,
   "region": "ירקון",
+  "required_positions": 363,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 27,
+    "pct_jewish": 79.57,
+    "pct_male": 71.23
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 11,
+    "pct_jewish": 80.61,
+    "pct_male": 74.9
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 15,
+    "pct_jewish": 78.15,
+    "pct_male": 72.84
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 11,
+    "pct_jewish": 76.53,
+    "pct_male": 68.24
+   }
+  ],
+  "staffing_pct": 80.44,
+  "stations_count": 3,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 554,
+  "candidates_by_role": null,
+  "candidates_in_process": 130,
+  "color": "#EAB308",
+  "district": "צפון",
+  "missing_positions": 96,
+  "region": "כנרת",
+  "required_positions": 650,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 39,
+    "pct_jewish": 62.99,
+    "pct_male": 69.54
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 16,
+    "pct_jewish": 71.67,
+    "pct_male": 70.08
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 22,
+    "pct_jewish": 71.71,
+    "pct_male": 68.06
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 14,
+    "pct_jewish": 68.28,
+    "pct_male": 70.73
+   }
+  ],
+  "staffing_pct": 85.23,
+  "stations_count": 6,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 312,
+  "candidates_by_role": null,
+  "candidates_in_process": 56,
+  "color": "#EAB308",
+  "district": "חוף",
+  "missing_positions": 39,
+  "region": "כרמל",
+  "required_positions": 351,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 15,
+    "pct_jewish": 71.32,
+    "pct_male": 59.59
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 7,
+    "pct_jewish": 74.31,
+    "pct_male": 66.36
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 9,
+    "pct_jewish": 71.63,
+    "pct_male": 62.9
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 5,
+    "pct_jewish": 68.88,
+    "pct_male": 67.8
+   }
+  ],
+  "staffing_pct": 88.89,
+  "stations_count": 3,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 240,
+  "candidates_by_role": null,
+  "candidates_in_process": 183,
+  "color": "#EA580C",
+  "district": "דרום",
+  "missing_positions": 100,
+  "region": "לכיש",
+  "required_positions": 340,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 38,
+    "pct_jewish": 73.47,
+    "pct_male": 67.54
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 17,
+    "pct_jewish": 77.61,
+    "pct_male": 67.99
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 23,
+    "pct_jewish": 78.12,
+    "pct_male": 71.56
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 14,
+    "pct_jewish": 75.24,
+    "pct_male": 71.27
+   }
+  ],
+  "staffing_pct": 70.59,
+  "stations_count": 4,
+  "status": "דחוף"
+ },
+ {
+  "actual_positions": 159,
+  "candidates_by_role": null,
+  "candidates_in_process": 10,
+  "color": "#16A34A",
+  "district": "מג\"ב",
+  "missing_positions": 13,
+  "region": "מג\"ב י-ם",
+  "required_positions": 172,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 6,
+    "pct_jewish": 90.9,
+    "pct_male": 61.5
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 2,
+    "pct_jewish": 90.9,
+    "pct_male": 53.2
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 3,
+    "pct_jewish": 92.9,
+    "pct_male": 58.9
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 2,
+    "pct_jewish": 99.0,
+    "pct_male": 56.4
+   }
+  ],
+  "staffing_pct": 92.44,
+  "stations_count": 1,
+  "status": "תקין"
+ },
+ {
+  "actual_positions": 388,
+  "candidates_by_role": null,
+  "candidates_in_process": 170,
+  "color": "#EA580C",
+  "district": "חוף",
+  "missing_positions": 111,
+  "region": "מנשה",
+  "required_positions": 499,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 45,
+    "pct_jewish": 70.62,
+    "pct_male": 65.78
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 18,
+    "pct_jewish": 70.61,
+    "pct_male": 71.78
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 25,
+    "pct_jewish": 68.75,
+    "pct_male": 65.19
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 17,
+    "pct_jewish": 69.95,
+    "pct_male": 71.19
+   }
+  ],
+  "staffing_pct": 77.76,
+  "stations_count": 6,
+  "status": "דחוף"
+ },
+ {
+  "actual_positions": 376,
+  "candidates_by_role": null,
+  "candidates_in_process": 94,
+  "color": "#EAB308",
+  "district": "דרום",
+  "missing_positions": 49,
+  "region": "נגב",
+  "required_positions": 425,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 19,
+    "pct_jewish": 71.09,
+    "pct_male": 67.18
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 9,
+    "pct_jewish": 74.13,
+    "pct_male": 68.48
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 12,
+    "pct_jewish": 76.99,
+    "pct_male": 70.2
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 7,
+    "pct_jewish": 74.15,
+    "pct_male": 71.42
+   }
+  ],
+  "staffing_pct": 88.47,
+  "stations_count": 5,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 179,
+  "candidates_by_role": null,
+  "candidates_in_process": 28,
+  "color": "#16A34A",
+  "district": "מרכז",
+  "missing_positions": 14,
+  "region": "נתב\"ג",
+  "required_positions": 193,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 6,
+    "pct_jewish": 85.5,
+    "pct_male": 71.2
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 2,
+    "pct_jewish": 91.1,
+    "pct_male": 65.7
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 3,
+    "pct_jewish": 80.5,
+    "pct_male": 67.1
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 2,
+    "pct_jewish": 87.4,
+    "pct_male": 57.9
+   }
+  ],
+  "staffing_pct": 92.75,
+  "stations_count": 1,
+  "status": "תקין"
+ },
+ {
+  "actual_positions": 620,
+  "candidates_by_role": null,
+  "candidates_in_process": 174,
+  "color": "#EAB308",
+  "district": "צפון",
+  "missing_positions": 142,
+  "region": "עמקים",
+  "required_positions": 762,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 55,
+    "pct_jewish": 86.32,
+    "pct_male": 62.99
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 25,
+    "pct_jewish": 83.19,
+    "pct_male": 67.05
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 33,
+    "pct_jewish": 82.32,
+    "pct_male": 67.54
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 21,
+    "pct_jewish": 84.93,
+    "pct_male": 61.72
+   }
+  ],
+  "staffing_pct": 81.36,
+  "stations_count": 7,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 312,
+  "candidates_by_role": null,
+  "candidates_in_process": 75,
+  "color": "#EAB308",
+  "district": "ירושלים",
+  "missing_positions": 55,
+  "region": "ציון",
+  "required_positions": 367,
+  "roles": [
+   {
+    "key": "patrol",
+    "label": "סייר",
+    "missing": 22,
+    "pct_jewish": 82.99,
+    "pct_male": 72.47
+   },
+   {
+    "key": "detectives",
+    "label": "בלש",
+    "missing": 10,
+    "pct_jewish": 80.53,
+    "pct_male": 78.97
+   },
+   {
+    "key": "investigators",
+    "label": "חוקר",
+    "missing": 12,
+    "pct_jewish": 78.57,
+    "pct_male": 80.46
+   },
+   {
+    "key": "other",
+    "label": "אחר",
+    "missing": 9,
+    "pct_jewish": 74.03,
+    "pct_male": 68.64
+   }
+  ],
+  "staffing_pct": 85.01,
+  "stations_count": 4,
+  "status": "בינוני"
+ },
+ {
+  "actual_positions": 279,
+  "candidates_by_role": null,
+  "candidates_in_process": 110,
+  "color": "#EAB308",
+  "district": "ירושלים",
+  "missing_positions": 60,
+  "region": "קדם",
   "required_positions": 339,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
     "missing": 22,
-    "pct_jewish": 74.5,
-    "pct_male": 55.93
+    "pct_jewish": 67.11,
+    "pct_male": 76.96
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 9,
-    "pct_jewish": 80.15,
-    "pct_male": 57.35
+    "missing": 11,
+    "pct_jewish": 70.55,
+    "pct_male": 75.3
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 12,
-    "pct_jewish": 83.46,
-    "pct_male": 59.49
+    "missing": 13,
+    "pct_jewish": 70.94,
+    "pct_male": 74.49
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 9,
-    "pct_jewish": 74.31,
-    "pct_male": 61.43
+    "missing": 8,
+    "pct_jewish": 70.81,
+    "pct_male": 67.47
    }
   ],
-  "staffing_pct": 83.19,
+  "staffing_pct": 82.3,
   "stations_count": 3,
   "status": "בינוני"
  },
  {
-  "actual_positions": 470,
+  "actual_positions": 367,
   "candidates_by_role": null,
-  "candidates_in_process": 201,
+  "candidates_in_process": 79,
   "color": "#EAB308",
-  "district": "צפון",
-  "missing_positions": 112,
-  "region": "כנרת",
-  "required_positions": 582,
+  "district": "דרום",
+  "missing_positions": 47,
+  "region": "רותם",
+  "required_positions": 414,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 43,
-    "pct_jewish": 76.81,
-    "pct_male": 64.36
+    "missing": 18,
+    "pct_jewish": 83.76,
+    "pct_male": 69.87
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 19,
-    "pct_jewish": 78.51,
-    "pct_male": 62.33
+    "missing": 9,
+    "pct_jewish": 85.05,
+    "pct_male": 71.39
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 24,
-    "pct_jewish": 75.36,
-    "pct_male": 62.54
+    "missing": 10,
+    "pct_jewish": 85.05,
+    "pct_male": 77.37
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 17,
-    "pct_jewish": 74.07,
-    "pct_male": 62.42
+    "missing": 8,
+    "pct_jewish": 80.96,
+    "pct_male": 75.89
    }
   ],
-  "staffing_pct": 80.76,
-  "stations_count": 6,
+  "staffing_pct": 88.65,
+  "stations_count": 5,
   "status": "בינוני"
  },
  {
-  "actual_positions": 401,
+  "actual_positions": 231,
   "candidates_by_role": null,
-  "candidates_in_process": 94,
-  "color": "#EAB308",
-  "district": "דרום",
-  "missing_positions": 48,
-  "region": "לכיש",
-  "required_positions": 449,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 19,
-    "pct_jewish": 80.15,
-    "pct_male": 69.83
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 9,
-    "pct_jewish": 82.34,
-    "pct_male": 74.95
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 11,
-    "pct_jewish": 80.26,
-    "pct_male": 66.57
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 5,
-    "pct_jewish": 82.75,
-    "pct_male": 67.5
-   }
-  ],
-  "staffing_pct": 89.31,
-  "stations_count": 4,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 97,
-  "candidates_by_role": null,
-  "candidates_in_process": 41,
-  "color": "#EA580C",
-  "district": "מג\"ב",
-  "missing_positions": 37,
-  "region": "מג\"ב י-ם",
-  "required_positions": 134,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 15,
-    "pct_jewish": 75.3,
-    "pct_male": 53.3
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 7,
-    "pct_jewish": 82.0,
-    "pct_male": 58.6
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 9,
-    "pct_jewish": 72.1,
-    "pct_male": 47.7
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 6,
-    "pct_jewish": 78.7,
-    "pct_male": 73.4
-   }
-  ],
-  "staffing_pct": 72.39,
-  "stations_count": 1,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 69,
-  "candidates_by_role": null,
-  "candidates_in_process": 44,
-  "color": "#EA580C",
-  "district": "דרום",
-  "missing_positions": 27,
-  "region": "מרחב אילת",
-  "required_positions": 96,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 11,
-    "pct_jewish": 65.3,
-    "pct_male": 89.1
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 5,
-    "pct_jewish": 79.8,
-    "pct_male": 81.3
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 7,
-    "pct_jewish": 80.7,
-    "pct_male": 79.8
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 4,
-    "pct_jewish": 72.9,
-    "pct_male": 89.3
-   }
-  ],
-  "staffing_pct": 71.88,
-  "stations_count": 1,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 97,
-  "candidates_by_role": null,
-  "candidates_in_process": 49,
-  "color": "#EA580C",
-  "district": "ירושלים",
-  "missing_positions": 36,
-  "region": "מרחב דוד",
-  "required_positions": 133,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 15,
-    "pct_jewish": 58.0,
-    "pct_male": 56.1
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 6,
-    "pct_jewish": 65.7,
-    "pct_male": 59.7
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 9,
-    "pct_jewish": 60.3,
-    "pct_male": 58.2
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 6,
-    "pct_jewish": 57.0,
-    "pct_male": 72.0
-   }
-  ],
-  "staffing_pct": 72.93,
-  "stations_count": 1,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 92,
-  "candidates_by_role": null,
-  "candidates_in_process": 16,
+  "candidates_in_process": 26,
   "color": "#16A34A",
-  "district": "מרכז",
-  "missing_positions": 8,
-  "region": "מרכז",
-  "required_positions": 100,
+  "district": "ש\"י",
+  "missing_positions": 14,
+  "region": "שומרון",
+  "required_positions": 245,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 3,
-    "pct_jewish": 79.0,
-    "pct_male": 67.6
+    "missing": 6,
+    "pct_jewish": 82.76,
+    "pct_male": 67.66
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 1,
-    "pct_jewish": 78.8,
-    "pct_male": 71.0
+    "missing": 3,
+    "pct_jewish": 83.9,
+    "pct_male": 68.43
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 2,
-    "pct_jewish": 66.7,
-    "pct_male": 88.9
+    "missing": 3,
+    "pct_jewish": 75.67,
+    "pct_male": 75.12
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 1,
-    "pct_jewish": 65.6,
-    "pct_male": 74.6
+    "missing": 2,
+    "pct_jewish": 75.17,
+    "pct_male": 63.93
    }
   ],
-  "staffing_pct": 92.0,
-  "stations_count": 1,
+  "staffing_pct": 94.29,
+  "stations_count": 3,
   "status": "תקין"
  },
  {
-  "actual_positions": 401,
+  "actual_positions": 474,
   "candidates_by_role": null,
-  "candidates_in_process": 56,
-  "color": "#EAB308",
-  "district": "דרום",
-  "missing_positions": 70,
-  "region": "נגב",
-  "required_positions": 471,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 28,
-    "pct_jewish": 82.16,
-    "pct_male": 71.2
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 12,
-    "pct_jewish": 84.06,
-    "pct_male": 68.11
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 15,
-    "pct_jewish": 80.41,
-    "pct_male": 73.08
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 10,
-    "pct_jewish": 77.83,
-    "pct_male": 67.32
-   }
-  ],
-  "staffing_pct": 85.14,
-  "stations_count": 5,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 481,
-  "candidates_by_role": null,
-  "candidates_in_process": 200,
+  "candidates_in_process": 209,
   "color": "#EA580C",
-  "district": "צפון",
-  "missing_positions": 144,
-  "region": "עמקים",
-  "required_positions": 625,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 57,
-    "pct_jewish": 83.99,
-    "pct_male": 68.33
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 25,
-    "pct_jewish": 79.68,
-    "pct_male": 68.38
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 31,
-    "pct_jewish": 83.37,
-    "pct_male": 67.5
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 22,
-    "pct_jewish": 81.96,
-    "pct_male": 68.53
-   }
-  ],
-  "staffing_pct": 76.96,
-  "stations_count": 6,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 337,
-  "candidates_by_role": null,
-  "candidates_in_process": 179,
-  "color": "#EAB308",
-  "district": "ירושלים",
-  "missing_positions": 79,
-  "region": "ציון",
-  "required_positions": 416,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 30,
-    "pct_jewish": 73.31,
-    "pct_male": 66.86
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 13,
-    "pct_jewish": 74.65,
-    "pct_male": 71.3
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 17,
-    "pct_jewish": 74.16,
-    "pct_male": 69.24
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 12,
-    "pct_jewish": 71.84,
-    "pct_male": 66.91
-   }
-  ],
-  "staffing_pct": 81.01,
-  "stations_count": 4,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 58,
-  "candidates_by_role": null,
-  "candidates_in_process": 37,
-  "color": "#DC2626",
-  "district": "צפון",
-  "missing_positions": 25,
-  "region": "צפון",
-  "required_positions": 83,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 10,
-    "pct_jewish": 57.9,
-    "pct_male": 67.0
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 4,
-    "pct_jewish": 66.7,
-    "pct_male": 60.5
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 5,
-    "pct_jewish": 68.1,
-    "pct_male": 67.5
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 4,
-    "pct_jewish": 64.8,
-    "pct_male": 48.5
-   }
-  ],
-  "staffing_pct": 69.88,
-  "stations_count": 1,
-  "status": "קריטי"
- },
- {
-  "actual_positions": 196,
-  "candidates_by_role": null,
-  "candidates_in_process": 64,
-  "color": "#EAB308",
-  "district": "ירושלים",
-  "missing_positions": 35,
-  "region": "קדם",
-  "required_positions": 231,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 14,
-    "pct_jewish": 74.94,
-    "pct_male": 68.04
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 6,
-    "pct_jewish": 80.84,
-    "pct_male": 69.62
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 8,
-    "pct_jewish": 80.72,
-    "pct_male": 64.7
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 5,
-    "pct_jewish": 78.16,
-    "pct_male": 68.86
-   }
-  ],
-  "staffing_pct": 84.85,
-  "stations_count": 3,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 493,
-  "candidates_by_role": null,
-  "candidates_in_process": 105,
-  "color": "#EAB308",
-  "district": "דרום",
-  "missing_positions": 86,
-  "region": "רותם",
-  "required_positions": 579,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 33,
-    "pct_jewish": 76.27,
-    "pct_male": 66.89
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 13,
-    "pct_jewish": 74.29,
-    "pct_male": 68.0
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 18,
-    "pct_jewish": 79.0,
-    "pct_male": 67.93
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 13,
-    "pct_jewish": 73.33,
-    "pct_male": 61.46
-   }
-  ],
-  "staffing_pct": 85.15,
-  "stations_count": 5,
-  "status": "בינוני"
- },
- {
-  "actual_positions": 308,
-  "candidates_by_role": null,
-  "candidates_in_process": 111,
-  "color": "#EA580C",
-  "district": "ש\"י",
-  "missing_positions": 84,
-  "region": "שומרון",
-  "required_positions": 392,
-  "roles": [
-   {
-    "key": "patrol",
-    "label": "סייר",
-    "missing": 33,
-    "pct_jewish": 77.56,
-    "pct_male": 66.04
-   },
-   {
-    "key": "detectives",
-    "label": "בלש",
-    "missing": 14,
-    "pct_jewish": 81.34,
-    "pct_male": 68.05
-   },
-   {
-    "key": "investigators",
-    "label": "חוקר",
-    "missing": 19,
-    "pct_jewish": 78.79,
-    "pct_male": 67.95
-   },
-   {
-    "key": "other",
-    "label": "אחר",
-    "missing": 12,
-    "pct_jewish": 81.62,
-    "pct_male": 62.0
-   }
-  ],
-  "staffing_pct": 78.57,
-  "stations_count": 3,
-  "status": "דחוף"
- },
- {
-  "actual_positions": 570,
-  "candidates_by_role": null,
-  "candidates_in_process": 159,
-  "color": "#EAB308",
   "district": "מרכז",
-  "missing_positions": 113,
+  "missing_positions": 134,
   "region": "שפלה",
-  "required_positions": 683,
+  "required_positions": 608,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 43,
-    "pct_jewish": 70.54,
-    "pct_male": 66.99
+    "missing": 52,
+    "pct_jewish": 74.88,
+    "pct_male": 67.22
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 19,
-    "pct_jewish": 74.55,
-    "pct_male": 65.22
+    "missing": 23,
+    "pct_jewish": 74.12,
+    "pct_male": 70.72
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 25,
-    "pct_jewish": 75.34,
-    "pct_male": 65.59
+    "missing": 30,
+    "pct_jewish": 80.15,
+    "pct_male": 70.79
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 16,
-    "pct_jewish": 75.21,
-    "pct_male": 64.64
+    "missing": 18,
+    "pct_jewish": 78.66,
+    "pct_male": 66.64
    }
   ],
-  "staffing_pct": 83.46,
+  "staffing_pct": 77.96,
   "stations_count": 6,
-  "status": "בינוני"
+  "status": "דחוף"
  },
  {
-  "actual_positions": 761,
+  "actual_positions": 742,
   "candidates_by_role": null,
-  "candidates_in_process": 295,
-  "color": "#EAB308",
+  "candidates_in_process": 239,
+  "color": "#EA580C",
   "district": "מרכז",
-  "missing_positions": 189,
+  "missing_positions": 187,
   "region": "שרון",
-  "required_positions": 950,
+  "required_positions": 929,
   "roles": [
    {
     "key": "patrol",
     "label": "סייר",
-    "missing": 71,
-    "pct_jewish": 70.38,
-    "pct_male": 64.64
+    "missing": 76,
+    "pct_jewish": 79.49,
+    "pct_male": 66.19
    },
    {
     "key": "detectives",
     "label": "בלש",
-    "missing": 32,
-    "pct_jewish": 77.12,
-    "pct_male": 70.92
+    "missing": 33,
+    "pct_jewish": 81.99,
+    "pct_male": 72.78
    },
    {
     "key": "investigators",
     "label": "חוקר",
-    "missing": 42,
-    "pct_jewish": 75.44,
-    "pct_male": 69.59
+    "missing": 43,
+    "pct_jewish": 77.45,
+    "pct_male": 68.78
    },
    {
     "key": "other",
     "label": "אחר",
-    "missing": 27,
-    "pct_jewish": 76.79,
-    "pct_male": 67.68
+    "missing": 29,
+    "pct_jewish": 84.11,
+    "pct_male": 70.56
    }
   ],
-  "staffing_pct": 80.11,
+  "staffing_pct": 79.87,
   "stations_count": 8,
-  "status": "בינוני"
+  "status": "דחוף"
  }
 ]

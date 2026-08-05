@@ -1,13 +1,13 @@
 {
- "actual_positions": 92,
- "area": "מרכז",
+ "actual_positions": 24,
+ "area": "רותם",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 7,
+   "count": 8,
    "key": "patrol",
    "label": "סייר"
   },
@@ -39,57 +39,57 @@
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 15,
- "candidates_in_process": 33,
- "candidates_pct_jewish": 66.7,
- "candidates_pct_male": 40.0,
+ "candidates_gender_coverage": 14,
+ "candidates_in_process": 36,
+ "candidates_pct_jewish": 60.0,
+ "candidates_pct_male": 57.1,
  "candidates_religion_coverage": 15,
- "color": "#16A34A",
+ "color": "#DC2626",
  "coord_verified": false,
- "district": "מרכז",
+ "district": "דרום",
  "id": 67,
  "insights": [],
- "lat": 32.0004,
- "lng": 34.8706,
- "missing_positions": 8,
+ "lat": 31.26122,
+ "lng": 35.21458,
+ "missing_positions": 11,
  "missing_to_delete": 1,
- "name": "מרחב נתב\"ג",
+ "name": "תחנת ערד",
  "nearby_settlements": [],
- "pct_jewish": 71.7,
- "pct_male": 75.8,
- "required_positions": 100,
+ "pct_jewish": 63.4,
+ "pct_male": 72.6,
+ "required_positions": 35,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 3,
-   "pct_jewish": 79.0,
-   "pct_male": 67.6
+   "missing": 4,
+   "pct_jewish": 70.7,
+   "pct_male": 64.4
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 1,
-   "pct_jewish": 78.8,
-   "pct_male": 71.0
+   "missing": 2,
+   "pct_jewish": 70.5,
+   "pct_male": 67.8
   },
   {
    "key": "investigators",
    "label": "חוקר",
    "missing": 2,
-   "pct_jewish": 66.7,
-   "pct_male": 88.9
+   "pct_jewish": 58.4,
+   "pct_male": 85.7
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 1,
-   "pct_jewish": 65.6,
-   "pct_male": 74.6
+   "missing": 2,
+   "pct_jewish": 57.3,
+   "pct_male": 71.4
   }
  ],
- "staffing_pct": 92.0,
- "status": "תקין",
- "status_key": "ok",
+ "staffing_pct": 68.57,
+ "status": "קריטי",
+ "status_key": "critical",
  "surplus_positions": 1
 }

@@ -1,13 +1,13 @@
 {
- "actual_positions": 68,
- "area": "שרון",
+ "actual_positions": 48,
+ "area": "לכיש",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 5,
+   "count": 4,
    "key": "patrol",
    "label": "סייר"
   },
@@ -25,7 +25,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 3,
+   "count": 2,
    "key": "investigators",
    "label": "חוקר"
   },
@@ -34,61 +34,61 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 2,
+   "count": 1,
    "key": "other",
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 11,
- "candidates_in_process": 25,
- "candidates_pct_jewish": 50.0,
- "candidates_pct_male": 54.5,
+ "candidates_gender_coverage": 6,
+ "candidates_in_process": 18,
+ "candidates_pct_jewish": 87.5,
+ "candidates_pct_male": 50.0,
  "candidates_religion_coverage": 8,
  "color": "#EAB308",
  "coord_verified": false,
- "district": "מרכז",
+ "district": "דרום",
  "id": 71,
  "insights": [],
- "lat": 32.1773,
- "lng": 34.9075,
- "missing_positions": 10,
+ "lat": 31.6094,
+ "lng": 34.7712,
+ "missing_positions": 8,
  "missing_to_delete": 0,
- "name": "תחנת כפר סבא",
+ "name": "תחנת קרית גת",
  "nearby_settlements": [],
- "pct_jewish": 75.7,
- "pct_male": 76.0,
- "required_positions": 78,
+ "pct_jewish": 71.7,
+ "pct_male": 63.4,
+ "required_positions": 56,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 4,
-   "pct_jewish": 73.2,
-   "pct_male": 68.8
+   "missing": 3,
+   "pct_jewish": 69.2,
+   "pct_male": 56.2
   },
   {
    "key": "detectives",
    "label": "בלש",
    "missing": 2,
-   "pct_jewish": 80.8,
-   "pct_male": 78.7
+   "pct_jewish": 76.8,
+   "pct_male": 66.1
   },
   {
    "key": "investigators",
    "label": "חוקר",
    "missing": 2,
-   "pct_jewish": 83.3,
-   "pct_male": 74.3
+   "pct_jewish": 79.3,
+   "pct_male": 61.7
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 2,
-   "pct_jewish": 77.1,
-   "pct_male": 78.0
+   "missing": 1,
+   "pct_jewish": 73.1,
+   "pct_male": 65.4
   }
  ],
- "staffing_pct": 87.18,
+ "staffing_pct": 85.71,
  "status": "בינוני",
  "status_key": "medium",
  "surplus_positions": 0

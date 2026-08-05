@@ -1,13 +1,13 @@
 {
- "actual_positions": 85,
- "area": "חוף",
+ "actual_positions": 100,
+ "area": "כנרת",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 5,
+   "count": 6,
    "key": "patrol",
    "label": "סייר"
   },
@@ -16,7 +16,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 2,
+   "count": 3,
    "key": "detectives",
    "label": "בלש"
   },
@@ -39,57 +39,57 @@
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 10,
- "candidates_in_process": 24,
- "candidates_pct_jewish": 62.5,
- "candidates_pct_male": 70.0,
- "candidates_religion_coverage": 8,
- "color": "#16A34A",
+ "candidates_gender_coverage": 13,
+ "candidates_in_process": 28,
+ "candidates_pct_jewish": 77.8,
+ "candidates_pct_male": 61.5,
+ "candidates_religion_coverage": 9,
+ "color": "#EAB308",
  "coord_verified": false,
- "district": "חוף",
+ "district": "צפון",
  "id": 54,
  "insights": [],
- "lat": 32.4166,
- "lng": 35.04,
- "missing_positions": 9,
+ "lat": 33.017,
+ "lng": 35.287,
+ "missing_positions": 13,
  "missing_to_delete": 0,
- "name": "תחנת באקה אלע'רביה",
+ "name": "תחנת מעלות תרשיחא",
  "nearby_settlements": [],
- "pct_jewish": 79.9,
- "pct_male": 74.0,
- "required_positions": 94,
+ "pct_jewish": 69.1,
+ "pct_male": 76.2,
+ "required_positions": 113,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 4,
-   "pct_jewish": 74.1,
-   "pct_male": 69.1
+   "missing": 6,
+   "pct_jewish": 63.3,
+   "pct_male": 71.3
   },
   {
    "key": "detectives",
    "label": "בלש",
    "missing": 2,
-   "pct_jewish": 79.7,
-   "pct_male": 78.7
+   "pct_jewish": 68.9,
+   "pct_male": 80.9
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 2,
-   "pct_jewish": 84.2,
-   "pct_male": 66.4
+   "missing": 3,
+   "pct_jewish": 73.4,
+   "pct_male": 68.6
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 1,
-   "pct_jewish": 74.1,
-   "pct_male": 79.3
+   "missing": 2,
+   "pct_jewish": 63.3,
+   "pct_male": 81.5
   }
  ],
- "staffing_pct": 90.43,
- "status": "תקין",
- "status_key": "ok",
- "surplus_positions": 2
+ "staffing_pct": 88.5,
+ "status": "בינוני",
+ "status_key": "medium",
+ "surplus_positions": 3
 }

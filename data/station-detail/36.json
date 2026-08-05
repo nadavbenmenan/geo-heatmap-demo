@@ -1,6 +1,6 @@
 {
- "actual_positions": 45,
- "area": "קדם",
+ "actual_positions": 76,
+ "area": "שפלה",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
@@ -40,56 +40,56 @@
   }
  ],
  "candidates_gender_coverage": 9,
- "candidates_in_process": 23,
- "candidates_pct_jewish": 57.1,
- "candidates_pct_male": 55.6,
- "candidates_religion_coverage": 7,
+ "candidates_in_process": 25,
+ "candidates_pct_jewish": 63.6,
+ "candidates_pct_male": 66.7,
+ "candidates_religion_coverage": 11,
  "color": "#EAB308",
  "coord_verified": false,
- "district": "ירושלים",
+ "district": "מרכז",
  "id": 36,
  "insights": [],
- "lat": 31.79,
- "lng": 35.24,
- "missing_positions": 6,
- "missing_to_delete": 0,
- "name": "תחנת שלם",
+ "lat": 31.87689,
+ "lng": 34.7383,
+ "missing_positions": 12,
+ "missing_to_delete": 1,
+ "name": "תחנת יבנה",
  "nearby_settlements": [],
- "pct_jewish": 79.1,
- "pct_male": 71.0,
- "required_positions": 51,
+ "pct_jewish": 77.5,
+ "pct_male": 70.3,
+ "required_positions": 88,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 3,
-   "pct_jewish": 83.2,
-   "pct_male": 65.7
+   "missing": 4,
+   "pct_jewish": 81.6,
+   "pct_male": 65.0
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 1,
-   "pct_jewish": 74.0,
-   "pct_male": 67.9
+   "missing": 2,
+   "pct_jewish": 72.4,
+   "pct_male": 67.2
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 1,
-   "pct_jewish": 86.9,
-   "pct_male": 58.9
+   "missing": 3,
+   "pct_jewish": 85.3,
+   "pct_male": 58.2
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 1,
-   "pct_jewish": 76.1,
-   "pct_male": 58.8
+   "missing": 2,
+   "pct_jewish": 74.5,
+   "pct_male": 58.1
   }
  ],
- "staffing_pct": 88.24,
+ "staffing_pct": 86.36,
  "status": "בינוני",
  "status_key": "medium",
- "surplus_positions": 0
+ "surplus_positions": 2
 }

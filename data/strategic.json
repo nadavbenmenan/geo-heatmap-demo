@@ -2,17 +2,17 @@
  "kpis": {
   "candidates_in_process": {
    "available": true,
-   "value": 4814
+   "value": 4377
   },
   "critical_gap": {
    "available": true,
-   "units": 5,
-   "value": 178
+   "units": 7,
+   "value": 177
   },
   "units_below": {
    "available": true,
    "threshold": 90,
-   "value": 67
+   "value": 68
   }
  },
  "n": 10,
@@ -30,480 +30,308 @@
    "expected_success_pct": 65.0,
    "id": 1,
    "location": "לשכת גיוס מרכז",
-   "station_name": "תחנת טבריה"
+   "station_name": "תחנת אשקלון"
   },
   {
    "date": "2026-08-23",
    "expected_success_pct": 58.0,
    "id": 2,
    "location": "מתחם עירוני",
-   "station_name": "תחנת טירת הכרמל"
+   "station_name": "תחנת עירון"
   }
  ],
  "targets": [
   {
-   "name": "בית ברל",
-   "score": 473.7,
-   "settlement_id": 30,
+   "name": "ניצנים",
+   "score": 508.8,
+   "settlement_id": 170,
    "station_count": 2,
    "stations": [
     {
      "color": "#DC2626",
-     "name": "תחנת טייבה",
+     "name": "תחנת אשקלון",
      "status": "קריטי",
-     "travel_min": 21
+     "travel_min": 20
     },
     {
      "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
+     "name": "תחנת אשדוד",
+     "status": "קריטי",
+     "travel_min": 21
+    }
+   ]
+  },
+  {
+   "name": "גמזו",
+   "score": 333.7,
+   "settlement_id": 65,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 18
+    },
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 19
+    }
+   ]
+  },
+  {
+   "name": "כפר בן נון",
+   "score": 333.7,
+   "settlement_id": 115,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 18
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 24
+    }
+   ]
+  },
+  {
+   "name": "כפר דניאל",
+   "score": 333.7,
+   "settlement_id": 119,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 18
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 19
+    }
+   ]
+  },
+  {
+   "name": "מבוא מודיעים",
+   "score": 333.7,
+   "settlement_id": 139,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 11
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 26
+    }
+   ]
+  },
+  {
+   "name": "נוף איילון",
+   "score": 333.7,
+   "settlement_id": 166,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 9
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
      "status": "קריטי",
      "travel_min": 27
     }
    ]
   },
   {
-   "name": "כוכב יאיר",
-   "score": 473.7,
-   "settlement_id": 113,
+   "name": "פתחיה",
+   "score": 333.7,
+   "settlement_id": 205,
    "station_count": 2,
    "stations": [
     {
      "color": "#DC2626",
-     "name": "תחנת טייבה",
+     "name": "תחנת רמלה",
      "status": "קריטי",
-     "travel_min": 16
+     "travel_min": 18
     },
     {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 24
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 29
     }
    ]
   },
   {
-   "name": "נירית",
-   "score": 473.7,
-   "settlement_id": 178,
+   "name": "שוהם",
+   "score": 333.7,
+   "settlement_id": 241,
    "station_count": 2,
    "stations": [
     {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 13
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 25
     },
     {
      "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 30
-    }
-   ]
-  },
-  {
-   "name": "שדה ורבורג",
-   "score": 473.7,
-   "settlement_id": 242,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 24
-    },
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
+     "name": "תחנת רמלה",
      "status": "קריטי",
      "travel_min": 25
     }
    ]
   },
   {
-   "name": "כפר כמא",
-   "score": 426.0,
+   "name": "שעלבים",
+   "score": 333.7,
+   "settlement_id": 249,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 9
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 28
+    }
+   ]
+  },
+  {
+   "name": "אור הנר",
+   "score": 317.3,
+   "settlement_id": 7,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשקלון",
+     "status": "קריטי",
+     "travel_min": 30
+    }
+   ]
+  },
+  {
+   "name": "בת הדר",
+   "score": 317.3,
+   "settlement_id": 45,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשקלון",
+     "status": "קריטי",
+     "travel_min": 8
+    }
+   ]
+  },
+  {
+   "name": "כוכב מיכאל",
+   "score": 317.3,
+   "settlement_id": 111,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשקלון",
+     "status": "קריטי",
+     "travel_min": 23
+    }
+   ]
+  },
+  {
+   "name": "כרמייה",
+   "score": 317.3,
+   "settlement_id": 131,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשקלון",
+     "status": "קריטי",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "כפר קרע",
+   "score": 315.6,
    "settlement_id": 129,
    "station_count": 2,
    "stations": [
     {
      "color": "#DC2626",
-     "name": "תחנת תבור",
+     "name": "תחנת עירון",
      "status": "קריטי",
-     "travel_min": 12
+     "travel_min": 11
     },
     {
      "color": "#DC2626",
-     "name": "תחנת טבריה",
+     "name": "תחנת ג'סר א זרקא",
      "status": "קריטי",
-     "travel_min": 27
-    }
-   ]
-  },
-  {
-   "name": "אלעד",
-   "score": 420.8,
-   "settlement_id": 18,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 21
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 25
-    }
-   ]
-  },
-  {
-   "name": "ברקת",
-   "score": 420.8,
-   "settlement_id": 45,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 25
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "מזור",
-   "score": 420.8,
-   "settlement_id": 149,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 18
-    },
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 18
-    }
-   ]
-  },
-  {
-   "name": "נחשונים",
-   "score": 420.8,
-   "settlement_id": 172,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 16
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "פתח תקווה",
-   "score": 420.8,
-   "settlement_id": 208,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 18
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 19
-    }
-   ]
-  },
-  {
-   "name": "ראש העין",
-   "score": 420.8,
-   "settlement_id": 225,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 10
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "כסלון",
-   "score": 305.1,
-   "settlement_id": 116,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 13
-    },
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
      "travel_min": 30
     }
    ]
   },
   {
-   "name": "עין נקובא",
-   "score": 305.1,
-   "settlement_id": 193,
+   "name": "אבן יהודה",
+   "score": 275.9,
+   "settlement_id": 2,
    "station_count": 2,
    "stations": [
     {
      "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 20
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 24
-    }
-   ]
-  },
-  {
-   "name": "עין ראפה",
-   "score": 305.1,
-   "settlement_id": 194,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 19
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 21
-    }
-   ]
-  },
-  {
-   "name": "צור הדסה",
-   "score": 305.1,
-   "settlement_id": 212,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 14
-    },
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "בלפוריה",
-   "score": 296.1,
-   "settlement_id": 36,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 15
-    },
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 24
-    }
-   ]
-  },
-  {
-   "name": "דחי",
-   "score": 296.1,
-   "settlement_id": 72,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 21
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "כפר גדעון",
-   "score": 296.1,
-   "settlement_id": 120,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 15
-    },
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "סולם",
-   "score": 296.1,
-   "settlement_id": 182,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 23
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "עין מאהל",
-   "score": 296.1,
-   "settlement_id": 192,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 16
-    },
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "עפולה",
-   "score": 296.1,
-   "settlement_id": 198,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
+     "name": "תחנת כפר סבא",
      "status": "דחוף",
      "travel_min": 22
     },
     {
      "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "ריינה",
-   "score": 296.1,
-   "settlement_id": 232,
-   "station_count": 2,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 18
-    },
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
+     "name": "תחנת טייבה",
      "status": "קריטי",
      "travel_min": 24
     }
    ]
   },
   {
-   "name": "ברוכין",
-   "score": 269.7,
-   "settlement_id": 42,
-   "station_count": 1,
+   "name": "בית ברל",
+   "score": 275.9,
+   "settlement_id": 29,
+   "station_count": 2,
    "stations": [
     {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 23
-    }
-   ]
-  },
-  {
-   "name": "ברקן",
-   "score": 269.7,
-   "settlement_id": 44,
-   "station_count": 1,
-   "stations": [
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 8
+    },
     {
      "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
+     "name": "תחנת טייבה",
      "status": "קריטי",
      "travel_min": 25
     }
@@ -511,1342 +339,1058 @@
   },
   {
    "name": "ג'לג'וליה",
-   "score": 269.7,
-   "settlement_id": 50,
-   "station_count": 1,
+   "score": 275.9,
+   "settlement_id": 49,
+   "station_count": 2,
    "stations": [
     {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
      "travel_min": 11
-    }
-   ]
-  },
-  {
-   "name": "גן חיים",
-   "score": 269.7,
-   "settlement_id": 68,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 26
-    }
-   ]
-  },
-  {
-   "name": "הוד השרון",
-   "score": 269.7,
-   "settlement_id": 74,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 22
-    }
-   ]
-  },
-  {
-   "name": "חורשים",
-   "score": 269.7,
-   "settlement_id": 88,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 9
-    }
-   ]
-  },
-  {
-   "name": "כפר ברא",
-   "score": 269.7,
-   "settlement_id": 119,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "כפר סבא",
-   "score": 269.7,
-   "settlement_id": 130,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 19
-    }
-   ]
-  },
-  {
-   "name": "נווה ירק",
-   "score": 269.7,
-   "settlement_id": 167,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 12
-    }
-   ]
-  },
-  {
-   "name": "עלי זהב",
-   "score": 269.7,
-   "settlement_id": 196,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 24
-    }
-   ]
-  },
-  {
-   "name": "עץ אפרים",
-   "score": 269.7,
-   "settlement_id": 200,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 12
-    }
-   ]
-  },
-  {
-   "name": "פדואל",
-   "score": 269.7,
-   "settlement_id": 202,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 23
-    }
-   ]
-  },
-  {
-   "name": "קרני שומרון",
-   "score": 269.7,
-   "settlement_id": 223,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת כפר קאסם",
-     "status": "קריטי",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "ארבל",
-   "score": 267.9,
-   "settlement_id": 22,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 14
-    }
-   ]
-  },
-  {
-   "name": "גבעת יואב",
-   "score": 267.9,
-   "settlement_id": 59,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 30
-    }
-   ]
-  },
-  {
-   "name": "חוקוק",
-   "score": 267.9,
-   "settlement_id": 87,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 21
-    }
-   ]
-  },
-  {
-   "name": "טבריה",
-   "score": 267.9,
-   "settlement_id": 94,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 3
-    }
-   ]
-  },
-  {
-   "name": "טפחות",
-   "score": 267.9,
-   "settlement_id": 97,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "כפר חיטים",
-   "score": 267.9,
-   "settlement_id": 125,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 9
-    }
-   ]
-  },
-  {
-   "name": "שער הגולן",
-   "score": 267.9,
-   "settlement_id": 255,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טבריה",
-     "status": "קריטי",
-     "travel_min": 27
-    }
-   ]
-  },
-  {
-   "name": "בית אורן",
-   "score": 226.5,
-   "settlement_id": 29,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 12
-    }
-   ]
-  },
-  {
-   "name": "גבע כרמל",
-   "score": 226.5,
-   "settlement_id": 55,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 22
-    }
-   ]
-  },
-  {
-   "name": "החותרים",
-   "score": 226.5,
-   "settlement_id": 75,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 3
-    }
-   ]
-  },
-  {
-   "name": "חיפה",
-   "score": 226.5,
-   "settlement_id": 89,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 15
-    }
-   ]
-  },
-  {
-   "name": "כפר הנוער הדתי",
-   "score": 226.5,
-   "settlement_id": 123,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 30
-    }
-   ]
-  },
-  {
-   "name": "מגדים",
-   "score": 226.5,
-   "settlement_id": 144,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 10
-    }
-   ]
-  },
-  {
-   "name": "עין כרמל",
-   "score": 226.5,
-   "settlement_id": 191,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 20
-    }
-   ]
-  },
-  {
-   "name": "עתלית",
-   "score": 226.5,
-   "settlement_id": 201,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טירת הכרמל",
-     "status": "קריטי",
-     "travel_min": 19
-    }
-   ]
-  },
-  {
-   "name": "אבן יהודה",
-   "score": 204.0,
-   "settlement_id": 2,
-   "station_count": 1,
-   "stations": [
+    },
     {
      "color": "#DC2626",
      "name": "תחנת טייבה",
      "status": "קריטי",
-     "travel_min": 25
+     "travel_min": 29
     }
    ]
   },
   {
    "name": "טירה",
-   "score": 204.0,
-   "settlement_id": 95,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "כפר הס",
-   "score": 204.0,
-   "settlement_id": 124,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "כפר חיים",
-   "score": 204.0,
-   "settlement_id": 126,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "כפר יעבץ",
-   "score": 204.0,
-   "settlement_id": 128,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 10
-    }
-   ]
-  },
-  {
-   "name": "כפר עבודה",
-   "score": 204.0,
-   "settlement_id": 131,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "עזריאל",
-   "score": 204.0,
-   "settlement_id": 185,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 11
-    }
-   ]
-  },
-  {
-   "name": "צור יצחק",
-   "score": 204.0,
-   "settlement_id": 213,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 10
-    }
-   ]
-  },
-  {
-   "name": "קלנסווה",
-   "score": 204.0,
-   "settlement_id": 217,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 7
-    }
-   ]
-  },
-  {
-   "name": "תנובות",
-   "score": 204.0,
-   "settlement_id": 261,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת טייבה",
-     "status": "קריטי",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "בית השיטה",
-   "score": 163.3,
-   "settlement_id": 31,
-   "station_count": 1,
+   "score": 275.9,
+   "settlement_id": 93,
+   "station_count": 2,
    "stations": [
     {
      "color": "#EA580C",
-     "name": "תחנת בית שאן",
-     "status": "דחוף",
-     "travel_min": 19
-    }
-   ]
-  },
-  {
-   "name": "זמרת",
-   "score": 163.3,
-   "settlement_id": 82,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת בית שאן",
-     "status": "דחוף",
-     "travel_min": 6
-    }
-   ]
-  },
-  {
-   "name": "ניר דוד (תל עמל)",
-   "score": 163.3,
-   "settlement_id": 175,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת בית שאן",
-     "status": "דחוף",
-     "travel_min": 10
-    }
-   ]
-  },
-  {
-   "name": "רחוב",
-   "score": 163.3,
-   "settlement_id": 229,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת בית שאן",
-     "status": "דחוף",
-     "travel_min": 11
-    }
-   ]
-  },
-  {
-   "name": "שדה אליהו",
-   "score": 163.3,
-   "settlement_id": 240,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת בית שאן",
-     "status": "דחוף",
-     "travel_min": 14
-    }
-   ]
-  },
-  {
-   "name": "בית קשת",
-   "score": 158.1,
-   "settlement_id": 35,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 12
-    }
-   ]
-  },
-  {
-   "name": "כדורי",
-   "score": 158.1,
-   "settlement_id": 112,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 6
-    }
-   ]
-  },
-  {
-   "name": "מצפה נטופה",
-   "score": 158.1,
-   "settlement_id": 160,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#DC2626",
-     "name": "תחנת תבור",
-     "status": "קריטי",
-     "travel_min": 26
-    }
-   ]
-  },
-  {
-   "name": "אשתאול",
-   "score": 155.7,
-   "settlement_id": 25,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
+     "name": "תחנת כפר סבא",
      "status": "דחוף",
      "travel_min": 15
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 17
     }
    ]
   },
   {
-   "name": "בית מאיר",
-   "score": 155.7,
-   "settlement_id": 34,
-   "station_count": 1,
+   "name": "כוכב יאיר",
+   "score": 275.9,
+   "settlement_id": 110,
+   "station_count": 2,
    "stations": [
     {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 16
-    }
-   ]
-  },
-  {
-   "name": "בר גיורא",
-   "score": 155.7,
-   "settlement_id": 41,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 7
-    }
-   ]
-  },
-  {
-   "name": "בת עין",
-   "score": 155.7,
-   "settlement_id": 48,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 20
-    }
-   ]
-  },
-  {
-   "name": "הראל",
-   "score": 155.7,
-   "settlement_id": 78,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 29
-    }
-   ]
-  },
-  {
-   "name": "זנוח",
-   "score": 155.7,
-   "settlement_id": 83,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
      "travel_min": 13
-    }
-   ]
-  },
-  {
-   "name": "מסילת ציון",
-   "score": 155.7,
-   "settlement_id": 153,
-   "station_count": 1,
-   "stations": [
+    },
     {
      "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 20
-    }
-   ]
-  },
-  {
-   "name": "נווה דניאל",
-   "score": 155.7,
-   "settlement_id": 165,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 20
-    }
-   ]
-  },
-  {
-   "name": "נחם",
-   "score": 155.7,
-   "settlement_id": 171,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 15
-    }
-   ]
-  },
-  {
-   "name": "ראש צורים",
-   "score": 155.7,
-   "settlement_id": 226,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 23
-    }
-   ]
-  },
-  {
-   "name": "רמת רזיאל",
-   "score": 155.7,
-   "settlement_id": 237,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "שדות מיכה",
-   "score": 155.7,
-   "settlement_id": 244,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מטה יהודה",
-     "status": "דחוף",
-     "travel_min": 26
-    }
-   ]
-  },
-  {
-   "name": "אור יהודה",
-   "score": 151.1,
-   "settlement_id": 8,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 6
-    }
-   ]
-  },
-  {
-   "name": "אזור",
-   "score": 151.1,
-   "settlement_id": 10,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "אחיעזר",
-   "score": 151.1,
-   "settlement_id": 12,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
+     "name": "תחנת כפר סבא",
      "status": "דחוף",
      "travel_min": 18
     }
    ]
   },
   {
-   "name": "בני ברק",
-   "score": 151.1,
-   "settlement_id": 37,
-   "station_count": 1,
+   "name": "כפר הס",
+   "score": 275.9,
+   "settlement_id": 121,
+   "station_count": 2,
    "stations": [
     {
      "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "גבעת שמואל",
-   "score": 151.1,
-   "settlement_id": 61,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 14
-    }
-   ]
-  },
-  {
-   "name": "גבעתיים",
-   "score": 151.1,
-   "settlement_id": 62,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 11
-    }
-   ]
-  },
-  {
-   "name": "טירת יהודה",
-   "score": 151.1,
-   "settlement_id": 96,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 26
-    }
-   ]
-  },
-  {
-   "name": "יהוד",
-   "score": 151.1,
-   "settlement_id": 100,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 13
-    }
-   ]
-  },
-  {
-   "name": "לוד",
-   "score": 151.1,
-   "settlement_id": 137,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "מגשימים",
-   "score": 151.1,
-   "settlement_id": 147,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 17
-    }
-   ]
-  },
-  {
-   "name": "סביון",
-   "score": 151.1,
-   "settlement_id": 181,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "קריית אונו",
-   "score": 151.1,
-   "settlement_id": 219,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "רמת גן",
-   "score": 151.1,
-   "settlement_id": 234,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 6
-    }
-   ]
-  },
-  {
-   "name": "רמת פנקס",
-   "score": 151.1,
-   "settlement_id": 236,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מסובים",
-     "status": "דחוף",
-     "travel_min": 8
-    }
-   ]
-  },
-  {
-   "name": "אורה",
-   "score": 149.4,
-   "settlement_id": 9,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 15
-    }
-   ]
-  },
-  {
-   "name": "גבע בנימין",
-   "score": 149.4,
-   "settlement_id": 54,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 23
-    }
-   ]
-  },
-  {
-   "name": "גבעון החדשה",
-   "score": 149.4,
-   "settlement_id": 56,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 21
-    }
-   ]
-  },
-  {
-   "name": "גבעת זאב",
-   "score": 149.4,
-   "settlement_id": 58,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 21
-    }
-   ]
-  },
-  {
-   "name": "הר גילה",
-   "score": 149.4,
-   "settlement_id": 77,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "מרחב דוד",
-     "status": "דחוף",
-     "travel_min": 16
-    }
-   ]
-  },
-  {
-   "name": "ביר אל-מכסור",
-   "score": 138.0,
-   "settlement_id": 28,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 26
-    }
-   ]
-  },
-  {
-   "name": "גבעת אלה",
-   "score": 138.0,
-   "settlement_id": 57,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 9
-    }
-   ]
-  },
-  {
-   "name": "גבת",
-   "score": 138.0,
-   "settlement_id": 63,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 7
-    }
-   ]
-  },
-  {
-   "name": "הסוללים",
-   "score": 138.0,
-   "settlement_id": 76,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
+     "name": "תחנת כפר סבא",
      "status": "דחוף",
      "travel_min": 19
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 20
     }
    ]
   },
   {
-   "name": "הרדוף",
-   "score": 138.0,
-   "settlement_id": 79,
-   "station_count": 1,
+   "name": "כפר יעבץ",
+   "score": 275.9,
+   "settlement_id": 125,
+   "station_count": 2,
    "stations": [
     {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "חבר",
-   "score": 138.0,
-   "settlement_id": 85,
-   "station_count": 1,
-   "stations": [
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 7
+    },
     {
      "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 30
-    }
-   ]
-  },
-  {
-   "name": "חנתון",
-   "score": 138.0,
-   "settlement_id": 92,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 28
-    }
-   ]
-  },
-  {
-   "name": "יפעת",
-   "score": 138.0,
-   "settlement_id": 108,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
-     "status": "דחוף",
-     "travel_min": 6
-    }
-   ]
-  },
-  {
-   "name": "ניר יפה",
-   "score": 138.0,
-   "settlement_id": 176,
-   "station_count": 1,
-   "stations": [
-    {
-     "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
+     "name": "תחנת כפר סבא",
      "status": "דחוף",
      "travel_min": 25
     }
    ]
   },
   {
-   "name": "שדה יעקב",
-   "score": 138.0,
-   "settlement_id": 243,
+   "name": "כפר עבודה",
+   "score": 275.9,
+   "settlement_id": 128,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 12
+    },
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 19
+    }
+   ]
+  },
+  {
+   "name": "נירית",
+   "score": 275.9,
+   "settlement_id": 174,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 21
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 30
+    }
+   ]
+  },
+  {
+   "name": "עזריאל",
+   "score": 275.9,
+   "settlement_id": 181,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 8
+    },
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 22
+    }
+   ]
+  },
+  {
+   "name": "צור יצחק",
+   "score": 275.9,
+   "settlement_id": 209,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 6
+    },
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 25
+    }
+   ]
+  },
+  {
+   "name": "קלנסווה",
+   "score": 275.9,
+   "settlement_id": 213,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 11
+    },
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 30
+    }
+   ]
+  },
+  {
+   "name": "שדה ורבורג",
+   "score": 275.9,
+   "settlement_id": 237,
+   "station_count": 2,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 8
+    },
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 24
+    }
+   ]
+  },
+  {
+   "name": "בני דרום",
+   "score": 191.5,
+   "settlement_id": 38,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשדוד",
+     "status": "קריטי",
+     "travel_min": 9
+    }
+   ]
+  },
+  {
+   "name": "גני טל",
+   "score": 191.5,
+   "settlement_id": 68,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשדוד",
+     "status": "קריטי",
+     "travel_min": 30
+    }
+   ]
+  },
+  {
+   "name": "כפר אביב",
+   "score": 191.5,
+   "settlement_id": 114,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשדוד",
+     "status": "קריטי",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "נווה מבטח",
+   "score": 191.5,
+   "settlement_id": 164,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת אשדוד",
+     "status": "קריטי",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "אחיעזר",
+   "score": 188.5,
+   "settlement_id": 12,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "באר יעקב",
+   "score": 188.5,
+   "settlement_id": 26,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 8
+    }
+   ]
+  },
+  {
+   "name": "גן שלמה",
+   "score": 188.5,
+   "settlement_id": 67,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 21
+    }
+   ]
+  },
+  {
+   "name": "יסודות",
+   "score": 188.5,
+   "settlement_id": 103,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 26
+    }
+   ]
+  },
+  {
+   "name": "ישרש",
+   "score": 188.5,
+   "settlement_id": 108,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 7
+    }
+   ]
+  },
+  {
+   "name": "לוד",
+   "score": 188.5,
+   "settlement_id": 134,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 8
+    }
+   ]
+  },
+  {
+   "name": "מזכרת בתיה",
+   "score": 188.5,
+   "settlement_id": 147,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 22
+    }
+   ]
+  },
+  {
+   "name": "נס ציונה",
+   "score": 188.5,
+   "settlement_id": 175,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 16
+    }
+   ]
+  },
+  {
+   "name": "ראשון לציון",
+   "score": 188.5,
+   "settlement_id": 223,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 13
+    }
+   ]
+  },
+  {
+   "name": "רחובות",
+   "score": 188.5,
+   "settlement_id": 226,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "רמלה",
+   "score": 188.5,
+   "settlement_id": 229,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת רמלה",
+     "status": "קריטי",
+     "travel_min": 3
+    }
+   ]
+  },
+  {
+   "name": "אום אל-פחם",
+   "score": 187.5,
+   "settlement_id": 6,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת עירון",
+     "status": "קריטי",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "גבעת עוז",
+   "score": 187.5,
+   "settlement_id": 58,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת עירון",
+     "status": "קריטי",
+     "travel_min": 28
+    }
+   ]
+  },
+  {
+   "name": "אשתאול",
+   "score": 145.2,
+   "settlement_id": 25,
    "station_count": 1,
    "stations": [
     {
      "color": "#EA580C",
-     "name": "תחנת מגדל העמק",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 29
+    }
+   ]
+  },
+  {
+   "name": "בית מאיר",
+   "score": 145.2,
+   "settlement_id": 33,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 26
+    }
+   ]
+  },
+  {
+   "name": "הראל",
+   "score": 145.2,
+   "settlement_id": 76,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 28
+    }
+   ]
+  },
+  {
+   "name": "מסילת ציון",
+   "score": 145.2,
+   "settlement_id": 150,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
      "status": "דחוף",
      "travel_min": 24
+    }
+   ]
+  },
+  {
+   "name": "ניל\"י",
+   "score": 145.2,
+   "settlement_id": 169,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מודיעין",
+     "status": "דחוף",
+     "travel_min": 19
+    }
+   ]
+  },
+  {
+   "name": "ארסוף",
+   "score": 142.6,
+   "settlement_id": 23,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 20
+    }
+   ]
+  },
+  {
+   "name": "בית יהושע",
+   "score": 142.6,
+   "settlement_id": 31,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 22
+    }
+   ]
+  },
+  {
+   "name": "גן חיים",
+   "score": 142.6,
+   "settlement_id": 66,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 3
+    }
+   ]
+  },
+  {
+   "name": "הוד השרון",
+   "score": 142.6,
+   "settlement_id": 72,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 6
+    }
+   ]
+  },
+  {
+   "name": "הרצליה",
+   "score": 142.6,
+   "settlement_id": 78,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "חורשים",
+   "score": 142.6,
+   "settlement_id": 86,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "כפר ברא",
+   "score": 142.6,
+   "settlement_id": 116,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "כפר סבא",
+   "score": 142.6,
+   "settlement_id": 127,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 4
+    }
+   ]
+  },
+  {
+   "name": "כפר שמריהו",
+   "score": 142.6,
+   "settlement_id": 130,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 18
+    }
+   ]
+  },
+  {
+   "name": "נווה ירק",
+   "score": 142.6,
+   "settlement_id": 163,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 10
+    }
+   ]
+  },
+  {
+   "name": "עץ אפרים",
+   "score": 142.6,
+   "settlement_id": 196,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 29
+    }
+   ]
+  },
+  {
+   "name": "ראש העין",
+   "score": 142.6,
+   "settlement_id": 221,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 26
+    }
+   ]
+  },
+  {
+   "name": "רמת השרון",
+   "score": 142.6,
+   "settlement_id": 231,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "רעננה",
+   "score": 142.6,
+   "settlement_id": 233,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 9
+    }
+   ]
+  },
+  {
+   "name": "שפיים",
+   "score": 142.6,
+   "settlement_id": 251,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת כפר סבא",
+     "status": "דחוף",
+     "travel_min": 22
+    }
+   ]
+  },
+  {
+   "name": "גבע בנימין",
+   "score": 136.0,
+   "settlement_id": 52,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מעלה אדומים",
+     "status": "דחוף",
+     "travel_min": 14
+    }
+   ]
+  },
+  {
+   "name": "גבעת זאב",
+   "score": 136.0,
+   "settlement_id": 56,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מעלה אדומים",
+     "status": "דחוף",
+     "travel_min": 21
+    }
+   ]
+  },
+  {
+   "name": "מעלה אדומים",
+   "score": 136.0,
+   "settlement_id": 152,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מעלה אדומים",
+     "status": "דחוף",
+     "travel_min": 16
+    }
+   ]
+  },
+  {
+   "name": "פסגות",
+   "score": 136.0,
+   "settlement_id": 201,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת מעלה אדומים",
+     "status": "דחוף",
+     "travel_min": 28
+    }
+   ]
+  },
+  {
+   "name": "קרני שומרון",
+   "score": 133.3,
+   "settlement_id": 219,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 30
+    }
+   ]
+  },
+  {
+   "name": "תנובות",
+   "score": 133.3,
+   "settlement_id": 255,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת טייבה",
+     "status": "קריטי",
+     "travel_min": 17
+    }
+   ]
+  },
+  {
+   "name": "בת שלמה",
+   "score": 128.1,
+   "settlement_id": 48,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת ג'סר א זרקא",
+     "status": "קריטי",
+     "travel_min": 24
+    }
+   ]
+  },
+  {
+   "name": "עין איילה",
+   "score": 128.1,
+   "settlement_id": 182,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#DC2626",
+     "name": "תחנת ג'סר א זרקא",
+     "status": "קריטי",
+     "travel_min": 23
+    }
+   ]
+  },
+  {
+   "name": "בת ים",
+   "score": 122.0,
+   "settlement_id": 46,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת לב תל אביב",
+     "status": "דחוף",
+     "travel_min": 13
+    }
+   ]
+  },
+  {
+   "name": "גבעתיים",
+   "score": 122.0,
+   "settlement_id": 60,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת לב תל אביב",
+     "status": "דחוף",
+     "travel_min": 9
+    }
+   ]
+  },
+  {
+   "name": "חולון",
+   "score": 122.0,
+   "settlement_id": 84,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת לב תל אביב",
+     "status": "דחוף",
+     "travel_min": 10
+    }
+   ]
+  },
+  {
+   "name": "רמת גן",
+   "score": 122.0,
+   "settlement_id": 230,
+   "station_count": 1,
+   "stations": [
+    {
+     "color": "#EA580C",
+     "name": "תחנת לב תל אביב",
+     "status": "דחוף",
+     "travel_min": 12
     }
    ]
   }
  ],
  "top": [
   {
-   "area": "שרון",
+   "area": "לכיש",
+   "color": "#DC2626",
+   "district": "דרום",
+   "gap_pct": 38.5,
+   "id": 8,
+   "missing_positions": 45,
+   "name": "תחנת אשקלון",
+   "positions_factor": 5.5,
+   "score": 317.3,
+   "staffing_pct": 61.54,
+   "status": "קריטי",
+   "status_key": "critical",
+   "weight": 1.5
+  },
+  {
+   "area": "לכיש",
+   "color": "#DC2626",
+   "district": "דרום",
+   "gap_pct": 31.9,
+   "id": 7,
+   "missing_positions": 30,
+   "name": "תחנת אשדוד",
+   "positions_factor": 4.0,
+   "score": 191.5,
+   "staffing_pct": 68.09,
+   "status": "קריטי",
+   "status_key": "critical",
+   "weight": 1.5
+  },
+  {
+   "area": "שפלה",
    "color": "#DC2626",
    "district": "מרכז",
-   "gap_pct": 31.5,
-   "id": 72,
-   "missing_positions": 47,
-   "name": "תחנת כפר קאסם",
-   "positions_factor": 5.7,
-   "score": 269.7,
-   "staffing_pct": 68.46,
+   "gap_pct": 32.2,
+   "id": 78,
+   "missing_positions": 29,
+   "name": "תחנת רמלה",
+   "positions_factor": 3.9,
+   "score": 188.5,
+   "staffing_pct": 67.78,
    "status": "קריטי",
    "status_key": "critical",
    "weight": 1.5
   },
   {
-   "area": "כנרת",
-   "color": "#DC2626",
-   "district": "צפון",
-   "gap_pct": 36.5,
-   "id": 14,
-   "missing_positions": 39,
-   "name": "תחנת טבריה",
-   "positions_factor": 4.9,
-   "score": 267.9,
-   "staffing_pct": 63.55,
-   "status": "קריטי",
-   "status_key": "critical",
-   "weight": 1.5
-  },
-  {
-   "area": "חוף",
+   "area": "מנשה",
    "color": "#DC2626",
    "district": "חוף",
-   "gap_pct": 35.1,
-   "id": 61,
-   "missing_positions": 33,
-   "name": "תחנת טירת הכרמל",
-   "positions_factor": 4.3,
-   "score": 226.5,
-   "staffing_pct": 64.89,
+   "gap_pct": 35.7,
+   "id": 63,
+   "missing_positions": 25,
+   "name": "תחנת עירון",
+   "positions_factor": 3.5,
+   "score": 187.5,
+   "staffing_pct": 64.29,
    "status": "קריטי",
    "status_key": "critical",
    "weight": 1.5
+  },
+  {
+   "area": "שפלה",
+   "color": "#EA580C",
+   "district": "מרכז",
+   "gap_pct": 29.5,
+   "id": 48,
+   "missing_positions": 31,
+   "name": "תחנת מודיעין",
+   "positions_factor": 4.1,
+   "score": 145.2,
+   "staffing_pct": 70.48,
+   "status": "דחוף",
+   "status_key": "urgent",
+   "weight": 1.2
+  },
+  {
+   "area": "שרון",
+   "color": "#EA580C",
+   "district": "מרכז",
+   "gap_pct": 22.0,
+   "id": 40,
+   "missing_positions": 44,
+   "name": "תחנת כפר סבא",
+   "positions_factor": 5.4,
+   "score": 142.6,
+   "staffing_pct": 78.0,
+   "status": "דחוף",
+   "status_key": "urgent",
+   "weight": 1.2
+  },
+  {
+   "area": "גלעד",
+   "color": "#EA580C",
+   "district": "ש\"י",
+   "gap_pct": 25.2,
+   "id": 53,
+   "missing_positions": 35,
+   "name": "תחנת מעלה אדומים",
+   "positions_factor": 4.5,
+   "score": 136.0,
+   "staffing_pct": 74.82,
+   "status": "דחוף",
+   "status_key": "urgent",
+   "weight": 1.2
   },
   {
    "area": "שרון",
    "color": "#DC2626",
    "district": "מרכז",
-   "gap_pct": 30.9,
-   "id": 68,
-   "missing_positions": 34,
+   "gap_pct": 30.7,
+   "id": 32,
+   "missing_positions": 19,
    "name": "תחנת טייבה",
-   "positions_factor": 4.4,
-   "score": 204.0,
-   "staffing_pct": 69.09,
+   "positions_factor": 2.9,
+   "score": 133.3,
+   "staffing_pct": 69.35,
    "status": "קריטי",
    "status_key": "critical",
    "weight": 1.5
   },
   {
-   "area": "עמקים",
-   "color": "#EA580C",
-   "district": "צפון",
-   "gap_pct": 27.2,
-   "id": 12,
-   "missing_positions": 40,
-   "name": "תחנת בית שאן",
-   "positions_factor": 5.0,
-   "score": 163.3,
-   "staffing_pct": 72.79,
-   "status": "דחוף",
-   "status_key": "urgent",
-   "weight": 1.2
-  },
-  {
-   "area": "צפון",
+   "area": "מנשה",
    "color": "#DC2626",
-   "district": "צפון",
-   "gap_pct": 30.1,
-   "id": 29,
-   "missing_positions": 25,
-   "name": "תחנת תבור",
-   "positions_factor": 3.5,
-   "score": 158.1,
-   "staffing_pct": 69.88,
+   "district": "חוף",
+   "gap_pct": 30.5,
+   "id": 16,
+   "missing_positions": 18,
+   "name": "תחנת ג'סר א זרקא",
+   "positions_factor": 2.8,
+   "score": 128.1,
+   "staffing_pct": 69.49,
    "status": "קריטי",
    "status_key": "critical",
    "weight": 1.5
   },
   {
-   "area": "מג\"ב י-ם",
-   "color": "#EA580C",
-   "district": "מג\"ב",
-   "gap_pct": 27.6,
-   "id": 66,
-   "missing_positions": 37,
-   "name": "תחנת מטה יהודה",
-   "positions_factor": 4.7,
-   "score": 155.7,
-   "staffing_pct": 72.39,
-   "status": "דחוף",
-   "status_key": "urgent",
-   "weight": 1.2
-  },
-  {
-   "area": "דן",
+   "area": "ירקון",
    "color": "#EA580C",
    "district": "תל אביב",
-   "gap_pct": 23.8,
-   "id": 8,
-   "missing_positions": 43,
-   "name": "תחנת מסובים",
-   "positions_factor": 5.3,
-   "score": 151.1,
-   "staffing_pct": 76.24,
-   "status": "דחוף",
-   "status_key": "urgent",
-   "weight": 1.2
-  },
-  {
-   "area": "מרחב דוד",
-   "color": "#EA580C",
-   "district": "ירושלים",
-   "gap_pct": 27.1,
-   "id": 30,
-   "missing_positions": 36,
-   "name": "מרחב דוד",
-   "positions_factor": 4.6,
-   "score": 149.4,
-   "staffing_pct": 72.93,
-   "status": "דחוף",
-   "status_key": "urgent",
-   "weight": 1.2
-  },
-  {
-   "area": "עמקים",
-   "color": "#EA580C",
-   "district": "צפון",
-   "gap_pct": 25.5,
-   "id": 19,
-   "missing_positions": 35,
-   "name": "תחנת מגדל העמק",
-   "positions_factor": 4.5,
-   "score": 138.0,
-   "staffing_pct": 74.45,
+   "gap_pct": 20.7,
+   "id": 44,
+   "missing_positions": 39,
+   "name": "תחנת לב תל אביב",
+   "positions_factor": 4.9,
+   "score": 122.0,
+   "staffing_pct": 79.26,
    "status": "דחוף",
    "status_key": "urgent",
    "weight": 1.2

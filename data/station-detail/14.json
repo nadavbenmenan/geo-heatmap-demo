@@ -1,13 +1,13 @@
 {
- "actual_positions": 68,
- "area": "כנרת",
+ "actual_positions": 116,
+ "area": "שומרון",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 42,
+   "count": 5,
    "key": "patrol",
    "label": "סייר"
   },
@@ -16,7 +16,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 18,
+   "count": 2,
    "key": "detectives",
    "label": "בלש"
   },
@@ -25,7 +25,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 24,
+   "count": 3,
    "key": "investigators",
    "label": "חוקר"
   },
@@ -34,69 +34,62 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 16,
+   "count": 2,
    "key": "other",
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 69,
- "candidates_in_process": 199,
- "candidates_pct_jewish": 51.5,
- "candidates_pct_male": 66.7,
- "candidates_religion_coverage": 66,
- "color": "#DC2626",
+ "candidates_gender_coverage": 8,
+ "candidates_in_process": 25,
+ "candidates_pct_jewish": 88.9,
+ "candidates_pct_male": 50.0,
+ "candidates_religion_coverage": 9,
+ "color": "#16A34A",
  "coord_verified": false,
- "district": "צפון",
+ "district": "ש\"י",
  "id": 14,
- "insights": [
-  {
-   "created_at": "2026-08-02T14:42:34",
-   "done": 0,
-   "id": 1,
-   "text": "ריכוז חוסר בסיור — לשקול יום גיוס ממוקד באזור."
-  }
- ],
- "lat": 32.7922,
- "lng": 35.5312,
- "missing_positions": 39,
- "missing_to_delete": 5,
- "name": "תחנת טבריה",
+ "insights": [],
+ "lat": 31.87,
+ "lng": 35.24,
+ "missing_positions": 6,
+ "missing_to_delete": 0,
+ "name": "תחנת בנימין",
  "nearby_settlements": [],
- "pct_jewish": 60.3,
- "pct_male": 60.8,
- "required_positions": 107,
+ "pct_jewish": 78.6,
+ "pct_male": 69.7,
+ "required_positions": 122,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 14,
-   "pct_jewish": 60.6,
-   "pct_male": 54.9
+   "missing": 3,
+   "pct_jewish": 78.9,
+   "pct_male": 63.8
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 6,
-   "pct_jewish": 67.0,
-   "pct_male": 52.8
+   "missing": 1,
+   "pct_jewish": 85.3,
+   "pct_male": 61.7
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 8,
-   "pct_jewish": 53.0,
-   "pct_male": 64.4
+   "missing": 1,
+   "pct_jewish": 71.3,
+   "pct_male": 73.3
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 6,
-   "pct_jewish": 46.6,
-   "pct_male": 47.7
+   "missing": 1,
+   "pct_jewish": 64.9,
+   "pct_male": 56.6
   }
  ],
- "staffing_pct": 63.55,
- "status": "קריטי",
- "status_key": "critical",
+ "staffing_pct": 95.08,
+ "status": "תקין",
+ "status_key": "ok",
  "surplus_positions": 3
 }

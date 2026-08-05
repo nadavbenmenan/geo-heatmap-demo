@@ -1,11 +1,11 @@
 {
  "db": "(demo)",
- "focus_settlements": 34,
+ "focus_settlements": 33,
  "large_settlement_population": 20000,
  "nearby_minutes": 30,
  "ok": true,
- "population_known": 261,
- "relations": 1526,
- "settlements": 261,
+ "population_known": 255,
+ "relations": 1493,
+ "settlements": 255,
  "stations": 88
 }

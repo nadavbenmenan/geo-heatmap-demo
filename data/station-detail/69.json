@@ -1,5 +1,5 @@
 {
- "actual_positions": 87,
+ "actual_positions": 122,
  "area": "שרון",
  "candidates_by_role": [
   {
@@ -16,7 +16,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 8,
+   "count": 9,
    "key": "detectives",
    "label": "בלש"
   },
@@ -25,7 +25,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 11,
+   "count": 12,
    "key": "investigators",
    "label": "חוקר"
   },
@@ -39,56 +39,56 @@
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 28,
- "candidates_in_process": 94,
- "candidates_pct_jewish": 75.7,
- "candidates_pct_male": 46.4,
- "candidates_religion_coverage": 37,
+ "candidates_gender_coverage": 40,
+ "candidates_in_process": 97,
+ "candidates_pct_jewish": 82.4,
+ "candidates_pct_male": 52.5,
+ "candidates_religion_coverage": 34,
  "color": "#EA580C",
  "coord_verified": false,
  "district": "מרכז",
  "id": 69,
  "insights": [],
- "lat": 32.2347,
- "lng": 34.9545,
- "missing_positions": 28,
+ "lat": 32.08776,
+ "lng": 34.886,
+ "missing_positions": 33,
  "missing_to_delete": 2,
- "name": "תחנת טירה",
+ "name": "תחנת פתח תקוה",
  "nearby_settlements": [],
- "pct_jewish": 79.3,
- "pct_male": 60.3,
- "required_positions": 115,
+ "pct_jewish": 59.2,
+ "pct_male": 68.8,
+ "required_positions": 155,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 11,
-   "pct_jewish": 76.4,
-   "pct_male": 54.2
+   "missing": 13,
+   "pct_jewish": 56.3,
+   "pct_male": 62.7
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 5,
-   "pct_jewish": 79.8,
-   "pct_male": 76.6
+   "missing": 6,
+   "pct_jewish": 59.7,
+   "pct_male": 85.1
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 6,
-   "pct_jewish": 78.6,
-   "pct_male": 58.8
+   "missing": 7,
+   "pct_jewish": 58.5,
+   "pct_male": 67.3
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 4,
-   "pct_jewish": 89.2,
-   "pct_male": 65.1
+   "missing": 5,
+   "pct_jewish": 69.1,
+   "pct_male": 73.6
   }
  ],
- "staffing_pct": 75.65,
+ "staffing_pct": 78.71,
  "status": "דחוף",
  "status_key": "urgent",
  "surplus_positions": 0

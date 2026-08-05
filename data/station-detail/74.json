@@ -1,13 +1,13 @@
 {
- "actual_positions": 87,
- "area": "שפלה",
+ "actual_positions": 139,
+ "area": "שרון",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 12,
+   "count": 11,
    "key": "patrol",
    "label": "סייר"
   },
@@ -25,7 +25,7 @@
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 7,
+   "count": 6,
    "key": "investigators",
    "label": "חוקר"
   },
@@ -39,57 +39,57 @@
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 26,
- "candidates_in_process": 56,
- "candidates_pct_jewish": 84.6,
- "candidates_pct_male": 53.8,
- "candidates_religion_coverage": 26,
+ "candidates_gender_coverage": 25,
+ "candidates_in_process": 53,
+ "candidates_pct_jewish": 84.0,
+ "candidates_pct_male": 60.0,
+ "candidates_religion_coverage": 25,
  "color": "#EA580C",
  "coord_verified": false,
  "district": "מרכז",
  "id": 74,
  "insights": [],
- "lat": 31.8986,
- "lng": 35.0069,
- "missing_positions": 22,
+ "lat": 32.09529,
+ "lng": 34.95332,
+ "missing_positions": 36,
  "missing_to_delete": 0,
- "name": "תחנת מודיעין",
+ "name": "תחנת ראש העין",
  "nearby_settlements": [],
- "pct_jewish": 80.9,
- "pct_male": 69.0,
- "required_positions": 109,
+ "pct_jewish": 95.8,
+ "pct_male": 70.3,
+ "required_positions": 175,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
-   "missing": 9,
-   "pct_jewish": 83.7,
-   "pct_male": 62.3
+   "missing": 15,
+   "pct_jewish": 98.6,
+   "pct_male": 63.6
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 4,
-   "pct_jewish": 88.2,
-   "pct_male": 71.8
+   "missing": 6,
+   "pct_jewish": 99.0,
+   "pct_male": 73.1
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 5,
-   "pct_jewish": 69.9,
-   "pct_male": 75.8
+   "missing": 9,
+   "pct_jewish": 84.8,
+   "pct_male": 77.1
   },
   {
    "key": "other",
    "label": "אחר",
-   "missing": 4,
-   "pct_jewish": 82.1,
-   "pct_male": 70.5
+   "missing": 6,
+   "pct_jewish": 97.0,
+   "pct_male": 71.8
   }
  ],
- "staffing_pct": 79.82,
+ "staffing_pct": 79.43,
  "status": "דחוף",
  "status_key": "urgent",
- "surplus_positions": 1
+ "surplus_positions": 0
 }

@@ -4,7 +4,7 @@
   "key": "medium",
   "note": null,
   "status": "בינוני",
-  "value": 82.7,
+  "value": 84.2,
   "weighted": true
  },
  "by_role": [
@@ -14,9 +14,9 @@
    "candidates_pct_male": null,
    "key": "patrol",
    "label": "סייר",
-   "missing": 652,
-   "pct_jewish": 75.97,
-   "pct_male": 66.45
+   "missing": 586,
+   "pct_jewish": 77.29,
+   "pct_male": 67.37
   },
   {
    "candidates": null,
@@ -24,9 +24,9 @@
    "candidates_pct_male": null,
    "key": "detectives",
    "label": "בלש",
-   "missing": 282,
-   "pct_jewish": 76.59,
-   "pct_male": 68.54
+   "missing": 256,
+   "pct_jewish": 78.44,
+   "pct_male": 69.37
   },
   {
    "candidates": null,
@@ -34,9 +34,9 @@
    "candidates_pct_male": null,
    "key": "investigators",
    "label": "חוקר",
-   "missing": 368,
-   "pct_jewish": 77.06,
-   "pct_male": 68.15
+   "missing": 335,
+   "pct_jewish": 77.78,
+   "pct_male": 68.69
   },
   {
    "candidates": null,
@@ -44,15 +44,15 @@
    "candidates_pct_male": null,
    "key": "other",
    "label": "אחר",
-   "missing": 242,
-   "pct_jewish": 75.91,
-   "pct_male": 67.23
+   "missing": 217,
+   "pct_jewish": 77.58,
+   "pct_male": 67.82
   }
  ],
- "candidates_gender_coverage": 2009,
- "candidates_pct_jewish": 69.8,
- "candidates_pct_male": 58.7,
- "candidates_religion_coverage": 1868,
+ "candidates_gender_coverage": 1808,
+ "candidates_pct_jewish": 72.8,
+ "candidates_pct_male": 58.8,
+ "candidates_religion_coverage": 1722,
  "candidates_source": "national",
  "filters": {
   "district": null,
@@ -64,72 +64,72 @@
  "manpower_gap": {
   "available": true,
   "snapshots": 2,
-  "total_missing": 1671,
+  "total_missing": 1485,
   "trend": 1.4
  },
- "pct_jewish": 76.59,
- "pct_male": 67.99,
+ "pct_jewish": 77.74,
+ "pct_male": 68.74,
  "positions": {
-  "actual": 7974,
+  "actual": 7927,
   "available": true,
-  "required": 9645,
+  "required": 9412,
   "stations_count": 88,
   "status_counts": {
-   "בינוני": 35,
-   "דחוף": 27,
-   "קריטי": 5,
-   "תקין": 21
+   "בינוני": 39,
+   "דחוף": 22,
+   "קריטי": 7,
+   "תקין": 20
   }
  },
  "top5": [
   {
-   "area": "כנרת",
+   "area": "לכיש",
    "color": "#DC2626",
-   "district": "צפון",
+   "district": "דרום",
    "family_missing": null,
-   "missing_positions": 39,
-   "name": "תחנת טבריה",
-   "staffing_pct": 63.55,
+   "missing_positions": 45,
+   "name": "תחנת אשקלון",
+   "staffing_pct": 61.54,
    "status": "קריטי"
   },
   {
-   "area": "חוף",
+   "area": "מנשה",
    "color": "#DC2626",
    "district": "חוף",
    "family_missing": null,
-   "missing_positions": 33,
-   "name": "תחנת טירת הכרמל",
-   "staffing_pct": 64.89,
-   "status": "קריטי"
-  },
-  {
-   "area": "שרון",
-   "color": "#DC2626",
-   "district": "מרכז",
-   "family_missing": null,
-   "missing_positions": 47,
-   "name": "תחנת כפר קאסם",
-   "staffing_pct": 68.46,
-   "status": "קריטי"
-  },
-  {
-   "area": "שרון",
-   "color": "#DC2626",
-   "district": "מרכז",
-   "family_missing": null,
-   "missing_positions": 34,
-   "name": "תחנת טייבה",
-   "staffing_pct": 69.09,
-   "status": "קריטי"
-  },
-  {
-   "area": "צפון",
-   "color": "#DC2626",
-   "district": "צפון",
-   "family_missing": null,
    "missing_positions": 25,
-   "name": "תחנת תבור",
-   "staffing_pct": 69.88,
+   "name": "תחנת עירון",
+   "staffing_pct": 64.29,
+   "status": "קריטי"
+  },
+  {
+   "area": "שפלה",
+   "color": "#DC2626",
+   "district": "מרכז",
+   "family_missing": null,
+   "missing_positions": 29,
+   "name": "תחנת רמלה",
+   "staffing_pct": 67.78,
+   "status": "קריטי"
+  },
+  {
+   "area": "לכיש",
+   "color": "#DC2626",
+   "district": "דרום",
+   "family_missing": null,
+   "missing_positions": 30,
+   "name": "תחנת אשדוד",
+   "staffing_pct": 68.09,
+   "status": "קריטי"
+  },
+  {
+   "area": "רותם",
+   "color": "#DC2626",
+   "district": "דרום",
+   "family_missing": null,
+   "missing_positions": 11,
+   "name": "תחנת ערד",
+   "staffing_pct": 68.57,
    "status": "קריטי"
   }
  ]

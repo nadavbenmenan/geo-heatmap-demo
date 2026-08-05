@@ -1,110 +1,139 @@
 {
  "alerts": [
   {
-   "created_at": "2026-08-04T14:42:34",
+   "created_at": "2026-08-04T17:17:05",
    "direction": "left",
-   "district": "צפון",
-   "entity_name": "תחנת טבריה",
+   "district": "דרום",
+   "entity_name": "תחנת אשדוד",
    "entity_type": "station",
    "from_status": "קריטי",
    "id": 1,
-   "staffing_pct": 63.55,
+   "staffing_pct": 68.09,
    "to_status": "בינוני"
   },
   {
-   "created_at": "2026-08-02T13:42:34",
+   "created_at": "2026-08-02T16:17:05",
    "direction": "entered",
-   "district": "צפון",
-   "entity_name": "תחנת תבור",
+   "district": "דרום",
+   "entity_name": "תחנת אשקלון",
    "entity_type": "station",
    "from_status": "תקין",
    "id": 2,
-   "staffing_pct": 69.88,
+   "staffing_pct": 61.54,
    "to_status": "קריטי"
   },
   {
-   "created_at": "2026-07-31T12:42:34",
+   "created_at": "2026-07-31T15:17:05",
    "direction": "entered",
    "district": "חוף",
-   "entity_name": "תחנת טירת הכרמל",
+   "entity_name": "תחנת ג'סר א זרקא",
    "entity_type": "station",
    "from_status": "תקין",
    "id": 3,
-   "staffing_pct": 64.89,
+   "staffing_pct": 69.49,
    "to_status": "קריטי"
   },
   {
-   "created_at": "2026-07-29T11:42:34",
+   "created_at": "2026-07-29T14:17:05",
    "direction": "left",
    "district": "מרכז",
    "entity_name": "תחנת טייבה",
    "entity_type": "station",
    "from_status": "קריטי",
    "id": 4,
-   "staffing_pct": 69.09,
+   "staffing_pct": 69.35,
    "to_status": "בינוני"
   },
   {
-   "created_at": "2026-07-27T10:42:34",
+   "created_at": "2026-07-27T13:17:05",
    "direction": "entered",
-   "district": "מרכז",
-   "entity_name": "תחנת כפר קאסם",
+   "district": "חוף",
+   "entity_name": "תחנת עירון",
    "entity_type": "station",
    "from_status": "תקין",
    "id": 5,
-   "staffing_pct": 68.46,
+   "staffing_pct": 64.29,
    "to_status": "קריטי"
+  },
+  {
+   "created_at": "2026-07-25T12:17:05",
+   "direction": "entered",
+   "district": "דרום",
+   "entity_name": "תחנת ערד",
+   "entity_type": "station",
+   "from_status": "תקין",
+   "id": 6,
+   "staffing_pct": 68.57,
+   "to_status": "קריטי"
+  },
+  {
+   "created_at": "2026-07-23T11:17:05",
+   "direction": "left",
+   "district": "מרכז",
+   "entity_name": "תחנת רמלה",
+   "entity_type": "station",
+   "from_status": "קריטי",
+   "id": 7,
+   "staffing_pct": 67.78,
+   "to_status": "בינוני"
   }
  ],
  "critical": [
   {
-   "district": "צפון",
-   "entity_name": "תחנת טבריה",
+   "district": "דרום",
+   "entity_name": "תחנת אשקלון",
    "entity_type": "station",
-   "logged": false,
-   "staffing_pct": 63.55
+   "logged": true,
+   "staffing_pct": 61.54
   },
   {
    "district": "חוף",
-   "entity_name": "תחנת טירת הכרמל",
+   "entity_name": "תחנת עירון",
    "entity_type": "station",
    "logged": true,
-   "staffing_pct": 64.89
+   "staffing_pct": 64.29
   },
   {
    "district": "מרכז",
-   "entity_name": "תחנת כפר קאסם",
+   "entity_name": "תחנת רמלה",
+   "entity_type": "station",
+   "logged": false,
+   "staffing_pct": 67.78
+  },
+  {
+   "district": "דרום",
+   "entity_name": "תחנת אשדוד",
+   "entity_type": "station",
+   "logged": false,
+   "staffing_pct": 68.09
+  },
+  {
+   "district": "דרום",
+   "entity_name": "תחנת ערד",
    "entity_type": "station",
    "logged": true,
-   "staffing_pct": 68.46
+   "staffing_pct": 68.57
   },
   {
    "district": "מרכז",
    "entity_name": "תחנת טייבה",
    "entity_type": "station",
    "logged": false,
-   "staffing_pct": 69.09
+   "staffing_pct": 69.35
   },
   {
-   "district": "צפון",
-   "entity_name": "תחנת תבור",
+   "district": "חוף",
+   "entity_name": "תחנת ג'סר א זרקא",
    "entity_type": "station",
    "logged": true,
-   "staffing_pct": 69.88
-  },
-  {
-   "district": "צפון",
-   "entity_name": "צפון",
-   "entity_type": "region",
-   "logged": false,
-   "staffing_pct": 69.88
+   "staffing_pct": 69.49
   }
  ],
- "critical_now": 6,
+ "critical_now": 7,
  "enabled": true,
- "entered": 3,
- "entered_open": 3,
- "left": 2,
+ "entered": 4,
+ "entered_open": 4,
+ "left": 3,
  "threshold": 70,
  "unlogged": 3
 }

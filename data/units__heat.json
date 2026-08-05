@@ -1,119 +1,2930 @@
 {
  "items": [
   {
-   "actual_positions": 58,
-   "color": "#DC2626",
+   "actual_positions": 240,
+   "color": "#EA580C",
    "coord_verified": true,
-   "district": "צפון",
+   "district": "דרום",
    "id": 1,
-   "key": "critical",
+   "key": "urgent",
    "kind": "region",
    "kind_label": "מרחב",
-   "lat": 32.6863,
-   "lng": 35.4082,
-   "missing_positions": 25,
-   "name": "צפון",
-   "pct_jewish": 64.9,
-   "pct_male": 66.6,
-   "required_positions": 83,
+   "lat": 31.701013,
+   "lng": 34.68346,
+   "missing_positions": 100,
+   "name": "לכיש",
+   "pct_jewish": 77.9,
+   "pct_male": 71.2,
+   "required_positions": 340,
    "settlements": [
     {
      "focus": false,
      "large": false,
-     "name": "בית קשת",
-     "population": 63600,
-     "settlement_id": 35,
-     "travel_min": 7
+     "name": "ניצנים",
+     "population": 2700,
+     "settlement_id": 170,
+     "travel_min": 13
     },
     {
      "focus": false,
      "large": false,
-     "name": "כדורי",
-     "population": 8200,
-     "settlement_id": 112,
-     "travel_min": 7
+     "name": "כוכב מיכאל",
+     "population": 76100,
+     "settlement_id": 111,
+     "travel_min": 20
     },
     {
      "focus": false,
      "large": false,
-     "name": "כפר כמא",
+     "name": "שחר",
+     "population": 29400,
+     "settlement_id": 244,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "זבדיאל",
+     "population": 24500,
+     "settlement_id": 79,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נהורה",
+     "population": 33500,
+     "settlement_id": 159,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בת הדר",
+     "population": 20300,
+     "settlement_id": 45,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נווה מבטח",
+     "population": 34000,
+     "settlement_id": 164,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בני דרום",
+     "population": 101600,
+     "settlement_id": 38,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גני טל",
+     "population": 7100,
+     "settlement_id": 68,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 70.59,
+   "station_ids": [
+    7,
+    8,
+    71,
+    72
+   ],
+   "stations_count": 4,
+   "status": "דחוף",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 388,
+   "color": "#EA580C",
+   "coord_verified": true,
+   "district": "חוף",
+   "id": 2,
+   "key": "urgent",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.492258,
+   "lng": 35.015763,
+   "missing_positions": 111,
+   "name": "מנשה",
+   "pct_jewish": 70.77,
+   "pct_male": 68.23,
+   "required_positions": 499,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר קרע",
      "population": 10600,
      "settlement_id": 129,
-     "travel_min": 11
+     "travel_min": 6
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אום אל-פחם",
+     "population": 41800,
+     "settlement_id": 6,
+     "travel_min": 27
     },
     {
      "focus": false,
      "large": false,
-     "name": "ריינה",
-     "population": 44000,
-     "settlement_id": 232,
+     "name": "בת שלמה",
+     "population": 5500,
+     "settlement_id": 48,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 77.76,
+   "station_ids": [
+    4,
+    9,
+    16,
+    26,
+    28,
+    63
+   ],
+   "stations_count": 6,
+   "status": "דחוף",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 474,
+   "color": "#EA580C",
+   "coord_verified": true,
+   "district": "מרכז",
+   "id": 3,
+   "key": "urgent",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.920197,
+   "lng": 34.85279,
+   "missing_positions": 134,
+   "name": "שפלה",
+   "pct_jewish": 76.59,
+   "pct_male": 69.85,
+   "required_positions": 608,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "ישרש",
+     "population": 3600,
+     "settlement_id": 108,
+     "travel_min": 3
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "באר יעקב",
+     "population": 4800,
+     "settlement_id": 26,
+     "travel_min": 6
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמלה",
+     "population": 14100,
+     "settlement_id": 229,
+     "travel_min": 7
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רחובות",
+     "population": 47500,
+     "settlement_id": 226,
+     "travel_min": 8
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נס ציונה",
+     "population": 16500,
+     "settlement_id": 175,
+     "travel_min": 12
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "לוד",
+     "population": 8600,
+     "settlement_id": 134,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פתחיה",
+     "population": 134000,
+     "settlement_id": 205,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גן שלמה",
+     "population": 39100,
+     "settlement_id": 67,
+     "travel_min": 16
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראשון לציון",
+     "population": 12700,
+     "settlement_id": 223,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מזכרת בתיה",
+     "population": 19200,
+     "settlement_id": 147,
      "travel_min": 18
     },
     {
      "focus": false,
      "large": false,
-     "name": "עין מאהל",
-     "population": 14200,
-     "settlement_id": 192,
+     "name": "אחיעזר",
+     "population": 33800,
+     "settlement_id": 12,
      "travel_min": 19
     },
     {
      "focus": false,
      "large": false,
-     "name": "דחי",
-     "population": 10800,
-     "settlement_id": 72,
-     "travel_min": 21
+     "name": "גמזו",
+     "population": 42900,
+     "settlement_id": 65,
+     "travel_min": 20
     },
     {
      "focus": false,
      "large": false,
-     "name": "כפר גדעון",
-     "population": 17700,
-     "settlement_id": 120,
+     "name": "כפר דניאל",
+     "population": 1000,
+     "settlement_id": 119,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר בן נון",
+     "population": 2200,
+     "settlement_id": 115,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מבוא מודיעים",
+     "population": 7300,
+     "settlement_id": 139,
      "travel_min": 25
     },
     {
      "focus": false,
      "large": false,
-     "name": "סולם",
-     "population": 42600,
-     "settlement_id": 182,
+     "name": "יסודות",
+     "population": 41200,
+     "settlement_id": 103,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "טירת יהודה",
+     "population": 6100,
+     "settlement_id": 94,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פלמחים",
+     "population": 4900,
+     "settlement_id": 200,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שוהם",
+     "population": 5000,
+     "settlement_id": 241,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 77.96,
+   "station_ids": [
+    36,
+    45,
+    48,
+    75,
+    77,
+    78
+   ],
+   "stations_count": 6,
+   "status": "דחוף",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 742,
+   "color": "#EA580C",
+   "coord_verified": true,
+   "district": "מרכז",
+   "id": 4,
+   "key": "urgent",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.157546,
+   "lng": 34.923338,
+   "missing_positions": 187,
+   "name": "שרון",
+   "pct_jewish": 80.71,
+   "pct_male": 68.78,
+   "required_positions": 929,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "ג'לג'וליה",
+     "population": 12000,
+     "settlement_id": 49,
+     "travel_min": 5
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הוד השרון",
+     "population": 10800,
+     "settlement_id": 72,
+     "travel_min": 8
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נווה ירק",
+     "population": 131100,
+     "settlement_id": 163,
+     "travel_min": 8
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "כפר סבא",
+     "population": 4800,
+     "settlement_id": 127,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נירית",
+     "population": 94100,
+     "settlement_id": 174,
+     "travel_min": 12
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שדה ורבורג",
+     "population": 10600,
+     "settlement_id": 237,
+     "travel_min": 12
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית ברל",
+     "population": 4300,
+     "settlement_id": 29,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גן חיים",
+     "population": 11600,
+     "settlement_id": 66,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר ברא",
+     "population": 8300,
+     "settlement_id": 116,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "חורשים",
+     "population": 22200,
+     "settlement_id": 86,
+     "travel_min": 16
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רעננה",
+     "population": 25900,
+     "settlement_id": 233,
+     "travel_min": 17
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הרצליה",
+     "population": 28200,
+     "settlement_id": 78,
+     "travel_min": 18
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראש העין",
+     "population": 4600,
+     "settlement_id": 221,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר שמריהו",
+     "population": 11200,
+     "settlement_id": 130,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "פתח תקווה",
+     "population": 35800,
+     "settlement_id": 204,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת השרון",
+     "population": 12400,
+     "settlement_id": 231,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "טירה",
+     "population": 5800,
+     "settlement_id": 93,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כוכב יאיר",
+     "population": 3600,
+     "settlement_id": 110,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר הס",
+     "population": 5500,
+     "settlement_id": 121,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ארסוף",
+     "population": 53200,
+     "settlement_id": 23,
+     "travel_min": 24
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אלעד",
+     "population": 32500,
+     "settlement_id": 18,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מזור",
+     "population": 18500,
+     "settlement_id": 146,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עזריאל",
+     "population": 25600,
+     "settlement_id": 181,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "צור יצחק",
+     "population": 11300,
+     "settlement_id": 209,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שפיים",
+     "population": 5600,
+     "settlement_id": 251,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נחשונים",
+     "population": 24400,
+     "settlement_id": 168,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר עבודה",
+     "population": 68400,
+     "settlement_id": 128,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עץ אפרים",
+     "population": 41900,
+     "settlement_id": 196,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית יהושע",
+     "population": 1500,
+     "settlement_id": 31,
+     "travel_min": 29
+    }
+   ],
+   "staffing_pct": 79.87,
+   "station_ids": [
+    32,
+    33,
+    40,
+    41,
+    61,
+    69,
+    74,
+    80
+   ],
+   "stations_count": 8,
+   "status": "דחוף",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 292,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "תל אביב",
+   "id": 5,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.0976,
+   "lng": 34.785833,
+   "missing_positions": 71,
+   "name": "ירקון",
+   "pct_jewish": 75.22,
+   "pct_male": 72.53,
+   "required_positions": 363,
+   "settlements": [
+    {
+     "focus": true,
+     "large": true,
+     "name": "בני ברק",
+     "population": 15600,
+     "settlement_id": 36,
+     "travel_min": 12
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעתיים",
+     "population": 5400,
+     "settlement_id": 60,
+     "travel_min": 12
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמת גן",
+     "population": 17100,
+     "settlement_id": 230,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "חולון",
+     "population": 13000,
+     "settlement_id": 84,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת השרון",
+     "population": 12400,
+     "settlement_id": 231,
+     "travel_min": 17
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת שמואל",
+     "population": 29100,
+     "settlement_id": 59,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אזור",
+     "population": 2600,
+     "settlement_id": 10,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "פתח תקווה",
+     "population": 35800,
+     "settlement_id": 204,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית אונו",
+     "population": 53500,
+     "settlement_id": 215,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר שמריהו",
+     "population": 11200,
+     "settlement_id": 130,
+     "travel_min": 22
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הרצליה",
+     "population": 28200,
+     "settlement_id": 78,
+     "travel_min": 24
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אור יהודה",
+     "population": 140000,
+     "settlement_id": 8,
+     "travel_min": 25
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בת ים",
+     "population": 236700,
+     "settlement_id": 46,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ארסוף",
+     "population": 53200,
+     "settlement_id": 23,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "סביון",
+     "population": 7800,
+     "settlement_id": 177,
+     "travel_min": 27
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הוד השרון",
+     "population": 10800,
+     "settlement_id": 72,
      "travel_min": 29
     },
     {
      "focus": false,
      "large": false,
-     "name": "בלפוריה",
-     "population": 15600,
-     "settlement_id": 36,
+     "name": "מגשימים",
+     "population": 3400,
+     "settlement_id": 144,
+     "travel_min": 29
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רעננה",
+     "population": 25900,
+     "settlement_id": 233,
+     "travel_min": 29
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "כפר סבא",
+     "population": 4800,
+     "settlement_id": 127,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שפיים",
+     "population": 5600,
+     "settlement_id": 251,
      "travel_min": 30
     }
    ],
-   "staffing_pct": 69.88,
+   "staffing_pct": 80.44,
    "station_ids": [
-    29
+    20,
+    44,
+    88
    ],
-   "stations_count": 1,
-   "status": "קריטי",
+   "stations_count": 3,
+   "status": "בינוני",
    "vacant_positions": null
   },
   {
-   "actual_positions": 69,
-   "color": "#EA580C",
+   "actual_positions": 620,
+   "color": "#EAB308",
    "coord_verified": true,
-   "district": "דרום",
-   "id": 2,
-   "key": "urgent",
+   "district": "צפון",
+   "id": 6,
+   "key": "medium",
    "kind": "region",
    "kind_label": "מרחב",
-   "lat": 29.5569,
-   "lng": 34.9498,
-   "missing_positions": 27,
-   "name": "מרחב אילת",
+   "lat": 32.660401,
+   "lng": 35.341521,
+   "missing_positions": 142,
+   "name": "עמקים",
+   "pct_jewish": 83.05,
+   "pct_male": 64.92,
+   "required_positions": 762,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "דחי",
+     "population": 15600,
+     "settlement_id": 70,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בלפוריה",
+     "population": 63600,
+     "settlement_id": 35,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר גדעון",
+     "population": 23600,
+     "settlement_id": 117,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "סולם",
+     "population": 212600,
+     "settlement_id": 178,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "עפולה",
+     "population": 45800,
+     "settlement_id": 194,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ריינה",
+     "population": 40700,
+     "settlement_id": 228,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין מאהל",
+     "population": 4100,
+     "settlement_id": 188,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית קשת",
+     "population": 4100,
+     "settlement_id": 34,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כדורי",
+     "population": 1400,
+     "settlement_id": 109,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר כמא",
+     "population": 21700,
+     "settlement_id": 126,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבעת אלה",
+     "population": 37000,
+     "settlement_id": 55,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "יפעת",
+     "population": 76700,
+     "settlement_id": 105,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבת",
+     "population": 3000,
+     "settlement_id": 61,
+     "travel_min": 26
+    }
+   ],
+   "staffing_pct": 81.36,
+   "station_ids": [
+    11,
+    39,
+    47,
+    57,
+    58,
+    65,
+    86
+   ],
+   "stations_count": 7,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 279,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "ירושלים",
+   "id": 7,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.786667,
+   "lng": 35.22,
+   "missing_positions": 60,
+   "name": "קדם",
+   "pct_jewish": 69.23,
+   "pct_male": 74.96,
+   "required_positions": 339,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "אורה",
+     "population": 7600,
+     "settlement_id": 9,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מעלה אדומים",
+     "population": 8300,
+     "settlement_id": 152,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "הר גילה",
+     "population": 25900,
+     "settlement_id": 75,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת זאב",
+     "population": 85700,
+     "settlement_id": 56,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין ראפה",
+     "population": 10100,
+     "settlement_id": 190,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבע בנימין",
+     "population": 13200,
+     "settlement_id": 52,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין נקובא",
+     "population": 59500,
+     "settlement_id": 189,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבעון החדשה",
+     "population": 13100,
+     "settlement_id": 54,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פסגות",
+     "population": 37400,
+     "settlement_id": 201,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 82.3,
+   "station_ids": [
+    62,
+    82,
+    83
+   ],
+   "stations_count": 3,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 313,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "תל אביב",
+   "id": 8,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.0658,
+   "lng": 34.824733,
+   "missing_positions": 62,
+   "name": "דן",
+   "pct_jewish": 73.56,
+   "pct_male": 71.01,
+   "required_positions": 375,
+   "settlements": [
+    {
+     "focus": true,
+     "large": true,
+     "name": "בני ברק",
+     "population": 15600,
+     "settlement_id": 36,
+     "travel_min": 3
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמת גן",
+     "population": 17100,
+     "settlement_id": 230,
+     "travel_min": 5
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת שמואל",
+     "population": 29100,
+     "settlement_id": 59,
+     "travel_min": 6
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעתיים",
+     "population": 5400,
+     "settlement_id": 60,
+     "travel_min": 7
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית אונו",
+     "population": 53500,
+     "settlement_id": 215,
+     "travel_min": 7
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אזור",
+     "population": 2600,
+     "settlement_id": 10,
+     "travel_min": 10
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אור יהודה",
+     "population": 140000,
+     "settlement_id": 8,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "סביון",
+     "population": 7800,
+     "settlement_id": 177,
+     "travel_min": 13
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "חולון",
+     "population": 13000,
+     "settlement_id": 84,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "פתח תקווה",
+     "population": 35800,
+     "settlement_id": 204,
+     "travel_min": 17
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בת ים",
+     "population": 236700,
+     "settlement_id": 46,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מגשימים",
+     "population": 3400,
+     "settlement_id": 144,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת השרון",
+     "population": 12400,
+     "settlement_id": 231,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הרצליה",
+     "population": 28200,
+     "settlement_id": 78,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אחיעזר",
+     "population": 33800,
+     "settlement_id": 12,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מזור",
+     "population": 18500,
+     "settlement_id": 146,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "טירת יהודה",
+     "population": 6100,
+     "settlement_id": 94,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ברקת",
+     "population": 9100,
+     "settlement_id": 44,
+     "travel_min": 27
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אלעד",
+     "population": 32500,
+     "settlement_id": 18,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נווה ירק",
+     "population": 131100,
+     "settlement_id": 163,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נחשונים",
+     "population": 24400,
+     "settlement_id": 168,
+     "travel_min": 28
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראשון לציון",
+     "population": 12700,
+     "settlement_id": 223,
+     "travel_min": 28
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "הוד השרון",
+     "population": 10800,
+     "settlement_id": 72,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר שמריהו",
+     "population": 11200,
+     "settlement_id": 130,
+     "travel_min": 30
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "לוד",
+     "population": 8600,
+     "settlement_id": 134,
+     "travel_min": 30
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רעננה",
+     "population": 25900,
+     "settlement_id": 233,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 83.47,
+   "station_ids": [
+    13,
+    17,
+    52
+   ],
+   "stations_count": 3,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 217,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "ש\"י",
+   "id": 9,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.951445,
+   "lng": 35.35131,
+   "missing_positions": 42,
+   "name": "גלעד",
+   "pct_jewish": 70.54,
+   "pct_male": 66.86,
+   "required_positions": 259,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "עפרה",
+     "population": 500,
+     "settlement_id": 195,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גלגל",
+     "population": 600,
+     "settlement_id": 64,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פסגות",
+     "population": 37400,
+     "settlement_id": 201,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבע בנימין",
+     "population": 13200,
+     "settlement_id": 52,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 83.78,
+   "station_ids": [
+    22,
+    53
+   ],
+   "stations_count": 2,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 396,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "חוף",
+   "id": 10,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.92987,
+   "lng": 35.0913,
+   "missing_positions": 76,
+   "name": "אשר",
+   "pct_jewish": 83.69,
+   "pct_male": 71.09,
+   "required_positions": 472,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר יאסיף",
+     "population": 10100,
+     "settlement_id": 124,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "נהרייה",
+     "population": 5300,
+     "settlement_id": 160,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אחיהוד",
+     "population": 700,
+     "settlement_id": 11,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית ביאליק",
+     "population": 6200,
+     "settlement_id": 216,
+     "travel_min": 25
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ירכא",
+     "population": 1400,
+     "settlement_id": 106,
+     "travel_min": 26
+    }
+   ],
+   "staffing_pct": 83.9,
+   "station_ids": [
+    19,
+    25,
+    56,
+    64
+   ],
+   "stations_count": 4,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 312,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "ירושלים",
+   "id": 11,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.771648,
+   "lng": 35.09119,
+   "missing_positions": 55,
+   "name": "ציון",
+   "pct_jewish": 80.32,
+   "pct_male": 72.13,
+   "required_positions": 367,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת רזיאל",
+     "population": 44000,
+     "settlement_id": 232,
+     "travel_min": 6
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כסלון",
+     "population": 12600,
+     "settlement_id": 113,
+     "travel_min": 7
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין ראפה",
+     "population": 10100,
+     "settlement_id": 190,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בר גיורא",
+     "population": 9900,
+     "settlement_id": 40,
+     "travel_min": 11
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין נקובא",
+     "population": 59500,
+     "settlement_id": 189,
+     "travel_min": 12
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אורה",
+     "population": 7600,
+     "settlement_id": 9,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית מאיר",
+     "population": 45800,
+     "settlement_id": 33,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אשתאול",
+     "population": 1300,
+     "settlement_id": 25,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "צור הדסה",
+     "population": 37000,
+     "settlement_id": 208,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "זנוח",
+     "population": 5200,
+     "settlement_id": 81,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נחם",
+     "population": 6900,
+     "settlement_id": 167,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מסילת ציון",
+     "population": 4300,
+     "settlement_id": 150,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "הר גילה",
+     "population": 25900,
+     "settlement_id": 75,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בת עין",
+     "population": 7500,
+     "settlement_id": 47,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבעון החדשה",
+     "population": 13100,
+     "settlement_id": 54,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ראש צורים",
+     "population": 1500,
+     "settlement_id": 222,
+     "travel_min": 27
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת זאב",
+     "population": 85700,
+     "settlement_id": 56,
+     "travel_min": 29
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נווה דניאל",
+     "population": 14000,
+     "settlement_id": 161,
+     "travel_min": 29
+    }
+   ],
+   "staffing_pct": 85.01,
+   "station_ids": [
+    12,
+    24,
+    43,
+    50
+   ],
+   "stations_count": 4,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 554,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "צפון",
+   "id": 12,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.945992,
+   "lng": 35.525682,
+   "missing_positions": 96,
+   "name": "כנרת",
+   "pct_jewish": 68.26,
+   "pct_male": 70.06,
+   "required_positions": 650,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "חוקוק",
+     "population": 73900,
+     "settlement_id": 85,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שפר",
+     "population": 19500,
+     "settlement_id": 252,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין אל-אסד",
+     "population": 6400,
+     "settlement_id": 183,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עלמה",
+     "population": 29600,
+     "settlement_id": 193,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ריחאנייה",
+     "population": 1000,
+     "settlement_id": 227,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "יסוד המעלה",
+     "population": 33100,
+     "settlement_id": 102,
+     "travel_min": 29
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ראמה",
+     "population": 5500,
+     "settlement_id": 220,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 85.23,
+   "station_ids": [
+    18,
+    31,
+    38,
+    54,
+    70,
+    73
+   ],
+   "stations_count": 6,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 547,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "צפון",
+   "id": 13,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.882958,
+   "lng": 35.23882,
+   "missing_positions": 82,
+   "name": "גליל",
+   "pct_jewish": 81.6,
+   "pct_male": 68.74,
+   "required_positions": 629,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "קורנית",
+     "population": 10800,
+     "settlement_id": 212,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מורשת",
+     "population": 3200,
+     "settlement_id": 145,
+     "travel_min": 12
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אחיהוד",
+     "population": 700,
+     "settlement_id": 11,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "לפידות",
+     "population": 1800,
+     "settlement_id": 137,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר יאסיף",
+     "population": 10100,
+     "settlement_id": 124,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ירכא",
+     "population": 1400,
+     "settlement_id": 106,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "צביה",
+     "population": 2300,
+     "settlement_id": 206,
+     "travel_min": 23
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אבטליון",
+     "population": 800,
+     "settlement_id": 1,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "חנתון",
+     "population": 5100,
+     "settlement_id": 90,
+     "travel_min": 24
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שזור",
+     "population": 44200,
+     "settlement_id": 243,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "יחיעם",
+     "population": 2700,
+     "settlement_id": 101,
+     "travel_min": 27
+    }
+   ],
+   "staffing_pct": 86.96,
+   "station_ids": [
+    35,
+    42,
+    46,
+    55,
+    84
+   ],
+   "stations_count": 5,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 166,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "ש\"י",
+   "id": 14,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.69127,
+   "lng": 35.1637,
+   "missing_positions": 24,
+   "name": "יהודה",
+   "pct_jewish": 73.27,
+   "pct_male": 71.64,
+   "required_positions": 190,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "נווה דניאל",
+     "population": 14000,
+     "settlement_id": 161,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "הר גילה",
+     "population": 25900,
+     "settlement_id": 75,
+     "travel_min": 11
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ראש צורים",
+     "population": 1500,
+     "settlement_id": 222,
+     "travel_min": 13
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אורה",
+     "population": 7600,
+     "settlement_id": 9,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "צור הדסה",
+     "population": 37000,
+     "settlement_id": 208,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בת עין",
+     "population": 7500,
+     "settlement_id": 47,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בר גיורא",
+     "population": 9900,
+     "settlement_id": 40,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת רזיאל",
+     "population": 44000,
+     "settlement_id": 232,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין ראפה",
+     "population": 10100,
+     "settlement_id": 190,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מעלה עמוס",
+     "population": 6100,
+     "settlement_id": 154,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כסלון",
+     "population": 12600,
+     "settlement_id": 113,
+     "travel_min": 29
+    }
+   ],
+   "staffing_pct": 87.37,
+   "station_ids": [
+    27,
+    66
+   ],
+   "stations_count": 2,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 376,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "דרום",
+   "id": 15,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.3799,
+   "lng": 34.67069,
+   "missing_positions": 49,
+   "name": "נגב",
+   "pct_jewish": 74.11,
+   "pct_male": 69.31,
+   "required_positions": 425,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "תדהר",
+     "population": 4800,
+     "settlement_id": 254,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ברוש",
+     "population": 30100,
+     "settlement_id": 42,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שיבולים",
+     "population": 18200,
+     "settlement_id": 245,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שרשרת",
+     "population": 173800,
+     "settlement_id": 253,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "יושיביה",
+     "population": 6700,
+     "settlement_id": 100,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אשבול",
+     "population": 2100,
+     "settlement_id": 24,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פדויים",
+     "population": 7000,
+     "settlement_id": 199,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שבי דרום",
+     "population": 10000,
+     "settlement_id": 234,
+     "travel_min": 25
+    }
+   ],
+   "staffing_pct": 88.47,
+   "station_ids": [
+    5,
+    10,
+    60,
+    76,
+    81
+   ],
+   "stations_count": 5,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 367,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "דרום",
+   "id": 16,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.218152,
+   "lng": 34.950264,
+   "missing_positions": 47,
+   "name": "רותם",
+   "pct_jewish": 81.39,
+   "pct_male": 73.06,
+   "required_positions": 414,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "עומר",
+     "population": 63900,
+     "settlement_id": 180,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מיתר",
+     "population": 6500,
+     "settlement_id": 148,
+     "travel_min": 27
+    }
+   ],
+   "staffing_pct": 88.65,
+   "station_ids": [
+    21,
+    23,
+    67,
+    68,
+    79
+   ],
+   "stations_count": 5,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 312,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "חוף",
+   "id": 17,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.783433,
+   "lng": 35.002903,
+   "missing_positions": 39,
+   "name": "כרמל",
+   "pct_jewish": 74.05,
+   "pct_male": 62.3,
+   "required_positions": 351,
+   "settlements": [
+    {
+     "focus": true,
+     "large": true,
+     "name": "חיפה",
+     "population": 1500,
+     "settlement_id": 87,
+     "travel_min": 8
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "החותרים",
+     "population": 21300,
+     "settlement_id": 73,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מגדים",
+     "population": 5300,
+     "settlement_id": 141,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית אורן",
+     "population": 4000,
+     "settlement_id": 28,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית ביאליק",
+     "population": 6200,
+     "settlement_id": 216,
+     "travel_min": 19
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר הנוער הדתי",
+     "population": 17700,
+     "settlement_id": 120,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין כרמל",
+     "population": 2400,
+     "settlement_id": 187,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עתלית",
+     "population": 2400,
+     "settlement_id": 197,
+     "travel_min": 27
+    }
+   ],
+   "staffing_pct": 88.89,
+   "station_ids": [
+    30,
+    34,
+    59
+   ],
+   "stations_count": 3,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 526,
+   "color": "#EAB308",
+   "coord_verified": true,
+   "district": "תל אביב",
+   "id": 18,
+   "key": "medium",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.04038,
+   "lng": 34.7691,
+   "missing_positions": 61,
+   "name": "איילון",
+   "pct_jewish": 81.89,
+   "pct_male": 62.44,
+   "required_positions": 587,
+   "settlements": [
+    {
+     "focus": true,
+     "large": true,
+     "name": "חולון",
+     "population": 13000,
+     "settlement_id": 84,
+     "travel_min": 7
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אזור",
+     "population": 2600,
+     "settlement_id": 10,
+     "travel_min": 9
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בת ים",
+     "population": 236700,
+     "settlement_id": 46,
+     "travel_min": 11
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמת גן",
+     "population": 17100,
+     "settlement_id": 230,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעתיים",
+     "population": 5400,
+     "settlement_id": 60,
+     "travel_min": 16
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אור יהודה",
+     "population": 140000,
+     "settlement_id": 8,
+     "travel_min": 18
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת שמואל",
+     "population": 29100,
+     "settlement_id": 59,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית אונו",
+     "population": 53500,
+     "settlement_id": 215,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בני ברק",
+     "population": 15600,
+     "settlement_id": 36,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראשון לציון",
+     "population": 12700,
+     "settlement_id": 223,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "סביון",
+     "population": 7800,
+     "settlement_id": 177,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אחיעזר",
+     "population": 33800,
+     "settlement_id": 12,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "פלמחים",
+     "population": 4900,
+     "settlement_id": 200,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מגשימים",
+     "population": 3400,
+     "settlement_id": 144,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נס ציונה",
+     "population": 16500,
+     "settlement_id": 175,
+     "travel_min": 29
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "באר יעקב",
+     "population": 4800,
+     "settlement_id": 26,
+     "travel_min": 30
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת השרון",
+     "population": 12400,
+     "settlement_id": 231,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 89.61,
+   "station_ids": [
+    15,
+    29,
+    37,
+    85,
+    87
+   ],
+   "stations_count": 5,
+   "status": "בינוני",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 159,
+   "color": "#16A34A",
+   "coord_verified": true,
+   "district": "מג\"ב",
+   "id": 19,
+   "key": "ok",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.77,
+   "lng": 35.02,
+   "missing_positions": 13,
+   "name": "מג\"ב י-ם",
+   "pct_jewish": 95.1,
+   "pct_male": 58.8,
+   "required_positions": 172,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "אשתאול",
+     "population": 1300,
+     "settlement_id": 25,
+     "travel_min": 6
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בית מאיר",
+     "population": 45800,
+     "settlement_id": 33,
+     "travel_min": 8
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נחם",
+     "population": 6900,
+     "settlement_id": 167,
+     "travel_min": 8
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מסילת ציון",
+     "population": 4300,
+     "settlement_id": 150,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כסלון",
+     "population": 12600,
+     "settlement_id": 113,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "רמת רזיאל",
+     "population": 44000,
+     "settlement_id": 232,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "זנוח",
+     "population": 5200,
+     "settlement_id": 81,
+     "travel_min": 11
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "הראל",
+     "population": 1000,
+     "settlement_id": 76,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בר גיורא",
+     "population": 9900,
+     "settlement_id": 40,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין נקובא",
+     "population": 59500,
+     "settlement_id": 189,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "צור הדסה",
+     "population": 37000,
+     "settlement_id": 208,
+     "travel_min": 22
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עין ראפה",
+     "population": 10100,
+     "settlement_id": 190,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אורה",
+     "population": 7600,
+     "settlement_id": 9,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נוף איילון",
+     "population": 6900,
+     "settlement_id": 166,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שעלבים",
+     "population": 14600,
+     "settlement_id": 249,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שדות מיכה",
+     "population": 26000,
+     "settlement_id": 239,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר בן נון",
+     "population": 2200,
+     "settlement_id": 115,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בת עין",
+     "population": 7500,
+     "settlement_id": 47,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 92.44,
+   "station_ids": [
+    51
+   ],
+   "stations_count": 1,
+   "status": "תקין",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 179,
+   "color": "#16A34A",
+   "coord_verified": true,
+   "district": "מרכז",
+   "id": 20,
+   "key": "ok",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.009,
+   "lng": 34.883,
+   "missing_positions": 14,
+   "name": "נתב\"ג",
+   "pct_jewish": 86.2,
+   "pct_male": 70.7,
+   "required_positions": 193,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "אחיעזר",
+     "population": 33800,
+     "settlement_id": 12,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "סביון",
+     "population": 7800,
+     "settlement_id": 177,
+     "travel_min": 9
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אור יהודה",
+     "population": 140000,
+     "settlement_id": 8,
+     "travel_min": 11
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מגשימים",
+     "population": 3400,
+     "settlement_id": 144,
+     "travel_min": 11
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית אונו",
+     "population": 53500,
+     "settlement_id": 215,
+     "travel_min": 12
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "טירת יהודה",
+     "population": 6100,
+     "settlement_id": 94,
+     "travel_min": 14
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "לוד",
+     "population": 8600,
+     "settlement_id": 134,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מזור",
+     "population": 18500,
+     "settlement_id": 146,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ברקת",
+     "population": 9100,
+     "settlement_id": 44,
+     "travel_min": 15
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעת שמואל",
+     "population": 29100,
+     "settlement_id": 59,
+     "travel_min": 15
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שוהם",
+     "population": 5000,
+     "settlement_id": 241,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אזור",
+     "population": 2600,
+     "settlement_id": 10,
+     "travel_min": 17
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראשון לציון",
+     "population": 12700,
+     "settlement_id": 223,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נחשונים",
+     "population": 24400,
+     "settlement_id": 168,
+     "travel_min": 19
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בני ברק",
+     "population": 15600,
+     "settlement_id": 36,
+     "travel_min": 20
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "פתח תקווה",
+     "population": 35800,
+     "settlement_id": 204,
+     "travel_min": 20
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "אלעד",
+     "population": 32500,
+     "settlement_id": 18,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כפר דניאל",
+     "population": 1000,
+     "settlement_id": 119,
+     "travel_min": 21
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "באר יעקב",
+     "population": 4800,
+     "settlement_id": 26,
+     "travel_min": 22
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "גבעתיים",
+     "population": 5400,
+     "settlement_id": 60,
+     "travel_min": 22
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמלה",
+     "population": 14100,
+     "settlement_id": 229,
+     "travel_min": 22
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "חולון",
+     "population": 13000,
+     "settlement_id": 84,
+     "travel_min": 23
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "רמת גן",
+     "population": 17100,
+     "settlement_id": 230,
+     "travel_min": 23
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "בת ים",
+     "population": 236700,
+     "settlement_id": 46,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ישרש",
+     "population": 3600,
+     "settlement_id": 108,
+     "travel_min": 25
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גמזו",
+     "population": 42900,
+     "settlement_id": 65,
+     "travel_min": 27
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "ראש העין",
+     "population": 4600,
+     "settlement_id": 221,
+     "travel_min": 27
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נס ציונה",
+     "population": 16500,
+     "settlement_id": 175,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 92.75,
+   "station_ids": [
+    3
+   ],
+   "stations_count": 1,
+   "status": "תקין",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 231,
+   "color": "#16A34A",
+   "coord_verified": true,
+   "district": "ש\"י",
+   "id": 21,
+   "key": "ok",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 32.152097,
+   "lng": 35.32557,
+   "missing_positions": 14,
+   "name": "שומרון",
+   "pct_jewish": 79.63,
+   "pct_male": 73.93,
+   "required_positions": 245,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "איתמר",
+     "population": 5600,
+     "settlement_id": 14,
+     "travel_min": 10
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "מגדלים",
+     "population": 26000,
+     "settlement_id": 142,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גיתית",
+     "population": 27600,
+     "settlement_id": 62,
+     "travel_min": 18
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אלון מורה",
+     "population": 19500,
+     "settlement_id": 16,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "עלי",
+     "population": 3700,
+     "settlement_id": 191,
+     "travel_min": 25
+    }
+   ],
+   "staffing_pct": 94.29,
+   "station_ids": [
+    6,
+    14,
+    49
+   ],
+   "stations_count": 3,
+   "status": "תקין",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 130,
+   "color": "#16A34A",
+   "coord_verified": true,
+   "district": "ירושלים",
+   "id": 22,
+   "key": "ok",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 31.6,
+   "lng": 34.65,
+   "missing_positions": 6,
+   "name": "דוד",
+   "pct_jewish": 73.6,
+   "pct_male": 62.8,
+   "required_positions": 136,
+   "settlements": [
+    {
+     "focus": false,
+     "large": false,
+     "name": "כוכב מיכאל",
+     "population": 76100,
+     "settlement_id": 111,
+     "travel_min": 9
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שדה דוד",
+     "population": 14700,
+     "settlement_id": 236,
+     "travel_min": 11
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אור הנר",
+     "population": 6900,
+     "settlement_id": 7,
+     "travel_min": 14
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נהורה",
+     "population": 33500,
+     "settlement_id": 159,
+     "travel_min": 16
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "בת הדר",
+     "population": 20300,
+     "settlement_id": 45,
+     "travel_min": 17
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "שחר",
+     "population": 29400,
+     "settlement_id": 244,
+     "travel_min": 20
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "איתן",
+     "population": 168600,
+     "settlement_id": 15,
+     "travel_min": 21
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "כרמייה",
+     "population": 9500,
+     "settlement_id": 131,
+     "travel_min": 26
+    },
+    {
+     "focus": true,
+     "large": true,
+     "name": "קריית גת",
+     "population": 30000,
+     "settlement_id": 217,
+     "travel_min": 26
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "גבים",
+     "population": 14800,
+     "settlement_id": 51,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "נועם",
+     "population": 29100,
+     "settlement_id": 165,
+     "travel_min": 28
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "אבן שמואל",
+     "population": 93500,
+     "settlement_id": 3,
+     "travel_min": 29
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "ניצנים",
+     "population": 2700,
+     "settlement_id": 170,
+     "travel_min": 29
+    },
+    {
+     "focus": false,
+     "large": false,
+     "name": "זבדיאל",
+     "population": 24500,
+     "settlement_id": 79,
+     "travel_min": 30
+    }
+   ],
+   "staffing_pct": 95.59,
+   "station_ids": [
+    2
+   ],
+   "stations_count": 1,
+   "status": "תקין",
+   "vacant_positions": null
+  },
+  {
+   "actual_positions": 107,
+   "color": "#16A34A",
+   "coord_verified": true,
+   "district": "דרום",
+   "id": 23,
+   "key": "ok",
+   "kind": "region",
+   "kind_label": "מרחב",
+   "lat": 29.55693,
+   "lng": 34.94979,
+   "missing_positions": 0,
+   "name": "אילת",
    "pct_jewish": 70.9,
-   "pct_male": 82.9,
-   "required_positions": 96,
+   "pct_male": 63.0,
+   "required_positions": 107,
    "settlements": [
     {
      "focus": false,
@@ -124,2885 +2935,18 @@
      "travel_min": 8
     }
    ],
-   "staffing_pct": 71.88,
+   "staffing_pct": 100.0,
    "station_ids": [
-    38
-   ],
-   "stations_count": 1,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 97,
-   "color": "#EA580C",
-   "coord_verified": true,
-   "district": "מג\"ב",
-   "id": 3,
-   "key": "urgent",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.72,
-   "lng": 35.05,
-   "missing_positions": 37,
-   "name": "מג\"ב י-ם",
-   "pct_jewish": 76.2,
-   "pct_male": 60.7,
-   "required_positions": 134,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "בר גיורא",
-     "population": 13500,
-     "settlement_id": 41,
-     "travel_min": 4
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כסלון",
-     "population": 8300,
-     "settlement_id": 116,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "זנוח",
-     "population": 50300,
-     "settlement_id": 83,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נחם",
-     "population": 4200,
-     "settlement_id": 171,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "צור הדסה",
-     "population": 10800,
-     "settlement_id": 212,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת רזיאל",
-     "population": 10600,
-     "settlement_id": 237,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אשתאול",
-     "population": 1300,
-     "settlement_id": 25,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בת עין",
-     "population": 5500,
-     "settlement_id": 48,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה דניאל",
-     "population": 29100,
-     "settlement_id": 165,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אורה",
-     "population": 7600,
-     "settlement_id": 9,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית מאיר",
-     "population": 4100,
-     "settlement_id": 34,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מסילת ציון",
-     "population": 15200,
-     "settlement_id": 153,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין נקובא",
-     "population": 29600,
-     "settlement_id": 193,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין ראפה",
-     "population": 45800,
-     "settlement_id": 194,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ראש צורים",
-     "population": 47500,
-     "settlement_id": 226,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "הר גילה",
-     "population": 8100,
-     "settlement_id": 77,
-     "travel_min": 27
-    }
-   ],
-   "staffing_pct": 72.39,
-   "station_ids": [
-    66
-   ],
-   "stations_count": 1,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 97,
-   "color": "#EA580C",
-   "coord_verified": true,
-   "district": "ירושלים",
-   "id": 4,
-   "key": "urgent",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.7784,
-   "lng": 35.21,
-   "missing_positions": 36,
-   "name": "מרחב דוד",
-   "pct_jewish": 61.0,
-   "pct_male": 61.3,
-   "required_positions": 133,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "אורה",
-     "population": 7600,
-     "settlement_id": 9,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "הר גילה",
-     "population": 8100,
-     "settlement_id": 77,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מעלה אדומים",
-     "population": 5100,
-     "settlement_id": 155,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין נקובא",
-     "population": 29600,
-     "settlement_id": 193,
-     "travel_min": 18
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת זאב",
-     "population": 10400,
-     "settlement_id": 58,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין ראפה",
-     "population": 45800,
-     "settlement_id": 194,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבעון החדשה",
-     "population": 85700,
-     "settlement_id": 56,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבע בנימין",
-     "population": 13100,
-     "settlement_id": 54,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה דניאל",
-     "population": 29100,
-     "settlement_id": 165,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פסגות",
-     "population": 134000,
-     "settlement_id": 205,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת רזיאל",
-     "population": 10600,
-     "settlement_id": 237,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ראש צורים",
-     "population": 47500,
-     "settlement_id": 226,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 72.93,
-   "station_ids": [
-    30
-   ],
-   "stations_count": 1,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 481,
-   "color": "#EA580C",
-   "coord_verified": true,
-   "district": "צפון",
-   "id": 5,
-   "key": "urgent",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.655467,
-   "lng": 35.33065,
-   "missing_positions": 144,
-   "name": "עמקים",
-   "pct_jewish": 81.46,
-   "pct_male": 67.14,
-   "required_positions": 625,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "סולם",
-     "population": 42600,
-     "settlement_id": 182,
-     "travel_min": 10
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בלפוריה",
-     "population": 15600,
-     "settlement_id": 36,
-     "travel_min": 11
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר גדעון",
-     "population": 17700,
-     "settlement_id": 120,
-     "travel_min": 11
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "עפולה",
-     "population": 87700,
-     "settlement_id": 198,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "דחי",
-     "population": 10800,
-     "settlement_id": 72,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ריינה",
-     "population": 44000,
-     "settlement_id": 232,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית קשת",
-     "population": 63600,
-     "settlement_id": 35,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יפעת",
-     "population": 3600,
-     "settlement_id": 108,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין מאהל",
-     "population": 14200,
-     "settlement_id": 192,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כדורי",
-     "population": 8200,
-     "settlement_id": 112,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבת",
-     "population": 3100,
-     "settlement_id": 63,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבעת אלה",
-     "population": 11500,
-     "settlement_id": 57,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר כמא",
-     "population": 10600,
-     "settlement_id": 129,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "הסוללים",
-     "population": 1000,
-     "settlement_id": 76,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "חבר",
-     "population": 73900,
-     "settlement_id": 85,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ניר יפה",
-     "population": 10000,
-     "settlement_id": 176,
-     "travel_min": 29
-    }
-   ],
-   "staffing_pct": 76.96,
-   "station_ids": [
-    12,
-    17,
-    19,
-    23,
-    24,
-    25
-   ],
-   "stations_count": 6,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 277,
-   "color": "#EA580C",
-   "coord_verified": true,
-   "district": "תל אביב",
-   "id": 6,
-   "key": "urgent",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.0658,
-   "lng": 34.824733,
-   "missing_positions": 79,
-   "name": "דן",
-   "pct_jewish": 81.14,
-   "pct_male": 66.32,
-   "required_positions": 356,
-   "settlements": [
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעתיים",
-     "population": 27600,
-     "settlement_id": 62,
-     "travel_min": 3
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמת גן",
-     "population": 10000,
-     "settlement_id": 234,
-     "travel_min": 3
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת שמואל",
-     "population": 3000,
-     "settlement_id": 61,
-     "travel_min": 5
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בני ברק",
-     "population": 19200,
-     "settlement_id": 37,
-     "travel_min": 6
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית אונו",
-     "population": 10800,
-     "settlement_id": 219,
-     "travel_min": 7
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אזור",
-     "population": 2600,
-     "settlement_id": 10,
-     "travel_min": 10
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "תל אביב",
-     "population": 35000,
-     "settlement_id": 260,
-     "travel_min": 10
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אור יהודה",
-     "population": 140000,
-     "settlement_id": 8,
-     "travel_min": 11
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "פתח תקווה",
-     "population": 37000,
-     "settlement_id": 208,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת פנקס",
-     "population": 14700,
-     "settlement_id": 236,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "סביון",
-     "population": 25600,
-     "settlement_id": 181,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יהוד",
-     "population": 6700,
-     "settlement_id": 100,
-     "travel_min": 16
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בת ים",
-     "population": 7500,
-     "settlement_id": 47,
-     "travel_min": 17
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "חולון",
-     "population": 22200,
-     "settlement_id": 86,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מזור",
-     "population": 44100,
-     "settlement_id": 149,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת השרון",
-     "population": 17500,
-     "settlement_id": 235,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מגשימים",
-     "population": 19200,
-     "settlement_id": 147,
-     "travel_min": 22
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראשון לציון",
-     "population": 1000,
-     "settlement_id": 227,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אחיעזר",
-     "population": 33800,
-     "settlement_id": 12,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נחשונים",
-     "population": 11500,
-     "settlement_id": 172,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר שמריהו",
-     "population": 25800,
-     "settlement_id": 133,
-     "travel_min": 27
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רעננה",
-     "population": 31800,
-     "settlement_id": 238,
-     "travel_min": 27
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אלעד",
-     "population": 32500,
-     "settlement_id": 18,
-     "travel_min": 28
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הוד השרון",
-     "population": 5700,
-     "settlement_id": 74,
-     "travel_min": 28
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הרצליה",
-     "population": 43100,
-     "settlement_id": 80,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "טירת יהודה",
-     "population": 22500,
-     "settlement_id": 96,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברקת",
-     "population": 20300,
-     "settlement_id": 45,
-     "travel_min": 29
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "כפר סבא",
-     "population": 11200,
-     "settlement_id": 130,
-     "travel_min": 29
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "לוד",
-     "population": 1800,
-     "settlement_id": 137,
-     "travel_min": 30
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה ירק",
-     "population": 6900,
-     "settlement_id": 167,
-     "travel_min": 30
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שוהם",
-     "population": 86300,
-     "settlement_id": 246,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 77.81,
-   "station_ids": [
-    1,
-    3,
-    8
-   ],
-   "stations_count": 3,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 308,
-   "color": "#EA580C",
-   "coord_verified": true,
-   "district": "ש\"י",
-   "id": 7,
-   "key": "urgent",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.9961,
-   "lng": 35.149133,
-   "missing_positions": 84,
-   "name": "שומרון",
-   "pct_jewish": 78.83,
-   "pct_male": 67.19,
-   "required_positions": 392,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "ניל\"י",
-     "population": 2800,
-     "settlement_id": 173,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מעלה לבונה",
-     "population": 21100,
-     "settlement_id": 156,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עלי זהב",
-     "population": 41900,
-     "settlement_id": 196,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פדואל",
-     "population": 356400,
-     "settlement_id": 202,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברוכין",
-     "population": 30100,
-     "settlement_id": 42,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עלי",
-     "population": 500,
-     "settlement_id": 195,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברקן",
-     "population": 9100,
-     "settlement_id": 44,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עפרה",
-     "population": 7000,
-     "settlement_id": 199,
-     "travel_min": 29
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פסגות",
-     "population": 134000,
-     "settlement_id": 205,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 78.57,
-   "station_ids": [
-    82,
-    83,
-    86
-   ],
-   "stations_count": 3,
-   "status": "דחוף",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 761,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "מרכז",
-   "id": 8,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.196938,
-   "lng": 34.92905,
-   "missing_positions": 189,
-   "name": "שרון",
-   "pct_jewish": 74.71,
-   "pct_male": 69.43,
-   "required_positions": 950,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית ברל",
-     "population": 36200,
-     "settlement_id": 30,
-     "travel_min": 4
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גן חיים",
-     "population": 7100,
-     "settlement_id": 68,
-     "travel_min": 4
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "כפר סבא",
-     "population": 11200,
-     "settlement_id": 130,
-     "travel_min": 6
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שדה ורבורג",
-     "population": 7800,
-     "settlement_id": 242,
-     "travel_min": 8
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ג'לג'וליה",
-     "population": 12900,
-     "settlement_id": 50,
-     "travel_min": 10
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "טירה",
-     "population": 70400,
-     "settlement_id": 95,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר הס",
-     "population": 10100,
-     "settlement_id": 124,
-     "travel_min": 12
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רעננה",
-     "population": 31800,
-     "settlement_id": 238,
-     "travel_min": 13
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הוד השרון",
-     "population": 5700,
-     "settlement_id": 74,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נירית",
-     "population": 212600,
-     "settlement_id": 178,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כוכב יאיר",
-     "population": 12600,
-     "settlement_id": 113,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עזריאל",
-     "population": 5500,
-     "settlement_id": 185,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "צור יצחק",
-     "population": 24000,
-     "settlement_id": 213,
-     "travel_min": 17
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הרצליה",
-     "population": 43100,
-     "settlement_id": 80,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר עבודה",
-     "population": 9500,
-     "settlement_id": 131,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה ירק",
-     "population": 6900,
-     "settlement_id": 167,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית יהושע",
-     "population": 27500,
-     "settlement_id": 32,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר ברא",
-     "population": 1000,
-     "settlement_id": 119,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ארסוף",
-     "population": 53200,
-     "settlement_id": 23,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "חורשים",
-     "population": 27500,
-     "settlement_id": 88,
-     "travel_min": 21
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קלנסווה",
-     "population": 30000,
-     "settlement_id": 217,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אבן יהודה",
-     "population": 10000,
-     "settlement_id": 2,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר יעבץ",
-     "population": 68400,
-     "settlement_id": 128,
-     "travel_min": 24
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראש העין",
-     "population": 3900,
-     "settlement_id": 225,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת השרון",
-     "population": 17500,
-     "settlement_id": 235,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר שמריהו",
-     "population": 25800,
-     "settlement_id": 133,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שפיים",
-     "population": 13400,
-     "settlement_id": 256,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "תנובות",
-     "population": 65500,
-     "settlement_id": 261,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 80.11,
-   "station_ids": [
-    68,
-    69,
-    71,
-    72,
-    75,
-    76,
-    77,
-    81
-   ],
-   "stations_count": 8,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 470,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "צפון",
-   "id": 9,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.946017,
-   "lng": 35.526017,
-   "missing_positions": 112,
-   "name": "כנרת",
-   "pct_jewish": 75.68,
-   "pct_male": 63.46,
-   "required_positions": 582,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "חוקוק",
-     "population": 1500,
-     "settlement_id": 87,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שפר",
-     "population": 226900,
-     "settlement_id": 257,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עלמה",
-     "population": 2400,
-     "settlement_id": 197,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ריחאנייה",
-     "population": 12400,
-     "settlement_id": 231,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין אל-אסד",
-     "population": 2400,
-     "settlement_id": 187,
-     "travel_min": 27
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "מגאר",
-     "population": 75800,
-     "settlement_id": 143,
-     "travel_min": 28
-    }
-   ],
-   "staffing_pct": 80.76,
-   "station_ids": [
-    13,
-    14,
-    16,
-    21,
-    26,
-    27
-   ],
-   "stations_count": 6,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 337,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "ירושלים",
-   "id": 10,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.766675,
-   "lng": 35.14465,
-   "missing_positions": 79,
-   "name": "ציון",
-   "pct_jewish": 78.65,
-   "pct_male": 67.37,
-   "required_positions": 416,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "אורה",
-     "population": 7600,
-     "settlement_id": 9,
-     "travel_min": 4
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין נקובא",
-     "population": 29600,
-     "settlement_id": 193,
-     "travel_min": 8
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין ראפה",
-     "population": 45800,
-     "settlement_id": 194,
-     "travel_min": 8
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת רזיאל",
-     "population": 10600,
-     "settlement_id": 237,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "הר גילה",
-     "population": 8100,
-     "settlement_id": 77,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בר גיורא",
-     "population": 13500,
-     "settlement_id": 41,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "צור הדסה",
-     "population": 10800,
-     "settlement_id": 212,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבעון החדשה",
-     "population": 85700,
-     "settlement_id": 56,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כסלון",
-     "population": 8300,
-     "settlement_id": 116,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה דניאל",
-     "population": 29100,
-     "settlement_id": 165,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ראש צורים",
-     "population": 47500,
-     "settlement_id": 226,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית מאיר",
-     "population": 4100,
-     "settlement_id": 34,
-     "travel_min": 26
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת זאב",
-     "population": 10400,
-     "settlement_id": 58,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בת עין",
-     "population": 5500,
-     "settlement_id": 48,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אשתאול",
-     "population": 1300,
-     "settlement_id": 25,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מסילת ציון",
-     "population": 15200,
-     "settlement_id": 153,
-     "travel_min": 29
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מעלה אדומים",
-     "population": 5100,
-     "settlement_id": 155,
-     "travel_min": 29
-    }
-   ],
-   "staffing_pct": 81.01,
-   "station_ids": [
-    31,
-    32,
-    33,
-    34
-   ],
-   "stations_count": 4,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 1260,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "חוף",
-   "id": 11,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.696762,
-   "lng": 35.041962,
-   "missing_positions": 258,
-   "name": "חוף",
-   "pct_jewish": 74.92,
-   "pct_male": 68.5,
-   "required_positions": 1518,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "בית אורן",
-     "population": 4300,
-     "settlement_id": 29,
-     "travel_min": 11
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מגדים",
-     "population": 3400,
-     "settlement_id": 144,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עתלית",
-     "population": 37400,
-     "settlement_id": 201,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין כרמל",
-     "population": 3700,
-     "settlement_id": 191,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבע כרמל",
-     "population": 37000,
-     "settlement_id": 55,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר הנוער הדתי",
-     "population": 5200,
-     "settlement_id": 123,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שדה יעקב",
-     "population": 44200,
-     "settlement_id": 243,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין איילה",
-     "population": 33600,
-     "settlement_id": 186,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "החותרים",
-     "population": 25900,
-     "settlement_id": 75,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בת שלמה",
-     "population": 12000,
-     "settlement_id": 49,
-     "travel_min": 28
-    }
-   ],
-   "staffing_pct": 83.0,
-   "station_ids": [
-    53,
-    54,
-    56,
-    55,
-    57,
-    58,
-    59,
-    60,
-    61,
-    62,
-    63,
-    64,
-    65
-   ],
-   "stations_count": 13,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 282,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "תל אביב",
-   "id": 12,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.0976,
-   "lng": 34.785833,
-   "missing_positions": 57,
-   "name": "ירקון",
-   "pct_jewish": 81.99,
-   "pct_male": 61.86,
-   "required_positions": 339,
-   "settlements": [
-    {
-     "focus": true,
-     "large": true,
-     "name": "תל אביב",
-     "population": 35000,
-     "settlement_id": 260,
-     "travel_min": 3
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעתיים",
-     "population": 27600,
-     "settlement_id": 62,
-     "travel_min": 10
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמת גן",
-     "population": 10000,
-     "settlement_id": 234,
-     "travel_min": 13
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בני ברק",
-     "population": 19200,
-     "settlement_id": 37,
-     "travel_min": 14
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת שמואל",
-     "population": 3000,
-     "settlement_id": 61,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אזור",
-     "population": 2600,
-     "settlement_id": 10,
-     "travel_min": 18
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הרצליה",
-     "population": 43100,
-     "settlement_id": 80,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת פנקס",
-     "population": 14700,
-     "settlement_id": 236,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית אונו",
-     "population": 10800,
-     "settlement_id": 219,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת השרון",
-     "population": 17500,
-     "settlement_id": 235,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר שמריהו",
-     "population": 25800,
-     "settlement_id": 133,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "סביון",
-     "population": 25600,
-     "settlement_id": 181,
-     "travel_min": 21
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בת ים",
-     "population": 7500,
-     "settlement_id": 47,
-     "travel_min": 22
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אור יהודה",
-     "population": 140000,
-     "settlement_id": 8,
-     "travel_min": 23
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "הוד השרון",
-     "population": 5700,
-     "settlement_id": 74,
-     "travel_min": 23
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "פתח תקווה",
-     "population": 37000,
-     "settlement_id": 208,
-     "travel_min": 24
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "חולון",
-     "population": 22200,
-     "settlement_id": 86,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יהוד",
-     "population": 6700,
-     "settlement_id": 100,
-     "travel_min": 25
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רעננה",
-     "population": 31800,
-     "settlement_id": 238,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ארסוף",
-     "population": 53200,
-     "settlement_id": 23,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מגשימים",
-     "population": 19200,
-     "settlement_id": 147,
-     "travel_min": 29
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שפיים",
-     "population": 13400,
-     "settlement_id": 256,
-     "travel_min": 29
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה ירק",
-     "population": 6900,
-     "settlement_id": 167,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 83.19,
-   "station_ids": [
-    4,
-    7,
-    10
-   ],
-   "stations_count": 3,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 570,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "מרכז",
-   "id": 13,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.91855,
-   "lng": 34.852783,
-   "missing_positions": 113,
-   "name": "שפלה",
-   "pct_jewish": 73.92,
-   "pct_male": 66.26,
-   "required_positions": 683,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "ישרש",
-     "population": 76100,
-     "settlement_id": 111,
-     "travel_min": 3
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמלה",
-     "population": 25900,
-     "settlement_id": 233,
-     "travel_min": 5
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רחובות",
-     "population": 17100,
-     "settlement_id": 230,
-     "travel_min": 11
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "באר יעקב",
-     "population": 4800,
-     "settlement_id": 26,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פתחיה",
-     "population": 11300,
-     "settlement_id": 209,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נס ציונה",
-     "population": 10100,
-     "settlement_id": 179,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר דניאל",
-     "population": 21500,
-     "settlement_id": 122,
-     "travel_min": 16
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "לוד",
-     "population": 1800,
-     "settlement_id": 137,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מזכרת בתיה",
-     "population": 4300,
-     "settlement_id": 150,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גמזו",
-     "population": 39100,
-     "settlement_id": 67,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גן שלמה",
-     "population": 700,
-     "settlement_id": 69,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראשון לציון",
-     "population": 1000,
-     "settlement_id": 227,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אחיעזר",
-     "population": 33800,
-     "settlement_id": 12,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר בן נון",
-     "population": 2400,
-     "settlement_id": 118,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שוהם",
-     "population": 86300,
-     "settlement_id": 246,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מבוא מודיעים",
-     "population": 26000,
-     "settlement_id": 142,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שעלבים",
-     "population": 4800,
-     "settlement_id": 254,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברקת",
-     "population": 20300,
-     "settlement_id": 45,
-     "travel_min": 30
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יסודות",
-     "population": 1400,
-     "settlement_id": 106,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 83.46,
-   "station_ids": [
-    70,
-    73,
-    74,
-    78,
-    79,
-    80
-   ],
-   "stations_count": 6,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 196,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "ירושלים",
-   "id": 14,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.795,
-   "lng": 35.235,
-   "missing_positions": 35,
-   "name": "קדם",
-   "pct_jewish": 80.11,
-   "pct_male": 68.14,
-   "required_positions": 231,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "אורה",
-     "population": 7600,
-     "settlement_id": 9,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מעלה אדומים",
-     "population": 5100,
-     "settlement_id": 155,
-     "travel_min": 18
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבע בנימין",
-     "population": 13100,
-     "settlement_id": 54,
-     "travel_min": 20
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת זאב",
-     "population": 10400,
-     "settlement_id": 58,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין נקובא",
-     "population": 29600,
-     "settlement_id": 193,
-     "travel_min": 23
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבעון החדשה",
-     "population": 85700,
-     "settlement_id": 56,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "הר גילה",
-     "population": 8100,
-     "settlement_id": 77,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פסגות",
-     "population": 134000,
-     "settlement_id": 205,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עין ראפה",
-     "population": 45800,
-     "settlement_id": 194,
-     "travel_min": 28
-    }
-   ],
-   "staffing_pct": 84.85,
-   "station_ids": [
-    35,
-    36,
-    37
-   ],
-   "stations_count": 3,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 124,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "ש\"י",
-   "id": 15,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.92195,
-   "lng": 35.35915,
-   "missing_positions": 22,
-   "name": "גלעד",
-   "pct_jewish": 85.08,
-   "pct_male": 68.22,
-   "required_positions": 146,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "גבע בנימין",
-     "population": 13100,
-     "settlement_id": 54,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "עפרה",
-     "population": 7000,
-     "settlement_id": 199,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גלגל",
-     "population": 11600,
-     "settlement_id": 66,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 84.93,
-   "station_ids": [
-    84,
-    87
-   ],
-   "stations_count": 2,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 401,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "דרום",
-   "id": 16,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.37992,
-   "lng": 34.6707,
-   "missing_positions": 70,
-   "name": "נגב",
-   "pct_jewish": 80.91,
-   "pct_male": 69.45,
-   "required_positions": 471,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברוש",
-     "population": 14400,
-     "settlement_id": 43,
-     "travel_min": 7
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "תדהר",
-     "population": 5600,
-     "settlement_id": 259,
-     "travel_min": 7
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שיבולים",
-     "population": 3600,
-     "settlement_id": 250,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שרשרת",
-     "population": 4400,
-     "settlement_id": 258,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אשבול",
-     "population": 2100,
-     "settlement_id": 24,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פדויים",
-     "population": 7200,
-     "settlement_id": 203,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יושיביה",
-     "population": 41200,
-     "settlement_id": 103,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שבי דרום",
-     "population": 26000,
-     "settlement_id": 239,
-     "travel_min": 26
-    }
-   ],
-   "staffing_pct": 85.14,
-   "station_ids": [
-    39,
-    42,
-    45,
-    50,
-    52
-   ],
-   "stations_count": 5,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 493,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "דרום",
-   "id": 17,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.20016,
-   "lng": 35.04626,
-   "missing_positions": 86,
-   "name": "רותם",
-   "pct_jewish": 75.63,
-   "pct_male": 67.68,
-   "required_positions": 579,
-   "settlements": [],
-   "staffing_pct": 85.15,
-   "station_ids": [
-    43,
-    44,
-    46,
-    47,
-    51
-   ],
-   "stations_count": 5,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 164,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "ש\"י",
-   "id": 18,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.5913,
-   "lng": 35.1124,
-   "missing_positions": 28,
-   "name": "יהודה",
-   "pct_jewish": 80.18,
-   "pct_male": 68.73,
-   "required_positions": 192,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "בת עין",
-     "population": 5500,
-     "settlement_id": 48,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ראש צורים",
-     "population": 47500,
-     "settlement_id": 226,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נווה דניאל",
-     "population": 29100,
-     "settlement_id": 165,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מעלה עמוס",
-     "population": 37400,
-     "settlement_id": 157,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "צור הדסה",
-     "population": 10800,
-     "settlement_id": 212,
-     "travel_min": 29
-    }
-   ],
-   "staffing_pct": 85.42,
-   "station_ids": [
-    85,
-    88
-   ],
-   "stations_count": 2,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 543,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "תל אביב",
-   "id": 19,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.04038,
-   "lng": 34.7691,
-   "missing_positions": 79,
-   "name": "איילון",
-   "pct_jewish": 68.21,
-   "pct_male": 69.96,
-   "required_positions": 622,
-   "settlements": [
-    {
-     "focus": true,
-     "large": true,
-     "name": "בת ים",
-     "population": 7500,
-     "settlement_id": 47,
-     "travel_min": 7
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אזור",
-     "population": 2600,
-     "settlement_id": 10,
-     "travel_min": 8
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "חולון",
-     "population": 22200,
-     "settlement_id": 86,
-     "travel_min": 12
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "תל אביב",
-     "population": 35000,
-     "settlement_id": 260,
-     "travel_min": 12
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעתיים",
-     "population": 27600,
-     "settlement_id": 62,
-     "travel_min": 13
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אור יהודה",
-     "population": 140000,
-     "settlement_id": 8,
-     "travel_min": 16
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בני ברק",
-     "population": 19200,
-     "settlement_id": 37,
-     "travel_min": 16
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמת גן",
-     "population": 10000,
-     "settlement_id": 234,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת פנקס",
-     "population": 14700,
-     "settlement_id": 236,
-     "travel_min": 17
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת שמואל",
-     "population": 3000,
-     "settlement_id": 61,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראשון לציון",
-     "population": 1000,
-     "settlement_id": 227,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית אונו",
-     "population": 10800,
-     "settlement_id": 219,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "סביון",
-     "population": 25600,
-     "settlement_id": 181,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אחיעזר",
-     "population": 33800,
-     "settlement_id": 12,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יהוד",
-     "population": 6700,
-     "settlement_id": 100,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מגשימים",
-     "population": 19200,
-     "settlement_id": 147,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "פלמחים",
-     "population": 35800,
-     "settlement_id": 204,
-     "travel_min": 28
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "באר יעקב",
-     "population": 4800,
-     "settlement_id": 26,
-     "travel_min": 29
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נס ציונה",
-     "population": 10100,
-     "settlement_id": 179,
-     "travel_min": 29
-    }
-   ],
-   "staffing_pct": 87.3,
-   "station_ids": [
-    2,
-    5,
-    6,
-    9,
-    11
-   ],
-   "stations_count": 5,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 401,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "דרום",
-   "id": 20,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 31.7006,
-   "lng": 34.68355,
-   "missing_positions": 48,
-   "name": "לכיש",
-   "pct_jewish": 79.47,
-   "pct_male": 69.8,
-   "required_positions": 449,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "ניצנים",
-     "population": 94100,
-     "settlement_id": 174,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כוכב מיכאל",
-     "population": 4400,
-     "settlement_id": 114,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "זבדיאל",
-     "population": 5200,
-     "settlement_id": 81,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שחר",
-     "population": 14600,
-     "settlement_id": 249,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "בת הדר",
-     "population": 236700,
-     "settlement_id": 46,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נהורה",
-     "population": 131100,
-     "settlement_id": 163,
-     "travel_min": 23
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית גת",
-     "population": 4600,
-     "settlement_id": 221,
-     "travel_min": 27
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שדה דוד",
-     "population": 5000,
-     "settlement_id": 241,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רבדים",
-     "population": 40700,
-     "settlement_id": 228,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 89.31,
-   "station_ids": [
-    40,
-    41,
-    49,
-    48
-   ],
-   "stations_count": 4,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 493,
-   "color": "#EAB308",
-   "coord_verified": true,
-   "district": "צפון",
-   "id": 21,
-   "key": "medium",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.87668,
-   "lng": 35.231,
-   "missing_positions": 55,
-   "name": "גליל",
-   "pct_jewish": 80.4,
-   "pct_male": 71.47,
-   "required_positions": 548,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "קורנית",
-     "population": 6200,
-     "settlement_id": 216,
-     "travel_min": 9
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מורשת",
-     "population": 6500,
-     "settlement_id": 148,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מצפה אבי\"ב",
-     "population": 33500,
-     "settlement_id": 159,
-     "travel_min": 15
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אחיהוד",
-     "population": 700,
-     "settlement_id": 11,
-     "travel_min": 16
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "חנתון",
-     "population": 25300,
-     "settlement_id": 92,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "לפידות",
-     "population": 3300,
-     "settlement_id": 140,
-     "travel_min": 22
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "צביה",
-     "population": 9600,
-     "settlement_id": 210,
-     "travel_min": 22
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ירכא",
-     "population": 1400,
-     "settlement_id": 109,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אבטליון",
-     "population": 800,
-     "settlement_id": 1,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ביר אל-מכסור",
-     "population": 4000,
-     "settlement_id": 28,
-     "travel_min": 25
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר יאסיף",
-     "population": 4800,
-     "settlement_id": 127,
-     "travel_min": 26
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית ביאליק",
-     "population": 5500,
-     "settlement_id": 220,
-     "travel_min": 28
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שזור",
-     "population": 25700,
-     "settlement_id": 248,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 89.96,
-   "station_ids": [
-    15,
-    18,
-    20,
-    22,
-    28
-   ],
-   "stations_count": 5,
-   "status": "בינוני",
-   "vacant_positions": null
-  },
-  {
-   "actual_positions": 92,
-   "color": "#16A34A",
-   "coord_verified": true,
-   "district": "מרכז",
-   "id": 22,
-   "key": "ok",
-   "kind": "region",
-   "kind_label": "מרחב",
-   "lat": 32.0004,
-   "lng": 34.8706,
-   "missing_positions": 8,
-   "name": "מרכז",
-   "pct_jewish": 71.7,
-   "pct_male": 75.8,
-   "required_positions": 100,
-   "settlements": [
-    {
-     "focus": false,
-     "large": false,
-     "name": "אחיעזר",
-     "population": 33800,
-     "settlement_id": 12,
-     "travel_min": 6
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "יהוד",
-     "population": 6700,
-     "settlement_id": 100,
-     "travel_min": 8
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "סביון",
-     "population": 25600,
-     "settlement_id": 181,
-     "travel_min": 12
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "רמת פנקס",
-     "population": 14700,
-     "settlement_id": 236,
-     "travel_min": 12
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אור יהודה",
-     "population": 140000,
-     "settlement_id": 8,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "טירת יהודה",
-     "population": 22500,
-     "settlement_id": 96,
-     "travel_min": 13
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "לוד",
-     "population": 1800,
-     "settlement_id": 137,
-     "travel_min": 13
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מזור",
-     "population": 44100,
-     "settlement_id": 149,
-     "travel_min": 14
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מגשימים",
-     "population": 19200,
-     "settlement_id": 147,
-     "travel_min": 17
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "אזור",
-     "population": 2600,
-     "settlement_id": 10,
-     "travel_min": 18
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "באר יעקב",
-     "population": 4800,
-     "settlement_id": 26,
-     "travel_min": 18
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעת שמואל",
-     "population": 3000,
-     "settlement_id": 61,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "חולון",
-     "population": 22200,
-     "settlement_id": 86,
-     "travel_min": 19
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "שוהם",
-     "population": 86300,
-     "settlement_id": 246,
-     "travel_min": 19
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בני ברק",
-     "population": 19200,
-     "settlement_id": 37,
-     "travel_min": 20
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ברקת",
-     "population": 20300,
-     "settlement_id": 45,
-     "travel_min": 20
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "קריית אונו",
-     "population": 10800,
-     "settlement_id": 219,
-     "travel_min": 20
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראשון לציון",
-     "population": 1000,
-     "settlement_id": 227,
-     "travel_min": 20
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "גבעתיים",
-     "population": 27600,
-     "settlement_id": 62,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "גמזו",
-     "population": 39100,
-     "settlement_id": 67,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "ישרש",
-     "population": 76100,
-     "settlement_id": 111,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "כפר דניאל",
-     "population": 21500,
-     "settlement_id": 122,
-     "travel_min": 21
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נחשונים",
-     "population": 11500,
-     "settlement_id": 172,
-     "travel_min": 21
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "פתח תקווה",
-     "population": 37000,
-     "settlement_id": 208,
-     "travel_min": 21
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמלה",
-     "population": 25900,
-     "settlement_id": 233,
-     "travel_min": 22
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "אלעד",
-     "population": 32500,
-     "settlement_id": 18,
-     "travel_min": 23
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "רמת גן",
-     "population": 10000,
-     "settlement_id": 234,
-     "travel_min": 23
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "בת ים",
-     "population": 7500,
-     "settlement_id": 47,
-     "travel_min": 24
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "נס ציונה",
-     "population": 10100,
-     "settlement_id": 179,
-     "travel_min": 26
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "ראש העין",
-     "population": 3900,
-     "settlement_id": 225,
-     "travel_min": 26
-    },
-    {
-     "focus": false,
-     "large": false,
-     "name": "מבוא מודיעים",
-     "population": 26000,
-     "settlement_id": 142,
-     "travel_min": 30
-    },
-    {
-     "focus": true,
-     "large": true,
-     "name": "תל אביב",
-     "population": 35000,
-     "settlement_id": 260,
-     "travel_min": 30
-    }
-   ],
-   "staffing_pct": 92.0,
-   "station_ids": [
-    67
+    1
    ],
    "stations_count": 1,
    "status": "תקין",
    "vacant_positions": null
   }
  ],
- "regions_count": 22,
+ "regions_count": 23,
  "units_count": 0,
  "units_defined": false,
  "without_location": [],
- "without_settlements": [
-  "רותם"
- ]
+ "without_settlements": []
 }

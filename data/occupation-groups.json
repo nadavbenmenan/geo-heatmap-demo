@@ -17,103 +17,103 @@
   {
    "category": "בילוש",
    "occupation": "בילוש — מפקד צוות",
-   "positions": 561,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 99
-  },
-  {
-   "category": "בילוש",
-   "occupation": "בילוש — קצין",
-   "positions": 612,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 115
-  },
-  {
-   "category": "בילוש",
-   "occupation": "בילוש — שוטר",
-   "positions": 567,
+   "positions": 562,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 91
   },
   {
-   "category": "הדרכה והכשרות",
-   "occupation": "הדרכה והכשרות — מפקד צוות",
-   "positions": 90,
+   "category": "בילוש",
+   "occupation": "בילוש — קצין",
+   "positions": 584,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 16
+   "vacant": 100
+  },
+  {
+   "category": "בילוש",
+   "occupation": "בילוש — שוטר",
+   "positions": 547,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 73
+  },
+  {
+   "category": "הדרכה והכשרות",
+   "occupation": "הדרכה והכשרות — מפקד צוות",
+   "positions": 110,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 21
   },
   {
    "category": "הדרכה והכשרות",
    "occupation": "הדרכה והכשרות — קצין",
-   "positions": 90,
+   "positions": 119,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 14
+   "vacant": 18
   },
   {
    "category": "הדרכה והכשרות",
    "occupation": "הדרכה והכשרות — שוטר",
-   "positions": 103,
+   "positions": 138,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 15
+   "vacant": 32
   },
   {
    "category": "חקירות",
    "occupation": "חקירות — מפקד צוות",
-   "positions": 817,
+   "positions": 754,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 100
+  },
+  {
+   "category": "חקירות",
+   "occupation": "חקירות — קצין",
+   "positions": 723,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 126
+  },
+  {
+   "category": "חקירות",
+   "occupation": "חקירות — שוטר",
+   "positions": 778,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 130
   },
   {
-   "category": "חקירות",
-   "occupation": "חקירות — קצין",
-   "positions": 738,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 139
-  },
-  {
-   "category": "חקירות",
-   "occupation": "חקירות — שוטר",
-   "positions": 760,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 136
-  },
-  {
    "category": "ייעוץ משפטי",
    "occupation": "ייעוץ משפטי — מפקד צוות",
-   "positions": 103,
+   "positions": 113,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 20
+   "vacant": 12
   },
   {
    "category": "ייעוץ משפטי",
    "occupation": "ייעוץ משפטי — קצין",
-   "positions": 113,
+   "positions": 128,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 25
+   "vacant": 22
   },
   {
    "category": "ייעוץ משפטי",
    "occupation": "ייעוץ משפטי — שוטר",
-   "positions": 114,
+   "positions": 103,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 13
+   "vacant": 19
   },
   {
    "category": "כספים ותקציב",
    "occupation": "כספים ותקציב — מפקד צוות",
-   "positions": 102,
+   "positions": 106,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 13
@@ -121,42 +121,42 @@
   {
    "category": "כספים ותקציב",
    "occupation": "כספים ותקציב — קצין",
-   "positions": 109,
+   "positions": 101,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 21
+   "vacant": 20
   },
   {
    "category": "כספים ותקציב",
    "occupation": "כספים ותקציב — שוטר",
-   "positions": 90,
+   "positions": 102,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 19
+   "vacant": 14
   },
   {
    "category": "לוגיסטיקה",
    "occupation": "לוגיסטיקה — מפקד צוות",
-   "positions": 115,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 13
-  },
-  {
-   "category": "לוגיסטיקה",
-   "occupation": "לוגיסטיקה — קצין",
-   "positions": 102,
+   "positions": 84,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 16
   },
   {
    "category": "לוגיסטיקה",
-   "occupation": "לוגיסטיקה — שוטר",
-   "positions": 109,
+   "occupation": "לוגיסטיקה — קצין",
+   "positions": 79,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 24
+   "vacant": 7
+  },
+  {
+   "category": "לוגיסטיקה",
+   "occupation": "לוגיסטיקה — שוטר",
+   "positions": 81,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 14
   },
   {
    "category": "מודיעין",
@@ -185,74 +185,74 @@
   {
    "category": "מנהלה וכוח אדם",
    "occupation": "מנהלה וכוח אדם — מפקד צוות",
-   "positions": 106,
+   "positions": 102,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 16
+   "vacant": 19
   },
   {
    "category": "מנהלה וכוח אדם",
    "occupation": "מנהלה וכוח אדם — קצין",
-   "positions": 122,
+   "positions": 92,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 9
+  },
+  {
+   "category": "מנהלה וכוח אדם",
+   "occupation": "מנהלה וכוח אדם — שוטר",
+   "positions": 105,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 9
+  },
+  {
+   "category": "מערכות מידע",
+   "occupation": "מערכות מידע — מפקד צוות",
+   "positions": 84,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 13
+  },
+  {
+   "category": "מערכות מידע",
+   "occupation": "מערכות מידע — קצין",
+   "positions": 96,
+   "source": "הרשימה שאופיינה",
+   "unclassified": false,
+   "vacant": 21
+  },
+  {
+   "category": "מערכות מידע",
+   "occupation": "מערכות מידע — שוטר",
+   "positions": 98,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
    "vacant": 16
   },
   {
-   "category": "מנהלה וכוח אדם",
-   "occupation": "מנהלה וכוח אדם — שוטר",
-   "positions": 122,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 28
-  },
-  {
-   "category": "מערכות מידע",
-   "occupation": "מערכות מידע — מפקד צוות",
-   "positions": 80,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 14
-  },
-  {
-   "category": "מערכות מידע",
-   "occupation": "מערכות מידע — קצין",
-   "positions": 101,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 12
-  },
-  {
-   "category": "מערכות מידע",
-   "occupation": "מערכות מידע — שוטר",
-   "positions": 122,
-   "source": "הרשימה שאופיינה",
-   "unclassified": false,
-   "vacant": 14
-  },
-  {
    "category": "סיור",
    "occupation": "סיור — מפקד צוות",
-   "positions": 1341,
+   "positions": 1346,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 262
+   "vacant": 218
   },
   {
    "category": "סיור",
    "occupation": "סיור — קצין",
-   "positions": 1352,
+   "positions": 1339,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 214
+   "vacant": 213
   },
   {
    "category": "סיור",
    "occupation": "סיור — שוטר",
-   "positions": 1353,
+   "positions": 1270,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 221
+   "vacant": 193
   },
   {
    "category": "מקצועות ללא סיווג",
@@ -273,26 +273,26 @@
   {
    "category": "שיטור קהילתי",
    "occupation": "שיטור קהילתי — מפקד צוות",
-   "positions": 522,
+   "positions": 508,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 97
+   "vacant": 73
   },
   {
    "category": "שיטור קהילתי",
    "occupation": "שיטור קהילתי — קצין",
-   "positions": 530,
+   "positions": 497,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 87
+   "vacant": 78
   },
   {
    "category": "שיטור קהילתי",
    "occupation": "שיטור קהילתי — שוטר",
-   "positions": 492,
+   "positions": 504,
    "source": "הרשימה שאופיינה",
    "unclassified": false,
-   "vacant": 80
+   "vacant": 90
   },
   {
    "category": "תנועה",

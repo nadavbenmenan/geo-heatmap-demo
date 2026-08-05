@@ -1,13 +1,13 @@
 {
- "actual_positions": 87,
- "area": "שומרון",
+ "actual_positions": 131,
+ "area": "קדם",
  "candidates_by_role": [
   {
    "candidates_gender_coverage": null,
    "candidates_pct_jewish": null,
    "candidates_pct_male": null,
    "candidates_religion_coverage": null,
-   "count": 22,
+   "count": 21,
    "key": "patrol",
    "label": "סייר"
   },
@@ -39,57 +39,57 @@
    "label": "אחר"
   }
  ],
- "candidates_gender_coverage": 49,
- "candidates_in_process": 103,
- "candidates_pct_jewish": 63.3,
- "candidates_pct_male": 67.3,
+ "candidates_gender_coverage": 42,
+ "candidates_in_process": 100,
+ "candidates_pct_jewish": 69.4,
+ "candidates_pct_male": 59.5,
  "candidates_religion_coverage": 49,
  "color": "#EAB308",
  "coord_verified": false,
- "district": "ש\"י",
+ "district": "ירושלים",
  "id": 83,
  "insights": [],
- "lat": 31.95,
- "lng": 35.22,
- "missing_positions": 20,
- "missing_to_delete": 2,
- "name": "תחנת בנימין",
+ "lat": 31.81,
+ "lng": 35.23,
+ "missing_positions": 24,
+ "missing_to_delete": 4,
+ "name": "תחנת שפט",
  "nearby_settlements": [],
- "pct_jewish": 75.4,
- "pct_male": 78.1,
- "required_positions": 107,
+ "pct_jewish": 72.0,
+ "pct_male": 79.3,
+ "required_positions": 155,
  "roles": [
   {
    "key": "patrol",
    "label": "סייר",
    "missing": 8,
-   "pct_jewish": 77.0,
-   "pct_male": 87.7
+   "pct_jewish": 73.6,
+   "pct_male": 88.9
   },
   {
    "key": "detectives",
    "label": "בלש",
-   "missing": 3,
-   "pct_jewish": 76.6,
-   "pct_male": 77.0
+   "missing": 4,
+   "pct_jewish": 73.2,
+   "pct_male": 78.2
   },
   {
    "key": "investigators",
    "label": "חוקר",
-   "missing": 4,
-   "pct_jewish": 76.2,
-   "pct_male": 74.4
+   "missing": 5,
+   "pct_jewish": 72.8,
+   "pct_male": 75.6
   },
   {
    "key": "other",
    "label": "אחר",
    "missing": 3,
-   "pct_jewish": 77.2,
-   "pct_male": 63.7
+   "pct_jewish": 73.8,
+   "pct_male": 64.9
   }
  ],
- "staffing_pct": 81.31,
+ "staffing_pct": 84.52,
  "status": "בינוני",
  "status_key": "medium",
- "surplus_positions": 0
+ "surplus_positions": 1
 }

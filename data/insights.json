@@ -1,26 +1,26 @@
 [
  {
-  "created_at": "2026-08-04T14:42:34",
+  "created_at": "2026-08-04T17:17:05",
   "done": 0,
   "id": 2,
-  "station_id": 61,
-  "station_name": "תחנת טירת הכרמל",
+  "station_id": 63,
+  "station_name": "תחנת עירון",
   "text": "פער מתמשך בחקירות — לבחון שיתוף מרחבי."
  },
  {
-  "created_at": "2026-08-02T14:42:34",
+  "created_at": "2026-08-02T17:17:05",
   "done": 0,
   "id": 1,
-  "station_id": 14,
-  "station_name": "תחנת טבריה",
+  "station_id": 8,
+  "station_name": "תחנת אשקלון",
   "text": "ריכוז חוסר בסיור — לשקול יום גיוס ממוקד באזור."
  },
  {
-  "created_at": "2026-07-28T14:42:34",
+  "created_at": "2026-07-28T17:17:05",
   "done": 1,
   "id": 3,
-  "station_id": 72,
-  "station_name": "תחנת כפר קאסם",
+  "station_id": 78,
+  "station_name": "תחנת רמלה",
   "text": "להסיט תקציב פרסום לתחנות האדומות."
  }
 ]
