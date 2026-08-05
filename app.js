@@ -64,6 +64,7 @@ const state = {
   regionRelations: [],
   candidateScopes: [],
   adminRows: [],
+  occupationGroups: { items: [], groups: [], unclassified: 0 },
   adminProfessions: [],
   adminRegion: "", // היחידה שנבחרה בטבלת המנהלה, לצמצום רשימת המשרות
   populationKnown: false, // האם יש במאגר נתוני אוכלוסייה בכלל
@@ -654,21 +655,27 @@ function popDemographics(role) {
 //   * *משרות פנויות* = משרות שמסומנות לגיוס בפועל.
 // משרה מוקפאת היא חוסר תקן ואינה משרה פנויה; משרה בתקן שבור נספרת
 // בחוסר כחצי ובמשרות כאחת. ההפרש אינו באג, וכשהוא קיים נאמר למה.
-// §18.3: ערך השורה. **החוסר קודם**, ומספר המשרות נשאר כהקשר דהוי לצדו.
-// הסדר ההפוך הוא מה שגרם ל-"סיור 6" להיפתח לרשימה שמתחילה ב-21.
+// §20.1: ערך השורה — **החוסר הנקי בלבד**.
+//
+// קודם הופיע לצדו גם פירוט בסוגריים ("3 משרות · 2 פנויות לגיוס"), והוא
+// ייצר סתירה ויזואלית: בתחנת חברון סכום החוסרים ברשימה היה 4 וסכום
+// הפנויות בסוגריים 5, ושני המספרים נראו כאילו הם אמורים להיות שווים.
+// הם לא — חוסר הוא תקן פחות איוש, ומשרה פנויה היא משרה שמסומנת לגיוס
+// בפועל; משרה מוקפאת היא חוסר ואינה פנויה. אבל ההסבר הזה אינו נקרא
+// מתוך שתי שורות מספרים זו לצד זו, והמשתמש נשאר עם תחושת באג.
+//
+// המספר שעל השבב הוא החוסר, ולכן הרשימה שנפתחת ממנו מציגה חוסר ותו לא.
+// ההקשר (כמה משרות, כמה מהן פנויות) נשאר בשורת הסיכום שמתחת לרשימה,
+// שם הוא מוסבר במילים ואינו מתחזה לסכום של הרשימה.
 function occupationValue(item, hasTarget) {
+  // בלי יעד אין חוסר לחשב, והמשרות הן המידע היחיד שיש — כאן אין סתירה
+  // ואין סוגריים, ולכן השורה נשארת כפי שהייתה.
   if (!hasTarget) {
     return item.vacant
       ? `${item.positions} משרות · ${item.vacant} פנויות`
       : `${item.positions} משרות`;
   }
-  const context = [
-    `${item.positions} משרות`,
-    item.vacant ? `${item.vacant} פנויות לגיוס` : "",
-  ]
-    .filter(Boolean)
-    .join(" · ");
-  return `חסר ${item.missing} <em class="pop-context">(${context})</em>`;
+  return `חסר ${item.missing}`;
 }
 
 // שורת הסיכום. **היא חייבת להיות המספר שעל השבב** — זו כל הסיבה שהרשימה
@@ -2410,6 +2417,70 @@ const MANAGE_DATASETS = {
     note: "נטען מקובץ 'איוש מנהלה'. לעריכה — טען קובץ מעודכן במסך ההגדרות.",
     empty: "עדיין לא נטען קובץ איוש מנהלה.",
   },
+
+  // §20.2: כל תיאורי העיסוק והקבוצה שאליה שויכו.
+  //
+  // הצורך: קובץ המשרות מביא ניסוחי עיסוק חופשיים, ורשימת הסיווג שנמסרה
+  // מכסה את מה שהיה ידוע ביום המסירה. עיסוק חדש נופל לכלל מילת מפתח —
+  // ניחוש סביר, אבל ניחוש. בלי מסך שמראה אותם, אף אחד לא יודע שיש מה
+  // להשלים, והם נשארים משויכים לפי ניחוש לנצח.
+  //
+  // לכן העיסוקים שלא הוכרעו עולים לראש הרשימה ומסומנים באדום — הם
+  // המשימה, וכל השאר הוא הקשר.
+  occupations: {
+    title: "קשרי קבוצות תפקידים",
+    columns: ["תיאור עיסוק", "קבוצת תפקידים", "מקור הסיווג", "משרות", "פנויות"],
+    filters: [
+      { label: "קבוצת תפקידים", of: (r) => r.category || "לא מסווג" },
+      { label: "מצב סיווג", of: (r) => (r.unclassified ? "טעון אישור" : "מסווג") },
+    ],
+    rows: () => {
+      // הלא-מסווגים ראשונים, ובתוך כל קבוצה לפי מספר המשרות: עיסוק
+      // שיושבות עליו 40 משרות דחוף יותר מאחד שיושבת עליו אחת.
+      const items = state.occupationGroups.items || [];
+      return [...items].sort(
+        (a, b) =>
+          Number(b.unclassified) - Number(a.unclassified) ||
+          b.positions - a.positions ||
+          a.occupation.localeCompare(b.occupation, "he")
+      );
+    },
+    search: (r, term) =>
+      r.occupation.includes(term) || (r.category || "").includes(term),
+    kpis: () => {
+      const items = state.occupationGroups.items || [];
+      const pending = items.filter((i) => i.unclassified);
+      return [
+        { n: items.length, label: "תיאורי עיסוק" },
+        { n: (state.occupationGroups.groups || []).length, label: "קבוצות תפקידים" },
+        {
+          n: pending.length,
+          label: "טעונים אישור סיווג",
+          cls: pending.length ? "kpi--bad" : "",
+        },
+        { n: pending.reduce((a, i) => a + i.positions, 0), label: "משרות בעיסוקים אלה" },
+      ];
+    },
+    render: (r) => `<tr class="${r.unclassified ? "row-unclassified" : ""}">
+      <td><strong>${escapeHtml(r.occupation)}</strong></td>
+      <td>${
+        r.category
+          ? escapeHtml(r.category)
+          : '<b class="neg">לא מסווג</b>'
+      }</td>
+      <td class="muted">${
+        r.unclassified
+          ? `<b class="neg">${escapeHtml(r.source || "אין סיווג שנמסר")}</b>`
+          : escapeHtml(r.source)
+      }</td>
+      <td>${r.positions}</td>
+      <td>${r.vacant}</td>
+    </tr>`,
+    note:
+      "עיסוק מסומן באדום כשהשיוך שלו נקבע ע\"י המערכת ולא נמסר ברשימה — " +
+      "הוא עובד, אבל טעון אישור. לעדכון: data/מיפוי_עיסוקים.xlsx.",
+    empty: "עדיין לא נטען קובץ תקן ומצבה, ולכן אין תיאורי עיסוק.",
+  },
 };
 
 // צ'יפים קומפקטיים לתא בטבלה. null נשאר "—" ולא 0.
@@ -2638,6 +2709,10 @@ function switchDataset(name) {
   ["add-row", "add-row-region"].forEach((id) => {
     if (el(id)) el(id).hidden = true;
   });
+  // המדדים שייכים למערך הנבחר ולא למסך. בלי הרענון כאן הם נשארו של המערך
+  // הקודם — שורת "4,937 קשרים · 88 תחנות" מעל טבלת תיאורי העיסוק נראית
+  // כמו כותרת שלה, ואינה.
+  renderManageKpis();
   renderManageTable();
 }
 
@@ -4044,7 +4119,8 @@ async function refreshAll() {
   // /api/regions מחזיר את שמות המרחבים לרשימות הסינון; /api/regions/heat
   // מחזיר את מפת החום שלהם. שני נתונים שונים, ולכן שני נתיבים.
   const [legend, stations, settlements, relations, lastUpdate, regions, regionHeat,
-         regionRelations, candidates, adminRows, unitLocations, unitHeat] =
+         regionRelations, candidates, adminRows, unitLocations, unitHeat,
+         occupationGroups] =
     await Promise.all([
       api("/api/legend"),
       api("/api/stations"),
@@ -4058,6 +4134,7 @@ async function refreshAll() {
       api("/api/admin-rows"),
       api("/api/unit-locations"),
       api("/api/units/heat"),
+      api("/api/occupation-groups"),
     ]);
 
   state.stations = stations;
@@ -4072,6 +4149,7 @@ async function refreshAll() {
   state.regionRelations = regionRelations;
   state.candidateScopes = candidates.scopes;
   state.adminRows = adminRows;
+  state.occupationGroups = occupationGroups;
   state.unitLocations = unitLocations.units;
   // רשימת היישובים ל-datalist נבנית פעם אחת: 1,400 אפשרויות בכל שורה
   // היו הופכות את הטבלה לאיטית בלי להוסיף דבר.
