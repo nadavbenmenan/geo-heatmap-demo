@@ -238,6 +238,13 @@
     if (typeof url === "string" && url.indexOf("/api/") === 0) {
       return serve(url, init).catch((err) => json({ ok: false, error: err.message }, 502));
     }
+    // נכסי המערכת נטענים ב-app.js בנתיב מוחלט תחת /web — כך הם מוגשים
+    // בשרת. באירוח סטטי האתר יושב תחת נתיב משנה (‎/geo-heatmap-demo/‎),
+    // ולכן /web/... מצביע לשורש הדומיין ומחזיר 404. זה מה שהשאיר את
+    // המפה ריקה כאן בזמן שבשרת היא נראתה תקינה.
+    if (typeof url === "string" && url.indexOf("/web/") === 0) {
+      return nativeFetch(url.slice(5), init);
+    }
     return nativeFetch(input, init);
   };
 
