@@ -1100,12 +1100,18 @@ async function initMap() {
   // מקוון) הם עשירים ממנו, וציור מעליהם היה מכסה מפה טובה במתאר שטוח.
   try {
     const outline = await (await fetch("/web/vendor/israel.geojson")).json();
+    // §22.2: הצבעים. ישראל בהירה וחמה ובולטת משכנותיה (שהן צבע הרקע),
+    // והמים כחולים. ההיררכיה הזו היא מה שמאפשר לסיכות להיות הדבר הבולט
+    // במסך — רקע שמתחרה בהן הופך מפת חום לתמונה יפה שקשה לקרוא.
+    const MAP_STYLE = {
+      sea: { color: "#a9d3ea", weight: 1, fillColor: "#c3e0f2", fillOpacity: 1 },
+      land: { color: "#8d9bb0", weight: 1.5, fillColor: "#f4f1e6", fillOpacity: 1 },
+      water: { color: "#8ec5e8", weight: 1, fillColor: "#b3dcf2", fillOpacity: 1 },
+      river: { color: "#9ccbe6", weight: 1.6, fillOpacity: 0 },
+    };
     L.geoJSON(outline, {
       pane: "tilePane", // מתחת לכל שכבות המידע, כמו רקע
-      style: (feature) =>
-        feature.properties.kind === "water"
-          ? { color: "#93c5fd", weight: 1, fillColor: "#bfdbfe", fillOpacity: 1 }
-          : { color: "#94a3b8", weight: 1.2, fillColor: "#eef2f6", fillOpacity: 1 },
+      style: (feature) => MAP_STYLE[feature.properties.kind] || MAP_STYLE.land,
       interactive: false, // רקע אינו נלחץ — לחיצה על המפה מנקה בחירה
     }).addTo(state.map);
   } catch (err) {
@@ -4378,15 +4384,17 @@ async function init() {
       selectEntity(next.id);
     });
 
-    // המעבר למסך אחר נעשה בסוף, אחרי שהמפה כבר נבנתה ומוקדה: fitToBase
-    // על מסך מוסתר מקבל גודל 0 ומחשב זום שגוי — אותה משפחת באגים שכבר
-    // תפסה אותנו עם האנימציה.
-    if (screenByHash && screenByHash[0] !== "map") {
-      // כתובת שנשמרה בעבר פותחת את הלשונית שהיא התכוונה אליה, ולא את
-      // ברירת המחדל — #/manage הוא ניהול נתונים גם כשהוא כבר לא מסך.
-      if (screenByHash[0] === "settings")
-        state.settingsPane = SETTINGS_PANE_BY_HASH[initialHash] || "manage";
-      showScreen(screenByHash[0]);
+    // §22.1: **הפתיחה תמיד על מפת חום תחנות.**
+    //
+    // הדפדפן שומר את ה-hash, ולכן מי שסגר את המערכת במסך ההגדרות נחת שם
+    // גם בפתיחה הבאה — לפעמים ימים אחרי. זו התנהגות נכונה לקישור שנשלח,
+    // ושגויה לפתיחה יומיומית: המסך הראשון הוא נקודת ההתחלה של העבודה.
+    //
+    // ההבחנה: **קישור שנפתח בכוונה מול חזרה למערכת.** קישור לישות
+    // (#station/5) הוא כוונה מפורשת ונשמר; hash של מסך (#/settings)
+    // הוא רק היכן שהמשתמש היה, ולכן מנוקה.
+    if (screenByHash && screenByHash[0] !== "map" && !target) {
+      history.replaceState(null, "", location.pathname + location.search);
     }
   } catch (err) {
     setHealth("err", "אין חיבור למאגר");
