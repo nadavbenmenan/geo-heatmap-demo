@@ -1068,26 +1068,20 @@ async function initMap() {
     minZoom: MIN_ZOOM,
   }).setView(DEFAULT_VIEW.center, DEFAULT_VIEW.zoom);
 
-  // §18.1: שכבה אחת ויחידה, מהשרת המקומי. אין בורר רקעים ואין נפילה
-  // אחורה לספק חיצוני — "אין קישור לאינטרנט" חייב להיות נכון גם כשמשהו
-  // חסר, אחרת זו הבטחה שנשברת בשקט ברגע הלא נכון.
-  const cfg = BASEMAPS[DEFAULT_BASEMAP];
-  const zooms = (tiles.zooms && tiles.zooms.length ? tiles.zooms : [cfg.maxZoom]);
-  const deepest = Math.max(...zooms);
-  const shallowest = Math.min(...zooms);
-  L.tileLayer(cfg.url, {
-    // §19.2: **שני הקצוות, לא רק העליון.** בלי minNativeZoom המפה נפתחה
-    // על כל הארץ בזום 7, ביקשה אריחי זום 7 שלא היו בחבילה, וקיבלה מסך
-    // לבן. עם שני הגבולות Leaflet מותח את הרמה הקרובה ביותר לשני
-    // הכיוונים — מטושטש הוא מידע, לבן הוא תקלה.
-    maxZoom: 19,
-    maxNativeZoom: deepest,
-    minNativeZoom: shallowest,
-    minZoom: MIN_ZOOM,
-    bounds: ISRAEL_BOUNDS, // לא מושכים אריחים מחוץ לישראל
-    attribution: cfg.attribution,
-  }).addTo(state.map);
-
+  // §21.3: **המפה היא שלנו. אין מקור חיצוני, גם לא מוקפא.**
+  //
+  // §18.1 הסיר את הרקעים המקוונים והשאיר חבילת אריחים מקומית — אבל
+  // האריחים עצמם הם דימוי של ספק חיצוני שנשמר על הדיסק. הם עובדים בלי
+  // אינטרנט, ועדיין אינם שלנו: אי אפשר לתקן בהם דבר, אי אפשר לפרסם
+  // אותם, והם 500MB.
+  //
+  // הרקע עכשיו הוא מתאר שאנחנו מציירים מקובץ GeoJSON בן 3KB שיושב
+  // במאגר: קו החוף, הגבולות, הכנרת וים המלח. אין בו רחובות — וזה מה
+  // שהתבקש. במבט הפתיחה הוא נראה כמו מפה, ובהגדלה ניכר שאין בו שבילים.
+  //
+  // שכבת האריחים אינה נטענת יותר. tools/download_tiles.py והחבילה
+  // נשארו במאגר למי שירצה מפת רחובות בהתקנה מסוימת, אבל הן אינן חלק
+  // מברירת המחדל ואינן נדרשות כדי שהמערכת תעבוד.
   // §21.3: **מתאר מדינת ישראל, מצויר מקומית.**
   //
   // כשהרקע החיצוני הוסר, מי שאין לו את חבילת האריחים נשאר עם סיכות
@@ -1101,7 +1095,7 @@ async function initMap() {
   // הוא מצויר **רק כשאין דימוי אחר** — כלומר בהתקנה שהרקע שלה מקומי
   // וחבילת האריחים אינה שם. כשיש אריחים (מקומיים או בפריסה שהזריקה רקע
   // מקוון) הם עשירים ממנו, וציור מעליהם היה מכסה מפה טובה במתאר שטוח.
-  if (cfg.offline && !tiles.available) try {
+  try {
     const outline = await (await fetch("/web/vendor/israel.geojson")).json();
     L.geoJSON(outline, {
       pane: "tilePane", // מתחת לכל שכבות המידע, כמו רקע
@@ -1115,13 +1109,7 @@ async function initMap() {
     // מתאר חסר אינו שובר את המפה — הסיכות עדיין נכונות.
   }
 
-  // חבילת האריחים חסרה — אומרים את זה, ולא משאירים מפה בלי הסבר.
-  if (!tiles.available) {
-    state.map.attributionControl.addAttribution(
-      "מתאר מקומי · ללא אינטרנט. למפת רחובות: " +
-        "<code>python tools/download_tiles.py --area israel</code>"
-    );
-  }
+  state.map.attributionControl.addAttribution("מתאר מקומי · ללא מקור חיצוני");
 
   state.baseLayer = L.layerGroup().addTo(state.map);
   state.nearbyLayer = L.layerGroup().addTo(state.map);

@@ -26,26 +26,10 @@
   "use strict";
 
   /* --- 3. רקע המפה ------------------------------------------------------- */
-  // Esri "רחובות" נבחר בגלל **שפת התוויות**, לא בגלל היופי: זה הרקע היחיד
-  // מבין הנבדקים שמציג שמות בעברית בכל רמות הזום. במערכת עברית זה מכריע.
-  window.BASEMAPS_OVERRIDE = {
-    "רחובות (עברית)": {
-      url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-      attribution: "© Esri",
-      maxZoom: 19,
-    },
-    "בהיר": {
-      url: "https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png",
-      attribution: "© OpenStreetMap · © CARTO",
-      maxZoom: 20,
-    },
-    "לוויין": {
-      url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-      attribution: "© Esri · Maxar · Earthstar Geographics",
-      maxZoom: 19,
-    },
-  };
-  window.DEFAULT_BASEMAP_OVERRIDE = "רחובות (עברית)";
+  //
+  // אין כאן override יותר. הרקע הוא אותו מתאר מקומי שהמערכת מציירת בשרת
+  // (web/vendor/israel.geojson) — הדמו מציג בדיוק את מה שהמזמין רואה,
+  // ולא מפה יפה יותר שאינה קיימת אצלו. גם כאן: אפס פניות לספק חיצוני.
 
   /* --- 1. ניתוב הנתונים -------------------------------------------------- */
 
