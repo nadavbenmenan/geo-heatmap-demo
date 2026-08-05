@@ -1363,11 +1363,34 @@ body {
 .demo-banner span { font-size: 11px; line-height: 1.55; color: #cbd5e1; }
 
 /* פקד שהוקפא. נשאר קריא ולא נעלם: המסך מתעד יכולת שקיימת בגרסת השרת,
-   והסתרתה הייתה מציגה מערכת חלקית יותר ממה שהיא. */
+   והסתרתה הייתה מציגה מערכת חלקית יותר ממה שהיא.
+
+   הפקד **אינו** disabled (ראו demo.js) — אלמנט מנוטרל אינו מקבל אירועי
+   עכבר, ואז לא ה-tooltip ולא הסמן הזה עובדים, והמשתמש מגלה שהוא מוקפא
+   רק אחרי לחיצה שלא עשתה כלום. כאן הוא חי לדפדפן וחסום בקוד. */
 .is-frozen,
-.is-frozen:hover {
-  opacity: .55;
-  cursor: not-allowed;
-  filter: grayscale(.35);
+.is-frozen:hover,
+.is-frozen * {
+  cursor: not-allowed !important;
+}
+.is-frozen {
+  opacity: .6;
+  filter: grayscale(.4);
+}
+/* שדה טקסט מוקפא נשאר בהיר וקריא — הערך שבתוכו הוא מידע, לא קישוט. */
+.is-frozen:is(input, select, textarea) {
+  opacity: .8;
+  background: #f8fafc;
+  color: var(--ink-soft);
+}
+.is-frozen:focus, .is-frozen:focus-visible {
+  outline: 2px solid #cbd5e1; outline-offset: -1px;
 }
 .drop-zone--locked { opacity: .7; }
+
+/* סימון ויזואלי קטן שאומר "לתצוגה בלבד" על כפתורי הפעולה שהוקפאו. */
+button.is-frozen::after,
+.drop-btn.is-frozen::after {
+  content: " 🔒";
+  font-size: .85em;
+}

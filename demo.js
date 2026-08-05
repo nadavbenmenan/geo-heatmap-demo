@@ -226,33 +226,89 @@
     return nativeFetch(input, init);
   };
 
-  /* --- 2. הקפאת פקדי הכתיבה --------------------------------------------- */
-  //
-  // ה-fetch כבר מחזיר "מוקפא", אבל שדה שנראה פעיל ואינו עושה דבר הוא ממשק
-  // גרוע. כאן מנטרלים את הפקדים עצמם ומסבירים למה, אחרי ש-app.js סיים
-  // לבנות את המסכים.
-  const FROZEN_TITLE = "מוקפא בגרסת ההדגמה — הפעולה זמינה בגרסת השרת המלאה";
+  /* --- 2. הקפאת פקדי הכתיבה ---------------------------------------------
+
+     הדרישה: **הכול מוצג, שום דבר לא ניתן ללחיצה, והריחוף מסביר למה.**
+
+     לכן לא משתמשים כאן ב-disabled. אלמנט מנוטרל אינו מקבל אירועי עכבר
+     בכלל — ה-title שלו אינו נפתח וה-cursor שלו אינו משתנה, ולכן המשתמש
+     מגלה שהוא מוקפא רק אחרי שלחץ ולא קרה כלום. במקום זה הפקד נשאר "חי"
+     לדפדפן, ומסומן ב-aria-disabled + title, והחסימה עצמה נעשית בשלב
+     ה-capture על document: לחיצה, הקלדה ושינוי נבלעים לפני שהם מגיעים
+     ל-app.js. התוצאה: tooltip עובד, סמן "אסור" מופיע, והערכים נשארים
+     קריאים — אבל שום פעולה אינה יוצאת לדרך.
+
+     מה **אינו** מוקפא, בכוונה: סינון, חיפוש, לשוניות, ניווט ובוררי המפה.
+     אלה פעולות צפייה ולא שינוי, והקפאתן הייתה הופכת את ההדגמה לתמונה
+     סטטית במקום למערכת שאפשר להסתובב בה. */
+
+  const FROZEN_TITLE =
+    "מוקפא בהדגמה — הפעולה משנה נתונים, וזמינה בגרסת השרת המלאה";
+
+  // כל מה שכותב, עורך, מוחק או טוען. מקובץ לפי המסך שהוא יושב בו.
+  const MUTATORS = [
+    // הגדרות — ספי צבע, סף מרחק, התראות, פרטי משתמש, שמירה
+    "#pane-config input", "#pane-config select", "#pane-config textarea",
+    "#pane-config .toggle", "#settings-save",
+    // טעינת נתונים — בוחרי קבצים וכפתורי הבחירה
+    "#pane-upload input", "#pane-upload button", ".drop-btn",
+    // ניהול נתונים — הוספה, עריכה בשורה, מחיקה
+    ".add-btn", ".add-save", ".add-cancel", ".row-del",
+    ".travel-input", ".unit-input",
+    "#add-station", "#add-settlement", "#add-travel",
+    "#add-region", "#add-region-settlement", "#add-region-travel",
+    // ימי גיוס מתוכננים
+    "#day-add", "#day-save", "#day-cancel",
+    "#day-station", "#day-date", "#day-location", "#day-pct", "[data-day]",
+    // תובנות המגייס — כתיבה, סימון בוצע, מחיקה
+    "[data-save]", "[data-text]", "[data-toggle]", "[data-del]",
+  ].join(",");
+
+  const isFrozen = (node) => node && node.closest && node.closest(".is-frozen");
 
   function freezeControls() {
-    document
-      .querySelectorAll(
-        '.drop-zone input[type="file"], .drop-btn, .add-btn, .add-save, .row-del,' +
-          ' #settings-save, .unit-btn:not([data-insight])'
-      )
-      .forEach((node) => {
-        node.disabled = true;
-        node.classList.add("is-frozen");
-        node.title = FROZEN_TITLE;
-      });
+    document.querySelectorAll(MUTATORS).forEach((node) => {
+      if (node.classList.contains("is-frozen")) return;
+      node.classList.add("is-frozen");
+      node.setAttribute("aria-disabled", "true");
+      node.title = FROZEN_TITLE;
+      // שדה טקסט/מספר נשאר קריא אך לא ניתן לעריכה. readOnly (ולא disabled)
+      // כדי שהערך לא יאפור והריחוף ימשיך לעבוד.
+      if (node.tagName === "INPUT" && /^(text|number|search|date)$/.test(node.type)) {
+        node.readOnly = true;
+      }
+      // התווית שמעל השדה נושאת את אותו הסבר: בשדה עצמו הסמן כבר "אסור",
+      // ומי שמרחף על השם שלצדו צריך לקבל את אותה תשובה.
+      const label = node.closest("label");
+      if (label && !label.title) label.title = FROZEN_TITLE;
+    });
 
     // גרירת קובץ אל אזור ההשלכה — בלי החסימה הדפדפן פותח את הקובץ במקומנו.
     document.querySelectorAll(".drop-zone").forEach((zone) => {
+      if (zone.classList.contains("drop-zone--locked")) return;
+      zone.classList.add("drop-zone--locked", "is-frozen");
+      zone.title = FROZEN_TITLE;
       ["dragenter", "dragover", "drop"].forEach((evt) =>
         zone.addEventListener(evt, (e) => e.preventDefault())
       );
-      zone.classList.add("drop-zone--locked");
     });
   }
+
+  // החסימה עצמה. capture=true כדי להקדים כל מאזין ש-app.js רשם על האלמנט.
+  ["click", "mousedown", "keydown", "change", "input", "paste"].forEach((evt) =>
+    document.addEventListener(
+      evt,
+      (e) => {
+        if (!isFrozen(e.target)) return;
+        // Tab וניווט במקלדת נשארים — חסימתם הייתה כולאת משתמש מקלדת במסך.
+        if (evt === "keydown" && (e.key === "Tab" || e.key === "Escape")) return;
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+      },
+      true
+    )
+  );
 
   // המסכים נבנים אחרי טעינת נתונים אסינכרונית, ולכן פקדים מופיעים גם אחרי
   // ה-load הראשוני. משגיחים ומקפיאים שוב במקום לנחש תזמון.
