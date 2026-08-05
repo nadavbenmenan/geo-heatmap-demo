@@ -1109,6 +1109,11 @@ async function initMap() {
     // מתאר חסר אינו שובר את המפה — הסיכות עדיין נכונות.
   }
 
+  // §21.4: קרדיט Leaflet כולל כברירת מחדל קישור ל-leafletjs.com. הוא אינו
+  // מבצע שום בקשת רשת — זהו <a href> שנוצר בהתחלה — אבל הוא הכתובת
+  // החיצונית האחרונה שנותרה בקוד המוגש, והוא נראה למשתמש כאילו המפה מגיעה
+  // מאתר כלשהו. בסקירת רשת סגורה זה בדיוק מה שנעצרים עליו.
+  state.map.attributionControl.setPrefix(false);
   state.map.attributionControl.addAttribution("מתאר מקומי · ללא מקור חיצוני");
 
   state.baseLayer = L.layerGroup().addTo(state.map);
