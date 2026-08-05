@@ -107,9 +107,112 @@
       if (found) return json(found);
     }
 
+    // מסך המנהלה — הסינון מחושב כאן, ראו adminOptions/adminPositions.
+    if (path === "/api/admin-options") return json(await adminOptions(query));
+    if (path === "/api/admin-positions") return json(await adminPositions(query));
+
     const res = await fetch(flatten(path));
     if (!res.ok) throw new Error(path + " → " + res.status);
     return json(await res.json());
+  }
+
+  /* --- סינון מסך המנהלה -------------------------------------------------
+     ארבעת הסינונים (תפקיד · אזור · אגף · יחידה) הם מכפלה קרטזית של אלפי
+     צירופים, ולכן אי אפשר להקפיא קובץ לכל אחד. הפשרה: מקפיאים את חומר
+     הגלם פעם אחת, והסינון עצמו רץ בדפדפן.
+
+     זה **המקום היחיד בדמו שמחשב משהו** במקום להציג תשובה של השרת, והוא
+     מוגבל בכוונה לשוויון על ארבעה שדות ולחיפוש תת-מחרוזת. ההגדרות שקל
+     לטעות בהן — מהי "משרה שאפשר לגייס אליה", מהו היקף המשרה, ומה סדר
+     המיון — נשארו בשרת: הקובץ admin-vacancies כבר מסונן, מחושב וממוין
+     על ידו, וכאן רק בוררים ממנו. */
+
+  const cache = {};
+  async function table(name) {
+    if (!cache[name]) {
+      const res = await fetch("data/" + name + ".json");
+      if (!res.ok) throw new Error(name + " → " + res.status);
+      cache[name] = await res.json();
+    }
+    return cache[name];
+  }
+
+  // שם הפרמטר במסך אינו שם העמודה בנתונים — "אזור" הוא geo_area, "יחידה"
+  // היא region. המיפוי במקום אחד, כדי ששני הצרכנים לא יסטו זה מזה.
+  const FIELD = { profession: "profession", area: "geo_area",
+                  department: "department", region: "region" };
+
+  const params = (q) => {
+    const p = new URLSearchParams(q);
+    return {
+      profession: p.get("profession") || "", area: p.get("area") || "",
+      department: p.get("department") || "", region: p.get("region") || "",
+      q: (p.get("q") || "").trim(), position: (p.get("position") || "").trim(),
+    };
+  };
+
+  const matches = (row, f, skip) =>
+    Object.keys(FIELD).every(
+      (key) => key === skip || !f[key] || row[FIELD[key]] === f[key]
+    );
+
+  async function adminOptions(query) {
+    const f = params(query);
+    const facets = await table("admin-facets");
+
+    // כל רשימה מחושבת מול *שאר* הסינונים ולא מול עצמה — אחרת הבחירה
+    // הנוכחית מצמצמת את הרשימה שממנה היא נבחרה, והמשתמש ננעל עליה.
+    const group = (key) => {
+      const totals = new Map();
+      facets.forEach((row) => {
+        const name = row[FIELD[key]];
+        if (!name || !matches(row, f, key)) return;
+        const acc = totals.get(name) || { name: name, vacant: 0, required: 0 };
+        acc.vacant += row.vacant || 0;
+        acc.required += row.required || 0;
+        totals.set(name, acc);
+      });
+      return [...totals.values()]
+        .map((o) => ({ name: o.name, vacant: o.vacant, required: Math.round(o.required) }))
+        .sort((a, b) => a.name.localeCompare(b.name, "he"));
+    };
+
+    return {
+      professions: group("profession"), areas: group("area"),
+      departments: group("department"), units: group("region"),
+    };
+  }
+
+  async function adminPositions(query) {
+    const f = params(query);
+    const LIMIT = 1000; // POSITIONS_LIMIT בשרת
+    const like = (value, term) => String(value || "").indexOf(term) !== -1;
+
+    const rows = (await table("admin-vacancies")).filter((row) => {
+      if (!matches(row, f, null)) return false;
+      // חיפוש חופשי מחפש גם בסיווג, גם בתיאור העיסוק וגם במספר המשרה:
+      // מי שמדביק מספר לשדה מחפש משרה, ולא סיווג.
+      if (f.q && !f.profession &&
+          !(like(row.profession, f.q) || like(row.occupation, f.q) || like(row.position_no, f.q)))
+        return false;
+      if (f.position && !like(row.position_no, f.position)) return false;
+      return true;
+    });
+
+    const counts = new Map();
+    rows.forEach((row) => counts.set(row.profession, (counts.get(row.profession) || 0) + 1));
+    const byLabel = [...counts.entries()]
+      .map(([name, n]) => ({ name: name, n: n }))
+      .sort((a, b) => b.n - a.n)
+      .slice(0, 12);
+
+    const items = rows.slice(0, LIMIT);
+    return {
+      profession: f.profession || null, q: f.q, position: f.position,
+      area: f.area || null, department: f.department || null, region: f.region || null,
+      total: rows.length, shown: items.length, limit: LIMIT,
+      by_label: byLabel, items: items,
+    };
   }
 
   // פרמטרי סינון אינם נתמכים בלי שרת: מסכי הסינון מוקפאים, וכל בקשה

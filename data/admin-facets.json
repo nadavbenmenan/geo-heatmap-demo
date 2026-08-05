@@ -1,0 +1,1762 @@
+[
+ {
+  "profession": "בילוש",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 9,
+  "required": 81.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 5,
+  "required": 17.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 13,
+  "required": 85.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 16,
+  "required": 104.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 45,
+  "required": 273.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 7,
+  "required": 24.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 14,
+  "required": 75.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 7,
+  "required": 42.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 7,
+  "required": 24.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 21,
+  "required": 124.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 35,
+  "required": 172.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 11,
+  "required": 99.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 21,
+  "required": 105.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 26,
+  "required": 112.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 4,
+  "required": 15.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 3,
+  "required": 26.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 5,
+  "required": 35.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 15,
+  "required": 71.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 15,
+  "required": 112.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 14,
+  "required": 65.0
+ },
+ {
+  "profession": "בילוש",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 10,
+  "required": 61.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 1,
+  "required": 11.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 2,
+  "required": 11.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 2,
+  "required": 12.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 1,
+  "required": 18.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 1,
+  "required": 16.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 3,
+  "required": 15.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 2,
+  "required": 13.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 1,
+  "required": 18.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 4,
+  "required": 17.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 1,
+  "required": 10.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 2,
+  "required": 11.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 3,
+  "required": 13.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 4,
+  "required": 20.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 3,
+  "required": 16.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 1,
+  "required": 12.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 1,
+  "required": 8.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 3,
+  "required": 17.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 3,
+  "required": 11.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 1,
+  "required": 3.0
+ },
+ {
+  "profession": "הדרכה והכשרות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 3,
+  "required": 15.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 11,
+  "required": 107.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 6,
+  "required": 23.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 17,
+  "required": 113.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 20,
+  "required": 138.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 64,
+  "required": 366.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 9,
+  "required": 32.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 19,
+  "required": 100.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 8,
+  "required": 55.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 9,
+  "required": 32.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 2,
+  "required": 24.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 27,
+  "required": 163.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 46,
+  "required": 229.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 14,
+  "required": 132.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 28,
+  "required": 140.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 33,
+  "required": 149.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 6,
+  "required": 20.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 6,
+  "required": 35.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 6,
+  "required": 46.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 21,
+  "required": 95.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 19,
+  "required": 149.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 19,
+  "required": 85.0
+ },
+ {
+  "profession": "חקירות",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 15,
+  "required": 82.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 3,
+  "required": 16.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 5,
+  "required": 21.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 1,
+  "required": 11.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 2,
+  "required": 12.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 2,
+  "required": 14.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 1,
+  "required": 3.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 1,
+  "required": 20.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 2,
+  "required": 23.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 8,
+  "required": 30.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 5,
+  "required": 21.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 1,
+  "required": 9.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 1,
+  "required": 12.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 2,
+  "required": 15.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 0,
+  "required": 15.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 3,
+  "required": 12.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 1,
+  "required": 23.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 2,
+  "required": 11.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 3,
+  "required": 14.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 7,
+  "required": 18.0
+ },
+ {
+  "profession": "ייעוץ משפטי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 5,
+  "required": 14.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 1,
+  "required": 5.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 3,
+  "required": 17.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 2,
+  "required": 7.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 4,
+  "required": 20.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 3,
+  "required": 17.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 2,
+  "required": 14.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 2,
+  "required": 20.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 3,
+  "required": 11.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 2,
+  "required": 15.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 4,
+  "required": 18.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 3,
+  "required": 15.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 3,
+  "required": 13.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 3,
+  "required": 13.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 1,
+  "required": 14.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 4,
+  "required": 18.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 4,
+  "required": 22.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 2,
+  "required": 17.0
+ },
+ {
+  "profession": "כספים ותקציב",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 1,
+  "required": 13.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 0,
+  "required": 14.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 1,
+  "required": 9.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 1,
+  "required": 16.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 1,
+  "required": 12.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 4,
+  "required": 21.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 2,
+  "required": 15.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 0,
+  "required": 15.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 3,
+  "required": 14.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 4,
+  "required": 16.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 1,
+  "required": 4.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 2,
+  "required": 16.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 7,
+  "required": 26.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 3,
+  "required": 16.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 1,
+  "required": 5.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 1,
+  "required": 11.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 1,
+  "required": 6.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 1,
+  "required": 6.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 5,
+  "required": 22.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 2,
+  "required": 15.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 4,
+  "required": 22.0
+ },
+ {
+  "profession": "לוגיסטיקה",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 7,
+  "required": 27.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 4,
+  "required": 19.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 3,
+  "required": 17.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 5,
+  "required": 16.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 5,
+  "required": 26.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 2,
+  "required": 21.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 2,
+  "required": 13.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 2,
+  "required": 21.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 4,
+  "required": 18.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 2,
+  "required": 22.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 5,
+  "required": 15.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 2,
+  "required": 10.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 2,
+  "required": 13.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 1,
+  "required": 26.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 5,
+  "required": 19.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 0,
+  "required": 6.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 5,
+  "required": 15.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 4,
+  "required": 16.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 0,
+  "required": 5.0
+ },
+ {
+  "profession": "מנהלה וכוח אדם",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 1,
+  "required": 7.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 2,
+  "required": 10.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 4,
+  "required": 18.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 0,
+  "required": 12.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 2,
+  "required": 15.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 1,
+  "required": 9.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 3,
+  "required": 8.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 4,
+  "required": 14.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 3,
+  "required": 20.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 3,
+  "required": 18.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 3,
+  "required": 14.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 0,
+  "required": 23.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 1,
+  "required": 3.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 2,
+  "required": 14.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 1,
+  "required": 13.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 2,
+  "required": 16.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 1,
+  "required": 17.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 2,
+  "required": 9.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 1,
+  "required": 12.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 0,
+  "required": 15.0
+ },
+ {
+  "profession": "מערכות מידע",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 2,
+  "required": 18.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 20,
+  "required": 189.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 11,
+  "required": 40.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 29,
+  "required": 197.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 36,
+  "required": 244.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 108,
+  "required": 635.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 15,
+  "required": 56.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 34,
+  "required": 175.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 14,
+  "required": 97.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 15,
+  "required": 56.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 3,
+  "required": 42.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 48,
+  "required": 287.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 78,
+  "required": 398.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 23,
+  "required": 230.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 46,
+  "required": 244.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 60,
+  "required": 263.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 11,
+  "required": 35.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 10,
+  "required": 62.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 12,
+  "required": 80.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 35,
+  "required": 164.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 33,
+  "required": 261.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 33,
+  "required": 149.0
+ },
+ {
+  "profession": "סיור",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 23,
+  "required": 142.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "לכיש",
+  "vacant": 8,
+  "required": 72.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "מרחב אילת",
+  "vacant": 5,
+  "required": 16.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "נגב",
+  "vacant": 11,
+  "required": 76.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "דרום",
+  "department": "מחוז דרום",
+  "region": "רותם",
+  "vacant": 14,
+  "required": 93.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "חוף",
+  "department": "מחוז חוף",
+  "region": "חוף",
+  "vacant": 41,
+  "required": 244.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "מרחב דוד",
+  "vacant": 5,
+  "required": 21.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "ציון",
+  "vacant": 12,
+  "required": 66.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ירושלים",
+  "department": "מחוז ירושלים",
+  "region": "קדם",
+  "vacant": 6,
+  "required": 37.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "מג\"ב",
+  "department": "מחוז מג\"ב",
+  "region": "מג\"ב י-ם",
+  "vacant": 6,
+  "required": 22.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "מרכז",
+  "vacant": 1,
+  "required": 16.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שפלה",
+  "vacant": 17,
+  "required": 109.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "מרכז",
+  "department": "מחוז מרכז",
+  "region": "שרון",
+  "vacant": 30,
+  "required": 151.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "גליל",
+  "vacant": 7,
+  "required": 87.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "כנרת",
+  "vacant": 17,
+  "required": 93.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "עמקים",
+  "vacant": 25,
+  "required": 101.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "צפון",
+  "department": "מחוז צפון",
+  "region": "צפון",
+  "vacant": 4,
+  "required": 13.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "גלעד",
+  "vacant": 3,
+  "required": 23.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "יהודה",
+  "vacant": 5,
+  "required": 31.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "ש\"י",
+  "department": "מחוז ש\"י",
+  "region": "שומרון",
+  "vacant": 13,
+  "required": 62.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "איילון",
+  "vacant": 12,
+  "required": 100.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "דן",
+  "vacant": 13,
+  "required": 57.0
+ },
+ {
+  "profession": "שיטור קהילתי",
+  "geo_area": "תל אביב",
+  "department": "מחוז תל אביב",
+  "region": "ירקון",
+  "vacant": 9,
+  "required": 54.0
+ }
+]
