@@ -1,0 +1,52 @@
+/* ---------------------------------------------------------------------------
+   demo.css — עיצוב שכבת ההדגמה בלבד. נטען **אחרי** style.css.
+
+   למה קובץ נפרד ולא תוספת ב-style.css: style.css מועתק מהשרת בכל עדכון,
+   וכל מה שנוסף לתוכו נמחק בהעתקה הבאה. זה כבר קרה פעם אחת. כאן, כמו
+   ב-demo.js, כל מה שייחודי להדגמה יושב בקובץ משלו שההעתקה אינה נוגעת בו.
+   --------------------------------------------------------------------------- */
+
+/* באנר "מצב הדגמה" בסרגל הצד. מוסבר ולא מתנצל: מי שנוחת כאן צריך לדעת
+   בשנייה הראשונה שהמספרים מוגרלים, לפני שהוא מסיק מהם משהו. */
+.demo-banner {
+  display: flex; flex-direction: column; gap: 5px;
+  margin: 4px 0 10px; padding: 10px 11px;
+  background: rgba(37, 99, 235, .16);
+  border: 1px solid rgba(96, 165, 250, .45);
+  border-radius: 9px;
+}
+.demo-banner strong { font-size: 12.5px; color: #bfdbfe; }
+.demo-banner span { font-size: 11px; line-height: 1.55; color: #cbd5e1; }
+
+/* פקד שהוקפא. נשאר קריא ולא נעלם: המסך מתעד יכולת שקיימת בגרסת השרת,
+   והסתרתה הייתה מציגה מערכת חלקית יותר ממה שהיא.
+
+   הפקד **אינו** disabled (ראו demo.js) — אלמנט מנוטרל אינו מקבל אירועי
+   עכבר, ואז לא ה-tooltip ולא הסמן הזה עובדים, והמשתמש מגלה שהוא מוקפא
+   רק אחרי לחיצה שלא עשתה כלום. כאן הוא חי לדפדפן וחסום בקוד. */
+.is-frozen,
+.is-frozen:hover,
+.is-frozen * {
+  cursor: not-allowed !important;
+}
+.is-frozen {
+  opacity: .6;
+  filter: grayscale(.4);
+}
+/* שדה טקסט מוקפא נשאר בהיר וקריא — הערך שבתוכו הוא מידע, לא קישוט. */
+.is-frozen:is(input, select, textarea) {
+  opacity: .8;
+  background: #f8fafc;
+  color: var(--ink-soft);
+}
+.is-frozen:focus, .is-frozen:focus-visible {
+  outline: 2px solid #cbd5e1; outline-offset: -1px;
+}
+.drop-zone--locked { opacity: .7; }
+
+/* סימון ויזואלי קטן שאומר "לתצוגה בלבד" על כפתורי הפעולה שהוקפאו. */
+button.is-frozen::after,
+.drop-btn.is-frozen::after {
+  content: " 🔒";
+  font-size: .85em;
+}

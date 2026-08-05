@@ -1425,6 +1425,76 @@ function openDrawer(station, rel) {
   attachChipHovers(drawer, station);
 }
 
+/* --- bottom-sheet בנייד ---------------------------------------------------
+   בטלפון כרטיס התחנה והחלונית נפתחים כגיליון תחתון שמכסה את רוב המפה.
+   הכפתור לסגירה יושב בראש הכרטיס, ובכרטיס גלול הוא יוצא מהמסך — ואז הדרך
+   היחידה לסגור היא לגלול חזרה עד הסוף. בפועל משתמשים פשוט יצאו מהמסך.
+
+   שלוש דרכי יציאה, כמו בכל גיליון תחתון מוכר:
+     · הכותרת דביקה, ולכן ה-× תמיד על המסך (ראו style.css)
+     · החלקה מטה סוגרת
+     · Escape סוגר (מקלדת חיצונית / טאבלט)
+
+   הגרירה מתחילה רק כשהתוכן כבר בראשו. אחרת כל ניסיון לגלול בתוך הכרטיס
+   היה נקרא כהחלקת-סגירה, והכרטיס היה נסגר בדיוק כשמנסים לקרוא אותו. */
+const SHEET_CLOSE_PX = 90; // מרחק גרירה שמעליו הכרטיס נסגר
+
+function wireSheetGestures() {
+  const sheets = [
+    { node: el("map-info"), close: () => selectEntity(null) },
+    { node: el("drawer"), close: () => closeDrawer() },
+  ];
+
+  sheets.forEach(({ node, close }) => {
+    if (!node) return;
+    let startY = null;
+    let delta = 0;
+
+    node.addEventListener(
+      "touchstart",
+      (e) => {
+        if (node.scrollTop > 0 || e.touches.length !== 1) return;
+        startY = e.touches[0].clientY;
+        delta = 0;
+        node.style.transition = "none";
+      },
+      { passive: true }
+    );
+
+    node.addEventListener(
+      "touchmove",
+      (e) => {
+        if (startY === null) return;
+        delta = e.touches[0].clientY - startY;
+        // רק מטה. גרירה מעלה אינה סוגרת, ולכן אין סיבה להזיז את הכרטיס.
+        if (delta > 0) node.style.transform = `translateY(${delta}px)`;
+      },
+      { passive: true }
+    );
+
+    const end = () => {
+      if (startY === null) return;
+      const shouldClose = delta > SHEET_CLOSE_PX;
+      node.style.transition = "";
+      node.style.transform = "";
+      startY = null;
+      delta = 0;
+      if (shouldClose) close();
+    };
+    node.addEventListener("touchend", end);
+    node.addEventListener("touchcancel", end);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const drawer = el("drawer");
+    const card = el("map-info");
+    // החלונית יושבת מעל הכרטיס, ולכן היא נסגרת ראשונה.
+    if (drawer && !drawer.hidden) return closeDrawer();
+    if (card && !card.hidden) selectEntity(null);
+  });
+}
+
 function closeDrawer({ keepCard = false } = {}) {
   el("drawer").hidden = true;
   hideChipPopover();
@@ -4066,6 +4136,7 @@ async function init() {
     const initialHash = location.hash;
 
     wireSearch();
+    wireSheetGestures();
     wireTabs();
     wireNav();
     wireUpload();

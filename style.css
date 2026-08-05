@@ -1038,29 +1038,71 @@ body {
   .map-legend { bottom: 10px; right: 10px; padding: 7px 10px; max-width: 62vw; }
   .legend-item { font-size: 11px; }
 
-  /* כרטיס תחנה נפתח כ-bottom-sheet מלא-רוחב */
+  /* --- כרטיס תחנה כגיליון תחתון (bottom-sheet) ---------------------------
+     שלוש דרכי יציאה, כמו בכל גיליון תחתון מוכר: הכותרת דביקה ולכן ה-× תמיד
+     על המסך, החלקה מטה סוגרת (ראו wireSheetGestures ב-app.js), ו-Escape
+     סוגר. קודם הכפתור ישב בראש תוכן גלול ויצא מהמסך ברגע שגללו — ואז לא
+     הייתה שום דרך לסגור חוץ מלצאת מהמסך.
+
+     64vh ולא 72vh: רצועת מפה שנשארת גלויה היא מה שאומר למשתמש שהכרטיס
+     צף מעל משהו ואפשר לחזור אליו. */
   .map-info {
+    /* fixed ולא absolute: absolute נצמד לתחתית *מקטע המפה*, ומכיוון
+       שהמקטע נמוך מהכרטיס הוא גלש מעליו וכיסה גם את הטאבים. גיליון
+       תחתון נמדד מול המסך, לא מול הרכיב שמעליו. */
+    position: fixed;
     top: auto; bottom: 0; left: 0; right: 0;
     width: auto; max-width: 100%;
-    max-height: 72vh;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
-    border-radius: 14px 14px 0 0;
-    box-shadow: 0 -4px 20px rgba(15, 23, 42, .22);
+    max-height: 58vh;
+    padding: 0 14px calc(12px + env(safe-area-inset-bottom));
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 24px rgba(15, 23, 42, .26);
+    overscroll-behavior: contain; /* גלילה בסופו לא תגרור את הדף שמאחור */
+    transition: transform .18s ease;
   }
 
   /* גם חלונית התחנה שנפתחת דרך יישוב — אחרת היא נשארת ריבוע צף של 268px
      שיושב מעל ה-bottom-sheet. היא מעליו בכוונה: המשתמש הרגע לחץ על התחנה,
      והמועמדים בהליך שלה הם מה שהוא בא לראות. */
   .drawer {
+    position: fixed;
     top: auto; bottom: 0; left: 0; right: 0;
     width: auto; max-width: 100%;
-    max-height: 72vh; overflow-y: auto;
+    max-height: 58vh; overflow-y: auto;
     z-index: 501;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
-    border-radius: 14px 14px 0 0;
-    box-shadow: 0 -4px 20px rgba(15, 23, 42, .22);
+    padding: 0 14px calc(12px + env(safe-area-inset-bottom));
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 24px rgba(15, 23, 42, .26);
+    overscroll-behavior: contain;
+    transition: transform .18s ease;
   }
-  .info-close { font-size: 26px; padding: 0 8px; } /* יעד מגע, לא רק תו */
+
+  /* הכותרת נשארת במקומה כשהתוכן נגלל — זה מה שמחזיר את ה-× למסך. */
+  .map-info .info-head,
+  .drawer .info-head {
+    position: sticky; top: 0; z-index: 2;
+    background: #fff; margin: 0 -14px 10px; padding: 6px 14px 9px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ידית גרירה מעל הכותרת. היא הסימן המוסכם ל"אפשר להחליק את זה מטה",
+     ובלעדיה המחווה קיימת אך בלתי נראית. */
+  .map-info .info-head::before,
+  .drawer .info-head::before {
+    content: ""; position: absolute; top: 6px; left: 50%;
+    transform: translateX(-50%);
+    width: 42px; height: 4px; border-radius: 999px; background: #cbd5e1;
+  }
+  .map-info .info-head,
+  .drawer .info-head { padding-top: 16px; }
+
+  /* יעד מגע מלא ל-×, ולא תו בגודל 26px שצריך לכוון אליו. */
+  .info-close {
+    font-size: 24px; line-height: 1;
+    width: 40px; height: 40px; flex: 0 0 40px;
+    display: grid; place-items: center;
+    border-radius: 10px; background: #f1f5f9; color: var(--ink);
+  }
 
   /* מרווחי תוכן מצומצמים, עם מקום לסרגל הניווט של המערכת בתחתית */
   .content {
@@ -1343,54 +1385,4 @@ body {
   color: inherit;
   font: inherit;
   text-align: right;
-}
-
-/* ============================================================
-   שכבת ההדגמה (קיים רק בגרסת הפורטפוליו הסטטית)
-   ראו demo.js — הקובץ היחיד שמבדיל בין ההדגמה למערכת שעל השרת.
-   ============================================================ */
-
-/* באנר "מצב הדגמה" בסרגל הצד. מוסבר ולא מתנצל: מי שנוחת כאן צריך לדעת
-   בשנייה הראשונה שהמספרים מוגרלים, לפני שהוא מסיק מהם משהו. */
-.demo-banner {
-  display: flex; flex-direction: column; gap: 5px;
-  margin: 4px 0 10px; padding: 10px 11px;
-  background: rgba(37, 99, 235, .16);
-  border: 1px solid rgba(96, 165, 250, .45);
-  border-radius: 9px;
-}
-.demo-banner strong { font-size: 12.5px; color: #bfdbfe; }
-.demo-banner span { font-size: 11px; line-height: 1.55; color: #cbd5e1; }
-
-/* פקד שהוקפא. נשאר קריא ולא נעלם: המסך מתעד יכולת שקיימת בגרסת השרת,
-   והסתרתה הייתה מציגה מערכת חלקית יותר ממה שהיא.
-
-   הפקד **אינו** disabled (ראו demo.js) — אלמנט מנוטרל אינו מקבל אירועי
-   עכבר, ואז לא ה-tooltip ולא הסמן הזה עובדים, והמשתמש מגלה שהוא מוקפא
-   רק אחרי לחיצה שלא עשתה כלום. כאן הוא חי לדפדפן וחסום בקוד. */
-.is-frozen,
-.is-frozen:hover,
-.is-frozen * {
-  cursor: not-allowed !important;
-}
-.is-frozen {
-  opacity: .6;
-  filter: grayscale(.4);
-}
-/* שדה טקסט מוקפא נשאר בהיר וקריא — הערך שבתוכו הוא מידע, לא קישוט. */
-.is-frozen:is(input, select, textarea) {
-  opacity: .8;
-  background: #f8fafc;
-  color: var(--ink-soft);
-}
-.is-frozen:focus, .is-frozen:focus-visible {
-  outline: 2px solid #cbd5e1; outline-offset: -1px;
-}
-.drop-zone--locked { opacity: .7; }
-
-/* סימון ויזואלי קטן שאומר "לתצוגה בלבד" על כפתורי הפעולה שהוקפאו. */
-button.is-frozen::after,
-.drop-btn.is-frozen::after {
-  content: " 🔒";
-  font-size: .85em;
 }
