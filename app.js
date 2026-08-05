@@ -1088,10 +1088,38 @@ async function initMap() {
     attribution: cfg.attribution,
   }).addTo(state.map);
 
-  // חבילת האריחים חסרה — אומרים את זה, ולא משאירים מפה אפורה בלי הסבר.
+  // §21.3: **מתאר מדינת ישראל, מצויר מקומית.**
+  //
+  // כשהרקע החיצוני הוסר, מי שאין לו את חבילת האריחים נשאר עם סיכות
+  // מרחפות על ריק — היישובים מוצגים, אבל בלי מדינה מתחתיהם אי אפשר
+  // להבין איפה הם. מפת רחובות אינה נדרשת כאן; תמונה כללית של הארץ כן.
+  //
+  // המתאר יושב בקובץ GeoJSON קטן (103 נקודות) ונטען מהשרת המקומי, ולכן
+  // הוא עובד ברשת סגורה. במבט הפתיחה הוא נראה כמו מפה רגילה; בהגדלה
+  // ניכר שאין בו כבישים ושבילים — וזה בדיוק ההסכם.
+  //
+  // הוא מצויר **רק כשאין דימוי אחר** — כלומר בהתקנה שהרקע שלה מקומי
+  // וחבילת האריחים אינה שם. כשיש אריחים (מקומיים או בפריסה שהזריקה רקע
+  // מקוון) הם עשירים ממנו, וציור מעליהם היה מכסה מפה טובה במתאר שטוח.
+  if (cfg.offline && !tiles.available) try {
+    const outline = await (await fetch("/web/vendor/israel.geojson")).json();
+    L.geoJSON(outline, {
+      pane: "tilePane", // מתחת לכל שכבות המידע, כמו רקע
+      style: (feature) =>
+        feature.properties.kind === "water"
+          ? { color: "#93c5fd", weight: 1, fillColor: "#bfdbfe", fillOpacity: 1 }
+          : { color: "#94a3b8", weight: 1.2, fillColor: "#eef2f6", fillOpacity: 1 },
+      interactive: false, // רקע אינו נלחץ — לחיצה על המפה מנקה בחירה
+    }).addTo(state.map);
+  } catch (err) {
+    // מתאר חסר אינו שובר את המפה — הסיכות עדיין נכונות.
+  }
+
+  // חבילת האריחים חסרה — אומרים את זה, ולא משאירים מפה בלי הסבר.
   if (!tiles.available) {
     state.map.attributionControl.addAttribution(
-      'חבילת האריחים המקומית חסרה — הרץ <code>python tools/download_tiles.py --area israel</code>'
+      "מתאר מקומי · ללא אינטרנט. למפת רחובות: " +
+        "<code>python tools/download_tiles.py --area israel</code>"
     );
   }
 
