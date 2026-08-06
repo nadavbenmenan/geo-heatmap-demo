@@ -1,5 +1,5 @@
 {
- "pending": 78,
+ "pending": 79,
  "settlements": [
   "אבטליון",
   "אבן יהודה",
@@ -773,6 +773,13 @@
    "located": false,
    "settlement_name": "אין נתון",
    "source": "טעון הגדרה",
+   "unit_name": "יחידת אכיפה כלכלית",
+   "unit_type": "unit"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
    "unit_name": "יחידת חילוץ ארצית",
    "unit_type": "unit"
   },
@@ -1069,20 +1076,6 @@
    "source": "תחנה בתוך עיר",
    "unit_name": "תחנת תבור",
    "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בית ברל",
-   "source": "ידני",
-   "unit_name": "יחידת אכיפה כלכלית",
-   "unit_type": "unit"
-  },
-  {
-   "located": true,
-   "settlement_name": "בית ברל",
-   "source": "ידני",
-   "unit_name": "יחידת אכיפה כלכלית (נבדק)",
-   "unit_type": "unit"
   }
  ]
 }

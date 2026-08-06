@@ -562,6 +562,7 @@
           <button class="tab" data-dataset="occupations">קשרי קבוצות תפקידים</button>
           <button class="tab" data-dataset="units">יחידות מגייסות</button>
           <button class="tab" data-dataset="unit_locations">מיקומי יחידות</button>
+          <button class="tab" data-dataset="changes">יומן שינויים</button>
         </div>
 
         <div class="kpis" id="manage-kpis"></div>
@@ -611,6 +612,15 @@
             <button class="add-save" id="add-unit-save">שמור</button>
             <button class="add-cancel" id="add-unit-cancel">ביטול</button>
             <span class="add-error" id="add-unit-error"></span>
+          </div>
+
+          <!-- §23: איחוד כתיבים של אותה יחידה. -->
+          <div class="manage-bar" id="unit-alias-bar" hidden>
+            <span class="panel-note">איחוד כתיבים:</span>
+            <select id="alias-candidate"></select>
+            <span class="panel-note">הוא בעצם</span>
+            <select id="alias-canonical"></select>
+            <button class="add-btn" id="alias-add">אחד</button>
           </div>
 
           <div class="manage-bar" id="occ-group-bar" hidden>

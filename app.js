@@ -66,6 +66,8 @@ const state = {
   adminRows: [],
   occupationGroups: { items: [], groups: [], unclassified: 0 },
   units_editable: [], // §23: היחידות המגייסות, לעריכה בניהול הנתונים
+  changeLog: [],      // §23: יומן השינויים הידניים
+  unitAliases: { aliases: [], candidates: [], units: [] }, // §23: איחוד כתיבים
   adminProfessions: [],
   adminRegion: "", // היחידה שנבחרה בטבלת המנהלה, לצמצום רשימת המשרות
   populationKnown: false, // האם יש במאגר נתוני אוכלוסייה בכלל
@@ -2306,6 +2308,45 @@ const MANAGE_DATASETS = {
     empty: "עדיין לא הוגדרו יחידות מגייסות. טען קובץ 'יחידות לגיוס' או הוסף ידנית.",
   },
 
+  // §23: יומן השינויים הידניים.
+  //
+  // כל עוד הנתונים הגיעו רק מקבצים, "מי שינה ומתי" נענה ע"י יומן הטעינות.
+  // מרגע שאפשר לערוך שם יחידה, לשייך עיסוק ולתקן זמן נסיעה ישירות במסך,
+  // השינוי לא היה מתועד בשום מקום — הנתון פשוט היה שונה.
+  changes: {
+    title: "יומן שינויים",
+    columns: ["מתי", "מה", "על מה", "שדה", "מ־", "ל־"],
+    filters: [
+      { label: "סוג", of: (r) => r.entity_label },
+      { label: "פעולה", of: (r) => r.action_label },
+    ],
+    rows: () => state.changeLog || [],
+    search: (r, term) =>
+      r.entity_name.includes(term) || (r.new_value || "").includes(term),
+    kpis: () => {
+      const rows = state.changeLog || [];
+      const today = new Date().toISOString().slice(0, 10);
+      return [
+        { n: rows.length, label: "שינויים מתועדים" },
+        { n: rows.filter((r) => (r.changed_at || "").startsWith(today)).length, label: "היום" },
+        { n: new Set(rows.map((r) => r.entity_label)).size, label: "סוגי נתונים" },
+        { n: rows.filter((r) => r.action === "delete").length, label: "מחיקות" },
+      ];
+    },
+    render: (r) => `<tr>
+        <td class="muted">${formatDateTime(r.changed_at)}</td>
+        <td>${escapeHtml(r.action_label)}</td>
+        <td><strong>${escapeHtml(r.entity_label)}: ${escapeHtml(r.entity_name)}</strong></td>
+        <td>${escapeHtml(r.field || "—")}</td>
+        <td class="muted">${escapeHtml(r.old_value || "—")}</td>
+        <td>${escapeHtml(r.new_value || "—")}</td>
+      </tr>`,
+    note:
+      "כל שינוי שנעשה במסכים מתועד כאן, עם הערך הקודם לצד החדש. טעינות " +
+      "קבצים מתועדות בנפרד — במסך טעינת נתונים.",
+    empty: "עדיין לא נעשו שינויים ידניים.",
+  },
+
   unit_locations: {
     title: "מיקומי יחידות",
     // §23: שלושה סוגים ולא שניים. היחידות המגייסות (רמה 05) נוספו לטבלה
@@ -2400,16 +2441,31 @@ const MANAGE_DATASETS = {
     },
     rows: () => state.stations,
     search: (s, term) => s.name.includes(term) || (s.area || "").includes(term),
+    // §23: השם, המחוז והמרחב נערכים כאן. התקן והאיוש נשארים לקריאה —
+    // הם מגיעים מקובץ המשרות, וכתיבתם ידנית הייתה מנתקת אותם ממקורם.
     render: (s) => `<tr>
-        <td><strong>${escapeHtml(s.name)}</strong></td>
-        <td>${escapeHtml(s.district || "—")}</td>
-        <td>${escapeHtml(s.area || "—")}</td>
+        <td class="cell-edit">
+          <input class="station-field" data-field="name" data-id="${s.id}"
+                 value="${escapeHtml(s.name)}" data-original="${escapeHtml(s.name)}">
+        </td>
+        <td class="cell-edit">
+          <input class="station-field" data-field="district" data-id="${s.id}"
+                 value="${escapeHtml(s.district || "")}" placeholder="—"
+                 data-original="${escapeHtml(s.district || "")}">
+        </td>
+        <td class="cell-edit">
+          <input class="station-field" data-field="area" data-id="${s.id}"
+                 value="${escapeHtml(s.area || "")}" placeholder="—"
+                 data-original="${escapeHtml(s.area || "")}">
+        </td>
         <td><span class="pill" style="background:${s.color}">${pctText(s)}</span></td>
         <td>${s.required_positions ?? '<span class="muted">אין נתון</span>'}</td>
         <td>${s.actual_positions ?? '<span class="muted">אין נתון</span>'}</td>
         <td>${roleSummary(s.roles, "missing")}</td>
       </tr>`,
-    note: "נטען מקובץ 'איוש תחנות'. לעריכה — טען קובץ מעודכן במסך ההגדרות.",
+    note:
+      "השם, המחוז והמרחב נערכים כאן ונשמרים מיד. התקן והאיוש מגיעים מקובץ " +
+      "המשרות ואינם ניתנים לעריכה ידנית — הם היו מתנתקים ממקורם.",
   },
 
   regions: {
@@ -2725,6 +2781,8 @@ function renderManageRows() {
 // — אחרת השם החדש מופיע בטבלה והישן נשאר על הסיכה.
 async function refreshUnits() {
   state.units_editable = await api("/api/units");
+  state.changeLog = await api("/api/change-log");
+  state.unitAliases = await api("/api/unit-aliases");
   const heat = await api("/api/units/heat");
   state.units = heat.items;
   state.unitsById = new Map(heat.items.map((u) => [u.id, u]));
@@ -2741,6 +2799,25 @@ async function refreshOccupationGroups() {
 
 // ניהול הקבוצות עצמן — יצירה, שינוי שם ומחיקה. שורה אחת מעל הטבלה, ורק
 // במערך העיסוקים: היא חסרת משמעות בכל מערך אחר.
+// §23: איחוד כתיבים — מוצג רק במערך היחידות, ששם הוא רלוונטי.
+function renderUnitAliasBar() {
+  const bar = el("unit-alias-bar");
+  if (!bar) return;
+  const show = state.dataset === "units";
+  bar.hidden = !show;
+  if (!show) return;
+  const data = state.unitAliases || { candidates: [], units: [] };
+  el("alias-candidate").innerHTML = data.candidates
+    .map(
+      (c) =>
+        `<option value="${escapeHtml(c.name)}">${escapeHtml(c.name)} (${c.positions} משרות)</option>`
+    )
+    .join("");
+  el("alias-canonical").innerHTML = (data.units || [])
+    .map((u) => `<option value="${escapeHtml(u)}">${escapeHtml(u)}</option>`)
+    .join("");
+}
+
 function renderOccupationGroupBar() {
   const bar = el("occ-group-bar");
   if (!bar) return;
@@ -2826,6 +2903,40 @@ function wireInlineEdit(table) {
 
   // §23: עריכת שדות היחידה. אותה תבנית כמו שאר העריכה בשורה — נשמר
   // ב-blur/Enter ורק כשהערך באמת השתנה.
+  // §23: עריכת שדות התחנה.
+  table.querySelectorAll(".station-field").forEach((input) => {
+    const save = async () => {
+      if (input.value === input.dataset.original) return;
+      const body = {};
+      body[input.dataset.field] = input.value.trim();
+      const response = await fetch(`/api/stations/${input.dataset.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await response.json();
+      if (!data.ok) {
+        input.value = input.dataset.original;
+        input.classList.add("input--err");
+        setTimeout(() => input.classList.remove("input--err"), 1500);
+        return alert(data.error);
+      }
+      input.dataset.original = input.value;
+      input.classList.add("input--ok");
+      // שינוי בתחנה משנה את המפה, המדדים והמרחבים — רענון מלא ולא מקומי.
+      await refreshAll();
+      renderManageTable();
+    };
+    input.onblur = save;
+    input.onkeydown = (e) => {
+      if (e.key === "Enter") input.blur();
+      if (e.key === "Escape") {
+        input.value = input.dataset.original;
+        input.blur();
+      }
+    };
+  });
+
   table.querySelectorAll(".unit-field").forEach((input) => {
     const save = async () => {
       if (input.value === input.dataset.original) return;
@@ -2964,6 +3075,7 @@ function switchDataset(name) {
   // כמו כותרת שלה, ואינה.
   renderManageKpis();
   renderOccupationGroupBar();
+  renderUnitAliasBar();
   renderManageTable();
 }
 
@@ -2971,6 +3083,22 @@ function wireManage() {
   // אין כאן חיווט של סרגל הסינון: הוא נבנה מחדש בכל רינדור, לפי עמודות
   // המערך הנבחר. ראה renderManageFilters.
   wireOccupationGroups();
+  el("alias-add").onclick = async () => {
+    const alias = el("alias-candidate").value;
+    const canonical = el("alias-canonical").value;
+    if (!alias || !canonical) return;
+    if (!confirm(`לסמן ש-"${alias}" הוא אותה יחידה כמו "${canonical}"?`)) return;
+    const data = await (
+      await fetch("/api/unit-aliases", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ alias, canonical }),
+      })
+    ).json();
+    if (!data.ok) return alert(data.error);
+    await refreshUnits();
+    renderUnitAliasBar();
+  };
   el("add-unit-cancel").onclick = () => (el("add-unit-row").hidden = true);
   el("add-unit-save").onclick = async () => {
     const name = el("add-unit-name").value.trim();
@@ -4397,7 +4525,7 @@ async function refreshAll() {
   // מחזיר את מפת החום שלהם. שני נתונים שונים, ולכן שני נתיבים.
   const [legend, stations, settlements, relations, lastUpdate, regions, regionHeat,
          regionRelations, candidates, adminRows, unitLocations, unitHeat,
-         occupationGroups, editableUnits] =
+         occupationGroups, editableUnits, changeLog, unitAliases] =
     await Promise.all([
       api("/api/legend"),
       api("/api/stations"),
@@ -4413,6 +4541,8 @@ async function refreshAll() {
       api("/api/units/heat"),
       api("/api/occupation-groups"),
       api("/api/units"),
+      api("/api/change-log"),
+      api("/api/unit-aliases"),
     ]);
 
   state.stations = stations;
@@ -4429,6 +4559,8 @@ async function refreshAll() {
   state.adminRows = adminRows;
   state.occupationGroups = occupationGroups;
   state.units_editable = editableUnits;
+  state.changeLog = changeLog;
+  state.unitAliases = unitAliases;
   state.unitLocations = unitLocations.units;
   // רשימת היישובים ל-datalist נבנית פעם אחת: 1,400 אפשרויות בכל שורה
   // היו הופכות את הטבלה לאיטית בלי להוסיף דבר.
