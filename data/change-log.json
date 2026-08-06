@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "action": "update",
+  "action_label": "עודכן",
+  "changed_at": "2026-08-06T19:15:59",
+  "entity": "region",
+  "entity_label": "region",
+  "entity_name": "איילון בדיקה",
+  "field": "שם",
+  "new_value": "איילון",
+  "old_value": "איילון בדיקה"
+ },
+ {
+  "action": "update",
+  "action_label": "עודכן",
+  "changed_at": "2026-08-06T19:15:59",
+  "entity": "region",
+  "entity_label": "region",
+  "entity_name": "איילון",
+  "field": "שם",
+  "new_value": "איילון בדיקה",
+  "old_value": "איילון"
+ }
+]

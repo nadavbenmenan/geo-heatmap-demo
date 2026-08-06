@@ -2486,16 +2486,27 @@ const MANAGE_DATASETS = {
     },
     rows: () => state.regions,
     search: (r, term) => r.name.includes(term) || (r.district || "").includes(term),
+    // §24: שם המרחב והמחוז נערכים כאן. המספרים נגזרים מהתחנות ואינם
+    // ניתנים לעריכה ישירה — הם תוצאה, לא נתון.
     render: (r) => `<tr>
-        <td><strong>${escapeHtml(r.name)}</strong></td>
-        <td>${escapeHtml(r.district || "—")}</td>
+        <td class="cell-edit">
+          <input class="org-field" data-level="region" data-name="${escapeHtml(r.name)}"
+                 value="${escapeHtml(r.name)}" data-original="${escapeHtml(r.name)}">
+        </td>
+        <td class="cell-edit">
+          <input class="org-field" data-level="district" data-name="${escapeHtml(r.district || "")}"
+                 value="${escapeHtml(r.district || "")}" placeholder="—"
+                 data-original="${escapeHtml(r.district || "")}">
+        </td>
         <td>${r.stations_count}</td>
         <td><span class="pill" style="background:${r.color}">${pctText(r)}</span></td>
         <td>${r.missing_positions ?? '<span class="muted">אין נתון</span>'}</td>
         <td>${candidatesText(r)}</td>
         <td>${roleSummary(r.roles, "missing")}</td>
       </tr>`,
-    note: "נגזר מהתחנות שבמרחב — אין קובץ 'איוש מרחבים'. עריכה נעשית ברמת התחנה.",
+    note:
+      "שם המרחב והמחוז נערכים כאן ומתעדכנים בכל מקום — התחנות, שורות " +
+      "המשרה והקשרים. המספרים נגזרים מהתחנות ואינם ניתנים לעריכה ישירה.",
   },
 
   candidates: {
@@ -2903,6 +2914,40 @@ function wireInlineEdit(table) {
 
   // §23: עריכת שדות היחידה. אותה תבנית כמו שאר העריכה בשורה — נשמר
   // ב-blur/Enter ורק כשהערך באמת השתנה.
+  // §24: שינוי שם מחוז או מרחב. שינוי כזה נוגע בכל הטבלאות שמחזיקות את
+  // השם, ולכן אחריו נדרש רענון מלא ולא עדכון מקומי.
+  table.querySelectorAll(".org-field").forEach((input) => {
+    const save = async () => {
+      const original = input.dataset.original;
+      if (input.value === original || !original) return;
+      const response = await fetch(
+        `/api/org/${input.dataset.level}/${encodeURIComponent(original)}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name: input.value.trim() }),
+        }
+      );
+      const data = await response.json();
+      if (!data.ok) {
+        input.value = original;
+        input.classList.add("input--err");
+        setTimeout(() => input.classList.remove("input--err"), 1500);
+        return alert(data.error);
+      }
+      await refreshAll();
+      renderManageTable();
+    };
+    input.onblur = save;
+    input.onkeydown = (e) => {
+      if (e.key === "Enter") input.blur();
+      if (e.key === "Escape") {
+        input.value = input.dataset.original;
+        input.blur();
+      }
+    };
+  });
+
   // §23: עריכת שדות התחנה.
   table.querySelectorAll(".station-field").forEach((input) => {
     const save = async () => {
@@ -4063,6 +4108,10 @@ async function loadAdminPositions() {
   // §16.6: מספר משרה. סינון בפני עצמו ולא חלק מהחיפוש החופשי — מגייס
   // שיש בידו מספר משרה מחפש **אותה**, ולא תפקיד ששמו מכיל ספרות.
   if (position) params.set("position", position);
+  // §24: "יחידות בלבד" — הצגת המשרות שיושבות ביחידות שהוגדרו, לצד
+  // המחוזות ולא במקומם. ברירת המחדל היא הכול.
+  const scopeFilter = el("a-scope") ? el("a-scope").value : "";
+  if (scopeFilter) params.set("scope", scopeFilter);
 
   const data = await api(`/api/admin-positions?${params}`);
 
@@ -4116,15 +4165,15 @@ async function refreshAdmin() {
 }
 
 function wireAdmin() {
-  ["a-area", "a-department", "a-unit"].forEach((id) => {
-    el(id).onchange = refreshAdmin;
+  ["a-area", "a-department", "a-unit", "a-scope"].forEach((id) => {
+    if (el(id)) el(id).onchange = refreshAdmin;
   });
   // input ולא change: הסינון מגיב תוך כדי הקלדה, בלי להמתין ליציאה מהשדה.
   el("a-profession").oninput = refreshAdmin;
   el("a-position").oninput = loadAdminPositions;
   el("a-reset").onclick = () => {
-    ["a-profession", "a-area", "a-department", "a-unit", "a-position"].forEach(
-      (id) => (el(id).value = "")
+    ["a-profession", "a-area", "a-department", "a-unit", "a-position", "a-scope"].forEach(
+      (id) => el(id) && (el(id).value = "")
     );
     refreshAdmin();
   };
