@@ -1,0 +1,62 @@
+[
+ {
+  "actual": 291.0,
+  "district": null,
+  "id": 5,
+  "name": "יחידת אכיפה כלכלית",
+  "positions": 344,
+  "required": 344.0,
+  "settlement_name": "בית ברל",
+  "vacant": 53
+ },
+ {
+  "actual": 262.0,
+  "district": null,
+  "id": 1,
+  "name": "יחידת חילוץ ארצית",
+  "positions": 299,
+  "required": 299.0,
+  "settlement_name": "אבטליון",
+  "vacant": 37
+ },
+ {
+  "actual": 262.0,
+  "district": null,
+  "id": 3,
+  "name": "יחידת סיור מיוחדת",
+  "positions": 309,
+  "required": 309.0,
+  "settlement_name": "איתן",
+  "vacant": 47
+ },
+ {
+  "actual": 207.0,
+  "district": null,
+  "id": 2,
+  "name": "מפקדת מרחב תפעולית",
+  "positions": 244,
+  "required": 244.0,
+  "settlement_name": "אור יהודה",
+  "vacant": 37
+ },
+ {
+  "actual": 296.0,
+  "district": null,
+  "id": 6,
+  "name": "מרכז הדרכה ארצי",
+  "positions": 367,
+  "required": 367.0,
+  "settlement_name": "בני ברק",
+  "vacant": 71
+ },
+ {
+  "actual": 228.0,
+  "district": null,
+  "id": 4,
+  "name": "מרכז שליטה ארצי",
+  "positions": 278,
+  "required": 278.0,
+  "settlement_name": "ארבל",
+  "vacant": 50
+ }
+]

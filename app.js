@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------------------
-   app.js — מסך "מפת חום תחנות": תחנות · מרחבים · יישובים.
+   app.js — מסך "מפת חום": תחנות · יחידות · מרחבים · יישובים.
 
    שני הטאבים הם אותה זרימה בדיוק, רק עם הצדדים מוחלפים: בוחרים ישות אחת
    ורואים את מי שקרוב אליה עד 30 דק'. לכן הם ממומשים כתצורה אחת (MODES) ולא
@@ -65,6 +65,7 @@ const state = {
   candidateScopes: [],
   adminRows: [],
   occupationGroups: { items: [], groups: [], unclassified: 0 },
+  units_editable: [], // §23: היחידות המגייסות, לעריכה בניהול הנתונים
   adminProfessions: [],
   adminRegion: "", // היחידה שנבחרה בטבלת המנהלה, לצמצום רשימת המשרות
   populationKnown: false, // האם יש במאגר נתוני אוכלוסייה בכלל
@@ -2199,6 +2200,10 @@ function sumOr(values) {
 // שמעליו. הרינדור, הסינון והחיפוש משותפים — כדי שמערך שיתווסף יידרש
 // להגדרה אחת, ולא למסך חדש.
 
+// §23: סוגי היחידות שיש להן מיקום. "unit" הוא היחידה המגייסת שיושבת
+// ברמה ההיררכית 05 — הרמה שממנה נגזר מי נחשב יחידה.
+const UNIT_TYPE_LABEL = { station: "תחנה", region: "מרחב", unit: "יחידה", district: "מחוז" };
+
 const MANAGE_DATASETS = {
   relations: {
     title: "קשרי תחנה‑יישוב",
@@ -2239,11 +2244,75 @@ const MANAGE_DATASETS = {
 
   // "המטרה שזה ירוץ ללא צורך לשנות את הקוד לעולם" — מרחב או תחנה שאינם
   // מוכרים מקבלים כאן יישוב, וכל המרחקים נגזרים ממנו.
+  // §23: היחידות המגייסות — הטבלה כולה ניתנת לעריכה.
+  //
+  // עד עכשיו הרשימה נקבעה אך ורק בקובץ. קובץ הוא דרך טובה להזין 200 שורות
+  // בבת אחת ודרך גרועה לתקן שם אחד שגוי — היה צריך לערוך אקסל, לטעון
+  // מחדש, ולקוות. השם, המחוז והיישוב נערכים כאן ונשמרים מיד.
+  units: {
+    title: "יחידות מגייסות",
+    columns: ["שם היחידה", "מחוז / אגף", "היישוב שבו היא יושבת", "תקן", "פנויות", ""],
+    addRow: "add-unit-row",
+    addLabel: "+ הוסף יחידה",
+    filters: [
+      { label: "מחוז / אגף", of: (r) => r.district },
+      { label: "מיקום", of: (r) => (r.settlement_name ? "מוגדר" : "טעון הגדרה") },
+      { label: "תקן", of: (r) => (r.required ? "יש נתון" : "אין נתון בקובץ המשרות") },
+    ],
+    rows: () => state.units_editable || [],
+    search: (r, term) =>
+      r.name.includes(term) || (r.settlement_name || "").includes(term),
+    kpis: () => {
+      const rows = state.units_editable || [];
+      return [
+        { n: rows.length, label: "יחידות" },
+        { n: rows.filter((r) => r.settlement_name).length, label: "עם מיקום" },
+        {
+          n: rows.filter((r) => !r.required).length,
+          label: "בלי תקן בקובץ המשרות",
+          cls: rows.some((r) => !r.required) ? "kpi--bad" : "",
+        },
+        { n: rows.reduce((a, r) => a + (r.vacant || 0), 0), label: "משרות פנויות" },
+      ];
+    },
+    // יחידה בלי תקן היא יחידה ששמה אינו קיים בקובץ התקן והמצבה — היא תופיע
+    // במפה ריקה. מסומנת, כי זו הבעיה שהכי קשה לגלות בלי סימון.
+    render: (r) => `<tr class="${r.required ? "" : "row-pending"}" data-unit="${r.id}">
+        <td class="cell-edit">
+          <input class="unit-field" data-field="name" data-id="${r.id}"
+                 value="${escapeHtml(r.name)}" data-original="${escapeHtml(r.name)}">
+        </td>
+        <td class="cell-edit">
+          <input class="unit-field" data-field="district" data-id="${r.id}"
+                 value="${escapeHtml(r.district || "")}" placeholder="—"
+                 data-original="${escapeHtml(r.district || "")}">
+        </td>
+        <td class="cell-edit">
+          <input class="unit-field" list="settlement-options" data-field="settlement_name"
+                 data-id="${r.id}" value="${escapeHtml(r.settlement_name || "")}"
+                 placeholder="הקלד שם יישוב…"
+                 data-original="${escapeHtml(r.settlement_name || "")}">
+        </td>
+        <td>${r.required ? Math.round(r.required) : '<span class="muted">אין נתון</span>'}</td>
+        <td>${r.vacant || 0}</td>
+        <td class="cell-actions">
+          <button class="row-del" data-unit-del="${r.id}"
+                  data-label="${escapeHtml(r.name)}">מחק</button>
+        </td>
+      </tr>`,
+    note:
+      "השם, המחוז והיישוב נערכים כאן ונשמרים מיד. יחידה מסומנת כשאין לה תקן " +
+      "בקובץ התקן והמצבה — שמה אינו מזוהה שם, ולכן המפה שלה תהיה ריקה.",
+    empty: "עדיין לא הוגדרו יחידות מגייסות. טען קובץ 'יחידות לגיוס' או הוסף ידנית.",
+  },
+
   unit_locations: {
     title: "מיקומי יחידות",
+    // §23: שלושה סוגים ולא שניים. היחידות המגייסות (רמה 05) נוספו לטבלה
+    // כדי שיהיה מה לערוך — מה שאין לו שורה אי אפשר לתקן במסך.
     columns: ["סוג", "יחידה", "היישוב שבו היא יושבת", "מקור", ""],
     filters: [
-      { label: "סוג", of: (r) => (r.unit_type === "region" ? "מרחב" : "תחנה") },
+      { label: "סוג", of: (r) => UNIT_TYPE_LABEL[r.unit_type] || r.unit_type },
       { label: "מקור ההגדרה", of: (r) => r.source },
       { label: "יישוב", of: (r) => (r.located ? r.settlement_name : null) },
     ],
@@ -2261,7 +2330,7 @@ const MANAGE_DATASETS = {
     search: (r, term) =>
       r.unit_name.includes(term) || (r.settlement_name || "").includes(term),
     render: (r) => `<tr class="${r.located ? "" : "row-pending"}">
-        <td>${r.unit_type === "region" ? "מרחב" : "תחנה"}</td>
+        <td>${escapeHtml(UNIT_TYPE_LABEL[r.unit_type] || r.unit_type)}</td>
         <td><strong>${escapeHtml(r.unit_name)}</strong></td>
         <td class="cell-edit">
           <input class="unit-input" list="settlement-options"
@@ -2641,7 +2710,7 @@ function renderManageRows() {
       )}</td></tr>`;
 
   // שורת ההוספה מוצגת רק למערכי נתונים שאפשר להוסיף להם ידנית.
-  ["add-row", "add-row-region"].forEach((id) => {
+  ["add-row", "add-row-region", "add-unit-row"].forEach((id) => {
     if (el(id) && id !== config.addRow) el(id).hidden = true;
   });
   el("rel-add").hidden = !config.addRow;
@@ -2652,6 +2721,18 @@ function renderManageRows() {
 
 // §21: רענון המיפוי אחרי שינוי. הקבוצות והשיוכים מזינים גם את בוררי
 // המסך וגם את מסך המנהלה, ולכן מרעננים את שניהם ולא רק את הטבלה.
+// §23: רענון היחידות אחרי עריכה. המפה נשענת עליהן, ולכן היא מתרעננת יחד
+// — אחרת השם החדש מופיע בטבלה והישן נשאר על הסיכה.
+async function refreshUnits() {
+  state.units_editable = await api("/api/units");
+  const heat = await api("/api/units/heat");
+  state.units = heat.items;
+  state.unitsById = new Map(heat.items.map((u) => [u.id, u]));
+  state.unitLocations = (await api("/api/unit-locations")).units;
+  renderManageKpis();
+  renderManageTable();
+}
+
 async function refreshOccupationGroups() {
   state.occupationGroups = await api("/api/occupation-groups");
   renderManageKpis();
@@ -2743,6 +2824,52 @@ function wireInlineEdit(table) {
     };
   });
 
+  // §23: עריכת שדות היחידה. אותה תבנית כמו שאר העריכה בשורה — נשמר
+  // ב-blur/Enter ורק כשהערך באמת השתנה.
+  table.querySelectorAll(".unit-field").forEach((input) => {
+    const save = async () => {
+      if (input.value === input.dataset.original) return;
+      const body = {};
+      body[input.dataset.field] = input.value.trim();
+      const response = await fetch(`/api/units/${input.dataset.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await response.json();
+      if (!data.ok) {
+        input.value = input.dataset.original;
+        input.classList.add("input--err");
+        setTimeout(() => input.classList.remove("input--err"), 1500);
+        return alert(data.error);
+      }
+      input.dataset.original = input.value;
+      input.classList.add("input--ok");
+      setTimeout(() => input.classList.remove("input--ok"), 900);
+      await refreshUnits();
+    };
+    input.onblur = save;
+    input.onkeydown = (e) => {
+      if (e.key === "Enter") input.blur();
+      if (e.key === "Escape") {
+        input.value = input.dataset.original;
+        input.blur();
+      }
+    };
+  });
+
+  table.querySelectorAll("[data-unit-del]").forEach((button) => {
+    button.onclick = async () => {
+      if (!confirm(`למחוק את היחידה "${button.dataset.label}"?\n\nשורות המשרה שלה אינן נמחקות.`))
+        return;
+      const data = await (
+        await fetch(`/api/units/${button.dataset.unitDel}`, { method: "DELETE" })
+      ).json();
+      if (!data.ok) return alert(data.error);
+      await refreshUnits();
+    };
+  });
+
   table.querySelectorAll(".unit-input").forEach((input) => {
     input.onblur = () => saveUnitLocation(input);
     input.onkeydown = (e) => {
@@ -2829,7 +2956,7 @@ function switchDataset(name) {
   document.querySelectorAll("#manage-tabs .tab").forEach((tab) => {
     tab.classList.toggle("active", tab.dataset.dataset === name);
   });
-  ["add-row", "add-row-region"].forEach((id) => {
+  ["add-row", "add-row-region", "add-unit-row"].forEach((id) => {
     if (el(id)) el(id).hidden = true;
   });
   // המדדים שייכים למערך הנבחר ולא למסך. בלי הרענון כאן הם נשארו של המערך
@@ -2844,6 +2971,28 @@ function wireManage() {
   // אין כאן חיווט של סרגל הסינון: הוא נבנה מחדש בכל רינדור, לפי עמודות
   // המערך הנבחר. ראה renderManageFilters.
   wireOccupationGroups();
+  el("add-unit-cancel").onclick = () => (el("add-unit-row").hidden = true);
+  el("add-unit-save").onclick = async () => {
+    const name = el("add-unit-name").value.trim();
+    if (!name) return (el("add-unit-error").textContent = "יש להזין שם יחידה.");
+    const response = await fetch("/api/units", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        district: el("add-unit-district").value.trim(),
+        settlement_name: el("add-unit-settlement").value.trim(),
+      }),
+    });
+    const data = await response.json();
+    if (!data.ok) return (el("add-unit-error").textContent = data.error);
+    ["add-unit-name", "add-unit-district", "add-unit-settlement"].forEach(
+      (id) => (el(id).value = "")
+    );
+    el("add-unit-error").textContent = "";
+    el("add-unit-row").hidden = true;
+    await refreshUnits();
+  };
   document.querySelectorAll("#manage-tabs .tab").forEach((tab) => {
     tab.onclick = () => switchDataset(tab.dataset.dataset);
   });
@@ -2855,6 +3004,8 @@ function wireManage() {
     if (state.dataset === "relations") {
       el("add-error").textContent = "";
       el("add-travel").value = "";
+    } else if (state.dataset === "units") {
+      el("add-unit-error").textContent = "";
     } else {
       el("add-region-error").textContent = "";
       el("add-region-travel").value = "";
@@ -3689,7 +3840,7 @@ async function wireStrategic() {
   };
 }
 
-/* --- מסך מפת חום מנהלה ---------------------------------------------------- */
+/* --- מסך לוח משרות -------------------------------------------------------- */
 //
 // **במסך הזה יש טבלה אחת בלבד**: המשרות שאפשר לגייס אליהן, עם מספר המשרה.
 // סקירת החוסרים (הגרף, התפקידים החסרים, היחידות המרוקנות) עברה ללוח
@@ -3821,11 +3972,12 @@ async function loadAdminPositions() {
             <td class="muted">${escapeHtml(p.district || "—")}</td>
             <td>${escapeHtml(p.region || "—")}</td>
             <td class="muted">${escapeHtml(p.unit || "—")}</td>
+            <td>${escapeHtml(p.subunit || "—")}</td>
             <td>${escapeHtml(p.state_label)}</td>
           </tr>`
         )
         .join("")
-    : `<tr><td colspan="10" class="muted">אין משרות פנויות בסינון הזה.</td></tr>`;
+    : `<tr><td colspan="11" class="muted">אין משרות פנויות בסינון הזה.</td></tr>`;
 }
 
 async function refreshAdmin() {
@@ -4245,7 +4397,7 @@ async function refreshAll() {
   // מחזיר את מפת החום שלהם. שני נתונים שונים, ולכן שני נתיבים.
   const [legend, stations, settlements, relations, lastUpdate, regions, regionHeat,
          regionRelations, candidates, adminRows, unitLocations, unitHeat,
-         occupationGroups] =
+         occupationGroups, editableUnits] =
     await Promise.all([
       api("/api/legend"),
       api("/api/stations"),
@@ -4260,6 +4412,7 @@ async function refreshAll() {
       api("/api/unit-locations"),
       api("/api/units/heat"),
       api("/api/occupation-groups"),
+      api("/api/units"),
     ]);
 
   state.stations = stations;
@@ -4275,6 +4428,7 @@ async function refreshAll() {
   state.candidateScopes = candidates.scopes;
   state.adminRows = adminRows;
   state.occupationGroups = occupationGroups;
+  state.units_editable = editableUnits;
   state.unitLocations = unitLocations.units;
   // רשימת היישובים ל-datalist נבנית פעם אחת: 1,400 אפשרויות בכל שורה
   // היו הופכות את הטבלה לאיטית בלי להוסיף דבר.
@@ -4384,7 +4538,7 @@ async function init() {
       selectEntity(next.id);
     });
 
-    // §22.1: **הפתיחה תמיד על מפת חום תחנות.**
+    // §22.1: **הפתיחה תמיד על מפת החום.**
     //
     // הדפדפן שומר את ה-hash, ולכן מי שסגר את המערכת במסך ההגדרות נחת שם
     // גם בפתיחה הבאה — לפעמים ימים אחרי. זו התנהגות נכונה לקישור שנשלח,

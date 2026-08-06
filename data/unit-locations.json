@@ -1,5 +1,5 @@
 {
- "pending": 0,
+ "pending": 78,
  "settlements": [
   "אבטליון",
   "אבן יהודה",
@@ -259,45 +259,563 @@
  ],
  "units": [
   {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "אילת",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "אשר",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "גליל",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "דוד",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "ירקון",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "כרמל",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "לכיש",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מג\"ב י-ם",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מנשה",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "נגב",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "עמקים",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "ציון",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "קדם",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "רותם",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "שומרון",
+   "unit_type": "region"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מרחב אילת",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מרחב דוד",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת אופקים",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת אריאל",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת אשדוד",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת אשקלון",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת באקה אלע'רביה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת באר שבע",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת בית שאן",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת בית שמש",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת בנימין",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת ג'סר א זרקא",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת דימונה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת הבקעה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת זבולון",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת זכרון יעקב",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת חברון",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת חדרה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת טייבה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת טירת הכרמל",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת טמרה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת יבנה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת יפו",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת ירדן",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת כפר כנא",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת כפר קאסם",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת כרמיאל",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת לב הבירה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת לב תל אביב",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מג'דל כרום",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מגדל העמק",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מודיעין",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מודיעין עילית",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מוריה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מטה יהודה",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת מעלות תרשיחא",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת משגב",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת נוף הגליל",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת נצרת",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת נשר",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת נתיבות",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת עוז",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת עכו",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת עציון",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת ערד",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת ערוער",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת צפת",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת קרית מלאכי",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת רהט",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שגב שלום",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שדות",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שדרות",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שלם",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שפט",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שפרעם",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת שרת",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת תל אביב דרום",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "תחנת תל אביב צפון",
+   "unit_type": "station"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "יחידת חילוץ ארצית",
+   "unit_type": "unit"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "יחידת סיור מיוחדת",
+   "unit_type": "unit"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מפקדת מרחב תפעולית",
+   "unit_type": "unit"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מרכז הדרכה ארצי",
+   "unit_type": "unit"
+  },
+  {
+   "located": false,
+   "settlement_name": "אין נתון",
+   "source": "טעון הגדרה",
+   "unit_name": "מרכז שליטה ארצי",
+   "unit_type": "unit"
+  },
+  {
    "located": true,
-   "settlement_name": "חולון",
+   "settlement_name": "בת ים",
    "source": "מפקדת מרחב",
    "unit_name": "איילון",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "אילות",
-   "source": "מפקדת מרחב",
-   "unit_name": "אילת",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "כפר יאסיף",
-   "source": "מפקדת מרחב",
-   "unit_name": "אשר",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "קורנית",
-   "source": "מפקדת מרחב",
-   "unit_name": "גליל",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "עפרה",
+   "settlement_name": "מעלה אדומים",
    "source": "מפקדת מרחב",
    "unit_name": "גלעד",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "כוכב מיכאל",
-   "source": "מפקדת מרחב",
-   "unit_name": "דוד",
    "unit_type": "region"
   },
   {
@@ -309,105 +827,28 @@
   },
   {
    "located": true,
-   "settlement_name": "נווה דניאל",
+   "settlement_name": "מעלה אדומים",
    "source": "מפקדת מרחב",
    "unit_name": "יהודה",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "גבעתיים",
-   "source": "מפקדת מרחב",
-   "unit_name": "ירקון",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "חוקוק",
+   "settlement_name": "טבריה",
    "source": "מפקדת מרחב",
    "unit_name": "כנרת",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "חיפה",
-   "source": "מפקדת מרחב",
-   "unit_name": "כרמל",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "ניצנים",
-   "source": "מפקדת מרחב",
-   "unit_name": "לכיש",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "אשתאול",
-   "source": "מפקדת מרחב",
-   "unit_name": "מג\"ב י-ם",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "כפר קרע",
-   "source": "מפקדת מרחב",
-   "unit_name": "מנשה",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "ברוש",
-   "source": "מפקדת מרחב",
-   "unit_name": "נגב",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "אור יהודה",
+   "settlement_name": "לוד",
    "source": "מפקדת מרחב",
    "unit_name": "נתב\"ג",
    "unit_type": "region"
   },
   {
    "located": true,
-   "settlement_name": "דחי",
-   "source": "מפקדת מרחב",
-   "unit_name": "עמקים",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "רמת רזיאל",
-   "source": "מפקדת מרחב",
-   "unit_name": "ציון",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "אורה",
-   "source": "מפקדת מרחב",
-   "unit_name": "קדם",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "עומר",
-   "source": "מפקדת מרחב",
-   "unit_name": "רותם",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "איתמר",
-   "source": "מפקדת מרחב",
-   "unit_name": "שומרון",
-   "unit_type": "region"
-  },
-  {
-   "located": true,
-   "settlement_name": "ישרש",
+   "settlement_name": "רחובות",
    "source": "מפקדת מרחב",
    "unit_name": "שפלה",
    "unit_type": "region"
@@ -421,619 +862,227 @@
   },
   {
    "located": true,
-   "settlement_name": "אילות",
-   "source": "הצעה",
-   "unit_name": "מרחב אילת",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "כוכב מיכאל",
-   "source": "הצעה",
-   "unit_name": "מרחב דוד",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "אור יהודה",
-   "source": "הצעה",
+   "settlement_name": "לוד",
+   "source": "מפקדת מרחב",
    "unit_name": "מרחב נתב\"ג",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "אום אל-פחם",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת אום אל פחם",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "פדויים",
-   "source": "הצעה",
-   "unit_name": "תחנת אופקים",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "אורה",
-   "source": "הצעה",
-   "unit_name": "תחנת אריאל",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בני דרום",
-   "source": "הצעה",
-   "unit_name": "תחנת אשדוד",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בת הדר",
-   "source": "הצעה",
-   "unit_name": "תחנת אשקלון",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "כפר קרע",
-   "source": "הצעה",
-   "unit_name": "תחנת באקה אלע'רביה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "עומר",
-   "source": "הצעה",
-   "unit_name": "תחנת באר שבע",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "זמרת",
-   "source": "הצעה",
-   "unit_name": "תחנת בית שאן",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "זנוח",
-   "source": "הצעה",
-   "unit_name": "תחנת בית שמש",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "בני ברק",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת בני ברק",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "פסגות",
-   "source": "הצעה",
-   "unit_name": "תחנת בנימין",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "בת ים",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת בת ים",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "עין איילה",
-   "source": "הצעה",
-   "unit_name": "תחנת ג'סר א זרקא",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "גבעתיים",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת גבעתיים",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "קצרין",
-   "source": "הצעה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת גולן",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "נהרייה",
-   "source": "הצעה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת גליל מערבי",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "רמת השרון",
-   "source": "הצעה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת גלילות",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "מרחב עם",
-   "source": "הצעה",
-   "unit_name": "תחנת דימונה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "יפית",
-   "source": "הצעה",
-   "unit_name": "תחנת הבקעה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "אשבול",
-   "source": "הצעה",
+   "settlement_name": "עומר",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת העיירות",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "הראל",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת הראל",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "קריית ביאליק",
-   "source": "הצעה",
-   "unit_name": "תחנת זבולון",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בת שלמה",
-   "source": "הצעה",
-   "unit_name": "תחנת זכרון יעקב",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "הר גילה",
-   "source": "הצעה",
-   "unit_name": "תחנת חברון",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בית ינאי",
-   "source": "הצעה",
-   "unit_name": "תחנת חדרה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "חולון",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת חולון",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "חיפה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת חיפה",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "טבריה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת טבריה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "צור יצחק",
-   "source": "הצעה",
-   "unit_name": "תחנת טייבה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "טירה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת טירה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "החותרים",
-   "source": "הצעה",
-   "unit_name": "תחנת טירת הכרמל",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "מורשת",
-   "source": "הצעה",
-   "unit_name": "תחנת טמרה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "כפר אביב",
-   "source": "הצעה",
-   "unit_name": "תחנת יבנה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בת ים",
-   "source": "הצעה",
-   "unit_name": "תחנת יפו",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "שער הגולן",
-   "source": "הצעה",
-   "unit_name": "תחנת ירדן",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "עין מאהל",
-   "source": "הצעה",
-   "unit_name": "תחנת כפר כנא",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "כפר סבא",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת כפר סבא",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "כפר ברא",
-   "source": "הצעה",
-   "unit_name": "תחנת כפר קאסם",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "צביה",
-   "source": "הצעה",
-   "unit_name": "תחנת כרמיאל",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "אורה",
-   "source": "הצעה",
-   "unit_name": "תחנת לב הבירה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "גבעתיים",
-   "source": "הצעה",
-   "unit_name": "תחנת לב תל אביב",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "לוד",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת לוד",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "ירכא",
-   "source": "הצעה",
-   "unit_name": "תחנת מג'דל כרום",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "יפעת",
-   "source": "הצעה",
-   "unit_name": "תחנת מגדל העמק",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "מבוא מודיעים",
-   "source": "הצעה",
-   "unit_name": "תחנת מודיעין",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "טבריה",
-   "source": "הצעה",
-   "unit_name": "תחנת מודיעין עילית",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "הר גילה",
-   "source": "הצעה",
-   "unit_name": "תחנת מוריה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "אשתאול",
-   "source": "הצעה",
-   "unit_name": "תחנת מטה יהודה",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "רמת גן",
-   "source": "הצעה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת מסובים",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "גבע בנימין",
-   "source": "הצעה",
+   "settlement_name": "מעלה אדומים",
+   "source": "יישוב זהה",
    "unit_name": "תחנת מעלה אדומים",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "צוריאל",
-   "source": "הצעה",
-   "unit_name": "תחנת מעלות תרשיחא",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "צביה",
-   "source": "הצעה",
-   "unit_name": "תחנת משגב",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "נהרייה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת נהריה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "ריינה",
-   "source": "הצעה",
-   "unit_name": "תחנת נוף הגליל",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "ריינה",
-   "source": "הצעה",
-   "unit_name": "תחנת נצרת",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "בית אורן",
-   "source": "הצעה",
-   "unit_name": "תחנת נשר",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "שרשרת",
-   "source": "הצעה",
-   "unit_name": "תחנת נתיבות",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "נתניה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת נתניה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "אורה",
-   "source": "הצעה",
-   "unit_name": "תחנת עוז",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "כפר קרע",
-   "source": "הצעה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת עירון",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "כפר יאסיף",
-   "source": "הצעה",
-   "unit_name": "תחנת עכו",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "עפולה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת עפולה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "בת עין",
-   "source": "הצעה",
-   "unit_name": "תחנת עציון",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "מעון",
-   "source": "הצעה",
-   "unit_name": "תחנת ערד",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "עומר",
-   "source": "הצעה",
-   "unit_name": "תחנת ערוער",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "פתח תקווה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת פתח תקוה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "שפר",
-   "source": "הצעה",
-   "unit_name": "תחנת צפת",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "קריית גת",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת קרית גת",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "גני טל",
-   "source": "הצעה",
-   "unit_name": "תחנת קרית מלאכי",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "קריית שמונה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת קרית שמונה",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "ראש העין",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת ראש העין",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "ראשון לציון",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת ראשון לציון",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "להבים",
-   "source": "הצעה",
-   "unit_name": "תחנת רהט",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
    "settlement_name": "רחובות",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת רחובות",
    "unit_type": "station"
   },
   {
    "located": true,
    "settlement_name": "רמלה",
-   "source": "הצעה",
+   "source": "יישוב זהה",
    "unit_name": "תחנת רמלה",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "עומר",
-   "source": "הצעה",
-   "unit_name": "תחנת שגב שלום",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "באר יעקב",
-   "source": "הצעה",
-   "unit_name": "תחנת שדות",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "גבים",
-   "source": "הצעה",
-   "unit_name": "תחנת שדרות",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "מעלה אדומים",
-   "source": "הצעה",
-   "unit_name": "תחנת שלם",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "גבע בנימין",
-   "source": "הצעה",
-   "unit_name": "תחנת שפט",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "הרדוף",
-   "source": "הצעה",
-   "unit_name": "תחנת שפרעם",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "גבעתיים",
-   "source": "הצעה",
-   "unit_name": "תחנת שרת",
-   "unit_type": "station"
-  },
-  {
-   "located": true,
-   "settlement_name": "כדורי",
-   "source": "הצעה",
+   "settlement_name": "עפולה",
+   "source": "תחנה בתוך עיר",
    "unit_name": "תחנת תבור",
    "unit_type": "station"
   },
   {
    "located": true,
-   "settlement_name": "אזור",
-   "source": "הצעה",
-   "unit_name": "תחנת תל אביב דרום",
-   "unit_type": "station"
+   "settlement_name": "בית ברל",
+   "source": "ידני",
+   "unit_name": "יחידת אכיפה כלכלית",
+   "unit_type": "unit"
   },
   {
    "located": true,
-   "settlement_name": "גבעתיים",
-   "source": "הצעה",
-   "unit_name": "תחנת תל אביב צפון",
-   "unit_type": "station"
+   "settlement_name": "בית ברל",
+   "source": "ידני",
+   "unit_name": "יחידת אכיפה כלכלית (נבדק)",
+   "unit_type": "unit"
   }
  ]
 }

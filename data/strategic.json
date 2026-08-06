@@ -26,14 +26,14 @@
  "nearby_minutes": 30,
  "recruitment_days": [
   {
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "expected_success_pct": 65.0,
    "id": 1,
    "location": "לשכת גיוס מרכז",
    "station_name": "תחנת אשקלון"
   },
   {
-   "date": "2026-08-23",
+   "date": "2026-08-24",
    "expected_success_pct": 58.0,
    "id": 2,
    "location": "מתחם עירוני",

@@ -35,8 +35,8 @@
       </div>
 
       <nav class="nav">
-        <button class="nav-item active" id="nav-map">מפת חום תחנות</button>
-        <button class="nav-item" id="nav-admin">מפת חום מנהלה</button>
+        <button class="nav-item active" id="nav-map">מפת חום</button>
+        <button class="nav-item" id="nav-admin">לוח משרות</button>
         <button class="nav-item" id="nav-strategic">לוח בקרה</button>
         <button class="nav-item" id="nav-recruiter">סטטוס תחנות</button>
         <button class="nav-item" id="nav-alerts">התראות <em id="alerts-badge" hidden></em></button>
@@ -55,11 +55,11 @@
     </aside>
 
     <main class="main">
-     <!-- ===================== מסך 1: מפת חום תחנות ===================== -->
+     <!-- ===================== מסך 1: מפת חום ===================== -->
      <section class="screen" id="screen-map">
       <header class="topbar">
         <div class="topbar-row">
-          <h1>מפת חום תחנות</h1>
+          <h1>מפת חום</h1>
         </div>
       </header>
 
@@ -134,7 +134,7 @@
       </section>
      </section>
 
-     <!-- ===== מסך: מפת חום מנהלה =====
+     <!-- ===== מסך: לוח משרות =====
           מאז מעבר למקור "משרות משטרה" המסך מכסה את **כל** התפקידים ולא רק
           תפקידי מנהלה: הקובץ הוא תמונת התקן המלאה, משרה‑משרה.
 
@@ -143,7 +143,7 @@
      <section class="screen" id="screen-admin" hidden>
       <header class="topbar">
         <div class="topbar-row">
-          <h1>מפת חום מנהלה</h1>
+          <h1>לוח משרות</h1>
           <span class="topbar-note">תקנים פנויים לגיוס</span>
         </div>
       </header>
@@ -204,7 +204,8 @@
                   <th>מספר משרה</th><th>היקף</th><th>תיאור עיסוק</th>
                   <th>סיווג תפקיד</th><th>תת קבוצה</th><th>דרגת תקן</th>
                   <th>רמה 02 — מחוז / אגף</th><th>רמה 03 — מרחב / יחידה</th>
-                  <th>רמה 04 — תחנה / יחידת משנה</th><th>מצב משרה</th>
+                  <th>רמה 04 — תחנה / יחידת משנה</th>
+                  <th>רמה 05 — יחידה</th><th>מצב משרה</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -284,8 +285,8 @@
         <div class="scope-row">
           <div class="scope-switch" id="str-scope">
             <button class="scope-btn active" data-scope="core">
-              <span class="scope-title">תפקידי ליבה</span>
-              <span class="scope-sub">סייר · בלש · חוקר</span>
+              <span class="scope-title">תחנות</span>
+              <span class="scope-sub">סייר · בלש · חוקר · אחר</span>
             </button>
             <button class="scope-btn" data-scope="admin">
               <span class="scope-title">כלל התפקידים</span>
@@ -559,6 +560,7 @@
           <button class="tab" data-dataset="candidates">מועמדים בהליך</button>
           <button class="tab" data-dataset="admin">איוש מנהלה</button>
           <button class="tab" data-dataset="occupations">קשרי קבוצות תפקידים</button>
+          <button class="tab" data-dataset="units">יחידות מגייסות</button>
           <button class="tab" data-dataset="unit_locations">מיקומי יחידות</button>
         </div>
 
@@ -600,6 +602,17 @@
           </div>
 
           <!-- §21: ניהול קבוצות התפקידים. מוצג רק בלשונית העיסוקים. -->
+          <!-- §23: הוספת יחידה מגייסת ידנית, בלי לטעון קובץ מחדש. -->
+          <div class="add-row" id="add-unit-row" hidden>
+            <input type="text" id="add-unit-name" placeholder="שם היחידה">
+            <input type="text" id="add-unit-district" placeholder="מחוז / אגף (רשות)">
+            <input type="text" id="add-unit-settlement" list="settlement-options"
+                   placeholder="יישוב (רשות)">
+            <button class="add-save" id="add-unit-save">שמור</button>
+            <button class="add-cancel" id="add-unit-cancel">ביטול</button>
+            <span class="add-error" id="add-unit-error"></span>
+          </div>
+
           <div class="manage-bar" id="occ-group-bar" hidden>
             <span class="panel-note" id="occ-group-count"></span>
             <select id="occ-group-pick"></select>
